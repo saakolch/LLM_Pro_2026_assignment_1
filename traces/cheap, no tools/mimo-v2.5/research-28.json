@@ -1,0 +1,38 @@
+{
+ "task": {
+  "id": "research-28",
+  "source": "research",
+  "question": "What score does the openJiuwen harness achieve on Terminal-Bench 2.1?",
+  "answer": "87.19%",
+  "evidence": "We systematically evaluate openJiuwen on SWE-bench Verified and Terminal-Bench 2.1, where it achieves 82.6% and 87.19%, respectively, exceeding the strongest selected official-leaderboard point estimates by 3.4 and 3.39 percentage points.",
+  "page": "openJiuwen (arXiv)",
+  "url": "https://arxiv.org/abs/2608.27969"
+ },
+ "answer": "<tool_call>\n<function=search>\n<parameter=query>openJiuwen harness Terminal-Bench 2.1 score</parameter>\n</function>\n</tool_call>",
+ "correct": false,
+ "cost": 2.2416199999999997e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What score does the openJiuwen harness achieve on Terminal-Bench 2.1?"
+  },
+  {
+   "role": "assistant",
+   "content": "<tool_call>\n<function=search>\n<parameter=query>openJiuwen harness Terminal-Bench 2.1 score</parameter>\n</function>\n</tool_call>",
+   "refusal": null,
+   "reasoning": "The user is asking about a score for \"openJiuwen harness\" on \"Terminal-Bench 2.1\". I need to search for this information.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a score for \"openJiuwen harness\" on \"Terminal-Bench 2.1\". I need to search for this information.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

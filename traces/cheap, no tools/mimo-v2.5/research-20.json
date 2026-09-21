@@ -1,0 +1,38 @@
+{
+ "task": {
+  "id": "research-20",
+  "source": "research",
+  "question": "By how many percentage points did the proactive memory agent improve pass@1 on Terminal-Bench 2.0?",
+  "answer": "8.3",
+  "evidence": "Across Terminal-Bench 2.0 and $τ^2$-Bench, it improves pass@1 for both weaker and stronger action agents, with gains of +8.3 pp on Terminal-Bench and +6.8 pp on $τ^2$-Bench.",
+  "page": "Proactive Memory Agent (arXiv)",
+  "url": "https://arxiv.org/abs/2607.08716"
+ },
+ "answer": "<tool_call>\n<function=search>\n<parameter=query>proactive memory agent Terminal-Bench 2.0 pass@1 improvement</parameter>\n</function>\n</tool_call>",
+ "correct": false,
+ "cost": 2.6224200000000107e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By how many percentage points did the proactive memory agent improve pass@1 on Terminal-Bench 2.0?"
+  },
+  {
+   "role": "assistant",
+   "content": "<tool_call>\n<function=search>\n<parameter=query>proactive memory agent Terminal-Bench 2.0 pass@1 improvement</parameter>\n</function>\n</tool_call>",
+   "refusal": null,
+   "reasoning": "The user is asking about a \"proactive memory agent\" and its improvement on \"Terminal-Bench 2.0\". This seems to be about a specific AI research paper or system. Let me search for this information.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a \"proactive memory agent\" and its improvement on \"Terminal-Bench 2.0\". This seems to be about a specific AI research paper or system. Let me search for this information.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "task": {
+  "id": "research-39",
+  "source": "research",
+  "question": "How many unique optimization examples per benchmark does COBRA-Skills use?",
+  "answer": "50",
+  "evidence": "Across six heterogeneous agent benchmarks and three target models, COBRA-Skills consistently achieves the strongest average performance among compared methods, while reducing optimization cost by 55--58\\% relative to SkillOpt and using only 50 unique optimization examples per benchmark.",
+  "page": "COBRA-Skills (arXiv)",
+  "url": "https://arxiv.org/abs/2609.11682"
+ },
+ "answer": "<tool_call>\n<function=search>\n<parameter=query>COBRA-Skills optimization examples per benchmark</parameter>\n</function>\n</tool_call>",
+ "correct": false,
+ "cost": 2.4577600000000657e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many unique optimization examples per benchmark does COBRA-Skills use?"
+  },
+  {
+   "role": "assistant",
+   "content": "<tool_call>\n<function=search>\n<parameter=query>COBRA-Skills optimization examples per benchmark</parameter>\n</function>\n</tool_call>",
+   "refusal": null,
+   "reasoning": "Let me search for information about COBRA-Skills and its optimization examples per benchmark.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me search for information about COBRA-Skills and its optimization examples per benchmark.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

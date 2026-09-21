@@ -1,0 +1,38 @@
+{
+ "task": {
+  "id": "research-33",
+  "source": "research",
+  "question": "What is the name of the configurable VLM-agent harness proposed alongside the MineAmongUs sandbox?",
+  "answer": "ARIA",
+  "evidence": "We also propose ARIA, a configurable VLM-agent harness that exposes five cognitive-component ablation axes; and an atom- and arc-level annotation scheme grounded in deception taxonomies and operationalized at scale by an LLM-as-a-Judge reaching near-human atom-labeling agreement.",
+  "page": "MineAmongUs (arXiv)",
+  "url": "https://arxiv.org/abs/2608.30428"
+ },
+ "answer": "<tool_call>\n<function=web_search>\n<parameter=query>MineAmongUs sandbox configurable VLM-agent harness</parameter>\n</function>\n</tool_call>",
+ "correct": false,
+ "cost": 4.675359999999941e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What is the name of the configurable VLM-agent harness proposed alongside the MineAmongUs sandbox?"
+  },
+  {
+   "role": "assistant",
+   "content": "<tool_call>\n<function=web_search>\n<parameter=query>MineAmongUs sandbox configurable VLM-agent harness</parameter>\n</function>\n</tool_call>",
+   "refusal": null,
+   "reasoning": "Okay, I need to find the name of a configurable VLM-agent harness that was proposed alongside the MineAmongUs sandbox. The user mentioned events of 2025 and 2026, but this might be about research in AI or something similar. Let me start by searching for \"MineAmongUs sandbox\" to see what comes up.\n\nI'll use web_search for this.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Okay, I need to find the name of a configurable VLM-agent harness that was proposed alongside the MineAmongUs sandbox. The user mentioned events of 2025 and 2026, but this might be about research in AI or something similar. Let me start by searching for \"MineAmongUs sandbox\" to see what comes up.\n\nI'll use web_search for this.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "task": {
+  "id": "research-31",
+  "source": "research",
+  "question": "What mean AUROC does verbal confidence achieve at trajectory completion?",
+  "answer": "0.85",
+  "evidence": "We evaluate mainstream uncertainty signals on deep-research tasks and find that verbal confidence reliably distinguishes failures at trajectory completion, achieving a mean AUROC of 0.85, whereas all evaluated signals offer limited predictive value earlier in execution, with none exceeding a mean AUROC of 0.60 at 50% trajectory progress.",
+  "page": "Last Step Matters (arXiv)",
+  "url": "https://arxiv.org/abs/2608.29685"
+ },
+ "answer": "<tool_call>\n<function=search>\n<parameter=query>verbal confidence AUROC trajectory completion</parameter>\n</function>\n</tool_call>",
+ "correct": false,
+ "cost": 2.5867200000000232e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What mean AUROC does verbal confidence achieve at trajectory completion?"
+  },
+  {
+   "role": "assistant",
+   "content": "<tool_call>\n<function=search>\n<parameter=query>verbal confidence AUROC trajectory completion</parameter>\n</function>\n</tool_call>",
+   "refusal": null,
+   "reasoning": "The user is asking about a specific AUROC (Area Under the Receiver Operating Characteristic curve) metric related to verbal confidence at trajectory completion. This seems like it could be from a research paper about autonomous driving or robotics, where verbal confidence is evaluated.\n\nLet me search for this information.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a specific AUROC (Area Under the Receiver Operating Characteristic curve) metric related to verbal confidence at trajectory completion. This seems like it could be from a research paper about autonomous driving or robotics, where verbal confidence is evaluated.\n\nLet me search for this information.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

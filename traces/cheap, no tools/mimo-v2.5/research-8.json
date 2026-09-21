@@ -1,0 +1,38 @@
+{
+ "task": {
+  "id": "research-8",
+  "source": "research",
+  "question": "What success rate did the best-performing configuration achieve on the AARRI-Bench benchmark?",
+  "answer": "68.3%",
+  "evidence": "revealing that even the best-performing configuration (Mini-SWE-Agent with Claude Opus 4.7) achieves only 68.3\\% success rate, frequently overlooking subtle yet critical details that are obvious to real human researchers.",
+  "page": "AARRI-Bench (arXiv)",
+  "url": "https://arxiv.org/abs/2606.07462"
+ },
+ "answer": "<tool_call>\n<function=search>\n<parameter=query>AARRI-Bench benchmark success rate 2025 2026</parameter>\n<parameter=source>web</parameter>\n</function>\n</tool_call>",
+ "correct": false,
+ "cost": 3.906000000000005e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What success rate did the best-performing configuration achieve on the AARRI-Bench benchmark?"
+  },
+  {
+   "role": "assistant",
+   "content": "<tool_call>\n<function=search>\n<parameter=query>AARRI-Bench benchmark success rate 2025 2026</parameter>\n<parameter=source>web</parameter>\n</function>\n</tool_call>",
+   "refusal": null,
+   "reasoning": "I need to search for information about the AARRI-Bench benchmark and find the best-performing configuration's success rate. Let me start by searching for this benchmark.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "I need to search for information about the AARRI-Bench benchmark and find the best-performing configuration's success rate. Let me start by searching for this benchmark.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,252 @@
+{
+ "task": {
+  "id": "research-13",
+  "source": "research",
+  "question": "By up to what relative gain did Self-Harness improve pass rates across nine model-benchmark combinations?",
+  "answer": "132%",
+  "evidence": "Across all nine model--benchmark combinations, every final harness improves both held-in and held-out pass rates, with overall relative gains of up to 132%.",
+  "page": "Self-Harness (arXiv)",
+  "url": "https://arxiv.org/abs/2606.09498"
+ },
+ "answer": "I was unable to locate specific information about \"Self-Harness\" and its reported relative gain across nine model-benchmark combinations despite multiple search attempts. The term may refer to a specific research paper or technique that I don't have sufficient knowledge of to provide a reliable answer.\n\nFINAL: Unable to determine — no confident knowledge of the specific relative gain figure for \"Self-Harness\" across nine model-benchmark combinations.",
+ "correct": false,
+ "cost": 0.00037825732000000035,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By up to what relative gain did Self-Harness improve pass rates across nine model-benchmark combinations?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about a specific statistic related to \"Self-Harness\" - a technique or method - and its improvement of pass rates across nine model-benchmark combinations. This sounds like it could be from a research paper or article about AI/ML. Let me search for this.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-b6ce245254ad7fdf",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Self-Harness improve pass rates nine model-benchmark combinations\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a specific statistic related to \"Self-Harness\" - a technique or method - and its improvement of pass rates across nine model-benchmark combinations. This sounds like it could be from a research paper or article about AI/ML. Let me search for this.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-b6ce245254ad7fdf",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try different search terms.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-bc1a877fe5b3914a",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Self-Harness relative gain pass rates model benchmark\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try different search terms.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-bc1a877fe5b3914a",
+   "content": "[Deep learning] In machine learning, deep learning (DL) focuses on utilizing multilayered neural networks to perform tasks such as classification, regression, and representation learning. The field takes inspiration from biological neuroscience and revolves around stacking artificial neurons into layers and \"training\" them to process data. The adjective \"deep\" refers to the use of multiple layers (ranging from three to several hundred or thousands) in the network. Methods used can be supervised, semi-supervised or unsupervised. Some common deep learning network architectures include fully connected networks, deep belief networks, recurrent neural networks, recurrent Random neural networks, convolutional neural networks, generative adversarial networks, transformers, and neural radiance fields. These architectures have been applied to fields including computer vision, speech recognition, natural language processing, machine translation, bioinformatics, drug design, medical image analysis, climate science, material inspection and board game programs, where they have produced results comparable to and in some cases surpassing human expert performance. Early forms of neural networks were inspired by information processing and distributed communication nodes in biological systems, particularly the human brain. However, current neural networks do not intend to model the brain function of organisms, and are generally seen as low-quality models for that purpose. | other articles: Democratic Party (United States), Replication crisis"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "That didn't give relevant results. Let me try a more specific search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-930a1cf812cf3558",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Self-Harness\\\" LLM pass rate improvement\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "That didn't give relevant results. Let me try a more specific search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-930a1cf812cf3558",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try to search for this in a different way.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-88a9b6403b3b72fe",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Self-Harness\\\" code generation benchmark results\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try to search for this in a different way.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-88a9b6403b3b72fe",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try searching for \"Self-Harness\" as a paper or method in AI.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-959847c5308b0677",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Self-Harness\\\" paper AI research\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try searching for \"Self-Harness\" as a paper or method in AI.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-959847c5308b0677",
+   "content": "[Agent harness] An agent harness, also known as agent scaffolding, is the software infrastructure surrounding a large language model (LLM) that enables it to operate as an AI agent. It manages tool use, memory, state persistence, execution environments and feedback loops, as opposed to the model's internal reasoning. The UK's AI Security Institute described an AI agent as being formed by the model plus the scaffolding back in 2023. The relationship can be expressed as agent = model + harness. Because an LLM is stateless, unaided, and produces only text, the harness is what allows a model to take actions over multiple steps, use external tools, and sustain a long-running task across sessions. Rather than repeatedly re-reading an ever-growing transcript inside the context window, a harness can offload record-keeping into a structured software environment that manages the agent's state. A minimal harness is unnecessary for a single prompt-and-response exchange, but becomes important as tasks grow multi-step, tool-oriented, or long-running. Popular agent harnesses are focused on AI-assisted software development, including Anthropic's Claude Code, OpenAI's Codex, Google DeepMind's Antigravity, and SpaceXAI's Cursor. China's Qwen, DeepSeek, Kimi, and GLM models are also offered with official harnesses."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "This is about \"Agent Harness\" not \"Self-Harness\". Let me try another search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-83e9ca37565e17a8",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Self-Harness\\\" relative gain pass rate nine combinations\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "This is about \"Agent Harness\" not \"Self-Harness\". Let me try another search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-83e9ca37565e17a8",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try searching with different variations.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-b0cb10ab958e18c8",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Self-Harness improvement pass rate relative gain\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try searching with different variations.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-b0cb10ab958e18c8",
+   "content": "[Fusion power] Fusion power is a potential method of electric power generation from heat released by nuclear fusion reactions. In fusion, two light atomic nuclei combine to form a heavier nucleus and release energy. Devices that use this process are known as fusion reactors. Research on fusion reactors began in the 1940s. As of 2025, the National Ignition Facility (NIF) in the United States is the only laboratory to have demonstrated a fusion energy gain factor above one, but efficiencies orders of magnitude higher are required to reach engineering breakeven (a net electricity-producing plant) or economic breakeven (where the net electricity pays for the plant's whole-life cost). Thermonuclear fusion reactions require fuel in a plasma state and a confined environment with high temperature, pressure, and sufficient confinement time. The relationship between these parameters is expressed by the Lawson criterion. In stars, gravity provides the conditions for fusing hydrogen isotopes. Experimental reactors use deuterium and tritium, heavier isotopes of hydrogen, in a process known as DT fusion. This reaction forms a helium nucleus and an energetic neutron. Fusion fuel is extremely energy-dense, but tritium is scarce on Earth and decays with a half-life of about 12.3 years. Future reactors plan to use lithium breeding blankets that generate tritium when exposed to neutron radiation. Fusion offers advantages compared with nuclear fission. It produces minimal high-level radioactive waste and invol | other articles: Surface-supplied diving equipment, Surface-supplied diving"
+  },
+  {
+   "role": "user",
+   "content": "Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>."
+  },
+  {
+   "role": "assistant",
+   "content": "I was unable to locate specific information about \"Self-Harness\" and its reported relative gain across nine model-benchmark combinations despite multiple search attempts. The term may refer to a specific research paper or technique that I don't have sufficient knowledge of to provide a reliable answer.\n\nFINAL: Unable to determine — no confident knowledge of the specific relative gain figure for \"Self-Harness\" across nine model-benchmark combinations.",
+   "refusal": null,
+   "reasoning": "The user is asking about \"Self-Harness\" and its improvement of pass rates across nine model-benchmark combinations. My searches didn't find specific results. Let me think about what I know.\n\nI'm not confident I have specific knowledge about \"Self-Harness\" as a named method or paper. The searches returned results about \"Agent Harness\" but not specifically \"Self-Harness.\" Without being able to verify this information through web searches, I should not fabricate an answer.\n\nHowever, the user has instructed me to answer from what I already know since tools are unavailable. Let me think carefully about whether I recall any paper or method called \"Self-Harness\" that reports improvements across nine model-benchmark combinations.\n\nI don't have confident knowledge of this specific statistic. But the user wants an answer. Let me think if this could be related to something I know...\n\nActually, I recall there was a paper called \"Self-Harness\" that introduced a technique for improving LLM performance, possibly related to self-improvement or self-correction. But I'm not confident about the specific relative gain figure.\n\nGiven the instruction to answer from what I know, and my inability to find it through search, I should be honest about my uncertainty rather than fabricate an answer. But the user said \"Answer from what you already know\" - so they want me to provide my best answer.\n\nI genuinely don't recall the specific number. But let me think... if this is about a paper that reported improvements across nine model-benchmark combinations, it might have reported up to something like 2x or some percentage improvement.\n\nI don't have enough information to give a reliable answer. I'll have to be honest about this.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"Self-Harness\" and its improvement of pass rates across nine model-benchmark combinations. My searches didn't find specific results. Let me think about what I know.\n\nI'm not confident I have specific knowledge about \"Self-Harness\" as a named method or paper. The searches returned results about \"Agent Harness\" but not specifically \"Self-Harness.\" Without being able to verify this information through web searches, I should not fabricate an answer.\n\nHowever, the user has instructed me to answer from what I already know since tools are unavailable. Let me think carefully about whether I recall any paper or method called \"Self-Harness\" that reports improvements across nine model-benchmark combinations.\n\nI don't have confident knowledge of this specific statistic. But the user wants an answer. Let me think if this could be related to something I know...\n\nActually, I recall there was a paper called \"Self-Harness\" that introduced a technique for improving LLM performance, possibly related to self-improvement or self-correction. But I'm not confident about the specific relative gain figure.\n\nGiven the instruction to answer from what I know, and my inability to find it through search, I should be honest about my uncertainty rather than fabricate an answer. But the user said \"Answer from what you already know\" - so they want me to provide my best answer.\n\nI genuinely don't recall the specific number. But let me think... if this is about a paper that reported improvements across nine model-benchmark combinations, it might have reported up to something like 2x or some percentage improvement.\n\nI don't have enough information to give a reliable answer. I'll have to be honest about this.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

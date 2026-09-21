@@ -1,0 +1,38 @@
+{
+ "task": {
+  "id": "research-3",
+  "source": "research",
+  "question": "What is the name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality?",
+  "answer": "AutoMEM",
+  "evidence": "We instantiate this insight in AutoMEM, an agentic memory harness with a self-managed tool interface that achieves the best cross-scenario generality among the systems we evaluate.",
+  "page": "AutoMEM (arXiv)",
+  "url": "https://arxiv.org/abs/2606.04315"
+ },
+ "answer": "<tool_call>\n<function=search>\n<parameter=query>agentic memory harness self-managed tool interface best cross-scenario generality</parameter>\n<parameter=source>web</parameter>\n</function>\n</tool_call>",
+ "correct": false,
+ "cost": 5.8967999999999954e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What is the name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality?"
+  },
+  {
+   "role": "assistant",
+   "content": "<tool_call>\n<function=search>\n<parameter=query>agentic memory harness self-managed tool interface best cross-scenario generality</parameter>\n<parameter=source>web</parameter>\n</function>\n</tool_call>",
+   "refusal": null,
+   "reasoning": "The user is asking about an \"agentic memory harness with a self-managed tool interface\" that achieved the best cross-scenario generality. This sounds like it could be related to AI/LLM research, possibly from a paper or benchmark in 2025 or 2026.\n\nLet me search for this.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about an \"agentic memory harness with a self-managed tool interface\" that achieved the best cross-scenario generality. This sounds like it could be related to AI/LLM research, possibly from a paper or benchmark in 2025 or 2026.\n\nLet me search for this.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

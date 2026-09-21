@@ -1,0 +1,38 @@
+{
+ "task": {
+  "id": "research-17",
+  "source": "research",
+  "question": "How many sequential releases of the Qwen Code CLI were evaluated in the controlled longitudinal harness study?",
+  "answer": "35",
+  "evidence": "We then perform a controlled deep dive into 35 sequential releases of the Qwen Code CLI, evaluating each against 50 stratified SWE-bench Verified tasks while holding the underlying LLM constant.",
+  "page": "Don't Blame the LLM (arXiv)",
+  "url": "https://arxiv.org/abs/2607.03691"
+ },
+ "answer": "<tool_call>\n<function=web_search>\n<parameter=query>Qwen Code CLI sequential releases controlled longitudinal harness study</parameter>\n</function>\n</tool_call>",
+ "correct": false,
+ "cost": 3.67919999999999e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many sequential releases of the Qwen Code CLI were evaluated in the controlled longitudinal harness study?"
+  },
+  {
+   "role": "assistant",
+   "content": "<tool_call>\n<function=web_search>\n<parameter=query>Qwen Code CLI sequential releases controlled longitudinal harness study</parameter>\n</function>\n</tool_call>",
+   "refusal": null,
+   "reasoning": "Let me search for this information about Qwen Code CLI and a controlled longitudinal harness study.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me search for this information about Qwen Code CLI and a controlled longitudinal harness study.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

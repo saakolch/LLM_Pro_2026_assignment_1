@@ -1,0 +1,38 @@
+{
+ "task": {
+  "id": "research-15",
+  "source": "research",
+  "question": "How many pathology workflow tasks does ACP-Bench evaluate?",
+  "answer": "41",
+  "evidence": "ACP-Bench evaluates 41 pathology workflow tasks, including 24 biomarker, 7 morphology and 10 prognosis tasks spanning 6 body-system groups and 9 endpoint families.",
+  "page": "ACP-Bench (arXiv)",
+  "url": "https://arxiv.org/abs/2607.02598"
+ },
+ "answer": "<tool_call>\n<function=search>\n<parameter=query>ACP-Bench pathology workflow tasks evaluate</parameter>\n</function>\n</tool_call>",
+ "correct": false,
+ "cost": 3.628799999999977e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many pathology workflow tasks does ACP-Bench evaluate?"
+  },
+  {
+   "role": "assistant",
+   "content": "<tool_call>\n<function=search>\n<parameter=query>ACP-Bench pathology workflow tasks evaluate</parameter>\n</function>\n</tool_call>",
+   "refusal": null,
+   "reasoning": "I need to find information about ACP-Bench and how many pathology workflow tasks it evaluates. Let me search for this.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "I need to find information about ACP-Bench and how many pathology workflow tasks it evaluates. Let me search for this.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "task": {
+  "id": "research-37",
+  "source": "research",
+  "question": "Which open-source agent framework does the HLS-Eval agentic evaluation flow build on?",
+  "answer": "mini-swe-agent",
+  "evidence": "We therefore extend HLS-Eval with an agentic evaluation flow built on the open-source mini-swe-agent framework.",
+  "page": "HLS-Eval (arXiv)",
+  "url": "https://arxiv.org/abs/2609.09526"
+ },
+ "answer": "<tool_call>\n<function=search>\n<parameter=query>HLS-Eval agentic evaluation flow open-source agent framework</parameter>\n</function>\n</tool_call>",
+ "correct": false,
+ "cost": 3.2339999999999626e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "Which open-source agent framework does the HLS-Eval agentic evaluation flow build on?"
+  },
+  {
+   "role": "assistant",
+   "content": "<tool_call>\n<function=search>\n<parameter=query>HLS-Eval agentic evaluation flow open-source agent framework</parameter>\n</function>\n</tool_call>",
+   "refusal": null,
+   "reasoning": "I'll search for information about HLS-Eval and its agentic evaluation flow to find which open-source agent framework it builds on.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "I'll search for information about HLS-Eval and its agentic evaluation flow to find which open-source agent framework it builds on.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

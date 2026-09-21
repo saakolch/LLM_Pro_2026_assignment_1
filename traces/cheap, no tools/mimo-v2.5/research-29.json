@@ -1,0 +1,38 @@
+{
+ "task": {
+  "id": "research-29",
+  "source": "research",
+  "question": "How many tasks does the VisTarget-Bench benchmark contain?",
+  "answer": "150",
+  "evidence": "We also introduce VisTarget-Bench, a 150-task human-verified benchmark that pairs each question with a held-out target image, distinguishing image-retrieval failures from visual-perception failures.",
+  "page": "WeAgent-MMSearch (arXiv)",
+  "url": "https://arxiv.org/abs/2608.28062"
+ },
+ "answer": "<tool_call>\n<function=search>\n<parameter=query>VisTarget-Bench benchmark tasks</parameter>\n</function>\n</tool_call>",
+ "correct": false,
+ "cost": 2.2848000000000226e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many tasks does the VisTarget-Bench benchmark contain?"
+  },
+  {
+   "role": "assistant",
+   "content": "<tool_call>\n<function=search>\n<parameter=query>VisTarget-Bench benchmark tasks</parameter>\n</function>\n</tool_call>",
+   "refusal": null,
+   "reasoning": "I need to search for information about the VisTarget-Bench benchmark.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "I need to search for information about the VisTarget-Bench benchmark.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

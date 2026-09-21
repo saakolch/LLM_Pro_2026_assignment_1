@@ -1,0 +1,38 @@
+{
+ "task": {
+  "id": "research-21",
+  "source": "research",
+  "question": "To what value does GRACE improve strict reliability (pass^3) at the final checkpoint?",
+  "answer": "0.673",
+  "evidence": "Across five independent replications, GRACE improves strict reliability, measured by pass^3, from the Gemini 2.5 Flash zero-shot value of 0.091 to 0.673$\\pm$0.136 at the final checkpoint.",
+  "page": "GRACE (arXiv)",
+  "url": "https://arxiv.org/abs/2607.09175"
+ },
+ "answer": "I'll search for information about GRACE and its strict reliability (pass^3) improvements.<tool_call>\n<function=search>\n<parameter=query>GRACE strict reliability pass^3 final checkpoint improvement 2025 2026</parameter>\n</function>\n</tool_call>",
+ "correct": false,
+ "cost": 4.77616000000001e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "To what value does GRACE improve strict reliability (pass^3) at the final checkpoint?"
+  },
+  {
+   "role": "assistant",
+   "content": "I'll search for information about GRACE and its strict reliability (pass^3) improvements.<tool_call>\n<function=search>\n<parameter=query>GRACE strict reliability pass^3 final checkpoint improvement 2025 2026</parameter>\n</function>\n</tool_call>",
+   "refusal": null,
+   "reasoning": "I need to find information about GRACE and its improvement in strict reliability (pass^3) at the final checkpoint. This sounds like it could be related to a research paper or benchmark in AI/ML, possibly about code generation or reasoning. Let me search for this.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "I need to find information about GRACE and its improvement in strict reliability (pass^3) at the final checkpoint. This sounds like it could be related to a research paper or benchmark in AI/ML, possibly about code generation or reasoning. Let me search for this.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

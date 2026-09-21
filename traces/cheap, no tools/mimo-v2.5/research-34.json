@@ -1,0 +1,38 @@
+{
+ "task": {
+  "id": "research-34",
+  "source": "research",
+  "question": "What share of skill bundle tokens does SkillZip Pro remove with no quality loss?",
+  "answer": "38%",
+  "evidence": "On a production content-moderation skill evaluated by our industrial multi-round harness, \\method removes \\hl{38\\%} of skill bundle tokens and \\hl{10.4\\%} of end-to-end per-run tokens with no quality loss, while an unprotected 71\\% configuration loses up to 26 accuracy points to one-sided false positives.",
+  "page": "SkillZip Pro (arXiv)",
+  "url": "https://arxiv.org/abs/2608.30785"
+ },
+ "answer": "<tool_call>\n<function=search>\n<parameter=query>SkillZip Pro skill bundle tokens remove no quality loss</parameter>\n</function>\n</tool_call>",
+ "correct": false,
+ "cost": 3.348160000000034e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What share of skill bundle tokens does SkillZip Pro remove with no quality loss?"
+  },
+  {
+   "role": "assistant",
+   "content": "<tool_call>\n<function=search>\n<parameter=query>SkillZip Pro skill bundle tokens remove no quality loss</parameter>\n</function>\n</tool_call>",
+   "refusal": null,
+   "reasoning": "The user is asking about \"SkillZip Pro\" and what share of skill bundle tokens it can remove with no quality loss. This seems like it could be a specific product or feature - let me search for it.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"SkillZip Pro\" and what share of skill bundle tokens it can remove with no quality loss. This seems like it could be a specific product or feature - let me search for it.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

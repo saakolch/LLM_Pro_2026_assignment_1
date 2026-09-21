@@ -1,0 +1,38 @@
+{
+ "task": {
+  "id": "research-32",
+  "source": "research",
+  "question": "How many of the 203 dependency-upgrade tasks did the best coding-agent configuration solve on DEPBENCH?",
+  "answer": "104",
+  "evidence": "We evaluate mainstream coding agents on DEPBENCH. The best completed configuration solves only 104/203 tasks (51.2%), with substantial variation across agent harnesses, models, and ecosystems, highlighting an important gap between current agent capabilities and real-world software maintenance needs.",
+  "page": "DEPBENCH (arXiv)",
+  "url": "https://arxiv.org/abs/2608.30300"
+ },
+ "answer": "<tool_call>\n<function=search>\n<parameter=query>DEPBENCH 203 dependency-upgrade tasks coding agent configuration</parameter>\n</function>\n</tool_call>",
+ "correct": false,
+ "cost": 2.7295200000000165e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many of the 203 dependency-upgrade tasks did the best coding-agent configuration solve on DEPBENCH?"
+  },
+  {
+   "role": "assistant",
+   "content": "<tool_call>\n<function=search>\n<parameter=query>DEPBENCH 203 dependency-upgrade tasks coding agent configuration</parameter>\n</function>\n</tool_call>",
+   "refusal": null,
+   "reasoning": "The user is asking about a specific benchmark result related to coding agents and dependency upgrades. I need to search for information about \"DEPBENCH\" and \"203 dependency-upgrade tasks\" to find the answer.\n\nLet me search for this.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a specific benchmark result related to coding agents and dependency upgrades. I need to search for information about \"DEPBENCH\" and \"203 dependency-upgrade tasks\" to find the answer.\n\nLet me search for this.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

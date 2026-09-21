@@ -1,0 +1,38 @@
+{
+ "task": {
+  "id": "research-1",
+  "source": "research",
+  "question": "What is the name of the multimodal unified structured execution harness for MLLMs introduced in June 2026?",
+  "answer": "MUSE",
+  "evidence": "We introduce MUSE, a multimodal unified structured execution harness that wraps any off-the-shelf MLLM with composable modules for task representation, visual processing, perception tool use, structured parsing, deterministic verification, and verifier-guided repair, without any model retraining.",
+  "page": "MUSE: A Unified Agentic Harness for MLLMs (arXiv)",
+  "url": "https://arxiv.org/abs/2606.03005"
+ },
+ "answer": "<tool_call>\n<function=search>\n<parameter=query>multimodal unified structured execution harness MLLMs June 2026</parameter>\n</function>\n</tool_call>",
+ "correct": false,
+ "cost": 3.1633599999999866e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What is the name of the multimodal unified structured execution harness for MLLMs introduced in June 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "<tool_call>\n<function=search>\n<parameter=query>multimodal unified structured execution harness MLLMs June 2026</parameter>\n</function>\n</tool_call>",
+   "refusal": null,
+   "reasoning": "Let me search for this information about a multimodal unified structured execution harness for MLLMs introduced in June 2026.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me search for this information about a multimodal unified structured execution harness for MLLMs introduced in June 2026.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}
