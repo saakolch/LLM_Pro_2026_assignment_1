@@ -7,11 +7,11 @@
 
 ## Результаты
 
-![Fresh dataset](img\fresh.png)
+![Fresh dataset](img/fresh.png)
 
 ![Cost vs. accuracy](img/homework.png)
 
-![Table of results](img\table.png)
+![Table of results](img/table.png)
 
 
 ## Тезис
