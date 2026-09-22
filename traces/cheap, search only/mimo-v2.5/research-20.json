@@ -1,0 +1,265 @@
+{
+ "task": {
+  "id": "research-20",
+  "source": "research",
+  "question": "By how many percentage points did the proactive memory agent improve pass@1 on Terminal-Bench 2.0?",
+  "answer": "8.3",
+  "evidence": "Across Terminal-Bench 2.0 and $τ^2$-Bench, it improves pass@1 for both weaker and stronger action agents, with gains of +8.3 pp on Terminal-Bench and +6.8 pp on $τ^2$-Bench.",
+  "page": "Proactive Memory Agent (arXiv)",
+  "url": "https://arxiv.org/abs/2607.08716"
+ },
+ "answer": "I was unable to find reliable information about a \"proactive memory agent\" and its specific improvement on Terminal-Bench 2.0 in the search results I obtained. The searches returned information about GPT-5.5 scoring 82.7% on Terminal-Bench 2.0, but did not contain details about a \"proactive memory agent\" or its pass@1 improvement. Without the ability to conduct further searches, I cannot provide an accurate answer to this specific question.\n\nFINAL: Unable to determine the specific percentage point improvement from the available information.",
+ "correct": false,
+ "cost": 0.003275647199999999,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By how many percentage points did the proactive memory agent improve pass@1 on Terminal-Bench 2.0?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about a \"proactive memory agent\" and its improvement on \"Terminal-Bench 2.0\". I need to search for this specific metric.\n\nLet me search for \"proactive memory agent Terminal-Bench 2.0\".",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_3c0f30fbfcd24b67a49adbd4",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"proactive memory agent Terminal-Bench 2.0 pass@1\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a \"proactive memory agent\" and its improvement on \"Terminal-Bench 2.0\". I need to search for this specific metric.\n\nLet me search for \"proactive memory agent Terminal-Bench 2.0\".",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_3c0f30fbfcd24b67a49adbd4",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The Wikipedia search failed. Let me try again with a slightly different query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_1e477c29b07c456393e0a7e1",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Terminal-Bench 2.0 proactive memory agent improvement\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The Wikipedia search failed. Let me try again with a slightly different query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_1e477c29b07c456393e0a7e1",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The Wikipedia search is still failing with a 429 error. Let me wait a moment and try again with a different query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_60fb1a5e2afc420db1b4b533",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Terminal-Bench 2.0 AI benchmark proactive memory\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The Wikipedia search is still failing with a 429 error. Let me wait a moment and try again with a different query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_60fb1a5e2afc420db1b4b533",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The Wikipedia search is unavailable due to rate limiting (HTTP 429). Let me try again.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_48989f2c3980403ba24c3907",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Terminal-Bench 2.0 proactive memory agent\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The Wikipedia search is unavailable due to rate limiting (HTTP 429). Let me try again.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_48989f2c3980403ba24c3907",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The Wikipedia search is consistently returning HTTP 429 (rate limiting). Let me try one more time with a simpler query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_7855b7add1ff4c08820afd55",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Terminal-Bench\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The Wikipedia search is consistently returning HTTP 429 (rate limiting). Let me try one more time with a simpler query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_7855b7add1ff4c08820afd55",
+   "content": "[GPT-5.5] GPT-5.5 (Generative Pre-trained Transformer 5.5) is a large language model (LLM) released by OpenAI on April 23, 2026. The model is also known by its codename \"Spud\". OpenAI reported GPT-5.5 benchmark scores including 82.7% on Terminal-Bench 2.0, 51.7% on FrontierMath Tier 1–3, and 35.4% on FrontierMath Tier 4, while listing lower scores for Claude Opus 4.7 and Gemini 3.1 Pro on the same benchmarks. OpenAI said a recurring tendency in its models to mention goblins, gremlins, and other creatures began with GPT-5.1 and became noticeable in GPT-5.5's Codex testing. The company attributed the behavior to rewards used when training the \"Nerdy\" personality, which favored creature-word outputs and transferred beyond that personality during later training. OpenAI said it retired the Nerdy personality, removed the goblin-affine reward signal, filtered training data containing creature words, and added a developer-prompt instruction for GPT-5.5 in Codex. In April 2026, a GPT-5.5 developer-prompt instruction in the GitHub repository of Codex told it not to mention goblins if the user prompt did not require it. GPT-5.5-Cyber, along with Codex Security, was being used in June 2026 at the launch of the Patch the Planet project to help open-source projects find and fix vulnerabilities. | other articles: DeepSeek, Language model benchmark"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search returned information about GPT-5.5 and Terminal-Bench 2.0, but it doesn't mention a \"proactive memory agent.\" Let me search more specifically for this term.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_8b341ef2b089486c96e3e671",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"proactive memory agent benchmark improvement percentage points\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search returned information about GPT-5.5 and Terminal-Bench 2.0, but it doesn't mention a \"proactive memory agent.\" Let me search more specifically for this term.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_8b341ef2b089486c96e3e671",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try searching for more specific information about Terminal-Bench 2.0 and proactive memory agents.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_e0311685279549468f70b561",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Terminal-Bench 2.0 proactive memory\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try searching for more specific information about Terminal-Bench 2.0 and proactive memory agents.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_e0311685279549468f70b561",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "user",
+   "content": "Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>."
+  },
+  {
+   "role": "assistant",
+   "content": "I was unable to find reliable information about a \"proactive memory agent\" and its specific improvement on Terminal-Bench 2.0 in the search results I obtained. The searches returned information about GPT-5.5 scoring 82.7% on Terminal-Bench 2.0, but did not contain details about a \"proactive memory agent\" or its pass@1 improvement. Without the ability to conduct further searches, I cannot provide an accurate answer to this specific question.\n\nFINAL: Unable to determine the specific percentage point improvement from the available information.",
+   "refusal": null,
+   "reasoning": "The user is asking about a specific metric: how many percentage points did the \"proactive memory agent\" improve pass@1 on Terminal-Bench 2.0. \n\nFrom the search results I got, I found information about Terminal-Bench 2.0 in the context of GPT-5.5 (82.7% on Terminal-Bench 2.0), but I didn't find any information about a \"proactive memory agent\" or its improvement on this benchmark.\n\nI don't have enough information to answer this question. The concept of a \"proactive memory agent\" and its specific improvement on Terminal-Bench 2.0 is not something I can confidently recall or that appeared in my searches. I should be honest that I cannot find this specific information.\n\nHowever, since the tools are now unavailable and I'm asked to answer from what I already know, I need to be careful. I genuinely don't have reliable information about a \"proactive memory agent\" and its specific improvement on Terminal-Bench 2.0.\n\nI should state that I don't have this information rather than guessing.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a specific metric: how many percentage points did the \"proactive memory agent\" improve pass@1 on Terminal-Bench 2.0. \n\nFrom the search results I got, I found information about Terminal-Bench 2.0 in the context of GPT-5.5 (82.7% on Terminal-Bench 2.0), but I didn't find any information about a \"proactive memory agent\" or its improvement on this benchmark.\n\nI don't have enough information to answer this question. The concept of a \"proactive memory agent\" and its specific improvement on Terminal-Bench 2.0 is not something I can confidently recall or that appeared in my searches. I should be honest that I cannot find this specific information.\n\nHowever, since the tools are now unavailable and I'm asked to answer from what I already know, I need to be careful. I genuinely don't have reliable information about a \"proactive memory agent\" and its specific improvement on Terminal-Bench 2.0.\n\nI should state that I don't have this information rather than guessing.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, search only",
+  "model": "mimo-v2.5",
+  "id": "research-20",
+  "source": "research",
+  "correct": false,
+  "steps": 9,
+  "tool_calls": 7,
+  "cost": 0.003275647199999999,
+  "seconds": 92.7,
+  "answer": "Unable to determine the specific percentage point improvemen",
+  "gold": "8.3"
+ }
+}

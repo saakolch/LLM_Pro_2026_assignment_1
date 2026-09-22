@@ -1,0 +1,111 @@
+{
+ "task": {
+  "id": "research-30",
+  "source": "research",
+  "question": "What average F1 score does Harness-RL reach with Qwen2.5-3B?",
+  "answer": "47.79",
+  "evidence": "Across seven multi-hop question answering and agentic retrieval benchmarks, it reaches average F1 scores of 42.93 and 47.79 with Qwen2.5-1.5B and Qwen2.5-3B, respectively, while ablations validate the contribution of CAPO and favor central-only optimization in the evaluated setting.",
+  "page": "Harness-RL (arXiv)",
+  "url": "https://arxiv.org/abs/2608.29641"
+ },
+ "answer": "The answer is directly stated in the abstract of the Harness-RL paper (arXiv:2608.29641). It reports:\n\n> \"Across seven multi-hop question answering and agentic retrieval benchmarks, it reaches average F1 scores of 42.93 and **47.79** with Qwen2.5-1.5B and **Qwen2.5-3B**, respectively.\"\n\nFINAL: 47.79",
+ "correct": true,
+ "cost": 0.0013675872,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What average F1 score does Harness-RL reach with Qwen2.5-3B?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about \"Harness-RL\" and its F1 score with \"Qwen2.5-3B\". Let me search for this on arxiv.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_2ef69e04ef8b4a8f98f19f13",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"Harness-RL Qwen2.5-3B\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"Harness-RL\" and its F1 score with \"Qwen2.5-3B\". Let me search for this on arxiv.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_2ef69e04ef8b4a8f98f19f13",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try a different search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_64ac5f642be64a7ea85950da",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"Harness-RL reinforcement learning\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try a different search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_64ac5f642be64a7ea85950da",
+   "content": "[Harness-RL: Black-Box Reinforcement Learning with Action-Args Decoupling for Central-Agent Multi-Agent Harnesses] Large language model agents increasingly solve long-horizon tasks through multi-agent harnesses in which a central agent coordinates specialized sub-agents, tools, and environments. Training the central policy in such a harness raises two challenges. First, an action label is a low-cardinality decision, whereas its args form a high-dimensional conditional sequence; optimizing both with a shared sequence-level signal can produce conflicting gradients. Second, dynamic scheduling creates interdependent sessions with branches, parallel calls, and rewritten contexts, which cannot be faithfully reduced to one flat token sequence. We introduce Harness-RL, a structured reinforcement learning framework that combines Conflict-Aware Policy Optimization (CAPO) with interface-level black-box trajectory construction. The black-box component captures Interface Call Records, builds per-session prefix trees, and aligns outcome and process rewards with trainable tokens. CAPO uses forward activations to identify parameter partitions associated with action and args tokens, then routes their policy gradients to the corresponding subspaces. Harness-RL supports both central-only and joint multi-agent training. Across seven multi-hop question answering and agentic retrieval benchmarks, it reaches average F1 scores of 42.93 and 47.79 with Qwen2.5-1.5B and Qwen2.5-3B, respectively, while ablations validate the contribution of CAPO and favor central-only optimization in the evaluated setting. Our code is available at https://github.com/jiangxinke/Harness-RL. (https://arxiv.org/abs/2608.29641v1)\n---\n[LEGO-RL: Harness-Native Reinforcement Learning for Coding Agents] Reinforcement learning for coding agents increasingly relies on long-running agent harnesses to manage tool integration, repository contexts, and execution feedback. However, the native execution environments of these harnesses are inherently misaligned with policy-gradient training: environmental crashes and reward hacking corrupt outcome signals, while train-inference discrepancies decouple rollout behavior from policy updates. To address this, we present LEGO-RL, a framework that bridges native coding-agent harnesses with scalable policy-gradient optimization without modifying their internal control flow. LEGO-RL is built upon three pillars: (1) faithful optimization via in-process LLM proxying that captures raw generation streams for token-level alignment and robust trainer-side log-probability recomputation, even under harness-side compaction or re-serialization; (2) reliable execution via scalable sandbox orchestration featuring image caching and stage-wise defenses to mitigate reward hacking; and (3) observable training through an integrated plugin that automates validation and monitoring, paired with a Live UI for granular trajectory diagnostics. We evaluate LEGO-RL by training the sparse MoE model Qwen3.5-35B-A3B with GSPO across three native coding-agent harnesses. LEGO-RL improves Qwen3.5-35B-A3B across OpenHands SDK (64.0% to 70.4%), Claude Code (62.4% to 68.2%), and OpenCode (57.2% to 66.6%) on SWE-bench Verified, while maintaining a rollout-training probability correlation above 0.99. (https://arxiv.org/abs/2608.17393v1)\n---\n[Multi-Objective Reinforced Evolution in Mobile Neural Architecture Search] Fabricating neural models for a wide range of mobile devices demands for a specific design of networks due to highly constrained resources. Both evolution algorithms (EA) and reinforced learning methods (RL) have been dedicated to solve neural architecture search problems. However, these combinations usually concentrate on a single objective such as the error rate of image classification. They also fail to harness the very benefits from both sides. In this paper, we present a new multi-objective oriented algorithm called MoreMNAS (Multi-Objective Reinforced Evolution in Mobile Neural Architecture Search) by leveraging good virtues from both EA and RL. In particular, we incorporate a variant of multi-objective genetic algorithm NSGA-II, in which the search space is composed of various cells so that crossovers and mutations can be performed at the cell level. Moreover, reinforced control is mixed with a natural mutating process to regulate arbitrary mutation, maintaining a delicate balance between exploration and exploitation. Therefore, not only does our method prevent the searched models from degrading during the evolution process, but it also makes better use of learned knowledge. Our experiments conducted in Super-resolution domain (SR) deliver rivalling models compared to some state-of-the-art methods with fewer FLOPS. (https://arxiv.org/abs/1901.01074v3)"
+  },
+  {
+   "role": "assistant",
+   "content": "The answer is directly stated in the abstract of the Harness-RL paper (arXiv:2608.29641). It reports:\n\n> \"Across seven multi-hop question answering and agentic retrieval benchmarks, it reaches average F1 scores of 42.93 and **47.79** with Qwen2.5-1.5B and **Qwen2.5-3B**, respectively.\"\n\nFINAL: 47.79",
+   "refusal": null,
+   "reasoning": "The first result contains the answer. Let me extract the relevant information:\n\n\"Across seven multi-hop question answering and agentic retrieval benchmarks, it reaches average F1 scores of 42.93 and 47.79 with Qwen2.5-1.5B and Qwen2.5-3B, respectively\"\n\nSo with Qwen2.5-3B, Harness-RL reaches an average F1 score of 47.79.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The first result contains the answer. Let me extract the relevant information:\n\n\"Across seven multi-hop question answering and agentic retrieval benchmarks, it reaches average F1 scores of 42.93 and 47.79 with Qwen2.5-1.5B and Qwen2.5-3B, respectively\"\n\nSo with Qwen2.5-3B, Harness-RL reaches an average F1 score of 47.79.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-30",
+  "source": "research",
+  "correct": true,
+  "steps": 3,
+  "tool_calls": 2,
+  "cost": 0.0013675872,
+  "seconds": 34.4,
+  "answer": "47.79",
+  "gold": "47.79"
+ }
+}

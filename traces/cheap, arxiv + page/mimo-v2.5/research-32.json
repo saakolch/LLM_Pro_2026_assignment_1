@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-32",
+  "source": "research",
+  "question": "How many of the 203 dependency-upgrade tasks did the best coding-agent configuration solve on DEPBENCH?",
+  "answer": "104",
+  "evidence": "We evaluate mainstream coding agents on DEPBENCH. The best completed configuration solves only 104/203 tasks (51.2%), with substantial variation across agent harnesses, models, and ecosystems, highlighting an important gap between current agent capabilities and real-world software maintenance needs.",
+  "page": "DEPBENCH (arXiv)",
+  "url": "https://arxiv.org/abs/2608.30300"
+ },
+ "answer": "The answer is clearly stated in the abstract of the DEPBENCH paper.\n\nFINAL: 104",
+ "correct": true,
+ "cost": 0.00028887040000000024,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many of the 203 dependency-upgrade tasks did the best coding-agent configuration solve on DEPBENCH?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me search for information about DEPBENCH and dependency-upgrade tasks.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_495a3e2fb9e343f7be7fe09f",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"DEPBENCH dependency upgrade tasks\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me search for information about DEPBENCH and dependency-upgrade tasks.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_495a3e2fb9e343f7be7fe09f",
+   "content": "[Update from Hell: Can Coding Agents Survive Hidden Breakage in Dependency Upgrades?] Modern software systems rely heavily on third-party dependencies, but upgrading those dependencies remains a costly maintenance activity. Dependency upgrades do not always preserve the function signatures, type systems, APIs, or runtime semantics assumed by existing code. Consequently, developers often need to perform source code adaptations to accommodate dependency-induced changes. However, such code-level changes are often not explicitly communicated to project maintainers, posing a significant challenge to software reliability. Meanwhile, coding agents have emerged as a new form of software development tool and are increasingly adopted by developers due to their automation capabilities. In this paper, we introduce DEPBENCH, a benchmark consisting of 203 real-world dependency-upgrade tasks across five package ecosystems spanning five language communities, each involving hidden code-level changes that require source code adaptation. We evaluate mainstream coding agents on DEPBENCH. The best completed configuration solves only 104/203 tasks (51.2%), with substantial variation across agent harnesses, models, and ecosystems, highlighting an important gap between current agent capabilities and real-world software maintenance needs. (https://arxiv.org/abs/2608.30300v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "The answer is clearly stated in the abstract of the DEPBENCH paper.\n\nFINAL: 104",
+   "refusal": null,
+   "reasoning": "The answer is directly stated in the abstract: the best completed configuration solves 104/203 tasks.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The answer is directly stated in the abstract: the best completed configuration solves 104/203 tasks.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-32",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.00028887040000000024,
+  "seconds": 15.8,
+  "answer": "104",
+  "gold": "104"
+ }
+}

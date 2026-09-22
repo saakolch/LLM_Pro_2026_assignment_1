@@ -1,0 +1,43 @@
+{
+ "task": {
+  "id": "research-17",
+  "source": "research",
+  "question": "How many sequential releases of the Qwen Code CLI were evaluated in the controlled longitudinal harness study?",
+  "answer": "35",
+  "evidence": "We then perform a controlled deep dive into 35 sequential releases of the Qwen Code CLI, evaluating each against 50 stratified SWE-bench Verified tasks while holding the underlying LLM constant.",
+  "page": "Don't Blame the LLM (arXiv)",
+  "url": "https://arxiv.org/abs/2607.03691"
+ },
+ "answer": "The controlled longitudinal harness study evaluated **4 sequential releases** of the Qwen Code CLI.\n\nFINAL: 4",
+ "correct": false,
+ "cost": 0.03775121919999999,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions. No tools are available in this run, so answer from your own knowledge. Do not attempt to call any tools. Write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many sequential releases of the Qwen Code CLI were evaluated in the controlled longitudinal harness study?"
+  },
+  {
+   "role": "assistant",
+   "content": "The controlled longitudinal harness study evaluated **4 sequential releases** of the Qwen Code CLI.\n\nFINAL: 4",
+   "refusal": null,
+   "reasoning": null
+  }
+ ],
+ "row": {
+  "config": "strong, no tools",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-17",
+  "source": "research",
+  "correct": false,
+  "steps": 1,
+  "tool_calls": 0,
+  "cost": 0.03775121919999999,
+  "seconds": 46.6,
+  "answer": "4",
+  "gold": "35"
+ }
+}

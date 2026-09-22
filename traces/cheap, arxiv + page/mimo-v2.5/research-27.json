@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-27",
+  "source": "research",
+  "question": "How many capability-improving mutations that fail recoverability verification did EvoUndo identify?",
+  "answer": "197",
+  "evidence": "Across 600 unseen one-shot self-evolution tasks, we identify 197 capability-improving mutations that fail recoverability verification.",
+  "page": "EvoUndo (arXiv)",
+  "url": "https://arxiv.org/abs/2608.28363"
+ },
+ "answer": "The abstract of the EvoUndo paper states clearly:\n\n> \"Across 600 unseen one-shot self-evolution tasks, we identify **197** capability-improving mutations that fail recoverability verification.\"\n\nFINAL: 197",
+ "correct": true,
+ "cost": 0.0005836039999999997,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many capability-improving mutations that fail recoverability verification did EvoUndo identify?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about \"EvoUndo\" and a specific number of capability-improving mutations that fail recoverability verification. Let me search for this on arxiv.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_a4208a4c2ee946f6b531d9ff",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"EvoUndo capability-improving mutations recoverability\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"EvoUndo\" and a specific number of capability-improving mutations that fail recoverability verification. Let me search for this on arxiv.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_a4208a4c2ee946f6b531d9ff",
+   "content": "[EvoUndo: Recoverability-Constrained Self-Evolution for LLM Agent Harnesses] LLM agents increasingly modify their own prompts, tools, middleware, resources, and execution harnesses at runtime. Such self-evolution can improve capability, but a successful mutation may leave persistent effects that cannot be safely reversed in states different from the one in which it was created. We introduce EvoUndo, a framework for representing, synthesizing, diagnosing, and independently verifying recoverability of model-generated self-modifications across counterfactual states. Across 600 unseen one-shot self-evolution tasks, we identify 197 capability-improving mutations that fail recoverability verification. Under the original recovery representation, conventional repair strategies recover 0/197 of these natural failures. Deterministic oracle analysis recovers 48/197 under the original recovery language L0, while the extended recovery calculus increases empirical oracle recovery to 191/197. A protocol-locked 2x2 grounding-by-expressivity intervention then separates two bottlenecks: exact state-address grounding increases successful recovery from 0/48 to 38/48 (79.2%) when the original language is sufficient, while extending the recovery language enables recovery on 142/143 (99.3%) failures in the oracle-defined S1 stratum. On the primary gpt-oss-120b backbone, adding exact-address diagnostics to the richer language reduces recovery to 133/143 (93.0%); a Qwen3.8-27B replication preserves the grounding and expressivity effects but not this negative interaction, indicating that the latter is model-dependent. These results indicate that reliable agent self-evolution requires co-designing verification, state grounding, witness semantics, and recovery-language expressivity rather than relying on iterative prompting alone. (https://arxiv.org/abs/2608.28363v2)"
+  },
+  {
+   "role": "assistant",
+   "content": "The abstract of the EvoUndo paper states clearly:\n\n> \"Across 600 unseen one-shot self-evolution tasks, we identify **197** capability-improving mutations that fail recoverability verification.\"\n\nFINAL: 197",
+   "refusal": null,
+   "reasoning": "The abstract clearly states: \"we identify 197 capability-improving mutations that fail recoverability verification.\"",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract clearly states: \"we identify 197 capability-improving mutations that fail recoverability verification.\"",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-27",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0005836039999999997,
+  "seconds": 19.2,
+  "answer": "197",
+  "gold": "197"
+ }
+}

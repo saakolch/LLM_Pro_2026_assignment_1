@@ -1,0 +1,257 @@
+{
+ "task": {
+  "id": "research-39",
+  "source": "research",
+  "question": "How many unique optimization examples per benchmark does COBRA-Skills use?",
+  "answer": "50",
+  "evidence": "Across six heterogeneous agent benchmarks and three target models, COBRA-Skills consistently achieves the strongest average performance among compared methods, while reducing optimization cost by 55--58\\% relative to SkillOpt and using only 50 unique optimization examples per benchmark.",
+  "page": "COBRA-Skills (arXiv)",
+  "url": "https://arxiv.org/abs/2609.11682"
+ },
+ "answer": "I do not have specific recollection of a benchmark called COBRA-Skills or its exact number of unique optimization examples per benchmark from memory, as web searches were unavailable to verify.\n\nFINAL: unknown",
+ "correct": false,
+ "cost": 0.010022760000000006,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many unique optimization examples per benchmark does COBRA-Skills use?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about COBRA-Skills, specifically how many unique optimization examples per benchmark it uses. This seems like a 2025/2026 topic. Let me search for it",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-88614c8b8d4422b7",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA-Skills benchmark optimization examples\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about COBRA-Skills, specifically how many unique optimization examples per benchmark it uses. This seems like a 2025/2026 topic. Let me search for it",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-88614c8b8d4422b7",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The web search failed with a 429 error (rate limit). Let me retry",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-80bba47123505e3c",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA-Skills\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The web search failed with a 429 error (rate limit). Let me retry",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-80bba47123505e3c",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Still rate limited. Let me wait and retry.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-80a5d8ac3ffb0aa0",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA-Skills LLM benchmark\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Still rate limited. Let me wait and retry.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-80a5d8ac3ffb0aa0",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search returned \"nothing found\". Let me try a different search",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-95193b6c32134b07",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA Skills AI agent\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search returned \"nothing found\". Let me try a different search",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-95193b6c32134b07",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-84721efbcdebbb62",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA-Skills 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-84721efbcdebbb62",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search keeps failing. Let me try once more after some attempts",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-ba8f0c188bf6fa77",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA Skills language model\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search keeps failing. Let me try once more after some attempts",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-ba8f0c188bf6fa77",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The Wikipedia tool keeps returning 429 errors. COBRA-Skills is likely a research paper (perhaps from 2025/2026). Wikipedia may not have an article specifically on it. Let me try a few more times with different queries, since the rate limit might clear",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-9a7c5907888a3ac5",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA-Skills optimization benchmarks\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The Wikipedia tool keeps returning 429 errors. COBRA-Skills is likely a research paper (perhaps from 2025/2026). Wikipedia may not have an article specifically on it. Let me try a few more times with different queries, since the rate limit might clear",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-9a7c5907888a3ac5",
+   "content": "nothing found"
+  },
+  {
+   "role": "user",
+   "content": "Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>."
+  },
+  {
+   "role": "assistant",
+   "content": "I do not have specific recollection of a benchmark called COBRA-Skills or its exact number of unique optimization examples per benchmark from memory, as web searches were unavailable to verify.\n\nFINAL: unknown",
+   "refusal": null,
+   "reasoning": "The user originally asked: \"How many unique optimization examples per benchmark does COBRA-Skills use?\" and instructed to use web search and not memory. However, web search tools failed (Wikipedia unavailable / nothing found). The user now says: \"Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>.\"\n\nI need to answer from what I know. COBRA-Skills — I recall there is a paper or benchmark called COBRA (maybe Continuous Benchmarking of Reasoning Agents?) or COBRA-Skills? Let me think. There is something called \"COBRA\" in the context of LLM agents? Actually, there is a recent 2025/2026 benchmark called \"COBRA-Skills\" maybe from a paper about tool-use or optimization? Wait, I'm not sure.\n\nLet me recall: There is a benchmark called \"COBRA\" (Cluster of Open Benchmarks for Reasoning Agents?) Not sure.\n\nMaybe it's from a paper about \"COBRA-Skills: A Benchmark for...\" Hmm.\n\nActually, I think there is a 2025 paper \"COBRA: A Continuous Benchmark for Reasoning Agents\" or something. But \"COBRA-Skills\" might refer to a specific dataset. The question: \"How many unique optimization examples per benchmark does COBRA-Skills use?\" This sounds like a specific number mentioned in a paper. Could be something like 100, 200, 500, 1,000?\n\nWait, there is an \"optimization\" benchmark? Like \"COBRA-Skills\" uses a set of optimization examples per benchmark. Maybe it's related to the \"Skills\" library? Let's search memory.\n\nI recall a paper: \"COBRA: A Benchmark for Curriculum-Based Reasoning Agents\"? Not sure.\n\nCould it be \"COBRA-Skills: A Benchmark for LLM Skill Composition\"? The phrase \"unique optimization examples per benchmark\" suggests they have multiple benchmarks, each with some number of unique optimization examples.\n\nMaybe I'm thinking of \"AgentBench\" or \"WebArena\"? No.\n\nAlternatively, maybe it's about \"COBRA\" (COnstraint-Based Reasoning Agent) and \"Skills\" refers to a specific thing.\n\nGiven the inability to search, I need to provide an answer from memory. But I genuinely do not recall a specific benchmark named COBRA-Skills with a specific number of unique optimization examples per benchmark. However, the user demands an answer. Could be a trick? The user said \"Answer from what you already know\". If I don't know, I might say \"I don't know\" but they want FINAL: <answer>.\n\nMaybe I can infer: If it's a known benchmark from 2025/2026, maybe from the paper \"COBRA-Skills: A Benchmark for Optimization\"? Let's think of recent AI benchmarks in 2025. There is \"SciCode\", \"GPQA\", \"MMLU-Pro\", \"BigCode\", \"SWE-bench\". Not COBRA.\n\nThere is \"COBRA\" in the context of \"Continuous Observation-Based Reasoning\"? Hmm.\n\nWait, there is a benchmark called \"COBRA\" from the paper \"COBRA: A Systematic Evaluation of LLM Agents on Software Engineering Tasks\"? Not sure.\n\nAlternatively, COBRA might stand for \"Comparative Benchmark of Reasoning Agents\". \n\nLet's think about \"optimization examples\". Could be from a paper on \"LLM optimization\" where they have a benchmark with X unique optimization problems per task. For example, \"OptiBench\" or \"Optimization Benchmark\".\n\nMaybe \"COBRA-Skills\" is a benchmark from the \"AI Scientist\" or \"auto-research\" domain. There is a paper \"The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery\" which uses \"COBRA\" as a benchmark? Actually, \"COBRA\" might be \"Curriculum of Benchmarks for Reasoning and Agentic tasks\"? \n\nWait, there's a 2025 paper: \"COBRA: A Comprehensive Benchmark for Reward Models\"? No.\n\nLet's consider the possibility that COBRA-Skills uses \"10 unique optimization examples per benchmark\" or \"100\". The phrasing \"per benchmark\" suggests maybe they evaluated across N benchmarks, each having M unique optimization examples. Could be something like \"50 unique optimization examples per benchmark\".\n\nBut I should not hallucinate a precise number if I'm not sure. However, the instruction says answer from what I already know. If I don't know, maybe I should state \"unknown\" but format as FINAL: unknown? The user said \"last line FINAL: <answer>\". I can put \"unknown\" or \"I do not know\". But maybe it's better to give a plausible recollection.\n\nLet's try to recall any article from 2025 or 2026 about COBRA-Skills. Maybe it's from a Wikipedia article \"2026 in artificial intelligence\"? The user originally wanted to search Wikipedia. They said \"use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>'\". So likely COBRA-Skills is mentioned in \"2026 in artificial intelligence\" or \"2025 in artificial intelligence\". So it's a 2025/2026 event. Possibly a benchmark released in 2025.\n\nI recall a paper from late 2024 or 2025: \"COBRA: A Benchmark for Curriculum-Based Object Reasoning\"? No.\n\nWait, there is a known benchmark \"COBRA\" (Composition of Basic Reasoning and Actions) from 2024? Actually, there is \"COBRA: A Benchmark for Constrained Long-Horizon Reasoning\"? Not sure.\n\nLet's think of \"Skills\" specifically: \"Skills\" might refer to \"Agent Skills\" or \"Tool Skills\". There is a benchmark called \"ToolBench\", \"ToolE\", \"SkillBench\". Ah! \"SkillBench\" is a benchmark for tool learning. But \"COBRA-Skills\"? Maybe it's \"COBRA: A Benchmark for Skill Composition\"? \n\nThere is a paper \"COBRA: A Continuous Benchmark for Reasoning Agents\" by some authors, and they have a \"Skills\" subset. They might say: \"COBRA-Skills uses 120 unique optimization examples per benchmark.\" \n\nAlternatively, maybe it's from the \"arXiv\" paper \"COBRA-Skills: A Benchmark for Optimization of LLM Skills\" where they use \"100 unique optimization examples per benchmark\". \n\nGiven the lack of memory, maybe I should answer with a generic statement that I don't have specific knowledge, but the user wants a short answer. I'll answer \"unknown\" but that might be considered not following \"answer from what you already know\". If I already know nothing, then \"unknown\" is honest.\n\nBut wait, maybe I do know: There is a 2025 benchmark called \"COBRA\" (Continuous Benchmark of Reasoning Abilities) and it has a \"Skills\" track. I think I saw a table: \"For each benchmark, we use 50 unique optimization examples.\" Could be 50.\n\nLet's search my memory of exact phrases: \"unique optimization examples per benchmark\" – this exact phrasing might be from a paper. I recall reading something about \"We use 100 unique optimization examples per benchmark to ensure diversity.\" That sounds like a typical sentence.\n\nMaybe it's 100. Or 200. Let's think of common numbers: 100, 200, 500, 1000. In ML benchmarks, often they use 200 tasks per domain. For optimization, maybe they use fewer because they are expensive: 50 or 100.\n\nCould it be \"20\"? Small scale.\n\nGiven the instruction to not repeat calls and now tools unavailable, I must produce FINAL. I'll state that I do not have reliable knowledge and answer \"unknown\". But the user said \"Answer from what you already know\". If I know nothing, I can say \"I do not know\". But they want short answer. Let's do FINAL: unknown.\n\nBut maybe I can guess: \"100\". However, guessing could be wrong. Since the user originally wanted factual answer from Wikipedia, and the tool failed, they now accept memory. If I don't know, I should say so.\n\nI'll write: \"I do not have specific knowledge of COBRA-Skills' benchmark configuration from memory.\" then FINAL: unknown.\n\nBut the format: \"When done, write the last line as FINAL: <short answer>.\" So last line must be FINAL: unknown.\n\nLet's do that.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user originally asked: \"How many unique optimization examples per benchmark does COBRA-Skills use?\" and instructed to use web search and not memory. However, web search tools failed (Wikipedia unavailable / nothing found). The user now says: \"Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>.\"\n\nI need to answer from what I know. COBRA-Skills — I recall there is a paper or benchmark called COBRA (maybe Continuous Benchmarking of Reasoning Agents?) or COBRA-Skills? Let me think. There is something called \"COBRA\" in the context of LLM agents? Actually, there is a recent 2025/2026 benchmark called \"COBRA-Skills\" maybe from a paper about tool-use or optimization? Wait, I'm not sure.\n\nLet me recall: There is a benchmark called \"COBRA\" (Cluster of Open Benchmarks for Reasoning Agents?) Not sure.\n\nMaybe it's from a paper about \"COBRA-Skills: A Benchmark for...\" Hmm.\n\nActually, I think there is a 2025 paper \"COBRA: A Continuous Benchmark for Reasoning Agents\" or something. But \"COBRA-Skills\" might refer to a specific dataset. The question: \"How many unique optimization examples per benchmark does COBRA-Skills use?\" This sounds like a specific number mentioned in a paper. Could be something like 100, 200, 500, 1,000?\n\nWait, there is an \"optimization\" benchmark? Like \"COBRA-Skills\" uses a set of optimization examples per benchmark. Maybe it's related to the \"Skills\" library? Let's search memory.\n\nI recall a paper: \"COBRA: A Benchmark for Curriculum-Based Reasoning Agents\"? Not sure.\n\nCould it be \"COBRA-Skills: A Benchmark for LLM Skill Composition\"? The phrase \"unique optimization examples per benchmark\" suggests they have multiple benchmarks, each with some number of unique optimization examples.\n\nMaybe I'm thinking of \"AgentBench\" or \"WebArena\"? No.\n\nAlternatively, maybe it's about \"COBRA\" (COnstraint-Based Reasoning Agent) and \"Skills\" refers to a specific thing.\n\nGiven the inability to search, I need to provide an answer from memory. But I genuinely do not recall a specific benchmark named COBRA-Skills with a specific number of unique optimization examples per benchmark. However, the user demands an answer. Could be a trick? The user said \"Answer from what you already know\". If I don't know, I might say \"I don't know\" but they want FINAL: <answer>.\n\nMaybe I can infer: If it's a known benchmark from 2025/2026, maybe from the paper \"COBRA-Skills: A Benchmark for Optimization\"? Let's think of recent AI benchmarks in 2025. There is \"SciCode\", \"GPQA\", \"MMLU-Pro\", \"BigCode\", \"SWE-bench\". Not COBRA.\n\nThere is \"COBRA\" in the context of \"Continuous Observation-Based Reasoning\"? Hmm.\n\nWait, there is a benchmark called \"COBRA\" from the paper \"COBRA: A Systematic Evaluation of LLM Agents on Software Engineering Tasks\"? Not sure.\n\nAlternatively, COBRA might stand for \"Comparative Benchmark of Reasoning Agents\". \n\nLet's think about \"optimization examples\". Could be from a paper on \"LLM optimization\" where they have a benchmark with X unique optimization problems per task. For example, \"OptiBench\" or \"Optimization Benchmark\".\n\nMaybe \"COBRA-Skills\" is a benchmark from the \"AI Scientist\" or \"auto-research\" domain. There is a paper \"The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery\" which uses \"COBRA\" as a benchmark? Actually, \"COBRA\" might be \"Curriculum of Benchmarks for Reasoning and Agentic tasks\"? \n\nWait, there's a 2025 paper: \"COBRA: A Comprehensive Benchmark for Reward Models\"? No.\n\nLet's consider the possibility that COBRA-Skills uses \"10 unique optimization examples per benchmark\" or \"100\". The phrasing \"per benchmark\" suggests maybe they evaluated across N benchmarks, each having M unique optimization examples. Could be something like \"50 unique optimization examples per benchmark\".\n\nBut I should not hallucinate a precise number if I'm not sure. However, the instruction says answer from what I already know. If I don't know, maybe I should state \"unknown\" but format as FINAL: unknown? The user said \"last line FINAL: <answer>\". I can put \"unknown\" or \"I do not know\". But maybe it's better to give a plausible recollection.\n\nLet's try to recall any article from 2025 or 2026 about COBRA-Skills. Maybe it's from a Wikipedia article \"2026 in artificial intelligence\"? The user originally wanted to search Wikipedia. They said \"use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>'\". So likely COBRA-Skills is mentioned in \"2026 in artificial intelligence\" or \"2025 in artificial intelligence\". So it's a 2025/2026 event. Possibly a benchmark released in 2025.\n\nI recall a paper from late 2024 or 2025: \"COBRA: A Benchmark for Curriculum-Based Object Reasoning\"? No.\n\nWait, there is a known benchmark \"COBRA\" (Composition of Basic Reasoning and Actions) from 2024? Actually, there is \"COBRA: A Benchmark for Constrained Long-Horizon Reasoning\"? Not sure.\n\nLet's think of \"Skills\" specifically: \"Skills\" might refer to \"Agent Skills\" or \"Tool Skills\". There is a benchmark called \"ToolBench\", \"ToolE\", \"SkillBench\". Ah! \"SkillBench\" is a benchmark for tool learning. But \"COBRA-Skills\"? Maybe it's \"COBRA: A Benchmark for Skill Composition\"? \n\nThere is a paper \"COBRA: A Continuous Benchmark for Reasoning Agents\" by some authors, and they have a \"Skills\" subset. They might say: \"COBRA-Skills uses 120 unique optimization examples per benchmark.\" \n\nAlternatively, maybe it's from the \"arXiv\" paper \"COBRA-Skills: A Benchmark for Optimization of LLM Skills\" where they use \"100 unique optimization examples per benchmark\". \n\nGiven the lack of memory, maybe I should answer with a generic statement that I don't have specific knowledge, but the user wants a short answer. I'll answer \"unknown\" but that might be considered not following \"answer from what you already know\". If I already know nothing, then \"unknown\" is honest.\n\nBut wait, maybe I do know: There is a 2025 benchmark called \"COBRA\" (Continuous Benchmark of Reasoning Abilities) and it has a \"Skills\" track. I think I saw a table: \"For each benchmark, we use 50 unique optimization examples.\" Could be 50.\n\nLet's search my memory of exact phrases: \"unique optimization examples per benchmark\" – this exact phrasing might be from a paper. I recall reading something about \"We use 100 unique optimization examples per benchmark to ensure diversity.\" That sounds like a typical sentence.\n\nMaybe it's 100. Or 200. Let's think of common numbers: 100, 200, 500, 1000. In ML benchmarks, often they use 200 tasks per domain. For optimization, maybe they use fewer because they are expensive: 50 or 100.\n\nCould it be \"20\"? Small scale.\n\nGiven the instruction to not repeat calls and now tools unavailable, I must produce FINAL. I'll state that I do not have reliable knowledge and answer \"unknown\". But the user said \"Answer from what you already know\". If I know nothing, I can say \"I do not know\". But they want short answer. Let's do FINAL: unknown.\n\nBut maybe I can guess: \"100\". However, guessing could be wrong. Since the user originally wanted factual answer from Wikipedia, and the tool failed, they now accept memory. If I don't know, I should say so.\n\nI'll write: \"I do not have specific knowledge of COBRA-Skills' benchmark configuration from memory.\" then FINAL: unknown.\n\nBut the format: \"When done, write the last line as FINAL: <short answer>.\" So last line must be FINAL: unknown.\n\nLet's do that.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "mid, best tools",
+  "model": "hy3-preview",
+  "id": "research-39",
+  "source": "research",
+  "correct": false,
+  "steps": 9,
+  "tool_calls": 7,
+  "cost": 0.010022760000000006,
+  "seconds": 115.4,
+  "answer": "unknown",
+  "gold": "50"
+ }
+}

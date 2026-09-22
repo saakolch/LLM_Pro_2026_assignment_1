@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-19",
+  "source": "research",
+  "question": "By what percentage does the harness cut blended cost per task, holding models constant, according to 'The Harness Effect' study?",
+  "answer": "41%",
+  "evidence": "Holding models constant, the harness cuts blended cost per task 41% ($0.21->$0.12), median wall-clock 44% (48s->27s), and tokens per task 38% (14.2k->8.8k), with task-completion quality at parity (0.78->0.81, directional at this sample size).",
+  "page": "The Harness Effect (arXiv)",
+  "url": "https://arxiv.org/abs/2607.06906"
+ },
+ "answer": "The abstract states it directly: **holding models constant, the harness cuts blended cost per task 41%** (from $0.21 to $0.12).\n\nFINAL: 41%",
+ "correct": true,
+ "cost": 0.0006360479999999997,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By what percentage does the harness cut blended cost per task, holding models constant, according to 'The Harness Effect' study?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me search for this paper.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_3503e6c43ef549b8bd27f38c",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"Harness Effect blended cost per task\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me search for this paper.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_3503e6c43ef549b8bd27f38c",
+   "content": "[The Harness Effect: How Orchestration Design Sets the Token Economics of Enterprise Agentic AI] Agentic AI development today runs on token maxing: buying capability with tokens -- longer reasoning traces, more turns, wider tool payloads, bigger replayed contexts -- so tokens per task grow faster than task value. Falling per-token prices mask the pattern; total spend rises anyway. We argue the decisive lever against token maxing is the harness: the orchestration layer that assembles context, exposes tools, sequences turns, delegates work, and carries enterprise observability and governance. We isolate it with a controlled swap: 22 locked evaluation tasks, six foundation models (Claude Sonnet 4.6, Gemini 3.1, Gemini Flash 3.5, Qwen 3.6, GLM 5.1, Palmyra X6), changing only the orchestration layer -- a frozen conventional production loop versus the Writer Agent Harness. Holding models constant, the harness cuts blended cost per task 41% ($0.21-&gt;$0.12), median wall-clock 44% (48s-&gt;27s), and tokens per task 38% (14.2k-&gt;8.8k), with task-completion quality at parity (0.78-&gt;0.81, directional at this sample size). Efficiency is model-invariant -- every model gets cheaper (33-61%) -- while quality gains are capability-dependent: a model's gain correlates almost perfectly with its baseline strength (r=0.99, n=6), a phenomenon we term harness leverage. Quality per dollar rises 82%; task-completions per million tokens rise from 54.9 to 92.0. On this workload the orchestration layer moved cost per task more than the full spread of the model menu did. We formalize token economics at the orchestration layer (including effective input price under prompt caching), detail the six mechanism families behind the effect -- cache-shape discipline to failure-spend governance -- compare six widely used agent systems on the same axes, and argue the harness is the one component wh (https://arxiv.org/abs/2607.06906v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "The abstract states it directly: **holding models constant, the harness cuts blended cost per task 41%** (from $0.21 to $0.12).\n\nFINAL: 41%",
+   "refusal": null,
+   "reasoning": "The answer is clearly stated in the abstract.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The answer is clearly stated in the abstract.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-19",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0006360479999999997,
+  "seconds": 17.5,
+  "answer": "41%",
+  "gold": "41%"
+ }
+}

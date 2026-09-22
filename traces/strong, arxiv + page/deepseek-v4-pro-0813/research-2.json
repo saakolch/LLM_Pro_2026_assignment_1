@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-2",
+  "source": "research",
+  "question": "How many CUDA kernels did Kernel Forge optimize to outperform PyTorch eager mode?",
+  "answer": "14",
+  "evidence": "With only 50 optimization iterations per kernel, it optimizes 14 kernels to outperform PyTorch eager mode, reaching $1.52\\times$ on adaptive\\_avgpool2d in ResNet-50",
+  "page": "Kernel Forge (arXiv)",
+  "url": "https://arxiv.org/abs/2607.24762"
+ },
+ "answer": "The abstract states that Kernel Forge optimizes **14 kernels** to outperform PyTorch eager mode.\n\nFINAL: 14",
+ "correct": true,
+ "cost": 0.0065432595360000005,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many CUDA kernels did Kernel Forge optimize to outperform PyTorch eager mode?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "We need answer from research paper. \"Kernel Forge\" system? Need arxiv search. Query: Kernel Forge CUDA kernels PyTorch.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_py0d19aqv20rd9qfxn0b3jjg",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"Kernel Forge CUDA kernels PyTorch eager\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer from research paper. \"Kernel Forge\" system? Need arxiv search. Query: Kernel Forge CUDA kernels PyTorch.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_py0d19aqv20rd9qfxn0b3jjg",
+   "content": "[Kernel Forge: An Agent Harness for LLM-based Generation and Optimization of CUDA Kernels] Machine learning models are increasingly embedded in everyday software, and most of their runtime is spent in a small set of compute kernels such as matrix multiplication, convolution, and normalization. Optimizing these kernels is one of the most direct ways to reduce latency and cost, but it has traditionally required expert engineers to hand-write low-level GPU code. Agentic systems built on large language models (LLMs) can now generate and optimize kernels with far less human effort, yet existing tools are largely evaluated on randomly generated tensors and isolated kernels, emit standalone CUDA code that developers must manually reintegrate, mostly target only LLM PyTorch models, and offer limited support for inspecting and debugging results. We present Kernel Forge, an open-source, end-to-end agentic harness that accepts any unmodified PyTorch model in place. Kernel Forge supports vision, diffusion, and LLM workloads, uses Monte Carlo Tree Search (MCTS) to explore multiple optimization paths rather than a single linear refinement chain, and ships with a graphical user interface for monitoring progress, inspecting candidate kernels, and debugging failures. We evaluate Kernel Forge on four PyTorch models spanning vision, diffusion, and LLM workloads on an NVIDIA DGX Spark with GB10 GPU. With only 50 optimization iterations per kernel, it optimizes 14 kernels to outperform PyTorch eager mode, reaching $1.52\\times$ on adaptive\\_avgpool2d in ResNet-50, $1.70\\times$ on group\\_norm in Stable Diffusion 3.5 Medium, $2.83\\times$ on softmax in Gemma 4 E2B, and $1.54\\times$ on softmax in Qwen 3.5 35B-A3B. (https://arxiv.org/abs/2607.24762v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "The abstract states that Kernel Forge optimizes **14 kernels** to outperform PyTorch eager mode.\n\nFINAL: 14",
+   "refusal": null,
+   "reasoning": "The abstract says \"it optimizes 14 kernels to outperform PyTorch eager mode\". So answer 14. Need final with FINAL line.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract says \"it optimizes 14 kernels to outperform PyTorch eager mode\". So answer 14. Need final with FINAL line.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-2",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0065432595360000005,
+  "seconds": 15.0,
+  "answer": "14",
+  "gold": "14"
+ }
+}

@@ -1,0 +1,265 @@
+{
+ "task": {
+  "id": "research-39",
+  "source": "research",
+  "question": "How many unique optimization examples per benchmark does COBRA-Skills use?",
+  "answer": "50",
+  "evidence": "Across six heterogeneous agent benchmarks and three target models, COBRA-Skills consistently achieves the strongest average performance among compared methods, while reducing optimization cost by 55--58\\% relative to SkillOpt and using only 50 unique optimization examples per benchmark.",
+  "page": "COBRA-Skills (arXiv)",
+  "url": "https://arxiv.org/abs/2609.11682"
+ },
+ "answer": "I was unable to find information about \"COBRA-Skills\" or its specific number of unique optimization examples per benchmark through my searches. This does not appear to correspond to a Wikipedia article, and my web searches were largely unsuccessful. I cannot confidently provide an accurate number without being able to verify the source.\n\nFINAL: I don't have reliable information about how many unique optimization examples per benchmark COBRA-Skills uses.",
+ "correct": false,
+ "cost": 0.003296585599999999,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many unique optimization examples per benchmark does COBRA-Skills use?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about COBRA-Skills, which seems to be a technical or research project. I need to search for information about it.\n\nLet me search for \"COBRA-Skills\" to find relevant information.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_7b8edf0dca0d41b18a04b8d8",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA-Skills optimization examples benchmark\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about COBRA-Skills, which seems to be a technical or research project. I need to search for information about it.\n\nLet me search for \"COBRA-Skills\" to find relevant information.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_7b8edf0dca0d41b18a04b8d8",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try again with a different search query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_eb8d6cccc9874eb9882f9f4c",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA-Skills benchmark optimization\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try again with a different search query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_eb8d6cccc9874eb9882f9f4c",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about \"COBRA-Skills\" which seems to be a specific system or framework, possibly related to AI/ML optimization. Let me try searching again.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_089962fc1c0d4eeaa09103e5",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA-Skills\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"COBRA-Skills\" which seems to be a specific system or framework, possibly related to AI/ML optimization. Let me try searching again.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_089962fc1c0d4eeaa09103e5",
+   "content": "[Cobra (2022 film)] Cobra is a 2022 Indian Tamil-language psychological action thriller film directed by R. Ajay Gnanamuthu and produced by 7 Screen Studio. The film stars Vikram in a dual roles as twin brothers, alongside Srinidhi Shetty, Irfan Pathan, Roshan Mathew, Sarjano Khalid, Mirnalini Ravi, Miya George, K. S. Ravikumar, Anandaraj, Robo Shankar and Meenakshi Govindarajan. It marked the acting debut of Pathan, previously a cricketer, and the Tamil debuts of Roshan Mathew, Sarjano Khalid and Srinidhi Shetty. In the film, an Interpol officer is assigned to catch a mysterious assassin, who intelligently assassinates people using mathematical skills, named \"Cobra\". The project was officially announced in May 2019 under the tentative title Vikram 58 as it is the actor's 58th film as a lead actor, and the official title was announced in December. Principal photography commenced in October 2019 and nearly took three years due to the impact of the COVID-19 pandemic on cinema, travel restrictions and Vikram's commitments on other projects, wrapping only in February 2022. It was primarily shot in Chennai, while filming also took place in Kerala, Kolkata and Russia. The film has music composed by A. R. Rahman, cinematography handled by Harish Kannan and editing by John Abraham and Bhuvan Srinivasan. Cobra was released worldwide on 31 August 2022 in theatres, coinciding with Vinayaka Chathurthi. The film received generally mixed reviews from critics, who praised Vikram's performance, Rahman's music,  | other articles: Rayna Vallandingham, List of The Karate Kid and Cobra Kai characters"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search for \"COBRA-Skills\" didn't return relevant results. This seems to be a very specific technical term that may not be on Wikipedia. Let me try a more specific search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_a7f73720a15f4de2bc4a4839",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"COBRA-Skills\\\" unique optimization examples\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search for \"COBRA-Skills\" didn't return relevant results. This seems to be a very specific technical term that may not be on Wikipedia. Let me try a more specific search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_a7f73720a15f4de2bc4a4839",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try another search approach.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_53a5443c2c864216894a9c1a",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA-Skills LLM benchmark unique examples\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try another search approach.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_53a5443c2c864216894a9c1a",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try the search again.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_bd9a18f93fa847dfb81cdbe5",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA Skills optimization benchmark examples\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try the search again.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_bd9a18f93fa847dfb81cdbe5",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": "I'm having difficulty finding information about \"COBRA-Skills\" through Wikipedia searches. This term doesn't appear to correspond to a Wikipedia article. It may be a recent research paper, preprint, or tool that isn't covered on Wikipedia, or it may be spelled differently.\n\nLet me try a couple more searches with variations:",
+   "refusal": null,
+   "reasoning": "It seems like COBRA-Skills may not be a Wikipedia article. Let me try different search queries.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_e0e06d5a970c4815a979917b",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA-Skills paper\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "It seems like COBRA-Skills may not be a Wikipedia article. Let me try different search queries.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_e0e06d5a970c4815a979917b",
+   "content": "[List of Cobra (G.I. Joe) characters] Cobra is the fictional nemesis of the G.I. Joe Team in the Hasbro toylines and related media. This is an alphabetical listing of Cobra members with unique identities as well as the members of its factions. | other articles: Yuji Okumoto, Cobra Kai: The Karate Kid Saga Continues"
+  },
+  {
+   "role": "user",
+   "content": "Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>."
+  },
+  {
+   "role": "assistant",
+   "content": "I was unable to find information about \"COBRA-Skills\" or its specific number of unique optimization examples per benchmark through my searches. This does not appear to correspond to a Wikipedia article, and my web searches were largely unsuccessful. I cannot confidently provide an accurate number without being able to verify the source.\n\nFINAL: I don't have reliable information about how many unique optimization examples per benchmark COBRA-Skills uses.",
+   "refusal": null,
+   "reasoning": "The user is asking about \"COBRA-Skills\" and how many unique optimization examples per benchmark it uses. I wasn't able to find this information through my searches. This appears to be a very specific technical detail from a research paper or project that I don't have reliable information about.\n\nI should not make up an answer. I'll have to be honest that I couldn't find this information.\n\nActually, let me think more carefully. \"COBRA-Skills\" might be related to code generation or optimization benchmarks. I'm not confident enough to provide a specific number without being able to verify it.\n\nI don't have reliable information about this specific detail. I should state that clearly.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"COBRA-Skills\" and how many unique optimization examples per benchmark it uses. I wasn't able to find this information through my searches. This appears to be a very specific technical detail from a research paper or project that I don't have reliable information about.\n\nI should not make up an answer. I'll have to be honest that I couldn't find this information.\n\nActually, let me think more carefully. \"COBRA-Skills\" might be related to code generation or optimization benchmarks. I'm not confident enough to provide a specific number without being able to verify it.\n\nI don't have reliable information about this specific detail. I should state that clearly.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, search + page",
+  "model": "mimo-v2.5",
+  "id": "research-39",
+  "source": "research",
+  "correct": false,
+  "steps": 9,
+  "tool_calls": 7,
+  "cost": 0.003296585599999999,
+  "seconds": 117.4,
+  "answer": "I don't have reliable information about how many unique opti",
+  "gold": "50"
+ }
+}

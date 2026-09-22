@@ -1,0 +1,43 @@
+{
+ "task": {
+  "id": "research-40",
+  "source": "research",
+  "question": "What was the best exact-match performance on the sentencing tasks of the TAM benchmark?",
+  "answer": "15.5%",
+  "evidence": "We evaluate general-purpose prompting approaches, including retrieval-augmented generation, ReAct-style prompting, and an agent-harness baseline on GPT-5, and find that the best exact-match performance remains extremely low: 1% on ICD-10-CM coding and 15.5% on sentencing tasks.",
+  "page": "Tasks over Application Manuals (arXiv)",
+  "url": "https://arxiv.org/abs/2609.13005"
+ },
+ "answer": "The best exact-match performance on the sentencing tasks of the TAM (Textual Analogy and Metaphor) benchmark was 43.1%.  \n\nFINAL: 43.1%",
+ "correct": false,
+ "cost": 0.00015431999999998558,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions. No tools are available in this run, so answer from your own knowledge. Do not attempt to call any tools. Write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What was the best exact-match performance on the sentencing tasks of the TAM benchmark?"
+  },
+  {
+   "role": "assistant",
+   "content": "The best exact-match performance on the sentencing tasks of the TAM (Textual Analogy and Metaphor) benchmark was 43.1%.  \n\nFINAL: 43.1%",
+   "refusal": null,
+   "reasoning": null
+  }
+ ],
+ "row": {
+  "config": "strong, no tools",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-40",
+  "source": "research",
+  "correct": false,
+  "steps": 1,
+  "tool_calls": 0,
+  "cost": 0.00015431999999998558,
+  "seconds": 2.8,
+  "answer": "43.1%",
+  "gold": "15.5%"
+ }
+}

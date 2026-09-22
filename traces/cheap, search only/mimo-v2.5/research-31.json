@@ -1,0 +1,265 @@
+{
+ "task": {
+  "id": "research-31",
+  "source": "research",
+  "question": "What mean AUROC does verbal confidence achieve at trajectory completion?",
+  "answer": "0.85",
+  "evidence": "We evaluate mainstream uncertainty signals on deep-research tasks and find that verbal confidence reliably distinguishes failures at trajectory completion, achieving a mean AUROC of 0.85, whereas all evaluated signals offer limited predictive value earlier in execution, with none exceeding a mean AUROC of 0.60 at 50% trajectory progress.",
+  "page": "Last Step Matters (arXiv)",
+  "url": "https://arxiv.org/abs/2608.29685"
+ },
+ "answer": "I don't have reliable specific information about the exact mean AUROC that verbal confidence achieves at trajectory completion. This appears to reference a specific research finding — likely from a study on language model confidence calibration or uncertainty quantification — but without access to search tools, I cannot verify the precise figure.\n\nFINAL: I cannot confidently provide this specific metric without being able to verify it through a search. If you can share the source paper or additional context, I may be able to help further.",
+ "correct": false,
+ "cost": 0.003971543800000001,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What mean AUROC does verbal confidence achieve at trajectory completion?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about the mean AUROC (Area Under the Receiver Operating Characteristic curve) that verbal confidence achieves at trajectory completion. This seems to be about a specific research study or experiment, likely related to AI or machine learning, where verbal confidence (perhaps the confidence expressed verbally by an AI system) is measured at trajectory completion (possibly referring to when a task or trajectory is completed).\n\nThis sounds like it might be from a specific paper or research article about verbal confidence or confidence calibration in AI systems. The term \"trajectory completion\" might refer to when an AI agent completes a trajectory or path in some task, like navigation or decision-making.\n\nI need to search for this information. Let's search for \"verbal confidence AUROC trajectory completion\".",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_edfeea6ecc56431a849b2242",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"verbal confidence AUROC trajectory completion\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about the mean AUROC (Area Under the Receiver Operating Characteristic curve) that verbal confidence achieves at trajectory completion. This seems to be about a specific research study or experiment, likely related to AI or machine learning, where verbal confidence (perhaps the confidence expressed verbally by an AI system) is measured at trajectory completion (possibly referring to when a task or trajectory is completed).\n\nThis sounds like it might be from a specific paper or research article about verbal confidence or confidence calibration in AI systems. The term \"trajectory completion\" might refer to when an AI agent completes a trajectory or path in some task, like navigation or decision-making.\n\nI need to search for this information. Let's search for \"verbal confidence AUROC trajectory completion\".",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_edfeea6ecc56431a849b2242",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search didn't return results. Let me try different search terms. \"Verbal confidence\" might be a specific term in AI safety or alignment research, perhaps referring to when language models express confidence verbally. \"Trajectory completion\" might refer to completing a sequence or path. Maybe this is from a paper about AI confidence calibration.\n\nLet me search more broadly.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_4becea52ecf04812a40ada8f",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"verbal confidence\\\" AUROC\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search didn't return results. Let me try different search terms. \"Verbal confidence\" might be a specific term in AI safety or alignment research, perhaps referring to when language models express confidence verbally. \"Trajectory completion\" might refer to completing a sequence or path. Maybe this is from a paper about AI confidence calibration.\n\nLet me search more broadly.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_4becea52ecf04812a40ada8f",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try a different search query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_e000693525f1481cbccba6cd",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"verbal confidence trajectory completion AUROC machine learning\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try a different search query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_e000693525f1481cbccba6cd",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try again.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ee682b8d39e847bda6ecaf29",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"verbal confidence\\\" AUROC prediction\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try again.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ee682b8d39e847bda6ecaf29",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "It seems Wikipedia search is not finding relevant results. The question seems to be about a specific research paper or study that measures AUROC of verbal confidence at trajectory completion. This might not be on Wikipedia at all. Let me try searching Wikipedia for related topics.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_d8784e107476430ca890a067",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"verbal confidence AI safety AUROC\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "It seems Wikipedia search is not finding relevant results. The question seems to be about a specific research paper or study that measures AUROC of verbal confidence at trajectory completion. This might not be on Wikipedia at all. Let me try searching Wikipedia for related topics.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_d8784e107476430ca890a067",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try searching for \"verbal confidence\" and \"trajectory\" together.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_caba5740bbb84287bddd7a2d",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"verbal confidence trajectory Wikipedia\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try searching for \"verbal confidence\" and \"trajectory\" together.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_caba5740bbb84287bddd7a2d",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try a different search approach. This seems like it might be related to a specific paper or study about verbal confidence and trajectory completion, possibly in the context of AI safety or LLM reliability. Let me try searching for this on Wikipedia with different terms.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5fa330302e8343d8920cd092",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"verbal confidence calibration language model\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try a different search approach. This seems like it might be related to a specific paper or study about verbal confidence and trajectory completion, possibly in the context of AI safety or LLM reliability. Let me try searching for this on Wikipedia with different terms.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5fa330302e8343d8920cd092",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "user",
+   "content": "Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>."
+  },
+  {
+   "role": "assistant",
+   "content": "I don't have reliable specific information about the exact mean AUROC that verbal confidence achieves at trajectory completion. This appears to reference a specific research finding — likely from a study on language model confidence calibration or uncertainty quantification — but without access to search tools, I cannot verify the precise figure.\n\nFINAL: I cannot confidently provide this specific metric without being able to verify it through a search. If you can share the source paper or additional context, I may be able to help further.",
+   "refusal": null,
+   "reasoning": "The user is asking about the mean AUROC that verbal confidence achieves at trajectory completion. This sounds like it could be from a specific research paper or study. Let me think about what I know.\n\nThis question seems to relate to a specific study about AI confidence calibration, possibly about language models expressing confidence verbally. The term \"trajectory completion\" might refer to when a model completes generating a response or completing a task trajectory.\n\nI recall there was research on using verbal (textual) expressions of confidence from language models as a measure of uncertainty. AUROC (Area Under the Receiver Operating Characteristic curve) is a common metric for evaluating binary classification performance.\n\nThere was a paper by Kadavath et al. (2022) called \"Language Models (Mostly) Know What They Know\" that studied verbalized probabilities from language models. However, I'm not sure about the specific AUROC at trajectory completion.\n\nActually, I'm not confident I have the specific number the user is looking for. Without being able to search the web, I cannot verify this. I should be honest that I cannot confidently provide this specific metric.\n\nWait - let me think more carefully. This might be about a specific paper on verbal confidence in language models, perhaps studying how well a model's verbal confidence (e.g., saying \"I'm confident\" vs \"I'm not sure\") predicts correctness. The \"trajectory completion\" might refer to the point at which the model has finished generating its response.\n\nI don't have reliable specific information about what mean AUROC verbal confidence achieves at trajectory completion. I should note this uncertainty.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about the mean AUROC that verbal confidence achieves at trajectory completion. This sounds like it could be from a specific research paper or study. Let me think about what I know.\n\nThis question seems to relate to a specific study about AI confidence calibration, possibly about language models expressing confidence verbally. The term \"trajectory completion\" might refer to when a model completes generating a response or completing a task trajectory.\n\nI recall there was research on using verbal (textual) expressions of confidence from language models as a measure of uncertainty. AUROC (Area Under the Receiver Operating Characteristic curve) is a common metric for evaluating binary classification performance.\n\nThere was a paper by Kadavath et al. (2022) called \"Language Models (Mostly) Know What They Know\" that studied verbalized probabilities from language models. However, I'm not sure about the specific AUROC at trajectory completion.\n\nActually, I'm not confident I have the specific number the user is looking for. Without being able to search the web, I cannot verify this. I should be honest that I cannot confidently provide this specific metric.\n\nWait - let me think more carefully. This might be about a specific paper on verbal confidence in language models, perhaps studying how well a model's verbal confidence (e.g., saying \"I'm confident\" vs \"I'm not sure\") predicts correctness. The \"trajectory completion\" might refer to the point at which the model has finished generating its response.\n\nI don't have reliable specific information about what mean AUROC verbal confidence achieves at trajectory completion. I should note this uncertainty.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, search only",
+  "model": "mimo-v2.5",
+  "id": "research-31",
+  "source": "research",
+  "correct": false,
+  "steps": 9,
+  "tool_calls": 7,
+  "cost": 0.003971543800000001,
+  "seconds": 123.2,
+  "answer": "I cannot confidently provide this specific metric without be",
+  "gold": "0.85"
+ }
+}

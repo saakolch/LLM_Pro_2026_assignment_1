@@ -1,0 +1,125 @@
+{
+ "task": {
+  "id": "research-23",
+  "source": "research",
+  "question": "By up to how many points did GLM-5.2 gain when equipped with JIT-Agent as its harness helper?",
+  "answer": "20.2",
+  "evidence": "Equipped with JIT-Agent as a harness helper, DeepSeek-V4-Flash surpasses GPT-5.6 on DeepSearchQA (+9.1) and OdysseyBench (+4.3), while the already strong GLM-5.2 gains up to +20.2 points.",
+  "page": "JIT-Agent (arXiv)",
+  "url": "https://arxiv.org/abs/2608.25593"
+ },
+ "answer": "The first search result directly answers the question. From the **JIT-Agent** paper (arxiv.org/abs/2608.25593v2):\n\n> \"the already strong GLM-5.2 gains up to **+20.2 points**\"\n\nFINAL: GLM-5.2 gained up to **20.2 points** when equipped with JIT-Agent as its harness helper.",
+ "correct": true,
+ "cost": 0.0022461096,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By up to how many points did GLM-5.2 gain when equipped with JIT-Agent as its harness helper?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about a specific paper involving GLM-5.2 and JIT-Agent as a harness helper. Let me search for this.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_457ac24c0bb4449d9a7a5f7e",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"GLM-5.2 JIT-Agent harness helper\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a specific paper involving GLM-5.2 and JIT-Agent as a harness helper. Let me search for this.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_457ac24c0bb4449d9a7a5f7e",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try different search terms.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_52a8c1fc0af148998818bd60",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"JIT-Agent harness helper LLM\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_a75edfdb19f948dcac875e21",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"GLM-5.2 agentic harness\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try different search terms.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_52a8c1fc0af148998818bd60",
+   "content": "[JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution] Agent capability is not determined by the model alone. The agent harness, encompassing memory management, planning strategy, action protocol, and tool/skill orchestration, can dominate the contribution of the underlying foundation model. Yet harness design remains manual, task-specific, and fundamentally unscalable. We present JIT-Agent, a harness intelligence model trained to synthesize task-adaptive agent harnesses on the fly for arbitrary off-the-shelf agentic LLMs. We formalize the agent harness as a composable, machine-generatable artifact governed by a fixed four-module protocol, and train JIT-Agent to customize harnesses for a given task at hand, repair harnesses for stable and reliable execution, and self-evolve by distilling performance signals from an expanding archive of prior harness configurations. Equipped with JIT-Agent as a harness helper, DeepSeek-V4-Flash surpasses GPT-5.6 on DeepSearchQA (+9.1) and OdysseyBench (+4.3), while the already strong GLM-5.2 gains up to +20.2 points. Across controlled evaluations, JIT-Agent-generated harnesses are performance-competitive with mature agent runtimes such as OpenCode and Claude Code and consistently improve multi-scale model families of DeepSeek V4, Mimo-V2.5, and Qwen3.6. To our knowledge, JIT-Agent is the first model purpose-built for just-in-time harness generation, establishing harness intelligence as a trainable, transferable, and compounding dimension of agent capability orthogonal to model scaling. (https://arxiv.org/abs/2608.25593v2)"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_a75edfdb19f948dcac875e21",
+   "content": "[Self-Harness: Harnesses That Improve Themselves] The performance of LLM-based agents is jointly shaped by their base models and the harnesses that mediate their interaction with the environment. Because different models exhibit distinct behaviors, effective harness design is inherently model-specific. Yet agent harnesses are still largely engineered by human experts, a paradigm that scales poorly as modern LLMs become increasingly diverse and rapidly evolving. In this paper, we introduce Self-Harness, a new paradigm in which an LLM-based agent improves its own operating harness, without relying on human engineers or stronger external agents. We operationalize Self-Harness as an iterative loop with three stages: Weakness Mining, which identifies model-specific failure patterns from execution traces; Harness Proposal, which generates diverse yet minimal harness modifications tied to these failures; and Proposal Validation, which accepts candidate edits only after regression testing. We instantiate Self-Harness across Terminal-Bench-2.0, SWE-bench Verified, and AppWorld using a minimal initial harness and three base models from diverse families: MiniMax M2.5, Qwen3.5-35B-A3B, and GLM-5. Across all nine model--benchmark combinations, every final harness improves both held-in and held-out pass rates, with overall relative gains of up to 132%. Qualitative analyses further show that the retained mechanisms address benchmark-specific bottlenecks in artifact handling and runtime control, software-patch verification, and application-state retrieval. These results suggest a path toward LLM-based agents that are not merely shaped by their harnesses, but can also participate in reshaping them. (https://arxiv.org/abs/2606.09498v3)\n---\n[SkillAdaptor: Self-Adapting Skills for LLM Agents from Trajectories] Large language model (LLM) agents increasingly rely on reusable external skills to solve long-horizon interactive tasks. Existing training-free skill adaptation pipelines usually update skills from full trajectories or session-level feedback, which makes failure attribution coarse and often produces unstable or overly broad revisions. We propose SkillAdaptor, a training-free step-level skill adaptation framework with explicit failure attribution, and it can plug into OpenClaw-class agent harnesses. Given a failed trajectory, SkillAdaptor identifies a first actionable fault step, links responsibility to candidate skills, and applies targeted updates under explicit acceptance checks while keeping the backbone frozen. We evaluate on WebShop, PinchBench, and Claw-Eval with Kimi-K2.5, GLM-5, and GPT-5.2. SkillAdaptor improves over no-skill and skill-adaptation baselines on all three suites, with the largest single-metric improvements of +1.5 points on PinchBench Avg Score%, +1.8 on Claw-Eval Avg Score, and +1.7 on WebShop success rate. These results indicate that step-level attribution supports more stable and auditable training-free skill maintenance\\footnote{The code will be released at https://github.com/zjunlp/SkillAdaptor.}. (https://arxiv.org/abs/2606.01311v1)\n---\n[Self-Evolving Agents with Anytime-Valid Certificates] Self-evolving agents violate the assumption behind most learning-theoretic guarantees: the data, evaluator, components, and hypothesis space are produced by the policy being updated. We present \\textbf{SEA}, an architecture that confines self-modification to a small steering adapter and a versioned harness around a \\emph{frozen} base model and admits each modification only through an anytime-valid gate that emits an auditable certificate against a fixed error budget. Five loop controllers compose published guarantees; because such gates can only \\emph{select} among behaviors the frozen base already produces, five verifier-in-the-loop mechanisms -- best-of-$N$, micro-step search, self-authored reproduction oracles, search-layer control, and self-repair -- supply the dense, grader-free signal the gates require, computed from the issue text alone. On a $52$-instance SWE-bench Verified subset across four base models, base capability is the dominant, confound-free effect, and on two strong base models a deliberate no-op-composite control isolates the suite's contribution at $+4$ and $+5$ (\\textsc{Glm}~5.2 $24\\to28$; \\textsc{Gpt} $29\\to34$, the $65\\%$ best), with event logs confirming that its mechanisms fire and prevent regressions. Results are single-run on expensive evaluations; confirming run-to-run variance and adapting the per-task algorithm mix are future work. (https://arxiv.org/abs/2607.00871v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "The first search result directly answers the question. From the **JIT-Agent** paper (arxiv.org/abs/2608.25593v2):\n\n> \"the already strong GLM-5.2 gains up to **+20.2 points**\"\n\nFINAL: GLM-5.2 gained up to **20.2 points** when equipped with JIT-Agent as its harness helper.",
+   "refusal": null,
+   "reasoning": "The first search result (JIT-Agent paper) directly answers the question. It states:\n\n\"the already strong GLM-5.2 gains up to +20.2 points.\"\n\nSo the answer is 20.2 points.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The first search result (JIT-Agent paper) directly answers the question. It states:\n\n\"the already strong GLM-5.2 gains up to +20.2 points.\"\n\nSo the answer is 20.2 points.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-23",
+  "source": "research",
+  "correct": true,
+  "steps": 3,
+  "tool_calls": 3,
+  "cost": 0.0022461096,
+  "seconds": 37.0,
+  "answer": "GLM-5.2 gained up to **20.2 points** when equipped with JIT-",
+  "gold": "20.2"
+ }
+}

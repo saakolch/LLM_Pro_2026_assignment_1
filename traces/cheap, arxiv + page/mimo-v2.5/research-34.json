@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-34",
+  "source": "research",
+  "question": "What share of skill bundle tokens does SkillZip Pro remove with no quality loss?",
+  "answer": "38%",
+  "evidence": "On a production content-moderation skill evaluated by our industrial multi-round harness, \\method removes \\hl{38\\%} of skill bundle tokens and \\hl{10.4\\%} of end-to-end per-run tokens with no quality loss, while an unprotected 71\\% configuration loses up to 26 accuracy points to one-sided false positives.",
+  "page": "SkillZip Pro (arXiv)",
+  "url": "https://arxiv.org/abs/2608.30785"
+ },
+ "answer": "FINAL: 38%",
+ "correct": true,
+ "cost": 0.0007261295999999992,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What share of skill bundle tokens does SkillZip Pro remove with no quality loss?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about \"SkillZip Pro\" - a system that apparently removes some share of skill bundle tokens with no quality loss. I need to search for this specific system name.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_1a3030011aaa49e4b929a4b0",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"SkillZip Pro skill bundle tokens\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"SkillZip Pro\" - a system that apparently removes some share of skill bundle tokens with no quality loss. I need to search for this specific system name.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_1a3030011aaa49e4b929a4b0",
+   "content": "[SkillZip Pro: Execution-Aware Dynamic Compression of Progressively Loaded Skills for Self-Evolving Agents] Production agent skills are directory bundles, not isolated prompts. The root is loaded at activation; references, schemas, scripts, assets, and nested subskills are loaded only when an execution path needs them. Compressing only the root misses most deployment cost and may move branch-specific details into the always-loaded context. Flattening instead destroys progressive-loading boundaries. We introduce \\method, an evaluation-free compressor for complete, progressively loaded skill bundles. It leaves the agent harness unchanged and emits an ordinary directory. The method combines two safeguards. First, it compresses \\emph{across files}, removing content from a reference or subskill when the root or a declared environment contract already provides it. Second, it preserves routing, so every required file and directly callable entry remains reachable after rewriting. Users can configure \\method along two independent axes. \\emph{One-Shot} mode rebuilds the full bundle; \\emph{Continual} mode reuses state and applies Zip-on-Write after each evolution patch. \\emph{Persistent} compression rewrites the shipped bundle to reduce storage and runtime context. \\emph{Transient} compression keeps that bundle byte-identical and builds a task-specific view, reducing only per-run context after build cost. Entry contracts mark private, public, and conditional resources; a multi-entry audit preserves standalone public subskills. On a production content-moderation skill evaluated by our industrial multi-round harness, \\method removes \\hl{38\\%} of skill bundle tokens and \\hl{10.4\\%} of end-to-end per-run tokens with no quality loss, while an unprotected 71\\% configuration loses up to 26 accuracy points to one-sided false positives. On a multi-entry bundle, \\method effeciently reduces token  (https://arxiv.org/abs/2608.30785v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 38%",
+   "refusal": null,
+   "reasoning": "The abstract states that SkillZip Pro removes 38% of skill bundle tokens with no quality loss.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract states that SkillZip Pro removes 38% of skill bundle tokens with no quality loss.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-34",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0007261295999999992,
+  "seconds": 12.7,
+  "answer": "38%",
+  "gold": "38%"
+ }
+}

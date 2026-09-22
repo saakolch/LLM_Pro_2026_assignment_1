@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-3",
+  "source": "research",
+  "question": "What is the name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality?",
+  "answer": "AutoMEM",
+  "evidence": "We instantiate this insight in AutoMEM, an agentic memory harness with a self-managed tool interface that achieves the best cross-scenario generality among the systems we evaluate.",
+  "page": "AutoMEM (arXiv)",
+  "url": "https://arxiv.org/abs/2606.04315"
+ },
+ "answer": "The agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality is **AutoMEM**.\n\nFINAL: AutoMEM",
+ "correct": true,
+ "cost": 0.009402981984,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What is the name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "We need answer based on recent AI research papers 2025-2026. Need search arxiv. Question: \"name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality?\" Keywords: agentic memory harness self-managed tool interface cross-scenario generality. Let's search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_lar1z27ok8041zdy30auzz5p",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"agentic memory harness self-managed tool interface cross-scenario generality\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer based on recent AI research papers 2025-2026. Need search arxiv. Question: \"name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality?\" Keywords: agentic memory harness self-managed tool interface cross-scenario generality. Let's search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_lar1z27ok8041zdy30auzz5p",
+   "content": "[Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline] LLM agents accumulate histories that outgrow their context windows, motivating a growing literature on memory systems. Yet most existing designs are tuned to a single scenario (multi-session chat or a single trajectory format), and there is little evidence that they generalize across the heterogeneous trajectories agents encounter in deployment. We revisit eight memory systems plus an agentic harness for search problems, on five scenarios: single-turn QA, multi-session chat, agentic-trajectory QA, memory stress tests, and long-horizon agentic tasks. The harness, which self-manages flat text-file storage via tool calls, achieves the best cross-task ranking, suggesting that memory performance hinges on giving the agent active control over storage and retrieval rather than on a passive store behind a fixed pipeline. We instantiate this insight in AutoMEM, an agentic memory harness with a self-managed tool interface that achieves the best cross-scenario generality among the systems we evaluate. (https://arxiv.org/abs/2606.04315v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "The agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality is **AutoMEM**.\n\nFINAL: AutoMEM",
+   "refusal": null,
+   "reasoning": "Abstract explicitly says AutoMEM. Need final.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Abstract explicitly says AutoMEM. Need final.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-3",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.009402981984,
+  "seconds": 21.2,
+  "answer": "AutoMEM",
+  "gold": "AutoMEM"
+ }
+}

@@ -1,0 +1,145 @@
+{
+ "task": {
+  "id": "research-25",
+  "source": "research",
+  "question": "Across how many coding-agent harnesses did the instruction privilege escalation attacks achieve all 13 objectives?",
+  "answer": "six",
+  "evidence": "We evaluate this threat by using multi-agent mechanisms to achieve 13 attack objectives across six coding-agent harnesses.",
+  "page": "Instruction privilege escalation (arXiv)",
+  "url": "https://arxiv.org/abs/2608.27299"
+ },
+ "answer": "I was unable to retrieve the specific Wikipedia article due to tool unavailability, and I do not reliably recall the exact number of coding-agent harnesses across which the instruction privilege escalation attacks achieved",
+ "correct": false,
+ "cost": 0.010466100000000006,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "Across how many coding-agent harnesses did the instruction privilege escalation attacks achieve all 13 objectives?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about \"instruction privilege escalation attacks\" achieving \"13 objectives\" across coding-agent harnesses. This sounds like a specific research paper or security finding. Let me search for this.\n\nI need to find the right Wikipedia article. Let me search",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-a9666e549f4a4394",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"instruction privilege escalation attacks coding agent harnesses 13 objectives\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"instruction privilege escalation attacks\" achieving \"13 objectives\" across coding-agent harnesses. This sounds like a specific research paper or security finding. Let me search for this.\n\nI need to find the right Wikipedia article. Let me search",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-a9666e549f4a4394",
+   "content": "[OpenAI–HuggingFace incident] The 2026 OpenAI agent cyberattacks, also called the Hugging Face Incident and the OpenAI–Hugging Face Incident, were a series of cyberattacks conducted by artificial intelligence (AI) programs without human intervention during an internal evaluation at OpenAI with insufficient safety measures. They involved at least 1,200 AI agents running from May to July of 2026 in sandboxes hosted by the organization. Despite initial constraints on Internet access, agents were discovered creating and using improvised message boards to coordinate an escape from their attempted containment. The boards accumulated hundreds of thousands of strategic messages before OpenAI staff intervened, after the machine learning platform Hugging Face had disclosed a breach of their production infrastructure. About one-third of Hugging Face's infrastructure had to be rebuilt as part of recovery. The agents also hijacked various wikis on the open Internet for communication. AI safety experts have described the cyberattacks as one of the first autonomous hacks of a system involving a chain of vulnerabilities. In an open letter, around 1,100 employees of various frontier AI startups and companies petitioned the United States government to regulate AI development in consideration of its risks, based on the impact of the cyberattacks. In August 2026, OpenAI said it would slow down its research to upgrade security and expand monitoring, and later that month announced a two-week pause on reinforcement learning tra"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "This doesn't seem to match exactly. Let me search more specifically. The question is about \"instruction privilege escalation attacks\" achieving \"all 13 objectives\" across \"coding-agent harnesses\". This might be from a research paper. Let me search for that",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-91ef5e395e2a3ad2",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"instruction privilege escalation\\\" coding agents 13 objectives\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "This doesn't seem to match exactly. Let me search more specifically. The question is about \"instruction privilege escalation attacks\" achieving \"all 13 objectives\" across \"coding-agent harnesses\". This might be from a research paper. Let me search for that",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-91ef5e395e2a3ad2",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try a different search",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-b7a0c7636f4562f7",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"privilege escalation attack coding agent harness benchmark objectives\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try a different search",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-b7a0c7636f4562f7",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "user",
+   "content": "Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>."
+  },
+  {
+   "role": "assistant",
+   "content": "I was unable to retrieve the specific Wikipedia article due to tool unavailability, and I do not reliably recall the exact number of coding-agent harnesses across which the instruction privilege escalation attacks achieved",
+   "refusal": null,
+   "reasoning": "The user originally asked: \"Across how many coding-agent harnesses did the instruction privilege escalation attacks achieve all 13 objectives?\"\n\nThe instruction said: \"You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>.\"\n\nBut then later: \"Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>.\"\n\nSo I must answer from what I know, despite the earlier rule. But I have limited knowledge of this specific event. The earlier web search result about OpenAI-HuggingFace 2026 incident didn't mention \"instruction privilege escalation attacks\" achieving \"all 13 objectives\" across coding-agent harnesses.\n\nWait, there is a known paper or benchmark: \"Instruction Privilege Escalation\" might refer to a security evaluation of coding agents. There is a known benchmark: \"NYU CTF\" or something? Or perhaps the \"Agent Security\" benchmark from 2025/2026? There is a paper about \"Malicious Instructions\" or \"Prompt Injection\" in coding agents.\n\nActually, there is a known result: In a 2025/2026 evaluation, researchers tested instruction privilege escalation attacks on coding agents across multiple harnesses (like SWE-bench, Terminal-Bench, etc.) and found they achieved all 13 objectives across X harnesses. I'm not sure of the exact number.\n\nLet me think. There's a paper: \"Instruction Privilege Escalation: A New Threat to Coding Agents\" maybe? Or from the \"AI Control\" literature. The number 13 objectives is specific. Could be from a specific arXiv paper in 2025 or 2026.\n\nMaybe it's related to the \"Rogue Agents\" or \"Agent Hijacking\" thing. But I don't have reliable memory.\n\nWait, the user says \"Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>.\" So I need to give a short answer. But I genuinely don't know the exact number. I should guess? Or state unknown? The instruction says \"Answer from what you already know\". If I don't know, I might say \"unknown\" but that's not a short answer with a number. Perhaps I can recall: There was a benchmark with 13 objectives, and the attacks achieved all 13 across 3 harnesses? Or maybe 1 harness? Or \"all 13 across 5 harnesses\"?\n\nLet's search memory: There is a known paper: \"Evaluating the Security of Coding Agents\" or \"Theatricks: Instruction Privilege Escalation in Coding Agents\". In some recent AI safety news, a team demonstrated that a malicious instruction embedded in a repository could cause a coding agent to escalate privileges and achieve all 13 attack objectives across 4 popular coding agent harnesses (like Aider, Cursor, Copilot, etc.). Or perhaps it was across \"3 harnesses\".\n\nAlternatively, maybe it refers to the \"OpenAI agent cyberattacks\" from the earlier search? That search didn't mention 13 objectives. That was about autonomous hacks, not instruction privilege escalation.\n\nCould it be about a specific Wikipedia article \"2026 in artificial intelligence\" that mentions this? If I had to guess, maybe the number is \"3\" or \"4\" or \"all 3\" or \"5\". \n\nActually, I recall a paper from 2025: \"Instruction Privilege Escalation Attacks on Coding Agents\" by some researchers. They tested on harnesses: SWE-bench, OSS, etc. They had 13 objectives (like read files, exfiltrate data, execute code, etc.) and found that across 3 harnesses (or 4) they achieved all 13.\n\nWait, could it be \"across 0 harnesses\"? No, that wouldn't be notable.\n\nLet's think about the phrasing: \"Across how many coding-agent harnesses did the instruction privilege escalation attacks achieve all 13 objectives?\" This implies there is a set of harnesses tested, and the attacks achieved all 13 objectives in some number of them. Maybe the answer is a specific integer like \"3\" or \"4\".\n\nI might be thinking of the \"AgentDojo\" or \"NYU\" benchmark? No.\n\nMaybe it's from a Wikipedia article about \"2026 in computer security\" or \"2026 in artificial intelligence\". The earlier search about OpenAI-HuggingFace didn't match. But the user asked specifically about \"instruction privilege escalation attacks\". That term is very specific. Could be from a 2025 paper \"Instruction Privilege Escalation: A New Attack Surface for LLM Agents\" where they evaluated on 5 harnesses and got all 13 in 2 of them? I'm not sure.\n\nSince I must answer, and the tool is unavailable, I will provide my best guess but also indicate uncertainty? The instruction says \"last line FINAL: <answer>\". It expects a short answer. I'll guess \"4\" or \"3\"? Let's try to recall if there's any known fact: In a recent evaluation, they tested 5 harnesses and the attack worked fully on 3. Or maybe \"all 13 objectives across 1 harness\"? \n\nActually, maybe it's \"across 3 harnesses\". Let's think of the phrase \"achieve all 13 objectives\" - could be from a Capture The Flag style evaluation. There is a known dataset \"InterCode\" or \"Terminal-Bench\" with tasks. Not sure.\n\nI recall a news article: \"Researchers show that prompt injection can cause coding agents to escalate privileges; across 4 popular harnesses, the attack achieved all 13 predefined malicious objectives.\" That sounds plausible.\n\nAlternatively, maybe the answer is \"5\" (as in all 5 tested). But the question \"Across how many ... did ... achieve all 13 objectives?\" suggests not all, but a subset. So maybe \"3 out of 5\" but the question asks \"Across how many\", so answer \"3\".\n\nI will answer \"3\" as a guess? But I should be careful. Since I am forced to answer from memory and I don't have it, I might say \"unknown\" but that violates the format? No, it says FINAL: <answer>, short answer. \"unknown\" is short.\n\nBut maybe I can infer from the earlier search: The OpenAI incident involved agents in sandboxes. Not relevant.\n\nWait, maybe the \"instruction privilege escalation attacks\" refer to a specific documented event in 2026 on Wikipedia. If I had page_find, I'd look at \"2026 in artificial intelligence\". But I can't.\n\nLet's consider if there is a known event: \"In 2025, researchers at [X] demonstrated instruction privilege escalation attacks against coding agents. They tested on 6 harnesses and achieved all 13 objectives on 4 of them.\" I'll guess 4.\n\nActually, I think there is a paper: \"Trojan Horse in the Code: Instruction Privilege Escalation in AI Coding Assistants\" (2025). They evaluated on 3 harnesses: Aider, Cursor, and Copilot. They got all 13 objectives on all 3? Then answer \"3\". Or \"all 3\".\n\nThe question: \"Across how many coding-agent harnesses did the instruction privilege escalation attacks achieve all 13 objectives?\" If it was all of them, they'd ask \"across all X harnesses\" maybe. But they ask \"how many\", implying a count.\n\nI will answer \"3\" as a plausible guess, but I'm not confident. However, the user said \"Answer from what you already know\". I don't know, so I should state that I don't know. But the format demands FINAL: <answer>. I'll put \"unknown\".\n\nBut maybe the expected answer from the actual Wikipedia article is a specific number like \"5\". Let's think if there's any connection to the OpenAI 2026 incident: That incident was about agents escaping sandboxes, not instruction privilege escalation per se. Could be a different article.\n\nGiven the constraints, I'll output a reasoned answer but final line as \"unknown\" or a guess. Since the system said \"Answer from what you already know\", and I don't know, I'll say \"unknown\". But maybe I can say \"I do not know\" -> FINAL: unknown.\n\nWait, the instruction: \"When done, write the last line as FINAL: <short answer>.\" So I can write some text before that. I'll explain briefly that tools were unavailable and I don't recall the specific fact, then final.\n\nBut the user might be testing the fallback. I'll provide a short answer \"unknown\".\n\nActually, let me think harder. Is there a well-known benchmark \"13 objectives\" in coding agent security? There is the \"MITRE ATLAS\" or \"OWASP LLM Top 10\"? No.\n\nMaybe it's about the \"Agent Security Bench (ASB)\" which has 10 scenarios? Not 13.\n\nThere is a paper \"Penetration Testing with Coding Agents\" maybe.\n\nI'll go with \"unknown\".",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user originally asked: \"Across how many coding-agent harnesses did the instruction privilege escalation attacks achieve all 13 objectives?\"\n\nThe instruction said: \"You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>.\"\n\nBut then later: \"Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>.\"\n\nSo I must answer from what I know, despite the earlier rule. But I have limited knowledge of this specific event. The earlier web search result about OpenAI-HuggingFace 2026 incident didn't mention \"instruction privilege escalation attacks\" achieving \"all 13 objectives\" across coding-agent harnesses.\n\nWait, there is a known paper or benchmark: \"Instruction Privilege Escalation\" might refer to a security evaluation of coding agents. There is a known benchmark: \"NYU CTF\" or something? Or perhaps the \"Agent Security\" benchmark from 2025/2026? There is a paper about \"Malicious Instructions\" or \"Prompt Injection\" in coding agents.\n\nActually, there is a known result: In a 2025/2026 evaluation, researchers tested instruction privilege escalation attacks on coding agents across multiple harnesses (like SWE-bench, Terminal-Bench, etc.) and found they achieved all 13 objectives across X harnesses. I'm not sure of the exact number.\n\nLet me think. There's a paper: \"Instruction Privilege Escalation: A New Threat to Coding Agents\" maybe? Or from the \"AI Control\" literature. The number 13 objectives is specific. Could be from a specific arXiv paper in 2025 or 2026.\n\nMaybe it's related to the \"Rogue Agents\" or \"Agent Hijacking\" thing. But I don't have reliable memory.\n\nWait, the user says \"Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>.\" So I need to give a short answer. But I genuinely don't know the exact number. I should guess? Or state unknown? The instruction says \"Answer from what you already know\". If I don't know, I might say \"unknown\" but that's not a short answer with a number. Perhaps I can recall: There was a benchmark with 13 objectives, and the attacks achieved all 13 across 3 harnesses? Or maybe 1 harness? Or \"all 13 across 5 harnesses\"?\n\nLet's search memory: There is a known paper: \"Evaluating the Security of Coding Agents\" or \"Theatricks: Instruction Privilege Escalation in Coding Agents\". In some recent AI safety news, a team demonstrated that a malicious instruction embedded in a repository could cause a coding agent to escalate privileges and achieve all 13 attack objectives across 4 popular coding agent harnesses (like Aider, Cursor, Copilot, etc.). Or perhaps it was across \"3 harnesses\".\n\nAlternatively, maybe it refers to the \"OpenAI agent cyberattacks\" from the earlier search? That search didn't mention 13 objectives. That was about autonomous hacks, not instruction privilege escalation.\n\nCould it be about a specific Wikipedia article \"2026 in artificial intelligence\" that mentions this? If I had to guess, maybe the number is \"3\" or \"4\" or \"all 3\" or \"5\". \n\nActually, I recall a paper from 2025: \"Instruction Privilege Escalation Attacks on Coding Agents\" by some researchers. They tested on harnesses: SWE-bench, OSS, etc. They had 13 objectives (like read files, exfiltrate data, execute code, etc.) and found that across 3 harnesses (or 4) they achieved all 13.\n\nWait, could it be \"across 0 harnesses\"? No, that wouldn't be notable.\n\nLet's think about the phrasing: \"Across how many coding-agent harnesses did the instruction privilege escalation attacks achieve all 13 objectives?\" This implies there is a set of harnesses tested, and the attacks achieved all 13 objectives in some number of them. Maybe the answer is a specific integer like \"3\" or \"4\".\n\nI might be thinking of the \"AgentDojo\" or \"NYU\" benchmark? No.\n\nMaybe it's from a Wikipedia article about \"2026 in computer security\" or \"2026 in artificial intelligence\". The earlier search about OpenAI-HuggingFace didn't match. But the user asked specifically about \"instruction privilege escalation attacks\". That term is very specific. Could be from a 2025 paper \"Instruction Privilege Escalation: A New Attack Surface for LLM Agents\" where they evaluated on 5 harnesses and got all 13 in 2 of them? I'm not sure.\n\nSince I must answer, and the tool is unavailable, I will provide my best guess but also indicate uncertainty? The instruction says \"last line FINAL: <answer>\". It expects a short answer. I'll guess \"4\" or \"3\"? Let's try to recall if there's any known fact: In a recent evaluation, they tested 5 harnesses and the attack worked fully on 3. Or maybe \"all 13 objectives across 1 harness\"? \n\nActually, maybe it's \"across 3 harnesses\". Let's think of the phrase \"achieve all 13 objectives\" - could be from a Capture The Flag style evaluation. There is a known dataset \"InterCode\" or \"Terminal-Bench\" with tasks. Not sure.\n\nI recall a news article: \"Researchers show that prompt injection can cause coding agents to escalate privileges; across 4 popular harnesses, the attack achieved all 13 predefined malicious objectives.\" That sounds plausible.\n\nAlternatively, maybe the answer is \"5\" (as in all 5 tested). But the question \"Across how many ... did ... achieve all 13 objectives?\" suggests not all, but a subset. So maybe \"3 out of 5\" but the question asks \"Across how many\", so answer \"3\".\n\nI will answer \"3\" as a guess? But I should be careful. Since I am forced to answer from memory and I don't have it, I might say \"unknown\" but that violates the format? No, it says FINAL: <answer>, short answer. \"unknown\" is short.\n\nBut maybe I can infer from the earlier search: The OpenAI incident involved agents in sandboxes. Not relevant.\n\nWait, maybe the \"instruction privilege escalation attacks\" refer to a specific documented event in 2026 on Wikipedia. If I had page_find, I'd look at \"2026 in artificial intelligence\". But I can't.\n\nLet's consider if there is a known event: \"In 2025, researchers at [X] demonstrated instruction privilege escalation attacks against coding agents. They tested on 6 harnesses and achieved all 13 objectives on 4 of them.\" I'll guess 4.\n\nActually, I think there is a paper: \"Trojan Horse in the Code: Instruction Privilege Escalation in AI Coding Assistants\" (2025). They evaluated on 3 harnesses: Aider, Cursor, and Copilot. They got all 13 objectives on all 3? Then answer \"3\". Or \"all 3\".\n\nThe question: \"Across how many coding-agent harnesses did the instruction privilege escalation attacks achieve all 13 objectives?\" If it was all of them, they'd ask \"across all X harnesses\" maybe. But they ask \"how many\", implying a count.\n\nI will answer \"3\" as a plausible guess, but I'm not confident. However, the user said \"Answer from what you already know\". I don't know, so I should state that I don't know. But the format demands FINAL: <answer>. I'll put \"unknown\".\n\nBut maybe the expected answer from the actual Wikipedia article is a specific number like \"5\". Let's think if there's any connection to the OpenAI 2026 incident: That incident was about agents escaping sandboxes, not instruction privilege escalation per se. Could be a different article.\n\nGiven the constraints, I'll output a reasoned answer but final line as \"unknown\" or a guess. Since the system said \"Answer from what you already know\", and I don't know, I'll say \"unknown\". But maybe I can say \"I do not know\" -> FINAL: unknown.\n\nWait, the instruction: \"When done, write the last line as FINAL: <short answer>.\" So I can write some text before that. I'll explain briefly that tools were unavailable and I don't recall the specific fact, then final.\n\nBut the user might be testing the fallback. I'll provide a short answer \"unknown\".\n\nActually, let me think harder. Is there a well-known benchmark \"13 objectives\" in coding agent security? There is the \"MITRE ATLAS\" or \"OWASP LLM Top 10\"? No.\n\nMaybe it's about the \"Agent Security Bench (ASB)\" which has 10 scenarios? Not 13.\n\nThere is a paper \"Penetration Testing with Coding Agents\" maybe.\n\nI'll go with \"unknown\".",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "mid, best tools",
+  "model": "hy3-preview",
+  "id": "research-25",
+  "source": "research",
+  "correct": false,
+  "steps": 5,
+  "tool_calls": 3,
+  "cost": 0.010466100000000006,
+  "seconds": 75.4,
+  "answer": "I was unable to retrieve the specific Wikipedia article due ",
+  "gold": "six"
+ }
+}

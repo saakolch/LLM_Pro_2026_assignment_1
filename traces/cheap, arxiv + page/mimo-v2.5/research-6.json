@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-6",
+  "source": "research",
+  "question": "To what pass rate on SWE-Bench Pro did a single round of Retrospective Harness Optimization raise the agent?",
+  "answer": "78%",
+  "evidence": "Notably, a single optimization round improves the pass rate on SWE-Bench Pro from 59% to 78% without any external grading.",
+  "page": "Retrospective Harness Optimization (arXiv)",
+  "url": "https://arxiv.org/abs/2606.05922"
+ },
+ "answer": "FINAL: 78%",
+ "correct": true,
+ "cost": 0.0009354160000000001,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "To what pass rate on SWE-Bench Pro did a single round of Retrospective Harness Optimization raise the agent?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me search for information about \"Retrospective Harness Optimization\" and its performance on SWE-Bench Pro.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_95ce16ab8afd499ba0a38fc3",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"Retrospective Harness Optimization SWE-Bench\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me search for information about \"Retrospective Harness Optimization\" and its performance on SWE-Bench Pro.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_95ce16ab8afd499ba0a38fc3",
+   "content": "[Evolving Agents in the Dark: Retrospective Harness Optimization via Self-Preference] AI agents rely on a harness of skills, tools, and workflows to solve complex problems. Continually improving this harness is essential for adapting to new tasks. However, existing optimization methods typically require ground-truth validation sets, yet such labeled data is difficult to acquire in practical deployment settings. To address this problem, we introduce Retrospective Harness Optimization (RHO), a self-supervised method that optimizes the agent harness using only past trajectories. Specifically, RHO selects a diverse coreset of challenging tasks from past trajectories and re-solves them in parallel. The agent analyzes these rollouts using self-validation and self-consistency, then generates candidate harness updates and selects the most effective one by its own pairwise self-preference. We evaluate RHO across three diverse domains, spanning software engineering, technical work, and knowledge work. Notably, a single optimization round improves the pass rate on SWE-Bench Pro from 59% to 78% without any external grading. Furthermore, our analysis demonstrates that RHO effectively targets prior failure modes. As a result, the optimized harness alters the agent's behavior patterns and sustains higher accuracy during long-horizon sessions. (https://arxiv.org/abs/2606.05922v3)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 78%",
+   "refusal": null,
+   "reasoning": "The abstract states: \"a single optimization round improves the pass rate on SWE-Bench Pro from 59% to 78%.\"",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract states: \"a single optimization round improves the pass rate on SWE-Bench Pro from 59% to 78%.\"",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-6",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0009354160000000001,
+  "seconds": 23.1,
+  "answer": "78%",
+  "gold": "78%"
+ }
+}

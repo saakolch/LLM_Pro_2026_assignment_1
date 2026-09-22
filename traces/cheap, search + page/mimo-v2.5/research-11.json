@@ -1,0 +1,171 @@
+{
+ "task": {
+  "id": "research-11",
+  "source": "research",
+  "question": "By up to how much does AlloSpatial improve proprietary models in a training-free setting?",
+  "answer": "18%",
+  "evidence": "Experiments on VSI-Bench and MindCube show that AlloSpatial improves proprietary models by 5%-18% in a training-free setting, while ASTs alone support strong spatial reasoning even when visual inputs are removed.",
+  "page": "AlloSpatial (arXiv)",
+  "url": "https://arxiv.org/abs/2606.08952"
+ },
+ "answer": "I apologize, but the Wikipedia search service is currently unavailable (returning HTTP 429 - too many requests), and I'm unable to retrieve information about \"AlloSpatial.\" Additionally, \"AlloSpatial\" does not appear to be a topic covered in Wikipedia articles, which are the only sources I can search.\n\nIf you could provide more context about where you encountered this claim (e.g., a specific paper, blog post, or preprint), I would be happy to help once the search service is restored. However, based on my available tools, I cannot answer this question.\n\nFINAL: Unable to answer — the search service is temporarily unavailable and \"AlloSpatial\" does not appear to be a Wikipedia-covered topic. Please provide additional context about the source of this claim.",
+ "correct": false,
+ "cost": 0.0015259720000000004,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By up to how much does AlloSpatial improve proprietary models in a training-free setting?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user asks: \"By up to how much does AlloSpatial improve proprietary models in a training-free setting?\" This seems to be about a paper or method called \"AlloSpatial\" that improves proprietary models in a training-free setting. I need to search for information about AlloSpatial.\n\nI'll use web_search to find relevant information.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_b0fac759cfcd46bd82b4e783",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"AlloSpatial training-free setting improve proprietary models\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user asks: \"By up to how much does AlloSpatial improve proprietary models in a training-free setting?\" This seems to be about a paper or method called \"AlloSpatial\" that improves proprietary models in a training-free setting. I need to search for information about AlloSpatial.\n\nI'll use web_search to find relevant information.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_b0fac759cfcd46bd82b4e783",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The web search failed with HTTP 429 (Too Many Requests). Let me try again after a moment.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_7d36ed55bd5b4d86af4abd57",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"AlloSpatial paper\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The web search failed with HTTP 429 (Too Many Requests). Let me try again after a moment.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_7d36ed55bd5b4d86af4abd57",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try again with the search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_373819fca0ff4be09d91ba86",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"AlloSpatial spatial reasoning\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try again with the search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_373819fca0ff4be09d91ba86",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The Wikipedia search is not returning results for \"AlloSpatial\" - this doesn't appear to be a Wikipedia article topic. Let me try a different approach.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_3936fd88073e4aff8d90dfd2",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"AlloSpatial training-free\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The Wikipedia search is not returning results for \"AlloSpatial\" - this doesn't appear to be a Wikipedia article topic. Let me try a different approach.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_3936fd88073e4aff8d90dfd2",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": "I apologize, but the Wikipedia search service is currently unavailable (returning HTTP 429 - too many requests), and I'm unable to retrieve information about \"AlloSpatial.\" Additionally, \"AlloSpatial\" does not appear to be a topic covered in Wikipedia articles, which are the only sources I can search.\n\nIf you could provide more context about where you encountered this claim (e.g., a specific paper, blog post, or preprint), I would be happy to help once the search service is restored. However, based on my available tools, I cannot answer this question.\n\nFINAL: Unable to answer — the search service is temporarily unavailable and \"AlloSpatial\" does not appear to be a Wikipedia-covered topic. Please provide additional context about the source of this claim.",
+   "refusal": null,
+   "reasoning": "The web_search tool is failing with HTTP 429 (rate limiting). I cannot search Wikipedia for information about \"AlloSpatial.\" This term does not appear to be a well-known Wikipedia topic. Let me try once more.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The web_search tool is failing with HTTP 429 (rate limiting). I cannot search Wikipedia for information about \"AlloSpatial.\" This term does not appear to be a well-known Wikipedia topic. Let me try once more.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, search + page",
+  "model": "mimo-v2.5",
+  "id": "research-11",
+  "source": "research",
+  "correct": false,
+  "steps": 5,
+  "tool_calls": 4,
+  "cost": 0.0015259720000000004,
+  "seconds": 53.9,
+  "answer": "Unable to answer — the search service is temporarily unavail",
+  "gold": "18%"
+ }
+}

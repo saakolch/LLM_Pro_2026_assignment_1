@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-1",
+  "source": "research",
+  "question": "What is the name of the multimodal unified structured execution harness for MLLMs introduced in June 2026?",
+  "answer": "MUSE",
+  "evidence": "We introduce MUSE, a multimodal unified structured execution harness that wraps any off-the-shelf MLLM with composable modules for task representation, visual processing, perception tool use, structured parsing, deterministic verification, and verifier-guided repair, without any model retraining.",
+  "page": "MUSE: A Unified Agentic Harness for MLLMs (arXiv)",
+  "url": "https://arxiv.org/abs/2606.03005"
+ },
+ "answer": "FINAL: MUSE",
+ "correct": true,
+ "cost": 0.005042511936000001,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What is the name of the multimodal unified structured execution harness for MLLMs introduced in June 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "We need answer: \"What is the name of the multimodal unified structured execution harness for MLLMs introduced in June 2026?\" Need search arxiv. Keywords: multimodal unified structured execution harness MLLMs. Let's search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_logjgybcofjqs7qefwppve71",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"multimodal unified structured execution harness MLLMs\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer: \"What is the name of the multimodal unified structured execution harness for MLLMs introduced in June 2026?\" Need search arxiv. Keywords: multimodal unified structured execution harness MLLMs. Let's search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_logjgybcofjqs7qefwppve71",
+   "content": "[MUSE: A Unified Agentic Harness for MLLMs] Despite rapid progress, multimodal large language models (MLLMs) still fail on tasks that humans solve effortlessly, such as navigating a grid maze from a screenshot or selecting the correct puzzle piece. Rather than retraining the model, we ask a complementary question: how much capability can be elicited from a frozen MLLM purely by improving the execution scaffold around it? We introduce MUSE, a multimodal unified structured execution harness that wraps any off-the-shelf MLLM with composable modules for task representation, visual processing, perception tool use, structured parsing, deterministic verification, and verifier-guided repair, without any model retraining. We evaluate MUSE across diverse benchmarks spanning visual spatial planning, visual perception, multimodal reasoning, and fine-grained visual discrimination, using multiple state-of-the-art MLLMs. MUSE delivers consistent gains over the bare model in all settings, with the largest jumps on challenging instances. Further analysis reveals that many MLLM failures arise from harness-level shortcomings rather than fundamental model deficits, and can be addressed through verifier-guided repair without touching the model. These findings highlight the agentic multimodal harness as a critical yet underexplored design dimension, offering an orthogonal avenue for improving MLLMs beyond model-centric optimization. (https://arxiv.org/abs/2606.03005v1)\n---\n[HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness] Embodied navigation requires agents to ground instructions or object goals in spatial observations and translate plans into successful execution. As multimodal large language models (MLLMs) become increasingly capable, they offer stronger support for navigation without task-specific training; however, improved semantic reasoning alone does not ensure that proposed actions remain consistent with spatial evidence, task progress, and execution outcomes. We introduce HarnessVLN, a zero-shot, training-free framework that unifies instruction-following and object-goal navigation through a shared Agent Harness. The Harness coordinates perception, memory, and execution tools through a unified interface, validating planner proposals for evidential support, geometric feasibility, and subgoal consistency before dispatch. It jointly manages hierarchical event memory and a persistent Spatiotemporal Graph to track task progress, preserve spatial evidence, and contextualize failures. Structured execution feedback updates this shared state, guiding subsequent planning, recovery, and termination. Across R2R, RxR, HM3D-v2, and HM3D-OVON, HarnessVLN achieves success rates of 60.8%, 53.9%, 76.0%, and 59.3%, respectively, outperforming prior training-free state-of-the-art methods. Humanoid robot deployment further demonstrates its applicability to both navigation tasks in real-world environments. The project page is available at https://agibot-harnessvln.netlify.app/. (https://arxiv.org/abs/2609.15195v2)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: MUSE",
+   "refusal": null,
+   "reasoning": "The question asks \"name of the multimodal unified structured execution harness for MLLMs introduced in June 2026?\" The first abstract: MUSE, a multimodal unified structured execution harness. arXiv 2606.03005. June 2026. So answer MUSE. FINAL.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The question asks \"name of the multimodal unified structured execution harness for MLLMs introduced in June 2026?\" The first abstract: MUSE, a multimodal unified structured execution harness. arXiv 2606.03005. June 2026. So answer MUSE. FINAL.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-1",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.005042511936000001,
+  "seconds": 12.1,
+  "answer": "MUSE",
+  "gold": "MUSE"
+ }
+}

@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-39",
+  "source": "research",
+  "question": "How many unique optimization examples per benchmark does COBRA-Skills use?",
+  "answer": "50",
+  "evidence": "Across six heterogeneous agent benchmarks and three target models, COBRA-Skills consistently achieves the strongest average performance among compared methods, while reducing optimization cost by 55--58\\% relative to SkillOpt and using only 50 unique optimization examples per benchmark.",
+  "page": "COBRA-Skills (arXiv)",
+  "url": "https://arxiv.org/abs/2609.11682"
+ },
+ "answer": "The abstract of the COBRA-Skills paper directly answers this question:\n\n> \"reducing optimization cost by 55–58% relative to SkillOpt and **using only 50 unique optimization examples per benchmark**.\"\n\nFINAL: 50",
+ "correct": true,
+ "cost": 0.0005839287999999995,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many unique optimization examples per benchmark does COBRA-Skills use?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me search for COBRA-Skills to find information about its benchmark optimization examples.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_a86775c31d7c44a0a8708f3e",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"COBRA-Skills benchmark optimization examples\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me search for COBRA-Skills to find information about its benchmark optimization examples.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_a86775c31d7c44a0a8708f3e",
+   "content": "[COBRA-Skills: Contextual Bandit-Guided Evolution for Agent Skill Optimization] Large language model (LLM) agents can benefit from reusable skills distilled from prior task experience, yet existing skill optimization methods often rely on costly execution-based evaluation and substantial task data. We introduce \\textbf{COBRA-Skills}, an efficient framework that formulates skill optimization as budgeted sequential optimization over a dynamically evolving candidate space. COBRA-Skills couples contextual-bandit-guided prioritization with evidence-grounded skill evolution, selectively allocating evaluations to promising or informative candidates while continually refining the skill population from execution feedback. Across six heterogeneous agent benchmarks and three target models, COBRA-Skills consistently achieves the strongest average performance among compared methods, while reducing optimization cost by 55--58\\% relative to SkillOpt and using only 50 unique optimization examples per benchmark. Further analyses show that COBRA-Skills remains robust to changes in the agent harness and performs effectively when the target model itself is used for skill generation and refinement. (https://arxiv.org/abs/2609.11682v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "The abstract of the COBRA-Skills paper directly answers this question:\n\n> \"reducing optimization cost by 55–58% relative to SkillOpt and **using only 50 unique optimization examples per benchmark**.\"\n\nFINAL: 50",
+   "refusal": null,
+   "reasoning": "The answer is clearly stated in the abstract: COBRA-Skills uses 50 unique optimization examples per benchmark.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The answer is clearly stated in the abstract: COBRA-Skills uses 50 unique optimization examples per benchmark.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-39",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0005839287999999995,
+  "seconds": 16.1,
+  "answer": "50",
+  "gold": "50"
+ }
+}

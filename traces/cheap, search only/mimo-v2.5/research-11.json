@@ -8,9 +8,9 @@
   "page": "AlloSpatial (arXiv)",
   "url": "https://arxiv.org/abs/2606.08952"
  },
- "answer": "I was unable to find any information about \"AlloSpatial\" through my web searches, and I don't have reliable knowledge about this model in my training data. I cannot confidently answer this question without verified information.\n\nFINAL: I don't have sufficient information to answer this question accurately.",
+ "answer": "I was unable to find information about \"AlloSpatial\" through my searches before the tools became unavailable. This may be a very recent paper, model, or system that I do not have reliable data on. Without access to the source material, I cannot provide an accurate answer about by how much AlloSpatial improves proprietary models in a training-free setting.\n\nFINAL: I do not have sufficient information to answer this question accurately.",
  "correct": false,
- "cost": 0.0004931394000000002,
+ "cost": 0.003479380800000001,
  "messages": [
   {
    "role": "system",
@@ -24,22 +24,22 @@
    "role": "assistant",
    "content": null,
    "refusal": null,
-   "reasoning": "The user is asking about \"AlloSpatial\" and how much it improves proprietary models in a training-free setting. I need to search for information about this model and its performance improvements.",
+   "reasoning": "The user is asking about AlloSpatial and its improvement over proprietary models in a training-free setting. I need to search for information about AlloSpatial. Let me search for this term.",
    "tool_calls": [
     {
      "type": "function",
      "index": 0,
-     "id": "call_19d35e8a165648bea9cdaf88",
+     "id": "call_a6bbc5c85f4f409897f46332",
      "function": {
       "name": "web_search",
-      "arguments": "{\"query\": \"AlloSpatial training-free setting improvement proprietary models\"}"
+      "arguments": "{\"query\": \"AlloSpatial proprietary models training-free setting improvement\"}"
      }
     }
    ],
    "reasoning_details": [
     {
      "type": "reasoning.text",
-     "text": "The user is asking about \"AlloSpatial\" and how much it improves proprietary models in a training-free setting. I need to search for information about this model and its performance improvements.",
+     "text": "The user is asking about AlloSpatial and its improvement over proprietary models in a training-free setting. I need to search for information about AlloSpatial. Let me search for this term.",
      "format": "unknown",
      "index": 0
     }
@@ -47,19 +47,139 @@
   },
   {
    "role": "tool",
-   "tool_call_id": "call_19d35e8a165648bea9cdaf88",
+   "tool_call_id": "call_a6bbc5c85f4f409897f46332",
    "content": "nothing found"
   },
   {
    "role": "assistant",
    "content": null,
    "refusal": null,
-   "reasoning": "The search didn't return results. Let me try a different search query.",
+   "reasoning": "The search for \"AlloSpatial proprietary models training-free setting improvement\" returned no results. Let me try a broader search.",
    "tool_calls": [
     {
      "type": "function",
      "index": 0,
-     "id": "call_395c96b21cf349e089c86cdf",
+     "id": "call_7e706439e65043f3b87cf945",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"AlloSpatial spatial reasoning\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search for \"AlloSpatial proprietary models training-free setting improvement\" returned no results. Let me try a broader search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_7e706439e65043f3b87cf945",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search failed due to a rate limit. Let me try again with a slightly different query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_388a8e6e68644951a4e12e44",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"AlloSpatial training-free spatial reasoning model\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search failed due to a rate limit. Let me try again with a slightly different query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_388a8e6e68644951a4e12e44",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search failed due to a rate limit error. Let me try again.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_84d79b57d2d34fdc9aa807c6",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"AlloSpatial AI model\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search failed due to a rate limit error. Let me try again.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_84d79b57d2d34fdc9aa807c6",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search keeps failing with rate limiting. Let me try one more time with a different query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5141258a5e3a4312b9957d21",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"AlloSpatial\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search keeps failing with rate limiting. Let me try one more time with a different query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5141258a5e3a4312b9957d21",
+   "content": "[Spatial cognition] In cognitive psychology, spatial cognition is the acquisition, organization, utilization, and revision of knowledge about spatial environments. It is most about how animals, including humans, behave within space and the knowledge they built around it, rather than space itself. These capabilities enable individuals to manage basic and high-level cognitive tasks in everyday life. Numerous disciplines (such as cognitive psychology, neuroscience, artificial intelligence, geographic information science, cartography, etc.) work together to understand spatial cognition in different species, especially in humans. Thereby, spatial cognition studies also have helped to link cognitive psychology and neuroscience. Scientists in both fields work together to figure out what role spatial cognition plays in the brain as well as to determine the surrounding neurobiological infrastructure. In humans, spatial cognition is closely related to how people talk about their environment, find their way in new surroundings, and plan routes. Thus a wide range of studies is based on participants reports, performance measures and similar, for example in order to determine cognitive reference frames that allow subjects to perform. In this context the implementation of virtual reality becomes more and more widespread among researchers, since it offers the opportunity to confront participants with unknown environments in a highly controlled manner. Spatial cognition can be seen from a psychological point of  | other articles: AlloSphere, UCSB Center for Spatial Studies and Data Science"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search for \"AlloSpatial\" returned an article about \"Spatial cognition\" but no specific information about \"AlloSpatial\". This suggests that \"AlloSpatial\" may not be a well-known term on Wikipedia, or it might be a recent development not yet covered. Let me try searching more specifically for \"AlloSpatial\" as a model or system.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_89ee84af95e241539dfcdfb0",
      "function": {
       "name": "web_search",
       "arguments": "{\"query\": \"AlloSpatial model 2025 2026\"}"
@@ -69,7 +189,7 @@
    "reasoning_details": [
     {
      "type": "reasoning.text",
-     "text": "The search didn't return results. Let me try a different search query.",
+     "text": "The search for \"AlloSpatial\" returned an article about \"Spatial cognition\" but no specific information about \"AlloSpatial\". This suggests that \"AlloSpatial\" may not be a well-known term on Wikipedia, or it might be a recent development not yet covered. Let me try searching more specifically for \"AlloSpatial\" as a model or system.",
      "format": "unknown",
      "index": 0
     }
@@ -77,29 +197,29 @@
   },
   {
    "role": "tool",
-   "tool_call_id": "call_395c96b21cf349e089c86cdf",
-   "content": "[Quebec] Quebec (French: Québec) is Canada's largest province by area. Located in Central Canada, it is the country's only Francophone-majority province. It is home to speakers of Québécois French. It shares borders with Ontario to the west, Newfoundland and Labrador to the northeast, New Brunswick to the southeast and a coastal border with the territory of Nunavut. To the south, it borders the United States. Quebec has a population of around eight million, making it Canada's second-most populous province, behind Ontario. Between 1534 and 1763, what became Quebec was the French colony of Canada and was the most developed colony in New France. Following the Seven Years' War, Canada became a British colony, first as the Province of Quebec (1763–1791), then Lower Canada (1791–1841), and lastly part of the Province of Canada (1841–1867) as a result of the Lower Canada Rebellion. It was confederated with Ontario, Nova Scotia, and New Brunswick in 1867. Until the early 1960s, the Catholic Church played a large role in Quebec's social and cultural institutions. However, the Quiet Revolution of the 1960s to 1980s increased the role of the Government of Quebec in l'État québécois (the public authority of Quebec). The Government of Quebec functions within the context of Canada's Westminster system and is both a liberal democracy and a constitutional monarchy. The Premier of Quebec is head of government. Independence debates have played a large role in Quebec politics. Quebec society's cohesion  | other articles: Google Nest (smart speakers), Pride parade"
+   "tool_call_id": "call_89ee84af95e241539dfcdfb0",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
   },
   {
    "role": "assistant",
    "content": null,
    "refusal": null,
-   "reasoning": "The search didn't return relevant results. Let me try different search terms.",
+   "reasoning": "Let me try again.",
    "tool_calls": [
     {
      "type": "function",
      "index": 0,
-     "id": "call_dce5ca05e5bf4c17befe9bcd",
+     "id": "call_01ab777fa5954682b15d27da",
      "function": {
       "name": "web_search",
-      "arguments": "{\"query\": \"AlloSpatial spatial reasoning AI model paper\"}"
+      "arguments": "{\"query\": \"AlloSpatial benchmark spatial reasoning\"}"
      }
     }
    ],
    "reasoning_details": [
     {
      "type": "reasoning.text",
-     "text": "The search didn't return relevant results. Let me try different search terms.",
+     "text": "Let me try again.",
      "format": "unknown",
      "index": 0
     }
@@ -107,128 +227,8 @@
   },
   {
    "role": "tool",
-   "tool_call_id": "call_dce5ca05e5bf4c17befe9bcd",
-   "content": "nothing found"
-  },
-  {
-   "role": "assistant",
-   "content": null,
-   "refusal": null,
-   "reasoning": "Let me try another search approach.",
-   "tool_calls": [
-    {
-     "type": "function",
-     "index": 0,
-     "id": "call_6d58c36f4bf84f42a54621c3",
-     "function": {
-      "name": "web_search",
-      "arguments": "{\"query\": \"\\\"AlloSpatial\\\" spatial reasoning\"}"
-     }
-    }
-   ],
-   "reasoning_details": [
-    {
-     "type": "reasoning.text",
-     "text": "Let me try another search approach.",
-     "format": "unknown",
-     "index": 0
-    }
-   ]
-  },
-  {
-   "role": "tool",
-   "tool_call_id": "call_6d58c36f4bf84f42a54621c3",
-   "content": "nothing found"
-  },
-  {
-   "role": "assistant",
-   "content": null,
-   "refusal": null,
-   "reasoning": "Let me try searching for this differently.",
-   "tool_calls": [
-    {
-     "type": "function",
-     "index": 0,
-     "id": "call_0df0e68966384429b716b971",
-     "function": {
-      "name": "web_search",
-      "arguments": "{\"query\": \"AlloSpatial 3D reasoning benchmark\"}"
-     }
-    }
-   ],
-   "reasoning_details": [
-    {
-     "type": "reasoning.text",
-     "text": "Let me try searching for this differently.",
-     "format": "unknown",
-     "index": 0
-    }
-   ]
-  },
-  {
-   "role": "tool",
-   "tool_call_id": "call_0df0e68966384429b716b971",
-   "content": "nothing found"
-  },
-  {
-   "role": "assistant",
-   "content": null,
-   "refusal": null,
-   "reasoning": "Let me try broader searches.",
-   "tool_calls": [
-    {
-     "type": "function",
-     "index": 0,
-     "id": "call_0b33e76f052b452ca3914c0b",
-     "function": {
-      "name": "web_search",
-      "arguments": "{\"query\": \"AlloSpatial 2025\"}"
-     }
-    }
-   ],
-   "reasoning_details": [
-    {
-     "type": "reasoning.text",
-     "text": "Let me try broader searches.",
-     "format": "unknown",
-     "index": 0
-    }
-   ]
-  },
-  {
-   "role": "tool",
-   "tool_call_id": "call_0b33e76f052b452ca3914c0b",
-   "content": "[Quebec] Quebec (French: Québec) is Canada's largest province by area. Located in Central Canada, it is the country's only Francophone-majority province. It is home to speakers of Québécois French. It shares borders with Ontario to the west, Newfoundland and Labrador to the northeast, New Brunswick to the southeast and a coastal border with the territory of Nunavut. To the south, it borders the United States. Quebec has a population of around eight million, making it Canada's second-most populous province, behind Ontario. Between 1534 and 1763, what became Quebec was the French colony of Canada and was the most developed colony in New France. Following the Seven Years' War, Canada became a British colony, first as the Province of Quebec (1763–1791), then Lower Canada (1791–1841), and lastly part of the Province of Canada (1841–1867) as a result of the Lower Canada Rebellion. It was confederated with Ontario, Nova Scotia, and New Brunswick in 1867. Until the early 1960s, the Catholic Church played a large role in Quebec's social and cultural institutions. However, the Quiet Revolution of the 1960s to 1980s increased the role of the Government of Quebec in l'État québécois (the public authority of Quebec). The Government of Quebec functions within the context of Canada's Westminster system and is both a liberal democracy and a constitutional monarchy. The Premier of Quebec is head of government. Independence debates have played a large role in Quebec politics. Quebec society's cohesion  | other articles: Sapphism, Arrietty"
-  },
-  {
-   "role": "assistant",
-   "content": null,
-   "refusal": null,
-   "reasoning": "The search is not finding \"AlloSpatial\" on Wikipedia. Let me try different search terms.",
-   "tool_calls": [
-    {
-     "type": "function",
-     "index": 0,
-     "id": "call_530716c119954bf8a7d913f7",
-     "function": {
-      "name": "web_search",
-      "arguments": "{\"query\": \"AlloSpatial paper arxiv 2025\"}"
-     }
-    }
-   ],
-   "reasoning_details": [
-    {
-     "type": "reasoning.text",
-     "text": "The search is not finding \"AlloSpatial\" on Wikipedia. Let me try different search terms.",
-     "format": "unknown",
-     "index": 0
-    }
-   ]
-  },
-  {
-   "role": "tool",
-   "tool_call_id": "call_530716c119954bf8a7d913f7",
-   "content": "nothing found"
+   "tool_call_id": "call_01ab777fa5954682b15d27da",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
   },
   {
    "role": "user",
@@ -236,17 +236,30 @@
   },
   {
    "role": "assistant",
-   "content": "I was unable to find any information about \"AlloSpatial\" through my web searches, and I don't have reliable knowledge about this model in my training data. I cannot confidently answer this question without verified information.\n\nFINAL: I don't have sufficient information to answer this question accurately.",
+   "content": "I was unable to find information about \"AlloSpatial\" through my searches before the tools became unavailable. This may be a very recent paper, model, or system that I do not have reliable data on. Without access to the source material, I cannot provide an accurate answer about by how much AlloSpatial improves proprietary models in a training-free setting.\n\nFINAL: I do not have sufficient information to answer this question accurately.",
    "refusal": null,
-   "reasoning": "The user is asking about \"AlloSpatial\" and how much it improves proprietary models in a training-free setting. Despite multiple searches, I was unable to find any information about this. This appears to be either a very recent publication (perhaps2025 or 2026) that hasn't been indexed in Wikipedia or major search results, or it could be a hypothetical/fictional entity. I cannot answer this question from my knowledge, as I don't have information about \"AlloSpatial\" in my training data.\n\nI should be honest that I cannot find this information.",
+   "reasoning": "The user is asking about \"AlloSpatial\" and its improvement over proprietary models in a training-free setting. I was unable to find information about this through my searches. The term \"AlloSpatial\" does not appear to be a widely recognized or documented concept in the sources I was able to access. Without being able to verify this information through reliable sources, I should be honest about my limitations. However, the user has instructed me to answer from what I already know since tools are now unavailable.\n\nI don't have reliable information about \"AlloSpatial\" or its performance improvements over proprietary models. I cannot provide an accurate answer without access to the relevant source material.",
    "reasoning_details": [
     {
      "type": "reasoning.text",
-     "text": "The user is asking about \"AlloSpatial\" and how much it improves proprietary models in a training-free setting. Despite multiple searches, I was unable to find any information about this. This appears to be either a very recent publication (perhaps2025 or 2026) that hasn't been indexed in Wikipedia or major search results, or it could be a hypothetical/fictional entity. I cannot answer this question from my knowledge, as I don't have information about \"AlloSpatial\" in my training data.\n\nI should be honest that I cannot find this information.",
+     "text": "The user is asking about \"AlloSpatial\" and its improvement over proprietary models in a training-free setting. I was unable to find information about this through my searches. The term \"AlloSpatial\" does not appear to be a widely recognized or documented concept in the sources I was able to access. Without being able to verify this information through reliable sources, I should be honest about my limitations. However, the user has instructed me to answer from what I already know since tools are now unavailable.\n\nI don't have reliable information about \"AlloSpatial\" or its performance improvements over proprietary models. I cannot provide an accurate answer without access to the relevant source material.",
      "format": "unknown",
      "index": 0
     }
    ]
   }
- ]
+ ],
+ "row": {
+  "config": "cheap, search only",
+  "model": "mimo-v2.5",
+  "id": "research-11",
+  "source": "research",
+  "correct": false,
+  "steps": 9,
+  "tool_calls": 7,
+  "cost": 0.003479380800000001,
+  "seconds": 99.3,
+  "answer": "I do not have sufficient information to answer this question",
+  "gold": "18%"
+ }
 }

@@ -1,0 +1,43 @@
+{
+ "task": {
+  "id": "research-2",
+  "source": "research",
+  "question": "How many CUDA kernels did Kernel Forge optimize to outperform PyTorch eager mode?",
+  "answer": "14",
+  "evidence": "With only 50 optimization iterations per kernel, it optimizes 14 kernels to outperform PyTorch eager mode, reaching $1.52\\times$ on adaptive\\_avgpool2d in ResNet-50",
+  "page": "Kernel Forge (arXiv)",
+  "url": "https://arxiv.org/abs/2607.24762"
+ },
+ "answer": "The specific number of CUDA kernels optimized by \"Kernel Forge\" to outperform PyTorch eager mode is not publicly documented in a single verifiable figure. Kernel Forge appears to refer to a tool or project name that isn't widely recognized in mainstream AI/ML literature as of my knowledge cutoff date, so I cannot confirm an exact count.\n\nFINAL: No verifiable specific number available.",
+ "correct": false,
+ "cost": 0.004147599999999987,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions. No tools are available in this run, so answer from your own knowledge. Do not attempt to call any tools. Write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many CUDA kernels did Kernel Forge optimize to outperform PyTorch eager mode?"
+  },
+  {
+   "role": "assistant",
+   "content": "The specific number of CUDA kernels optimized by \"Kernel Forge\" to outperform PyTorch eager mode is not publicly documented in a single verifiable figure. Kernel Forge appears to refer to a tool or project name that isn't widely recognized in mainstream AI/ML literature as of my knowledge cutoff date, so I cannot confirm an exact count.\n\nFINAL: No verifiable specific number available.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ],
+ "row": {
+  "config": "strong, no tools",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-2",
+  "source": "research",
+  "correct": false,
+  "steps": 1,
+  "tool_calls": 0,
+  "cost": 0.004147599999999987,
+  "seconds": 16.4,
+  "answer": "No verifiable specific number available.",
+  "gold": "14"
+ }
+}

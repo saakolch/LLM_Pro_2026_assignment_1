@@ -1,0 +1,141 @@
+{
+ "task": {
+  "id": "research-23",
+  "source": "research",
+  "question": "By up to how many points did GLM-5.2 gain when equipped with JIT-Agent as its harness helper?",
+  "answer": "20.2",
+  "evidence": "Equipped with JIT-Agent as a harness helper, DeepSeek-V4-Flash surpasses GPT-5.6 on DeepSearchQA (+9.1) and OdysseyBench (+4.3), while the already strong GLM-5.2 gains up to +20.2 points.",
+  "page": "JIT-Agent (arXiv)",
+  "url": "https://arxiv.org/abs/2608.25593"
+ },
+ "answer": "FINAL: up to +20.2 points",
+ "correct": true,
+ "cost": 0.020835485616000002,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By up to how many points did GLM-5.2 gain when equipped with JIT-Agent as its harness helper?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "We need answer from recent AI research papers. GLM-5.2? JIT-Agent harness helper. Need arxiv search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_54huxrbzwltljy23al26gz2p",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"GLM-5.2 JIT-Agent harness helper\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer from recent AI research papers. GLM-5.2? JIT-Agent harness helper. Need arxiv search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_54huxrbzwltljy23al26gz2p",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Search retry with different keywords.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_i0lmd3sfdpsw1wqy6w6jh4yu",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"JIT-Agent GLM-5.2\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Search retry with different keywords.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_i0lmd3sfdpsw1wqy6w6jh4yu",
+   "content": "[SEC-bench Pro: Can Language Models Solve Long-Horizon Software Security Tasks?] Finding a real vulnerability in complicated systems is a challenging, long-horizon task that demands reasoning across an entire codebase to produce a working proof-of-concept (PoC). However, such critical security problems remain understudied. We present SEC-bench Pro, a benchmark that measures how well frontier models hunt real vulnerabilities by reproducing working PoC inputs from disclosed reports, where each task pairs a concrete bug with the instructions for triggering it. We also demonstrate the limitations of existing rule-based judges for grading generated PoCs, and propose a novel LLM-based judge for more precise grading. We instantiate SEC-bench Pro with 344 validated vulnerabilities across three targets, the V8 and SpiderMonkey browser engines and the Linux kernel, covering critical vulnerability families including memory-safety, sandbox, JIT, race-condition, and kernel-subsystem bugs. Across six frontier commercial and open-weight models and three coding agents, the strongest, Codex with GPT-5.5, solves 58% of instances overall. We also observe that Claude Code with Opus 4.6 tends to time out but solves most instances it completes. In contrast, open-weight models struggle; for example, GLM-5 solves only 13 of the 344 instances. During construction and evaluation, SEC-bench Pro also surfaced three vulnerabilities in V8 and SpiderMonkey, including a sandbox escape that was fixed and earned a $20,000 Google Vulnerability Reward Program bounty. More recently, SEC-bench Pro has been adopted by OpenAI to evaluate the long-horizon security capabilities of its newest models. Overall, SEC-bench Pro exposes where long-horizon vulnerability discovery succeeds, where it fails, and how different grading choices change the evaluation landscape, offering insights for secur (https://arxiv.org/abs/2605.26548v2)"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search didn't return JIT-Agent specifically. It mentions GLM-5. Maybe JIT-Agent is an agent harness. Need search specifically \"JIT-Agent\".",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_red28gv199telz6pmvwcvc5j",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"JIT-Agent\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search didn't return JIT-Agent specifically. It mentions GLM-5. Maybe JIT-Agent is an agent harness. Need search specifically \"JIT-Agent\".",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_red28gv199telz6pmvwcvc5j",
+   "content": "[JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution] Agent capability is not determined by the model alone. The agent harness, encompassing memory management, planning strategy, action protocol, and tool/skill orchestration, can dominate the contribution of the underlying foundation model. Yet harness design remains manual, task-specific, and fundamentally unscalable. We present JIT-Agent, a harness intelligence model trained to synthesize task-adaptive agent harnesses on the fly for arbitrary off-the-shelf agentic LLMs. We formalize the agent harness as a composable, machine-generatable artifact governed by a fixed four-module protocol, and train JIT-Agent to customize harnesses for a given task at hand, repair harnesses for stable and reliable execution, and self-evolve by distilling performance signals from an expanding archive of prior harness configurations. Equipped with JIT-Agent as a harness helper, DeepSeek-V4-Flash surpasses GPT-5.6 on DeepSearchQA (+9.1) and OdysseyBench (+4.3), while the already strong GLM-5.2 gains up to +20.2 points. Across controlled evaluations, JIT-Agent-generated harnesses are performance-competitive with mature agent runtimes such as OpenCode and Claude Code and consistently improve multi-scale model families of DeepSeek V4, Mimo-V2.5, and Qwen3.6. To our knowledge, JIT-Agent is the first model purpose-built for just-in-time harness generation, establishing harness intelligence as a trainable, transferable, and compounding dimension of agent capability orthogonal to model scaling. (https://arxiv.org/abs/2608.25593v2)\n---\n[A-JIT: Agentic Just-In-Time Software Construction] Traditional software delivery assumes a static paradigm: code is constructed prior to execution and deployed as a fixed artifact. We present Agentic Just-In-Time Software Construction (A-JIT), a paradigm that replaces static binaries with dynamic, software systems that can perpetually evolve to meet changing demands. In A-JIT, an application is an integrated assembly comprising code, a runtime harness, and an embedded AI agent that continuously observes system usage and live execution traces. Much like a traditional JIT compiler specializes machine code to runtime execution paths, A-JIT specializes software logic, workflows, and tool interfaces to meet the specific needs of the end-user. By integrating synthesis directly into the ambient application lifecycle, A-JIT enables applications to dynamically construct missing implementations, generate new capabilities on the fly, and continuously adapt to end-user behavior. We demonstrate how this model supports trace-driven human-AI co-construction and opens a new design space for adaptive, self-evolving software. (https://arxiv.org/abs/2609.10248v1)\n---\n[Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling] Computer-use agents (CUAs) automate tasks specified with natural language such as \"order the cheapest item from Taco Bell\" by generating sequences of calls to tools such as click, type, and scroll on a browser. Current implementations follow a sequential fetch-screenshot-execute loop where each iteration requires an LLM call, resulting in high latency and frequent errors from incorrect tool use. We present agent just-in-time (JIT) compilation, a system that compiles task descriptions directly into executable code that may include LLM calls, tool calls, and parallelization. Our approach comprises three components: (1) JIT-Planner, which generates multiple code plans, validates each against tool specifications, and selects the minimum-cost candidate; (2) JIT-Scheduler, which explores parallelization strategies via Monte Carlo cost estimation from learned latency distributions; and (3) an invariant-enforcing tool protocol specifying precondition and postcondition requirements to reduce the rate of incorrect tool use. Across five applications, JIT-Planner achieves $10.4\\times$ speedup and 28$\\%$ higher accuracy over Browser-Use, while JIT-Scheduler achieves $2.4\\times$ speedup and 9\\% higher accuracy over OpenAI CUA. (https://arxiv.org/abs/2605.21470v2)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: up to +20.2 points",
+   "refusal": null,
+   "reasoning": "The abstract says GLM-5.2 gains up to +20.2 points. Answer: up to 20.2 points. Need final line exactly.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract says GLM-5.2 gains up to +20.2 points. Answer: up to 20.2 points. Need final line exactly.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-23",
+  "source": "research",
+  "correct": true,
+  "steps": 4,
+  "tool_calls": 3,
+  "cost": 0.020835485616000002,
+  "seconds": 45.4,
+  "answer": "up to +20.2 points",
+  "gold": "20.2"
+ }
+}

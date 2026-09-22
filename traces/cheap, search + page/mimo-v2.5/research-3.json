@@ -1,0 +1,265 @@
+{
+ "task": {
+  "id": "research-3",
+  "source": "research",
+  "question": "What is the name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality?",
+  "answer": "AutoMEM",
+  "evidence": "We instantiate this insight in AutoMEM, an agentic memory harness with a self-managed tool interface that achieves the best cross-scenario generality among the systems we evaluate.",
+  "page": "AutoMEM (arXiv)",
+  "url": "https://arxiv.org/abs/2606.04315"
+ },
+ "answer": "I don't have reliable information about the specific system you're referring to. The term \"agentic memory harness with a self-managed tool interface\" doesn't match any system I can confidently identify from my training data, and I'm unable to verify through web search.\n\nFINAL: I cannot confidently identify this system without being able to search for verification.",
+ "correct": false,
+ "cost": 0.0034013223999999967,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What is the name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about \"the name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality\". This sounds like a specific AI or machine learning system or framework. The user mentions \"agentic memory harness\" which might be a term from a recent research paper or article. Since the user is asking about events of 2025 and 2026, this could be a recent development.\n\nI need to search for this term. Let's search for \"agentic memory harness self-managed tool interface cross-scenario generality\".",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_a34b694b9c2141d1a58286c6",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"agentic memory harness self-managed tool interface cross-scenario generality\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"the name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality\". This sounds like a specific AI or machine learning system or framework. The user mentions \"agentic memory harness\" which might be a term from a recent research paper or article. Since the user is asking about events of 2025 and 2026, this could be a recent development.\n\nI need to search for this term. Let's search for \"agentic memory harness self-managed tool interface cross-scenario generality\".",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_a34b694b9c2141d1a58286c6",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The Wikipedia search failed with a 429 error (too many requests). Let me try a simpler search query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_76a98930b896496a880edefd",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"agentic memory harness self-managed tool interface\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The Wikipedia search failed with a 429 error (too many requests). Let me try a simpler search query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_76a98930b896496a880edefd",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search is failing with HTTP 429 (rate limiting). Let me try again with a different approach.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_a49ca421bff3441eb60f936f",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"agentic memory harness tool interface\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search is failing with HTTP 429 (rate limiting). Let me try again with a different approach.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_a49ca421bff3441eb60f936f",
+   "content": "[AI agent] An AI agent is an artificial intelligence program that can pursue goals, use software or other tools, and take actions with some level of autonomy. Agentic AI contrasts with tool-like AI use for narrow, specific tasks such as answering questions - as with chatbots in the non-agentic forms that were common in 2023, or with traditional machine learning algorithms. While there is no universally agreed-upon definition of an AI agent, common attributes of AI agents include goal-directed behavior, use of external tools, the ability to interact with and modify an external environment, and the ability to autonomously perform multi-step tasks. Their control flow is frequently driven by large language models (LLMs). Agent systems may also include memory components, planning logic, tool interfaces, and orchestration software for coordinating agent components. A common application of AI agents is task automation: for example, booking travel plans based on a user's prompted request. | other articles: DeepSeek, Computer"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search returned a general article about AI agents. That's not specific enough. Let me search for \"agentic memory harness\" more specifically.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_80f52b49aa164b849ae9c240",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"agentic memory\\\" harness\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search returned a general article about AI agents. That's not specific enough. Let me search for \"agentic memory harness\" more specifically.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_80f52b49aa164b849ae9c240",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search is failing. Let me try a broader search for \"memory harness\" in the context of AI agents.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_b12c3040672a444697ee226c",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"memory harness AI agent tool interface\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search is failing. Let me try a broader search for \"memory harness\" in the context of AI agents.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_b12c3040672a444697ee226c",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "It seems the Wikipedia search is being rate limited. Let me wait a moment and try again with a different query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_f9c1902bf7244d59bfb39f6d",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"cross-scenario generality memory harness\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "It seems the Wikipedia search is being rate limited. Let me wait a moment and try again with a different query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_f9c1902bf7244d59bfb39f6d",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search keeps failing with rate limiting. Let me try again with a slightly different query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_92165100bf3c471e8dacf77f",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"self-managed tool interface agent benchmark\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search keeps failing with rate limiting. Let me try again with a slightly different query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_92165100bf3c471e8dacf77f",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "user",
+   "content": "Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>."
+  },
+  {
+   "role": "assistant",
+   "content": "I don't have reliable information about the specific system you're referring to. The term \"agentic memory harness with a self-managed tool interface\" doesn't match any system I can confidently identify from my training data, and I'm unable to verify through web search.\n\nFINAL: I cannot confidently identify this system without being able to search for verification.",
+   "refusal": null,
+   "reasoning": "The user is asking about an \"agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality.\" This sounds like it could be referring to a specific AI research project or framework, possibly from a recent benchmark or paper about AI agents with memory capabilities.\n\nHowever, I'm not confident I have specific knowledge about this particular term. The phrase \"agentic memory harness\" doesn't match any well-known system I'm aware of from my training data up to early 2025. This could be:\n\n1. A specific research paper or project from 2025-2026 that I don't have information about\n2. A term from a benchmark evaluation of AI agent memory systems\n\nI cannot verify this information through web search since the tools are unavailable. I should be honest that I don't have reliable information about this specific system.\n\nGiven the very specific nature of the question and my inability to search for it, I'll have to admit I don't know the answer with confidence.\n\nWait - let me think more carefully. The question mentions \"agentic memory harness\" which could be related to research on memory systems for AI agents. There have been various benchmarks and frameworks for evaluating agent memory, but I'm not confident about a specific system with a \"self-managed tool interface\" that achieved \"best cross-scenario generality.\"\n\nI don't have enough confidence to provide a specific answer here. I should be transparent about this limitation.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about an \"agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality.\" This sounds like it could be referring to a specific AI research project or framework, possibly from a recent benchmark or paper about AI agents with memory capabilities.\n\nHowever, I'm not confident I have specific knowledge about this particular term. The phrase \"agentic memory harness\" doesn't match any well-known system I'm aware of from my training data up to early 2025. This could be:\n\n1. A specific research paper or project from 2025-2026 that I don't have information about\n2. A term from a benchmark evaluation of AI agent memory systems\n\nI cannot verify this information through web search since the tools are unavailable. I should be honest that I don't have reliable information about this specific system.\n\nGiven the very specific nature of the question and my inability to search for it, I'll have to admit I don't know the answer with confidence.\n\nWait - let me think more carefully. The question mentions \"agentic memory harness\" which could be related to research on memory systems for AI agents. There have been various benchmarks and frameworks for evaluating agent memory, but I'm not confident about a specific system with a \"self-managed tool interface\" that achieved \"best cross-scenario generality.\"\n\nI don't have enough confidence to provide a specific answer here. I should be transparent about this limitation.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, search + page",
+  "model": "mimo-v2.5",
+  "id": "research-3",
+  "source": "research",
+  "correct": false,
+  "steps": 9,
+  "tool_calls": 7,
+  "cost": 0.0034013223999999967,
+  "seconds": 104.4,
+  "answer": "I cannot confidently identify this system without being able",
+  "gold": "AutoMEM"
+ }
+}

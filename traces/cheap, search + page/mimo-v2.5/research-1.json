@@ -1,0 +1,265 @@
+{
+ "task": {
+  "id": "research-1",
+  "source": "research",
+  "question": "What is the name of the multimodal unified structured execution harness for MLLMs introduced in June 2026?",
+  "answer": "MUSE",
+  "evidence": "We introduce MUSE, a multimodal unified structured execution harness that wraps any off-the-shelf MLLM with composable modules for task representation, visual processing, perception tool use, structured parsing, deterministic verification, and verifier-guided repair, without any model retraining.",
+  "page": "MUSE: A Unified Agentic Harness for MLLMs (arXiv)",
+  "url": "https://arxiv.org/abs/2606.03005"
+ },
+ "answer": "I was unable to find a definitive answer through my searches. The question refers to a very specific system described as a \"multimodal unified structured execution harness for MLLMs\" introduced in June 2026, but I could not locate reliable information about it, and the search tools became unavailable before I could further investigate.\n\nFINAL: Unable to determine the answer with confidence due to search tool limitations and no reliable source found.",
+ "correct": false,
+ "cost": 0.0027711152000000003,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What is the name of the multimodal unified structured execution harness for MLLMs introduced in June 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about a \"multimodal unified structured execution harness for MLLMs\" introduced in June 2026. I need to search for this specific term.\n\nLet me start with a web search for this exact phrase or concept.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_c96caf7d34324121b6f8118b",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"multimodal unified structured execution harness MLLMs June 2026\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a \"multimodal unified structured execution harness for MLLMs\" introduced in June 2026. I need to search for this specific term.\n\nLet me start with a web search for this exact phrase or concept.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_c96caf7d34324121b6f8118b",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try different search terms. \"MLLM\" likely refers to Multimodal Large Language Models. Let me search for structured execution harness for multimodal models.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_b747a3ec58504416a7643cb1",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"structured execution harness multimodal large language models 2026\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try different search terms. \"MLLM\" likely refers to Multimodal Large Language Models. Let me search for structured execution harness for multimodal models.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_b747a3ec58504416a7643cb1",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try another search with slightly different terms.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_fd47f17fcc1e4c6e934b370a",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"MULSE multimodal unified structured execution harness\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try another search with slightly different terms.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_fd47f17fcc1e4c6e934b370a",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try another search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_59e5469864004acabdec9f65",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"MLLM harness multimodal 2026\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try another search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_59e5469864004acabdec9f65",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try searching for \"MULSE\" as an acronym since it could stand for \"MUltimodal Unified Structured Execution\". Or maybe search more broadly.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_0248039315894856917fe387",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"MULSE multimodal structured execution\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try searching for \"MULSE\" as an acronym since it could stand for \"MUltimodal Unified Structured Execution\". Or maybe search more broadly.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_0248039315894856917fe387",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try a different search approach.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5b35314a12234504b65c4437",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"multimodal unified\\\" \\\"structured execution\\\" harness MLLM\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try a different search approach.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5b35314a12234504b65c4437",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try some different search terms.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_c637b549d0b849638a9e54db",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"multimodal execution harness benchmark MLLM 2026\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try some different search terms.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_c637b549d0b849638a9e54db",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "user",
+   "content": "Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>."
+  },
+  {
+   "role": "assistant",
+   "content": "I was unable to find a definitive answer through my searches. The question refers to a very specific system described as a \"multimodal unified structured execution harness for MLLMs\" introduced in June 2026, but I could not locate reliable information about it, and the search tools became unavailable before I could further investigate.\n\nFINAL: Unable to determine the answer with confidence due to search tool limitations and no reliable source found.",
+   "refusal": null,
+   "reasoning": "The user is asking about a \"multimodal unified structured execution harness for MLLMs\" introduced in June 2026. I tried multiple searches but couldn't find the answer due to Wikipedia being unavailable or returning no results.\n\nI don't have reliable information about this specific tool/framework from my training data. The question is very specific and refers to something from June 2026, which is beyond my training cutoff.\n\nI should be honest that I cannot determine this answer with confidence rather than guessing.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a \"multimodal unified structured execution harness for MLLMs\" introduced in June 2026. I tried multiple searches but couldn't find the answer due to Wikipedia being unavailable or returning no results.\n\nI don't have reliable information about this specific tool/framework from my training data. The question is very specific and refers to something from June 2026, which is beyond my training cutoff.\n\nI should be honest that I cannot determine this answer with confidence rather than guessing.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, search + page",
+  "model": "mimo-v2.5",
+  "id": "research-1",
+  "source": "research",
+  "correct": false,
+  "steps": 9,
+  "tool_calls": 7,
+  "cost": 0.0027711152000000003,
+  "seconds": 92.1,
+  "answer": "Unable to determine the answer with confidence due to search",
+  "gold": "MUSE"
+ }
+}

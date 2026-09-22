@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-28",
+  "source": "research",
+  "question": "What score does the openJiuwen harness achieve on Terminal-Bench 2.1?",
+  "answer": "87.19%",
+  "evidence": "We systematically evaluate openJiuwen on SWE-bench Verified and Terminal-Bench 2.1, where it achieves 82.6% and 87.19%, respectively, exceeding the strongest selected official-leaderboard point estimates by 3.4 and 3.39 percentage points.",
+  "page": "openJiuwen (arXiv)",
+  "url": "https://arxiv.org/abs/2608.27969"
+ },
+ "answer": "Based on the abstract of the paper *\"openJiuwen: Beyond Static Harnesses for Long-Horizon Coding Agents\"* (arXiv:2608.27969), the openJiuwen harness achieves a score of **87.19%** on Terminal-Bench 2.1, exceeding the strongest selected official-leaderboard point estimates by 3.39 percentage points.\n\nFINAL: 87.19%",
+ "correct": true,
+ "cost": 0.0005787320000000002,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What score does the openJiuwen harness achieve on Terminal-Bench 2.1?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about the score that \"openJiuwen harness\" achieves on Terminal-Bench 2.1. Let me search for this.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_d289f84f554c43098b58832e",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"openJiuwen Terminal-Bench 2.1\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about the score that \"openJiuwen harness\" achieves on Terminal-Bench 2.1. Let me search for this.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_d289f84f554c43098b58832e",
+   "content": "[openJiuwen: Beyond Static Harnesses for Long-Horizon Coding Agents] Long-horizon coding agents operate over evolving repository states while increasingly relying on heterogeneous capabilities, delegated agents, and multi-agent coordination. These trends pose two complementary challenges for the agent harness. First, developers need to compose capabilities, reconfigure execution logic, and scale increasingly complex agent systems without repeatedly rebuilding orchestration. Second, complex coding tasks continuously produce new evidence---such as semantic diagnostics, execution outcomes, task progress, and changing context relevance---that should dynamically influence subsequent runtime decisions. We characterize these challenges as Structural Composability and Runtime Adaptivity. We present openJiuwen, an open-source harness designed for both developer composability and adaptive task execution. openJiuwen provides a shared execution substrate and Rail-based capability composition across single agents, delegated sub-agents, and Swarm Flow, enabling developers to construct sophisticated agent harnesses under common execution semantics. It further adapts framework-controlled runtime decisions around a fixed model policy, allowing evolving evidence to dynamically affect context, feedback, and task control toward successful completion. We systematically evaluate openJiuwen on SWE-bench Verified and Terminal-Bench 2.1, where it achieves 82.6% and 87.19%, respectively, exceeding the strongest selected official-leaderboard point estimates by 3.4 and 3.39 percentage points. These results show that openJiuwen achieves strong performance on complex coding tasks while providing a composable and adaptive harness design. (https://arxiv.org/abs/2608.27969v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "Based on the abstract of the paper *\"openJiuwen: Beyond Static Harnesses for Long-Horizon Coding Agents\"* (arXiv:2608.27969), the openJiuwen harness achieves a score of **87.19%** on Terminal-Bench 2.1, exceeding the strongest selected official-leaderboard point estimates by 3.39 percentage points.\n\nFINAL: 87.19%",
+   "refusal": null,
+   "reasoning": "The abstract clearly states that openJiuwen achieves 87.19% on Terminal-Bench 2.1.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract clearly states that openJiuwen achieves 87.19% on Terminal-Bench 2.1.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-28",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0005787320000000002,
+  "seconds": 17.1,
+  "answer": "87.19%",
+  "gold": "87.19%"
+ }
+}

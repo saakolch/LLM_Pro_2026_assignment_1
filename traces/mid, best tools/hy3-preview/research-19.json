@@ -1,0 +1,145 @@
+{
+ "task": {
+  "id": "research-19",
+  "source": "research",
+  "question": "By what percentage does the harness cut blended cost per task, holding models constant, according to 'The Harness Effect' study?",
+  "answer": "41%",
+  "evidence": "Holding models constant, the harness cuts blended cost per task 41% ($0.21->$0.12), median wall-clock 44% (48s->27s), and tokens per task 38% (14.2k->8.8k), with task-completion quality at parity (0.78->0.81, directional at this sample size).",
+  "page": "The Harness Effect (arXiv)",
+  "url": "https://arxiv.org/abs/2607.06906"
+ },
+ "answer": "Since the web search tools became unavailable and I do not have a reliable recollection of the specific \"The Harness Effect\" study or its exact quantified percentage reduction in blended cost per task (holding models constant), I cannot provide the precise figure from memory.\n\nFINAL: Unknown",
+ "correct": false,
+ "cost": 0.007970400000000002,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By what percentage does the harness cut blended cost per task, holding models constant, according to 'The Harness Effect' study?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about \"The Harness Effect\" study and a specific percentage reduction in blended cost per task, holding models constant. This is a 2025/2026 event. I need to search for it.\n\nLet me search Wikipedia",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-a0aa1811f07be762",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"The Harness Effect study blended cost per task\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"The Harness Effect\" study and a specific percentage reduction in blended cost per task, holding models constant. This is a 2025/2026 event. I need to search for it.\n\nLet me search Wikipedia",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-a0aa1811f07be762",
+   "content": "[Diving weighting system] A diving weighting system is ballast weight added to a diver or diving equipment to counteract excess buoyancy. They may be used by divers or on equipment such as diving bells, submersibles or camera housings. Divers wear diver weighting systems, weight belts or weights to counteract the buoyancy of other diving equipment, such as diving suits and aluminium diving cylinders, and buoyancy of the diver. The scuba diver must be weighted sufficiently to be slightly negatively buoyant at the end of the dive when most of the breathing gas has been used, and needs to maintain neutral buoyancy at safety or obligatory decompression stops. During the dive, buoyancy is controlled by adjusting the volume of air in the buoyancy compensation device (BCD) and, if worn, the dry suit, in order to achieve negative, neutral, or positive buoyancy as needed. The amount of weight required is determined by the maximum overall positive buoyancy of the fully equipped but unweighted diver anticipated during the dive, with an empty buoyancy compensator and normally inflated dry suit. This depends on the diver's mass and body composition, buoyancy of other diving gear worn (especially the diving suit), water salinity, weight of breathing gas consumed, and water temperature. It normally is in the range of 2 kilograms (4.4 lb) to 15 kilograms (33 lb). The weights can be distributed to trim the diver to suit the purpose of the dive. Surface-supplied divers may be more heavily weighted to facilitate underwa | other articles: Collective intelligence, Biodiesel"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "That search didn't return the right article. Let me try a different query",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-82cf20a74773939a",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Harness Effect AI agents cost reduction\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "That search didn't return the right article. Let me try a different query",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-82cf20a74773939a",
+   "content": "[Workplace wellness] Workplace wellness, also known as corporate wellbeing outside the United States, is a broad term used to describe activities, programs, and/or organizational policies designed to support healthy behavior in the workplace. This often involves health education, medical screenings, weight management programs, and onsite fitness programs or facilities or off site retreats. It can also include flex-time for exercise, providing onsite kitchen and eating areas, offering healthy food options in vending machines, holding \"walk and talk\" meetings, and offering financial and other incentives for participation. Companies most commonly subsidize workplace wellness programs in the hope they will reduce costs on employee health benefits like health insurance in the long run. Existing research has failed to establish a clinically significant difference in health outcomes, proof of a return on investment, or demonstration of causal effects of treatments. The largest benefits have been observed in groups that were already attempting to manage health concerns, which indicates a strong possibility of selection bias. | other articles: Glossary of artificial intelligence, Algorithmic bias"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Still not right. Let me try a more specific search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-bb90fc29ed0f82a8",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Harness Effect\\\" LLM orchestration\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Still not right. Let me try a more specific search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-bb90fc29ed0f82a8",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "user",
+   "content": "Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>."
+  },
+  {
+   "role": "assistant",
+   "content": "Since the web search tools became unavailable and I do not have a reliable recollection of the specific \"The Harness Effect\" study or its exact quantified percentage reduction in blended cost per task (holding models constant), I cannot provide the precise figure from memory.\n\nFINAL: Unknown",
+   "refusal": null,
+   "reasoning": "The user is asking about \"The Harness Effect\" study and by what percentage the harness cuts blended cost per task, holding models constant. However, I was instructed never to answer from memory and to use web search. But the web search tools failed (Wikipedia unavailable / HTTP 429 or irrelevant results). Now the system says \"Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>.\"\n\nI need to answer from what I know. But I don't actually have reliable knowledge of a specific study called \"The Harness Effect\" that quantifies a percentage reduction in blended cost per task holding models constant. This sounds like it could be from a specific AI industry report, maybe related to agentic harnesses or orchestration frameworks (like using a harness to route between models). I don't recall a specific named study \"The Harness Effect\" with a specific percentage.\n\nWait, maybe this is a reference to something like the \"Harness Effect\" from an AI report (e.g., by Anthropic, OpenAI, or a consulting firm) about how using a harness (orchestration layer) reduces cost. Without the web search, I have to guess or state I don't know. But the instruction says \"Answer from what you already know, last line FINAL: <answer>.\"\n\nIf I don't know, I should say I don't know or provide a best guess? Usually, if I don't know, I should state that. But the format requires FINAL: <answer>.\n\nLet me think if I've heard of \"The Harness Effect\". In 2025-2026 context, there might be a study about AI agent harnesses. \"Blended cost per task\" sounds like using a mix of models (blended) and a harness reducing cost. Holding models constant means the same models are used, but the harness (routing/optimization) cuts cost.\n\nI genuinely do not have this fact in memory. Since tools are unavailable, I must answer from what I know, which is essentially nothing reliable. I will state that the information is not available / I don't know the specific percentage.\n\nBut maybe the user expects a specific number from a known article. Could it be 38%? 50%? I recall some article about \"The Harness Effect\" possibly from a newsletter or a paper. Let me try to recall: There's a concept in AI where \"harnessing\" multiple models or using a control harness reduces cost. I think there was a study by something like \"Menlo Ventures\" or \"a16z\" or \"OpenAI\" about agent harnesses. Actually, I recall a report maybe from \"The Harness Effect\" that said something like a 45% reduction in cost. But I'm not sure.\n\nGiven the instruction to answer from what I know, and I don't know, I should be honest. But the prompt says \"Answer from what you already know\". If I don't know, I can say \"I do not have information on this specific study's percentage.\"\n\nHowever, the final line must be FINAL: <answer>. So I could write FINAL: Unknown / Not available.\n\nWait, the original instruction: \"Never answer from memory: use web_search... When done, write the last line as FINAL: <short answer>.\" Then the intervention: \"Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>.\"\n\nSo I must provide an answer from memory. Since I don't have a clear memory, I will state that I cannot recall the specific percentage, but if forced, maybe I can infer it's not something I know.\n\nActually, let me think harder. Is there a well-known \"Harness Effect\" in 2025? Possibly related to \"Claude\" or \"GPT\" harness. Could be from an article on Wikipedia \"2025 in artificial intelligence\" or similar. The web search failed. I recall hearing about a \"Harness Effect\" study that found something like a 30% or 40% cost reduction. But this is purely a guess.\n\nBetter to be truthful: I don't know. FINAL: Unknown (specific percentage not recalled).\n\nBut the user asked \"By what percentage...\". A short answer would be a percentage or \"unknown\". I'll put \"unknown\".\n\nWait, maybe I should check if there's any vague memory: \"The Harness Effect\" might be a paper by \"Russell et al.\" or a blog post by \"Simon Willison\" or \"Liran Hason\" (PromptLayer) or \"LangChain\". Blended cost per task holding models constant... This sounds like a metric from an eval. For example, using a harness to dynamically route between cheap and expensive models while holding the model set constant reduces blended cost by X%. I think I saw something about 22% or 37%. I really don't know.\n\nGiven the constraints, I will answer that I do not have this information from memory.\n\nLet me construct the response: state that tools were unavailable and from memory I do not have the specific figure, then FINAL: Not known.\n\nBut the instruction says \"Answer from what you already know\". If I know nothing, I say so.\n\nI'll write:\nSince web search tools are unavailable and I do not have a reliable memory of the specific \"Harness Effect\" study's percentage reduction in blended cost per task holding models constant, I cannot provide the exact figure.\nFINAL: Unknown\n\nBut maybe I should just give a placeholder? No, accuracy is better.\n\nLet me double-check if \"The Harness Effect\" is a known thing in my training data. I have training data up to 2024 and some 2025 info. \"The Harness Effect\" might be a term coined in 2025. It's possible it's from an article like \"The Harness Effect: How AI Agent Harnesses Cut Costs\" published in 2025. If I don't recall, I don't recall.\n\nI will output the honest answer.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"The Harness Effect\" study and by what percentage the harness cuts blended cost per task, holding models constant. However, I was instructed never to answer from memory and to use web search. But the web search tools failed (Wikipedia unavailable / HTTP 429 or irrelevant results). Now the system says \"Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>.\"\n\nI need to answer from what I know. But I don't actually have reliable knowledge of a specific study called \"The Harness Effect\" that quantifies a percentage reduction in blended cost per task holding models constant. This sounds like it could be from a specific AI industry report, maybe related to agentic harnesses or orchestration frameworks (like using a harness to route between models). I don't recall a specific named study \"The Harness Effect\" with a specific percentage.\n\nWait, maybe this is a reference to something like the \"Harness Effect\" from an AI report (e.g., by Anthropic, OpenAI, or a consulting firm) about how using a harness (orchestration layer) reduces cost. Without the web search, I have to guess or state I don't know. But the instruction says \"Answer from what you already know, last line FINAL: <answer>.\"\n\nIf I don't know, I should say I don't know or provide a best guess? Usually, if I don't know, I should state that. But the format requires FINAL: <answer>.\n\nLet me think if I've heard of \"The Harness Effect\". In 2025-2026 context, there might be a study about AI agent harnesses. \"Blended cost per task\" sounds like using a mix of models (blended) and a harness reducing cost. Holding models constant means the same models are used, but the harness (routing/optimization) cuts cost.\n\nI genuinely do not have this fact in memory. Since tools are unavailable, I must answer from what I know, which is essentially nothing reliable. I will state that the information is not available / I don't know the specific percentage.\n\nBut maybe the user expects a specific number from a known article. Could it be 38%? 50%? I recall some article about \"The Harness Effect\" possibly from a newsletter or a paper. Let me try to recall: There's a concept in AI where \"harnessing\" multiple models or using a control harness reduces cost. I think there was a study by something like \"Menlo Ventures\" or \"a16z\" or \"OpenAI\" about agent harnesses. Actually, I recall a report maybe from \"The Harness Effect\" that said something like a 45% reduction in cost. But I'm not sure.\n\nGiven the instruction to answer from what I know, and I don't know, I should be honest. But the prompt says \"Answer from what you already know\". If I don't know, I can say \"I do not have information on this specific study's percentage.\"\n\nHowever, the final line must be FINAL: <answer>. So I could write FINAL: Unknown / Not available.\n\nWait, the original instruction: \"Never answer from memory: use web_search... When done, write the last line as FINAL: <short answer>.\" Then the intervention: \"Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>.\"\n\nSo I must provide an answer from memory. Since I don't have a clear memory, I will state that I cannot recall the specific percentage, but if forced, maybe I can infer it's not something I know.\n\nActually, let me think harder. Is there a well-known \"Harness Effect\" in 2025? Possibly related to \"Claude\" or \"GPT\" harness. Could be from an article on Wikipedia \"2025 in artificial intelligence\" or similar. The web search failed. I recall hearing about a \"Harness Effect\" study that found something like a 30% or 40% cost reduction. But this is purely a guess.\n\nBetter to be truthful: I don't know. FINAL: Unknown (specific percentage not recalled).\n\nBut the user asked \"By what percentage...\". A short answer would be a percentage or \"unknown\". I'll put \"unknown\".\n\nWait, maybe I should check if there's any vague memory: \"The Harness Effect\" might be a paper by \"Russell et al.\" or a blog post by \"Simon Willison\" or \"Liran Hason\" (PromptLayer) or \"LangChain\". Blended cost per task holding models constant... This sounds like a metric from an eval. For example, using a harness to dynamically route between cheap and expensive models while holding the model set constant reduces blended cost by X%. I think I saw something about 22% or 37%. I really don't know.\n\nGiven the constraints, I will answer that I do not have this information from memory.\n\nLet me construct the response: state that tools were unavailable and from memory I do not have the specific figure, then FINAL: Not known.\n\nBut the instruction says \"Answer from what you already know\". If I know nothing, I say so.\n\nI'll write:\nSince web search tools are unavailable and I do not have a reliable memory of the specific \"Harness Effect\" study's percentage reduction in blended cost per task holding models constant, I cannot provide the exact figure.\nFINAL: Unknown\n\nBut maybe I should just give a placeholder? No, accuracy is better.\n\nLet me double-check if \"The Harness Effect\" is a known thing in my training data. I have training data up to 2024 and some 2025 info. \"The Harness Effect\" might be a term coined in 2025. It's possible it's from an article like \"The Harness Effect: How AI Agent Harnesses Cut Costs\" published in 2025. If I don't recall, I don't recall.\n\nI will output the honest answer.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "mid, best tools",
+  "model": "hy3-preview",
+  "id": "research-19",
+  "source": "research",
+  "correct": false,
+  "steps": 5,
+  "tool_calls": 3,
+  "cost": 0.007970400000000002,
+  "seconds": 47.2,
+  "answer": "Unknown",
+  "gold": "41%"
+ }
+}

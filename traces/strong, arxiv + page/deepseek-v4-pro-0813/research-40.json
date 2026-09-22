@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-40",
+  "source": "research",
+  "question": "What was the best exact-match performance on the sentencing tasks of the TAM benchmark?",
+  "answer": "15.5%",
+  "evidence": "We evaluate general-purpose prompting approaches, including retrieval-augmented generation, ReAct-style prompting, and an agent-harness baseline on GPT-5, and find that the best exact-match performance remains extremely low: 1% on ICD-10-CM coding and 15.5% on sentencing tasks.",
+  "page": "Tasks over Application Manuals (arXiv)",
+  "url": "https://arxiv.org/abs/2609.13005"
+ },
+ "answer": "FINAL: 15.5%",
+ "correct": true,
+ "cost": 0.005281992935999999,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What was the best exact-match performance on the sentencing tasks of the TAM benchmark?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user asks: \"What was the best exact-match performance on the sentencing tasks of the TAM benchmark?\" This is about a recent AI research paper (2025-2026). TAM benchmark - likely \"Temporal Action... \" or \"TAM: ...\" Let me search arXiv.\n\nI need to find TAM benchmark, sentencing tasks. Let me search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_mopna6nrv6opgdzlmu8peun1",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"TAM benchmark sentencing tasks exact-match\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user asks: \"What was the best exact-match performance on the sentencing tasks of the TAM benchmark?\" This is about a recent AI research paper (2025-2026). TAM benchmark - likely \"Temporal Action... \" or \"TAM: ...\" Let me search arXiv.\n\nI need to find TAM benchmark, sentencing tasks. Let me search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_mopna6nrv6opgdzlmu8peun1",
+   "content": "[Tasks over Application Manuals: Revealing Gaps in Long-Horizon Procedural Reasoning for Language Models] Large language models (LLMs) have achieved strong performance on a wide range of natural language tasks, and recent benchmarks suggest that they are increasingly adept at multi-hop reasoning. However, these benchmarks are typically short-horizon, requiring only a small number of retrieval or inference steps, and provide limited evidence of reliability on real-world tasks that involve following manuals spanning hundreds of pages with complex, interdependent guidelines. In this paper, we introduce Tasks over Application Manuals (TAM), a benchmark for evaluating long-horizon procedural reasoning. We construct TAM by curating real-world tasks from two domains: ICD-10-CM clinical coding (mapping medical conditions to diagnostic codes) and U.S. federal sentencing (computing crime sentencing guideline outcomes, specifically offense levels), with human-validated labels. Each task requires following an authoritative manual with tens of thousands of rules and executing a sequence of interdependent steps across different sections to produce an exact answer. We evaluate general-purpose prompting approaches, including retrieval-augmented generation, ReAct-style prompting, and an agent-harness baseline on GPT-5, and find that the best exact-match performance remains extremely low: 1% on ICD-10-CM coding and 15.5% on sentencing tasks. These results show that current benchmarks may overestimate LLM reasoning ability and miss a key challenge: reliably following long, rule-based procedures. The complete TAM data and code are publicly available. (https://arxiv.org/abs/2609.13005v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 15.5%",
+   "refusal": null,
+   "reasoning": "The abstract states best exact-match performance on sentencing tasks is 15.5%. Answer: 15.5%.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract states best exact-match performance on sentencing tasks is 15.5%. Answer: 15.5%.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-40",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.005281992935999999,
+  "seconds": 15.0,
+  "answer": "15.5%",
+  "gold": "15.5%"
+ }
+}

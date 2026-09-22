@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-37",
+  "source": "research",
+  "question": "Which open-source agent framework does the HLS-Eval agentic evaluation flow build on?",
+  "answer": "mini-swe-agent",
+  "evidence": "We therefore extend HLS-Eval with an agentic evaluation flow built on the open-source mini-swe-agent framework.",
+  "page": "HLS-Eval (arXiv)",
+  "url": "https://arxiv.org/abs/2609.09526"
+ },
+ "answer": "The answer is found directly in the abstract of the first paper. It states: \"We therefore extend HLS-Eval with an agentic evaluation flow built on the open-source **mini-swe-agent** framework.\"\n\nFINAL: mini-swe-agent",
+ "correct": true,
+ "cost": 0.00044684079999999984,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "Which open-source agent framework does the HLS-Eval agentic evaluation flow build on?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me search for HLS-Eval to find information about this agentic evaluation flow.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_105e172498894d2384ccefbb",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"HLS-Eval agentic evaluation\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me search for HLS-Eval to find information about this agentic evaluation flow.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_105e172498894d2384ccefbb",
+   "content": "[Benchmarking Agentic HLS Design Tasks With HLS-Eval] Large language models (LLMs) and AI agents are increasingly explored for hardware design, including high-level digital design. While most work targets code generation and editing for hardware description languages (HDLs), our prior work introduced HLS-Eval, an open-source benchmark for evaluating LLMs on high-level synthesis (HLS) design tasks. Those evaluations, however, focused on zero-shot generation and editing, leaving open how agents achieve HLS design tasks. We therefore extend HLS-Eval with an agentic evaluation flow built on the open-source mini-swe-agent framework. The flow lets HLS design agents use file-editing tools, invoke a C++ compiler for self-verification, and iteratively refine designs during inference, while logging agent traces for analysis of cost, token usage, and iteration count. We present initial results on the existing HLS-Eval benchmarks. In our initial evaluation, we find open-source LLMs paired with an agentic harness solve every simple HLS code generation task in our evaluation, underscoring the need to expand benchmark difficulty as model capabilities advance. Analyzing traces from passing and failing runs, we show how model size, token usage, and trajectory length relate to design pass rates. These results establish a foundation for agentic HLS design and motivate harder benchmarks and new agentic tooling as model capabilities progress. (https://arxiv.org/abs/2609.09526v1)\n---\n[ContractHIL-HLS: Contract-Aligned Multi-Agent Workflow with Hardware-in-the-Loop Feedback for HLS Design] This paper presents ContractHIL-HLS, a contract-aligned multi-agent workflow for practical high-level synthesis (HLS) engineering. The workflow makes three contributions. First, it introduces a structured contract as the semantic-alignment and task-execution artifact that translates natural language requirements into explicit interfaces, constraints, validation checks, and rollback rules. Second, it incorporates hardware information into the feedback loop by feeding HLS, Vivado, PYNQ runtime, power, and failure evidence back into generation, thereby extending LLM-assisted HLS from kernel code toward system- and board-level closure. Third, it decomposes agents by semantic lowering and execution tasks rather than by conversational roles: a Contract Agent lowers natural language into the contract, an HTML Agent renders the contract as persistent structured HTML, and a Hardware-in-the-Loop Agent implements and revises the design with measured evidence. We evaluate ContractHIL-HLS in two parts. On 94 locally executable HLS-Eval tasks, the structured contract provides the largest small design gain, improving the estimated single-sample testbench pass rate from 64.0% to 70.2%; the full flow reaches 70.4% pass@1 and 76.6% pass@5. Because HLS-Eval does not exercise board-level design, we also validate ContractHIL-HLS on a board tested ML-KEM/ML-DSA post-quantum cryptography (PQC) secure-message accelerator, where the retained dual-bitstream organization reduces six-message average text runtime from 207.3 ms to 52.4 ms with positive routed WNS on both images while preserving decrypted-message verification. We open-source our work at BJUT-CS316-LAB/ContractHIL-HLS (https://github.com/BJUT-CS316-LAB/ContractHIL-HLS). (https://arxiv.org/abs/2607.25283v1)\n---\n[FPGAgent: An LLM-Assisted Framework for Autonomous HLS Code Generation and Verification in FPGA Environments] Large language models (LLMs) have shown substantial promise for high-level synthesis (HLS) code generation, but most existing approaches validate only simulation or synthesis results. Because of timing and place-and-route constraints, \\emph{HLS code that passes simulation and synthesis may still fail to produce deployable, runnable designs on real FPGA platforms}. Moreover, the lack of public benchmarks has limited many evaluations to small, self-curated test suites. We propose FPGAgent, a multi-agent framework tailored to real FPGA environments for autonomous HLS coding with end-to-end executability validation. To the best of our knowledge, FPGAgent is \\emph{the first task-specification-to-executable HLS generation framework experimentally validated on a well-established benchmark}. Given a natural-language task specification, FPGAgent injects HLS-specific knowledge and employs evolutionary search to iteratively derive reliable HLS kernel implementations. It then generates a C++ validation program to verify functional correctness, diagnoses potential defects, and guides targeted repairs. Finally, it synthesizes host code for compilation and board-level execution on FPGA hardware. We comprehensively evaluate FPGAgent with five established LLMs on HLS-Eval, a benchmark containing 78 tasks across multiple domains, and verify board-level executability on a real FPGA platform. Compared with existing baselines, FPGAgent improves the synthesizable rate by 16.9% on average, executability by 26.7%, and functional correctness by 30.6%. These results show that FPGAgent substantially improves the practical usability of LLM-based HLS generation and demonstrates the value of end-to-end validation. (https://arxiv.org/abs/2608.23630v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "The answer is found directly in the abstract of the first paper. It states: \"We therefore extend HLS-Eval with an agentic evaluation flow built on the open-source **mini-swe-agent** framework.\"\n\nFINAL: mini-swe-agent",
+   "refusal": null,
+   "reasoning": "The first result clearly states: \"We therefore extend HLS-Eval with an agentic evaluation flow built on the open-source mini-swe-agent framework.\"",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The first result clearly states: \"We therefore extend HLS-Eval with an agentic evaluation flow built on the open-source mini-swe-agent framework.\"",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-37",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.00044684079999999984,
+  "seconds": 15.9,
+  "answer": "mini-swe-agent",
+  "gold": "mini-swe-agent"
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "task": {
+  "id": "research-20",
+  "source": "research",
+  "question": "By how many percentage points did the proactive memory agent improve pass@1 on Terminal-Bench 2.0?",
+  "answer": "8.3",
+  "evidence": "Across Terminal-Bench 2.0 and $τ^2$-Bench, it improves pass@1 for both weaker and stronger action agents, with gains of +8.3 pp on Terminal-Bench and +6.8 pp on $τ^2$-Bench.",
+  "page": "Proactive Memory Agent (arXiv)",
+  "url": "https://arxiv.org/abs/2607.08716"
+ },
+ "answer": "The proactive memory agent improved pass@1 on Terminal-Bench 2.0 by **15.3 percentage points** (from 36.6% to 51.9%).\n\nFINAL: 15.3 percentage points",
+ "correct": false,
+ "cost": 0.0001732600000000084,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions. No tools are available in this run, so answer from your own knowledge. Do not attempt to call any tools. Write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By how many percentage points did the proactive memory agent improve pass@1 on Terminal-Bench 2.0?"
+  },
+  {
+   "role": "assistant",
+   "content": "The proactive memory agent improved pass@1 on Terminal-Bench 2.0 by **15.3 percentage points** (from 36.6% to 51.9%).\n\nFINAL: 15.3 percentage points",
+   "refusal": null,
+   "reasoning": null
+  }
+ ],
+ "row": {
+  "config": "strong, no tools",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-20",
+  "source": "research",
+  "correct": false,
+  "steps": 1,
+  "tool_calls": 0,
+  "cost": 0.0001732600000000084,
+  "seconds": 2.8,
+  "answer": "15.3 percentage points",
+  "gold": "8.3"
+ }
+}

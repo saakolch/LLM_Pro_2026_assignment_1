@@ -1,0 +1,43 @@
+{
+ "task": {
+  "id": "research-34",
+  "source": "research",
+  "question": "What share of skill bundle tokens does SkillZip Pro remove with no quality loss?",
+  "answer": "38%",
+  "evidence": "On a production content-moderation skill evaluated by our industrial multi-round harness, \\method removes \\hl{38\\%} of skill bundle tokens and \\hl{10.4\\%} of end-to-end per-run tokens with no quality loss, while an unprotected 71\\% configuration loses up to 26 accuracy points to one-sided false positives.",
+  "page": "SkillZip Pro (arXiv)",
+  "url": "https://arxiv.org/abs/2608.30785"
+ },
+ "answer": "The question references \"SkillZip Pro\" and \"skill bundle tokens,\" which do not correspond to any widely known product, service, or standard terminology as of my knowledge cutoff in early 2025. Without a verified source or official specification, I cannot provide a specific percentage or share.  \n\nFINAL: No verified share is available; the claim cannot be confirmed from known sources.",
+ "correct": false,
+ "cost": 0.0002563399999999938,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions. No tools are available in this run, so answer from your own knowledge. Do not attempt to call any tools. Write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What share of skill bundle tokens does SkillZip Pro remove with no quality loss?"
+  },
+  {
+   "role": "assistant",
+   "content": "The question references \"SkillZip Pro\" and \"skill bundle tokens,\" which do not correspond to any widely known product, service, or standard terminology as of my knowledge cutoff in early 2025. Without a verified source or official specification, I cannot provide a specific percentage or share.  \n\nFINAL: No verified share is available; the claim cannot be confirmed from known sources.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ],
+ "row": {
+  "config": "strong, no tools",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-34",
+  "source": "research",
+  "correct": false,
+  "steps": 1,
+  "tool_calls": 0,
+  "cost": 0.0002563399999999938,
+  "seconds": 2.5,
+  "answer": "No verified share is available; the claim cannot be confirme",
+  "gold": "38%"
+ }
+}

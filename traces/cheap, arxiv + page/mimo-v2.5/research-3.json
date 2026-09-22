@@ -1,0 +1,95 @@
+{
+ "task": {
+  "id": "research-3",
+  "source": "research",
+  "question": "What is the name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality?",
+  "answer": "AutoMEM",
+  "evidence": "We instantiate this insight in AutoMEM, an agentic memory harness with a self-managed tool interface that achieves the best cross-scenario generality among the systems we evaluate.",
+  "page": "AutoMEM (arXiv)",
+  "url": "https://arxiv.org/abs/2606.04315"
+ },
+ "answer": "The answer is clearly stated in the abstract of the paper **\"Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline\"** (arXiv:2606.04315). The system described as \"an agentic memory harness with a self-managed tool interface that achieves the best cross-scenario generality\" is **AutoMEM**.\n\nFINAL: AutoMEM",
+ "correct": true,
+ "cost": 0.001255492,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What is the name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The question asks about an \"agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality.\" This sounds like a specific system or benchmark name. Let me search for relevant papers.\n\nI'll use keywords like \"agentic memory harness\" and \"tool interface\" and \"cross-scenario generality\".",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_3f9923b48c8b4fed9845de0d",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"agentic memory harness tool interface generality\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_f2fe54c6ad3f44889b52efc3",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"memory harness agentic self-managed tool interface\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The question asks about an \"agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality.\" This sounds like a specific system or benchmark name. Let me search for relevant papers.\n\nI'll use keywords like \"agentic memory harness\" and \"tool interface\" and \"cross-scenario generality\".",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_3f9923b48c8b4fed9845de0d",
+   "content": "[Code as Agent Harness] Recent large language models (LLMs) have demonstrated strong capabilities in understanding and generating code, from competitive programming to repository-level software engineering. In emerging agentic systems, code is no longer only a target output. It increasingly serves as an operational substrate for agent reasoning, acting, environment modeling, and execution-based verification. We frame this shift through the lens of agent harnesses and introduce code as agent harness: a unified view that centers code as the basis for agent infrastructure. To systematically study this perspective, we organize the survey around three connected layers. First, we study the harness interface, where code connects agents to reasoning, action, and environment modeling. Second, we examine harness mechanisms: planning, memory, and tool use for long-horizon execution, together with feedback-driven control and optimization that make harness reliable and adaptive. Third, we discuss scaling the harness from single-agent systems to multi-agent settings, where shared code artifacts support multi-agent coordination, review, and verification. Across these layers, we summarize representative methods and practical applications of code as agent harness, spanning coding assistants, GUI/OS automation, embodied agents, scientific discovery, personalization and recommendation, DevOps, and enterprise workflows. We further outline open challenges for harness engineering, including evaluation beyond final task success, verification under incomplete feedback, regression-free harness improvement, consistent shared state across multiple agents, human oversight for safety-critical actions, and extensions to multimodal environments. By centering code as the harness of agentic AI, this survey provides a unified  (https://arxiv.org/abs/2605.18747v1)\n---\n[Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline] LLM agents accumulate histories that outgrow their context windows, motivating a growing literature on memory systems. Yet most existing designs are tuned to a single scenario (multi-session chat or a single trajectory format), and there is little evidence that they generalize across the heterogeneous trajectories agents encounter in deployment. We revisit eight memory systems plus an agentic harness for search problems, on five scenarios: single-turn QA, multi-session chat, agentic-trajectory QA, memory stress tests, and long-horizon agentic tasks. The harness, which self-manages flat text-file storage via tool calls, achieves the best cross-task ranking, suggesting that memory performance hinges on giving the agent active control over storage and retrieval rather than on a passive store behind a fixed pipeline. We instantiate this insight in AutoMEM, an agentic memory harness with a self-managed tool interface that achieves the best cross-scenario generality among the systems we evaluate. (https://arxiv.org/abs/2606.04315v1)\n---\n[RetroAgent: Harnessing LLMs to Search Over Structured Memory for Agentic Retrosynthesis Planning] Multi-step retrosynthesis planning seeks to decompose a target molecule into commercially available building blocks through a sequence of feasible reactions. The vast combinatorial search space makes this task challenging even for expert chemists. Traditional methods combine tree search with offline-trained value networks that score candidates in isolation, without reasoning about complete multi-step routes. Recent work leverages Large Language Models (LLMs) for this task, but relies on simple interfaces that limit exploration of the full search space. We introduce RetroAgent, an LLM agent that bridges symbolic search and neural reasoning through a harness with structured memory. Through memory and chemistry tools, the agent observes the full search state, including explored routes, available alternatives, and properties of intermediates, enabling informed decisions grounded in both global progress and domain knowledge. Experiments on in-distribution and out-of-distribution benchmarks demonstrate that RetroAgent delivers strong performance and generalization. (https://arxiv.org/abs/2607.14512v2)"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_f2fe54c6ad3f44889b52efc3",
+   "content": "[Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline] LLM agents accumulate histories that outgrow their context windows, motivating a growing literature on memory systems. Yet most existing designs are tuned to a single scenario (multi-session chat or a single trajectory format), and there is little evidence that they generalize across the heterogeneous trajectories agents encounter in deployment. We revisit eight memory systems plus an agentic harness for search problems, on five scenarios: single-turn QA, multi-session chat, agentic-trajectory QA, memory stress tests, and long-horizon agentic tasks. The harness, which self-manages flat text-file storage via tool calls, achieves the best cross-task ranking, suggesting that memory performance hinges on giving the agent active control over storage and retrieval rather than on a passive store behind a fixed pipeline. We instantiate this insight in AutoMEM, an agentic memory harness with a self-managed tool interface that achieves the best cross-scenario generality among the systems we evaluate. (https://arxiv.org/abs/2606.04315v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "The answer is clearly stated in the abstract of the paper **\"Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline\"** (arXiv:2606.04315). The system described as \"an agentic memory harness with a self-managed tool interface that achieves the best cross-scenario generality\" is **AutoMEM**.\n\nFINAL: AutoMEM",
+   "refusal": null,
+   "reasoning": "The answer is clearly AutoMEM from the paper \"Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline\".",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The answer is clearly AutoMEM from the paper \"Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline\".",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-3",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 2,
+  "cost": 0.001255492,
+  "seconds": 17.8,
+  "answer": "AutoMEM",
+  "gold": "AutoMEM"
+ }
+}

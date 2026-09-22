@@ -1,0 +1,231 @@
+{
+ "task": {
+  "id": "research-39",
+  "source": "research",
+  "question": "How many unique optimization examples per benchmark does COBRA-Skills use?",
+  "answer": "50",
+  "evidence": "Across six heterogeneous agent benchmarks and three target models, COBRA-Skills consistently achieves the strongest average performance among compared methods, while reducing optimization cost by 55--58\\% relative to SkillOpt and using only 50 unique optimization examples per benchmark.",
+  "page": "COBRA-Skills (arXiv)",
+  "url": "https://arxiv.org/abs/2609.11682"
+ },
+ "answer": "I wasn't able to find information about COBRA-Skills through Wikipedia searches. This appears to be a specialized research topic (likely a recent paper or system related to AI/optimization) that doesn't have a Wikipedia article, and my search tools are limited to Wikipedia content. I don't have enough information to answer your question.\n\nFINAL: I was unable to find information about how many unique optimization examples per benchmark COBRA-Skills uses, as this topic does not appear to have a Wikipedia article and my available search tools are limited to Wikipedia.",
+ "correct": false,
+ "cost": 0.0017061799999999946,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many unique optimization examples per benchmark does COBRA-Skills use?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about COBRA-Skills, which appears to be a specific system or framework related to optimization examples per benchmark. I need to search for information about this. Let me use web_search to find relevant articles.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_9b065fe28f1645f4a93ac305",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA-Skills optimization examples per benchmark\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about COBRA-Skills, which appears to be a specific system or framework related to optimization examples per benchmark. I need to search for information about this. Let me use web_search to find relevant articles.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_9b065fe28f1645f4a93ac305",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search didn't return results. Let me try a broader search for \"COBRA-Skills\" alone to see what it is.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_544ebbd261154eee8a99365d",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA-Skills\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search didn't return results. Let me try a broader search for \"COBRA-Skills\" alone to see what it is.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_544ebbd261154eee8a99365d",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "It seems the Wikipedia search isn't finding anything about COBRA-Skills. This might be a very specific or niche topic. Let me try searching with different terms to find relevant information.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_2cbdf27cfb10428b82b68244",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA Skills benchmark optimization\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "It seems the Wikipedia search isn't finding anything about COBRA-Skills. This might be a very specific or niche topic. Let me try searching with different terms to find relevant information.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_2cbdf27cfb10428b82b68244",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search is failing due to rate limiting. Let me try again after a moment.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_835ab14c9fc74429a8a2308c",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA benchmark dataset\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search is failing due to rate limiting. Let me try again after a moment.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_835ab14c9fc74429a8a2308c",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search keeps failing. Let me try once more.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_f3f8ae222c1f443094f951ff",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA-Skills optimization benchmark unique examples\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search keeps failing. Let me try once more.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_f3f8ae222c1f443094f951ff",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Unfortunately, I'm encountering rate limiting on the Wikipedia search and I'm not finding information about \"COBRA-Skills\" in the results I've received. This appears to be a very specific research paper or system that may not have a Wikipedia article. Let me try once more with a different query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_03a41818b8f54d34bb08dcd2",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"COBRA Skills scientific computing optimization\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Unfortunately, I'm encountering rate limiting on the Wikipedia search and I'm not finding information about \"COBRA-Skills\" in the results I've received. This appears to be a very specific research paper or system that may not have a Wikipedia article. Let me try once more with a different query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_03a41818b8f54d34bb08dcd2",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": "I wasn't able to find information about COBRA-Skills through Wikipedia searches. This appears to be a specialized research topic (likely a recent paper or system related to AI/optimization) that doesn't have a Wikipedia article, and my search tools are limited to Wikipedia content. I don't have enough information to answer your question.\n\nFINAL: I was unable to find information about how many unique optimization examples per benchmark COBRA-Skills uses, as this topic does not appear to have a Wikipedia article and my available search tools are limited to Wikipedia.",
+   "refusal": null,
+   "reasoning": "I'm not finding any results for \"COBRA-Skills\" through Wikipedia searches. This could be a very recent research paper, a specialized tool, or something that doesn't have a Wikipedia article. Since I'm limited to Wikipedia searches with the available tools, I'm unable to find the specific information about the number of unique optimization examples per benchmark that COBRA-Skills uses.\n\nI should let the user know that I couldn't find this information.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "I'm not finding any results for \"COBRA-Skills\" through Wikipedia searches. This could be a very recent research paper, a specialized tool, or something that doesn't have a Wikipedia article. Since I'm limited to Wikipedia searches with the available tools, I'm unable to find the specific information about the number of unique optimization examples per benchmark that COBRA-Skills uses.\n\nI should let the user know that I couldn't find this information.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, search only",
+  "model": "mimo-v2.5",
+  "id": "research-39",
+  "source": "research",
+  "correct": false,
+  "steps": 7,
+  "tool_calls": 6,
+  "cost": 0.0017061799999999946,
+  "seconds": 74.8,
+  "answer": "I was unable to find information about how many unique optim",
+  "gold": "50"
+ }
+}

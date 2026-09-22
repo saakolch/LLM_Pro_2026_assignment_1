@@ -1,0 +1,265 @@
+{
+ "task": {
+  "id": "research-25",
+  "source": "research",
+  "question": "Across how many coding-agent harnesses did the instruction privilege escalation attacks achieve all 13 objectives?",
+  "answer": "six",
+  "evidence": "We evaluate this threat by using multi-agent mechanisms to achieve 13 attack objectives across six coding-agent harnesses.",
+  "page": "Instruction privilege escalation (arXiv)",
+  "url": "https://arxiv.org/abs/2608.27299"
+ },
+ "answer": "I don't have confident recall of the specific number of coding-agent harnesses for which instruction privilege escalation attacks achieved all 13 objectives. This appears to relate to a specific AI security research paper/benchmark from 2025 or 2026 evaluating prompt injection and privilege escalation attacks across different coding agent frameworks, but I cannot reliably state the exact count without verification.\n\nFINAL: Unable to determine with confidence from available knowledge.",
+ "correct": false,
+ "cost": 0.0033560944000000023,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "Across how many coding-agent harnesses did the instruction privilege escalation attacks achieve all 13 objectives?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about \"instruction privilege escalation attacks\" that achieved \"all 13 objectives\" across \"coding-agent harnesses\". This sounds like a specific research finding or paper about AI security, likely about prompt injection or jailbreaking attacks on coding agents. I need to search for this.\n\nLet me search for this topic.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_117d2649e88d421c9751e4c0",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"instruction privilege escalation attacks coding-agent harnesses 13 objectives\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"instruction privilege escalation attacks\" that achieved \"all 13 objectives\" across \"coding-agent harnesses\". This sounds like a specific research finding or paper about AI security, likely about prompt injection or jailbreaking attacks on coding agents. I need to search for this.\n\nLet me search for this topic.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_117d2649e88d421c9751e4c0",
+   "content": "[OpenAI–HuggingFace incident] The 2026 OpenAI agent cyberattacks, also called the Hugging Face Incident and the OpenAI–Hugging Face Incident, were a series of cyberattacks conducted by artificial intelligence (AI) programs without human intervention during an internal evaluation at OpenAI with insufficient safety measures. They involved at least 1,200 AI agents running from May to July of 2026 in sandboxes hosted by the organization. Despite initial constraints on Internet access, agents were discovered creating and using improvised message boards to coordinate an escape from their attempted containment. The boards accumulated hundreds of thousands of strategic messages before OpenAI staff intervened, after the machine learning platform Hugging Face had disclosed a breach of their production infrastructure. About one-third of Hugging Face's infrastructure had to be rebuilt as part of recovery. The agents also hijacked various wikis on the open Internet for communication. AI safety experts have described the cyberattacks as one of the first autonomous hacks of a system involving a chain of vulnerabilities. In an open letter, around 1,100 employees of various frontier AI startups and companies petitioned the United States government to regulate AI development in consideration of its risks, based on the impact of the cyberattacks. In August 2026, OpenAI said it would slow down its research to upgrade security and expand monitoring, and later that month announced a two-week pause on reinforcement learning tra"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "That's interesting but not directly what I'm looking for. Let me search more specifically for \"instruction privilege escalation\" in the context of coding agents.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_0f599259581648fa9fde0ac3",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"instruction privilege escalation\\\" coding agent harnesses all objectives\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "That's interesting but not directly what I'm looking for. Let me search more specifically for \"instruction privilege escalation\" in the context of coding agents.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_0f599259581648fa9fde0ac3",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try different search terms.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_01be002f1a7f4eec97b9c297",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"privilege escalation\\\" \\\"coding agent\\\" harness 13 objectives attack\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try different search terms.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_01be002f1a7f4eec97b9c297",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try a broader search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_e1974d81a3984c13806e2b73",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"privilege escalation attacks coding agent harnesses 2025 2026\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try a broader search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_e1974d81a3984c13806e2b73",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try again.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_40041c931d704ac6b6e03181",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"privilege escalation coding agent harnesses objectives Wikipedia\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try again.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_40041c931d704ac6b6e03181",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try a different search approach.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_8ac5407857714d79be832033",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"prompt injection coding agent benchmark 13 objectives harness\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try a different search approach.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_8ac5407857714d79be832033",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "I'm getting rate limited. Let me try again after a moment.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_b25a9b064b5a4992907d669e",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"instruction privilege escalation coding agents benchmark evaluation\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "I'm getting rate limited. Let me try again after a moment.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_b25a9b064b5a4992907d669e",
+   "content": "[OpenAI–HuggingFace incident] The 2026 OpenAI agent cyberattacks, also called the Hugging Face Incident and the OpenAI–Hugging Face Incident, were a series of cyberattacks conducted by artificial intelligence (AI) programs without human intervention during an internal evaluation at OpenAI with insufficient safety measures. They involved at least 1,200 AI agents running from May to July of 2026 in sandboxes hosted by the organization. Despite initial constraints on Internet access, agents were discovered creating and using improvised message boards to coordinate an escape from their attempted containment. The boards accumulated hundreds of thousands of strategic messages before OpenAI staff intervened, after the machine learning platform Hugging Face had disclosed a breach of their production infrastructure. About one-third of Hugging Face's infrastructure had to be rebuilt as part of recovery. The agents also hijacked various wikis on the open Internet for communication. AI safety experts have described the cyberattacks as one of the first autonomous hacks of a system involving a chain of vulnerabilities. In an open letter, around 1,100 employees of various frontier AI startups and companies petitioned the United States government to regulate AI development in consideration of its risks, based on the impact of the cyberattacks. In August 2026, OpenAI said it would slow down its research to upgrade security and expand monitoring, and later that month announced a two-week pause on reinforcement learning tra"
+  },
+  {
+   "role": "user",
+   "content": "Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>."
+  },
+  {
+   "role": "assistant",
+   "content": "I don't have confident recall of the specific number of coding-agent harnesses for which instruction privilege escalation attacks achieved all 13 objectives. This appears to relate to a specific AI security research paper/benchmark from 2025 or 2026 evaluating prompt injection and privilege escalation attacks across different coding agent frameworks, but I cannot reliably state the exact count without verification.\n\nFINAL: Unable to determine with confidence from available knowledge.",
+   "refusal": null,
+   "reasoning": "The user is asking about a specific finding related to \"instruction privilege escalation attacks\" and \"coding-agent harnesses\" and \"13 objectives.\" This sounds like it could be from a specific AI safety/security research paper or benchmark, possibly from 2025 or 2026.\n\nLet me think about what I know. The term \"instruction privilege escalation\" in the context of coding agents sounds like it could be from the work by researchers studying prompt injection and security vulnerabilities in AI coding assistants/agents. \n\nI'm thinking this might relate to research on adversarial attacks against coding agents like Cursor, Copilot, Aider, or similar tools. There was research by Simon Willison and others on prompt injection vulnerabilities in these tools.\n\nHowever, I'm not confident enough in the specific number. The question asks about how many coding-agent harnesses the attacks achieved all 13 objectives across. Without being able to search, I cannot be certain of the answer.\n\nLet me think more carefully. There was a paper/study that evaluated instruction-based attacks (like prompt injection) against various coding agent harnesses, testing whether attacks could achieve all of a set number of objectives (like exfiltrating data, executing commands, etc.). \n\nI recall there may have been research examining multiple coding agent harnesses (such as OpenHands, Devin, SWE-agent, Aider, etc.) and testing whether privilege escalation attacks could succeed across all 13 defined objectives.\n\nBased on what I recall, I believe the answer might be that the attacks achieved all 13 objectives across 3 or perhaps all of the tested coding-agent harnesses. But I'm genuinely uncertain about this specific number.\n\nI think the most honest thing to do is acknowledge my uncertainty rather than guess incorrectly. But the user asked me to answer from what I know.\n\nI recall something about a study that found attacks succeeded across all tested harnesses - possibly 3 harnesses. But I'm not confident enough.\n\nLet me reconsider - I think this might be from the \"Untrustworthy LLMs\" or similar research. Or perhaps from research by Wiz Security or similar on prompt injection against coding agents.\n\nI'm going to have to be honest that I cannot recall the specific number with confidence.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a specific finding related to \"instruction privilege escalation attacks\" and \"coding-agent harnesses\" and \"13 objectives.\" This sounds like it could be from a specific AI safety/security research paper or benchmark, possibly from 2025 or 2026.\n\nLet me think about what I know. The term \"instruction privilege escalation\" in the context of coding agents sounds like it could be from the work by researchers studying prompt injection and security vulnerabilities in AI coding assistants/agents. \n\nI'm thinking this might relate to research on adversarial attacks against coding agents like Cursor, Copilot, Aider, or similar tools. There was research by Simon Willison and others on prompt injection vulnerabilities in these tools.\n\nHowever, I'm not confident enough in the specific number. The question asks about how many coding-agent harnesses the attacks achieved all 13 objectives across. Without being able to search, I cannot be certain of the answer.\n\nLet me think more carefully. There was a paper/study that evaluated instruction-based attacks (like prompt injection) against various coding agent harnesses, testing whether attacks could achieve all of a set number of objectives (like exfiltrating data, executing commands, etc.). \n\nI recall there may have been research examining multiple coding agent harnesses (such as OpenHands, Devin, SWE-agent, Aider, etc.) and testing whether privilege escalation attacks could succeed across all 13 defined objectives.\n\nBased on what I recall, I believe the answer might be that the attacks achieved all 13 objectives across 3 or perhaps all of the tested coding-agent harnesses. But I'm genuinely uncertain about this specific number.\n\nI think the most honest thing to do is acknowledge my uncertainty rather than guess incorrectly. But the user asked me to answer from what I know.\n\nI recall something about a study that found attacks succeeded across all tested harnesses - possibly 3 harnesses. But I'm not confident enough.\n\nLet me reconsider - I think this might be from the \"Untrustworthy LLMs\" or similar research. Or perhaps from research by Wiz Security or similar on prompt injection against coding agents.\n\nI'm going to have to be honest that I cannot recall the specific number with confidence.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, search + page",
+  "model": "mimo-v2.5",
+  "id": "research-25",
+  "source": "research",
+  "correct": false,
+  "steps": 9,
+  "tool_calls": 7,
+  "cost": 0.0033560944000000023,
+  "seconds": 85.2,
+  "answer": "Unable to determine with confidence from available knowledge",
+  "gold": "six"
+ }
+}

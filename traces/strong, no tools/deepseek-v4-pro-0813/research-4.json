@@ -1,0 +1,43 @@
+{
+ "task": {
+  "id": "research-4",
+  "source": "research",
+  "question": "How many tasks does SentinelBench, the June 2026 benchmark for long-running monitoring agents, contain?",
+  "answer": "100",
+  "evidence": "SentinelBench contains 100 tasks across 10 synthetic web environments, including email, calendars, finance, professional networking, and entertainment.",
+  "page": "SentinelBench (arXiv)",
+  "url": "https://arxiv.org/abs/2606.05342"
+ },
+ "answer": "I’m not aware of a benchmark called “SentinelBench” scheduled for June 2026. It may be a hypothetical, internal, or not widely publicized benchmark. Without a reliable public source, I cannot confirm the number of tasks it contains.  \n\nFINAL: Unknown / not publicly documented as of my knowledge cutoff.",
+ "correct": false,
+ "cost": 0.0002406400000000003,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions. No tools are available in this run, so answer from your own knowledge. Do not attempt to call any tools. Write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many tasks does SentinelBench, the June 2026 benchmark for long-running monitoring agents, contain?"
+  },
+  {
+   "role": "assistant",
+   "content": "I’m not aware of a benchmark called “SentinelBench” scheduled for June 2026. It may be a hypothetical, internal, or not widely publicized benchmark. Without a reliable public source, I cannot confirm the number of tasks it contains.  \n\nFINAL: Unknown / not publicly documented as of my knowledge cutoff.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ],
+ "row": {
+  "config": "strong, no tools",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-4",
+  "source": "research",
+  "correct": false,
+  "steps": 1,
+  "tool_calls": 0,
+  "cost": 0.0002406400000000003,
+  "seconds": 2.5,
+  "answer": "Unknown / not publicly documented as of my knowledge cutoff.",
+  "gold": "100"
+ }
+}

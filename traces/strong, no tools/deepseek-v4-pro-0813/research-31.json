@@ -1,0 +1,43 @@
+{
+ "task": {
+  "id": "research-31",
+  "source": "research",
+  "question": "What mean AUROC does verbal confidence achieve at trajectory completion?",
+  "answer": "0.85",
+  "evidence": "We evaluate mainstream uncertainty signals on deep-research tasks and find that verbal confidence reliably distinguishes failures at trajectory completion, achieving a mean AUROC of 0.85, whereas all evaluated signals offer limited predictive value earlier in execution, with none exceeding a mean AUROC of 0.60 at 50% trajectory progress.",
+  "page": "Last Step Matters (arXiv)",
+  "url": "https://arxiv.org/abs/2608.29685"
+ },
+ "answer": "AUROC (Area Under the Receiver Operating Characteristic curve) for verbal confidence at trajectory completion typically achieves a **mean AUROC around 0.70–0.75** in common calibration studies when predicting correctness from self-reported confidence. However, values vary by dataset and setup, and without a specific paper or benchmark, there is no single definitive number.\n\nFINAL: ~0.70–0.75",
+ "correct": false,
+ "cost": 0.007638682000000008,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions. No tools are available in this run, so answer from your own knowledge. Do not attempt to call any tools. Write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What mean AUROC does verbal confidence achieve at trajectory completion?"
+  },
+  {
+   "role": "assistant",
+   "content": "AUROC (Area Under the Receiver Operating Characteristic curve) for verbal confidence at trajectory completion typically achieves a **mean AUROC around 0.70–0.75** in common calibration studies when predicting correctness from self-reported confidence. However, values vary by dataset and setup, and without a specific paper or benchmark, there is no single definitive number.\n\nFINAL: ~0.70–0.75",
+   "refusal": null,
+   "reasoning": null
+  }
+ ],
+ "row": {
+  "config": "strong, no tools",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-31",
+  "source": "research",
+  "correct": false,
+  "steps": 1,
+  "tool_calls": 0,
+  "cost": 0.007638682000000008,
+  "seconds": 4.1,
+  "answer": "~0.70–0.75",
+  "gold": "0.85"
+ }
+}

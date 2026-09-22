@@ -1,0 +1,111 @@
+{
+ "task": {
+  "id": "research-20",
+  "source": "research",
+  "question": "By how many percentage points did the proactive memory agent improve pass@1 on Terminal-Bench 2.0?",
+  "answer": "8.3",
+  "evidence": "Across Terminal-Bench 2.0 and $τ^2$-Bench, it improves pass@1 for both weaker and stronger action agents, with gains of +8.3 pp on Terminal-Bench and +6.8 pp on $τ^2$-Bench.",
+  "page": "Proactive Memory Agent (arXiv)",
+  "url": "https://arxiv.org/abs/2607.08716"
+ },
+ "answer": "FINAL: 8.3 percentage points.",
+ "correct": true,
+ "cost": 0.0016009000000000002,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By how many percentage points did the proactive memory agent improve pass@1 on Terminal-Bench 2.0?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user wants to know the improvement in pass@1 on Terminal-Bench 2.0 by the \"proactive memory agent\". I need to search for this on arxiv using the system/benchmark name. Let's search for \"proactive memory agent\" and \"Terminal-Bench 2.0\".",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5d95ea076eb34fa68dfd6f8c",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"proactive memory agent Terminal-Bench 2.0\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user wants to know the improvement in pass@1 on Terminal-Bench 2.0 by the \"proactive memory agent\". I need to search for this on arxiv using the system/benchmark name. Let's search for \"proactive memory agent\" and \"Terminal-Bench 2.0\".",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5d95ea076eb34fa68dfd6f8c",
+   "content": "[Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents] In long-horizon tasks, decision-relevant state is often scattered across an expanding trajectory, while the action agent must surface it and act. As trajectories grow, task requirements, environment facts, prior attempts, diagnoses, and open subgoals can be buried in the context window or pushed beyond it, failing to influence decisions when needed. We call this failure mode \"behavioral state decay\". We study memory as an active intervention mechanism rather than passive retrieval. A separate memory agent runs alongside an unmodified action agent, updating a structured memory bank from the recent trajectory and deciding whether to inject a memory-grounded reminder or remain silent. The module is plug-and-play with frontier action agents and existing agent harnesses. Across Terminal-Bench 2.0 and $τ^2$-Bench, it improves pass@1 for both weaker and stronger action agents, with gains of +8.3 pp on Terminal-Bench and +6.8 pp on $τ^2$-Bench. Ablations show that selective intervention outperforms passive bank exposure, always-on injection, advisor-only guidance, and general retrieval. As an early step toward open-weight memory policies, we train Qwen3.5-27B on SETA using SFT and GRPO, improving validation reward and achieving partial transfer to Terminal-Bench. (https://arxiv.org/abs/2607.08716v1)"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking for the improvement in pass@1 on Terminal-Bench 2.0 by the proactive memory agent.\nFrom the search results, the abstract states: \"Across Terminal-Bench 2.0 and $\\tau^2$-Bench, it improves pass@1 for both weaker and stronger action agents, with gains of +8.3 pp on Terminal-Bench and +6.8 pp on $\\tau^2$-Bench.\"\nSo the improvement on Terminal-Bench is +8.3 percentage points.\nI should double-check if it's Terminal-Bench 2.0 specifically.\nThe query mentions \"Terminal-Bench 2.0\".\nThe abstract says \"Across Terminal-Bench 2.0 and $\\tau^2$-Bench, it improves pass@1 ... with gains of +8.3 pp on Terminal-Bench\".\nYes, that's it.\nFinal answer: +8.3 percentage points.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ec5e37cc49044cc79ec5215b",
+     "function": {
+      "name": "calculator",
+      "arguments": "{\"expr\": \"8.3\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking for the improvement in pass@1 on Terminal-Bench 2.0 by the proactive memory agent.\nFrom the search results, the abstract states: \"Across Terminal-Bench 2.0 and $\\tau^2$-Bench, it improves pass@1 for both weaker and stronger action agents, with gains of +8.3 pp on Terminal-Bench and +6.8 pp on $\\tau^2$-Bench.\"\nSo the improvement on Terminal-Bench is +8.3 percentage points.\nI should double-check if it's Terminal-Bench 2.0 specifically.\nThe query mentions \"Terminal-Bench 2.0\".\nThe abstract says \"Across Terminal-Bench 2.0 and $\\tau^2$-Bench, it improves pass@1 ... with gains of +8.3 pp on Terminal-Bench\".\nYes, that's it.\nFinal answer: +8.3 percentage points.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ec5e37cc49044cc79ec5215b",
+   "content": "8.3"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 8.3 percentage points.",
+   "refusal": null,
+   "reasoning": "The user is asking for the improvement in pass@1 on Terminal-Bench 2.0 by the proactive memory agent.\nI have found a paper \"Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents\" which mentions gains of +8.3 pp on Terminal-Bench and +6.8 pp on $\\tau^2$-Bench.\nThe question asks for \"Terminal-Bench 2.0\". The abstract says \"Across Terminal-Bench 2.0 and $\\tau^2$-Bench... with gains of +8.3 pp on Terminal-Bench\".\nSo the answer is 8.3 percentage points.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking for the improvement in pass@1 on Terminal-Bench 2.0 by the proactive memory agent.\nI have found a paper \"Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents\" which mentions gains of +8.3 pp on Terminal-Bench and +6.8 pp on $\\tau^2$-Bench.\nThe question asks for \"Terminal-Bench 2.0\". The abstract says \"Across Terminal-Bench 2.0 and $\\tau^2$-Bench... with gains of +8.3 pp on Terminal-Bench\".\nSo the answer is 8.3 percentage points.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-20",
+  "source": "research",
+  "correct": true,
+  "steps": 3,
+  "tool_calls": 2,
+  "cost": 0.0016009000000000002,
+  "seconds": 23.9,
+  "answer": "8.3 percentage points.",
+  "gold": "8.3"
+ }
+}

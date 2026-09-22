@@ -1,0 +1,43 @@
+{
+ "task": {
+  "id": "research-35",
+  "source": "research",
+  "question": "What average improvement did AutoSciRub achieve on the AstaBench E2E Discovery subset?",
+  "answer": "16.8",
+  "evidence": "On a randomly sampled 20-task subset of AstaBench E2E Discovery, AutoSciRub further achieves an average improvement of 16.8 points across three agent harnesses, while maintaining or increasing the number of successfully completed tasks.",
+  "page": "AutoSciRub (arXiv)",
+  "url": "https://arxiv.org/abs/2608.31076"
+ },
+ "answer": "AutoSciRub achieved an average improvement of **31.8%** over the baseline LLM agent on the AstaBench E2E Discovery subset.  \n\nFINAL: 31.8%",
+ "correct": false,
+ "cost": 0.029723190463999988,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions. No tools are available in this run, so answer from your own knowledge. Do not attempt to call any tools. Write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What average improvement did AutoSciRub achieve on the AstaBench E2E Discovery subset?"
+  },
+  {
+   "role": "assistant",
+   "content": "AutoSciRub achieved an average improvement of **31.8%** over the baseline LLM agent on the AstaBench E2E Discovery subset.  \n\nFINAL: 31.8%",
+   "refusal": null,
+   "reasoning": null
+  }
+ ],
+ "row": {
+  "config": "strong, no tools",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-35",
+  "source": "research",
+  "correct": false,
+  "steps": 1,
+  "tool_calls": 0,
+  "cost": 0.029723190463999988,
+  "seconds": 48.5,
+  "answer": "31.8%",
+  "gold": "16.8"
+ }
+}

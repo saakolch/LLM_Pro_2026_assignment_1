@@ -1,0 +1,111 @@
+{
+ "task": {
+  "id": "research-30",
+  "source": "research",
+  "question": "What average F1 score does Harness-RL reach with Qwen2.5-3B?",
+  "answer": "47.79",
+  "evidence": "Across seven multi-hop question answering and agentic retrieval benchmarks, it reaches average F1 scores of 42.93 and 47.79 with Qwen2.5-1.5B and Qwen2.5-3B, respectively, while ablations validate the contribution of CAPO and favor central-only optimization in the evaluated setting.",
+  "page": "Harness-RL (arXiv)",
+  "url": "https://arxiv.org/abs/2608.29641"
+ },
+ "answer": "FINAL: 47.79",
+ "correct": true,
+ "cost": 0.013491401615999994,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What average F1 score does Harness-RL reach with Qwen2.5-3B?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "We need answer from recent AI research papers. Need use arxiv_search with distinctive keywords: \"Harness-RL\" maybe benchmark/system. Let's search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_k5s7g0xrl8whnat9ikgey1nk",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"Harness-RL Qwen2.5-3B\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer from recent AI research papers. Need use arxiv_search with distinctive keywords: \"Harness-RL\" maybe benchmark/system. Let's search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_k5s7g0xrl8whnat9ikgey1nk",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Retry once with different keywords.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_rw2el4jdb5t7m7vbjewlv30c",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"Harness-RL\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Retry once with different keywords.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_rw2el4jdb5t7m7vbjewlv30c",
+   "content": "[Harness-RL: Black-Box Reinforcement Learning with Action-Args Decoupling for Central-Agent Multi-Agent Harnesses] Large language model agents increasingly solve long-horizon tasks through multi-agent harnesses in which a central agent coordinates specialized sub-agents, tools, and environments. Training the central policy in such a harness raises two challenges. First, an action label is a low-cardinality decision, whereas its args form a high-dimensional conditional sequence; optimizing both with a shared sequence-level signal can produce conflicting gradients. Second, dynamic scheduling creates interdependent sessions with branches, parallel calls, and rewritten contexts, which cannot be faithfully reduced to one flat token sequence. We introduce Harness-RL, a structured reinforcement learning framework that combines Conflict-Aware Policy Optimization (CAPO) with interface-level black-box trajectory construction. The black-box component captures Interface Call Records, builds per-session prefix trees, and aligns outcome and process rewards with trainable tokens. CAPO uses forward activations to identify parameter partitions associated with action and args tokens, then routes their policy gradients to the corresponding subspaces. Harness-RL supports both central-only and joint multi-agent training. Across seven multi-hop question answering and agentic retrieval benchmarks, it reaches average F1 scores of 42.93 and 47.79 with Qwen2.5-1.5B and Qwen2.5-3B, respectively, while ablations validate the contribution of CAPO and favor central-only optimization in the evaluated setting. Our code is available at https://github.com/jiangxinke/Harness-RL. (https://arxiv.org/abs/2608.29641v1)\n---\n[Agent Lightning v1.0: Towards Harnessed Agentic RL] Modern agents operate inside agent harnesses that manage tools, context, and control flow, making the harness a critical part of the agent system. Our original Agent Lightning introduced a disaggregated architecture that connects arbitrary agents to RL training through an LLM endpoint proxy, an approach later adopted by frameworks such as verl Uni-Agent, AReaL 2.0, slime, and Polar. We refer to this paradigm as harnessed agentic RL, where the deploy-time harness directly participates in model post-training. Harnessed agentic RL differs fundamentally from traditional agentic RL: the harness, rather than the training engine, owns the environment interaction loop, while the trainer observes only sequences of LLM request-response pairs. This introduces challenges in retokenization, sample merging, advantage calculation, loss normalization, and backend scheduling, which can substantially affect training stability and effectiveness. We present Agent Lightning v1.0, a lightweight framework for harnessed agentic RL implemented in approximately 3,500 lines of code. It supports arbitrary agent harnesses and serves as a practical testbed for studying these challenges. We evaluate it on instruction-following, search, and coding agents, and provide a complete reproducible pipeline for coding-agent RL. Using only 6K training examples and modest compute, RL improves Qwen3.5-9B on SWE-bench Verified from 41.8% to 56.4%, a 14.6-point absolute gain. We release the complete workflow and training scripts to facilitate reproducible research on harnessed agentic RL. (https://arxiv.org/abs/2608.17528v1)\n---\n[Polar: Agentic RL on Any Harness at Scale] Reinforcement learning for language agents increasingly depends on custom harnesses that manage long-running context, multi-turn tool use and multi-agent orchestration. However, porting these harnesses into RL environment interfaces remains difficult and often loses important training signals. We bridge this gap with polar, a rollout framework for scalable asynchronous RL over arbitrary agent harnesses. Polar treats the agent harness as a black box: it proxies LLM API calls, records token-level model interactions, and reconstructs token-faithful trajectories for training. Each rollout node efficiently manages runtime prewarming, agent execution, trajectory reconstruction, and evaluation in parallel, exposing asynchronous service endpoints that can be consumed by independent trainers at scale. This decoupled design makes Polar agnostic to agent harnesses, training infrastructure, and RL algorithms while improving compute utilization for long-running agent workloads. We validate polar by training agents on software-engineering tasks with popular coding harnesses. Using simple GRPO, polar improves Qwen3.5-4B by 22.6, 4.8, 0.6 and 6.2 points on SWE-Bench Verified with the Codex, Claude Code, Qwen Code and Pi harnesses, respectively. We further demonstrate Polar for offline data generation over custom harnesses and ablate trajectory reconstruction strategies. Polar rewrites its preceding work, Prorl Agent, and has been registered as one of NeMo Gym environments. (https://arxiv.org/abs/2605.24220v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 47.79",
+   "refusal": null,
+   "reasoning": "We have the answer: average F1 scores 42.93 with Qwen2.5-1.5B and 47.79 with Qwen2.5-3B. Question asks average F1 score Harness-RL reach with Qwen2.5-3B: 47.79. Final line FINAL.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We have the answer: average F1 scores 42.93 with Qwen2.5-1.5B and 47.79 with Qwen2.5-3B. Question asks average F1 score Harness-RL reach with Qwen2.5-3B: 47.79. Final line FINAL.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-30",
+  "source": "research",
+  "correct": true,
+  "steps": 3,
+  "tool_calls": 2,
+  "cost": 0.013491401615999994,
+  "seconds": 28.9,
+  "answer": "47.79",
+  "gold": "47.79"
+ }
+}

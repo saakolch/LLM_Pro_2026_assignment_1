@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-35",
+  "source": "research",
+  "question": "What average improvement did AutoSciRub achieve on the AstaBench E2E Discovery subset?",
+  "answer": "16.8",
+  "evidence": "On a randomly sampled 20-task subset of AstaBench E2E Discovery, AutoSciRub further achieves an average improvement of 16.8 points across three agent harnesses, while maintaining or increasing the number of successfully completed tasks.",
+  "page": "AutoSciRub (arXiv)",
+  "url": "https://arxiv.org/abs/2608.31076"
+ },
+ "answer": "FINAL: AutoSciRub achieved an average improvement of **16.8 points** on the AstaBench E2E Discovery subset.",
+ "correct": true,
+ "cost": 0.007690213872000001,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What average improvement did AutoSciRub achieve on the AstaBench E2E Discovery subset?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "We need answer from research papers. Need search arxiv for AutoSciRub AstaBench E2E Discovery.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ged9wqzezl2lbjy7ncofro3j",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"AutoSciRub AstaBench E2E Discovery\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer from research papers. Need search arxiv for AutoSciRub AstaBench E2E Discovery.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ged9wqzezl2lbjy7ncofro3j",
+   "content": "[Learning to Evaluate Before Improving: Automatic Rubric Induction for Automatic Research Agents] Autonomous scientific research agents are increasingly applied to end-to-end scientific workflows, including literature review, data analysis, experimentation, and report generation. However, open-ended research tasks often do not clearly specify the analyses, methods, and success criteria required to complete the task. As a result, agents may miss important analyses, use inappropriate methods, or draw conclusions that are insufficiently supported by evidence. To address the problem, we present AutoSciRub, an evaluation-first framework that induces a task-specific executable rubric before research execution, and uses it to guide execution, criterion-level verification as well as iterative revision. AutoSciRub decomposes an underspecified instruction into atomic scientific goals, grounds them in relevant literature and task-visible data, and synthesizes specific, actionable, and verifiable criteria. The resulting rubric makes implicit experimental and evidential requirements explicit, providing guidance for experiments and analyses. During revision, rubric-guided verification identifies unmet criteria and enables targeted refinement of the research report and its supporting artifacts. On ResearchClawBench, AutoSciRub consistently improves all tested configurations, with an average gain of 2.08 points across three backbone LLMs under the fixed Codex harness and 2.95 points across three agent harnesses using a fixed DeepSeek-V4-Flash backbone. On a randomly sampled 20-task subset of AstaBench E2E Discovery, AutoSciRub further achieves an average improvement of 16.8 points across three agent harnesses, while maintaining or increasing the number of successfully completed tasks. These results demonstrate that evaluation-first guidance provides an effective and generalizable c (https://arxiv.org/abs/2608.31076v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: AutoSciRub achieved an average improvement of **16.8 points** on the AstaBench E2E Discovery subset.",
+   "refusal": null,
+   "reasoning": "The abstract says on AstaBench E2E Discovery subset, average improvement 16.8 points. Answer.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract says on AstaBench E2E Discovery subset, average improvement 16.8 points. Answer.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-35",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.007690213872000001,
+  "seconds": 17.6,
+  "answer": "AutoSciRub achieved an average improvement of **16.8 points*",
+  "gold": "16.8"
+ }
+}

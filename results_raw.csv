@@ -1,0 +1,289 @@
+config,model,id,source,correct,steps,tool_calls,cost,seconds,answer,gold
+"cheap, no tools",mimo-v2.5,research-1,research,False,1,0,0.00039229400000000006,16.7,I cannot answer this question as it refers to a date (June 2,MUSE
+"cheap, no tools",mimo-v2.5,research-2,research,False,1,0,0.0005471900000000001,18.0,11,14
+"cheap, no tools",mimo-v2.5,research-3,research,False,1,0,0.00032925200000000015,14.5,I'm not able to confidently identify the specific system ref,AutoMEM
+"cheap, no tools",mimo-v2.5,research-4,research,False,1,0,0.00018577999999999997,13.6,not available,100
+"cheap, no tools",mimo-v2.5,research-5,research,False,1,0,0.00287051324,88.7,"1,213",258
+"cheap, no tools",mimo-v2.5,research-6,research,False,1,0,0.0007950110000000002,25.0,I am not confident enough in the specific pass rate figure t,78%
+"cheap, no tools",mimo-v2.5,research-7,research,False,1,0,0.0011546441199999998,50.1,Unable to determine the specific figure without additional c,18.4%
+"cheap, no tools",mimo-v2.5,research-8,research,False,1,0,0.000212968,9.9,"I don't have information about an ""AARRI-Bench"" benchmark an",68.3%
+"cheap, no tools",mimo-v2.5,research-9,research,False,1,0,0.00014398999999999987,13.7,100,285
+"cheap, no tools",mimo-v2.5,research-10,research,False,1,0,0.00014553700000000005,8.7,82.50,95%
+"cheap, no tools",mimo-v2.5,research-11,research,False,1,0,0.00036065399999999997,12.0,I don't have reliable information about AlloSpatial's specif,18%
+"cheap, no tools",mimo-v2.5,research-12,research,False,1,0,0.00108911712,30.6,Unknown,Paimon
+"cheap, no tools",mimo-v2.5,research-13,research,False,1,0,0.0003315829999999999,17.3,18.92%,132%
+"cheap, no tools",mimo-v2.5,research-14,research,False,1,0,0.0013685652400000003,28.2,I don't know the specific number of unsafe schedules out of ,"6,091"
+"cheap, no tools",mimo-v2.5,research-15,research,False,1,0,0.00023942211999999994,9.3,nine,41
+"cheap, no tools",mimo-v2.5,research-16,research,False,1,0,0.0016096231200000005,31.5,90%,89 percent
+"cheap, no tools",mimo-v2.5,research-17,research,False,1,0,0.0009288171200000001,9.8,5,35
+"cheap, no tools",mimo-v2.5,research-18,research,False,1,0,0.00322444024,84.8,I don't know the specific pass@2 score for the Reflective Or,67.25%
+"cheap, no tools",mimo-v2.5,research-19,research,False,1,0,0.00294606424,90.6,~90%,41%
+"cheap, no tools",mimo-v2.5,research-20,research,False,1,0,0.0007385431200000003,37.4,5,8.3
+"cheap, no tools",mimo-v2.5,research-21,research,False,1,0,0.00740099396,186.9,I am unable to provide the specific value with confidence. P,0.673
+"cheap, no tools",mimo-v2.5,research-22,research,False,1,0,0.00022714411999999982,19.0,The best agent achieved 88.7% paired accuracy on AgentAbstai,59.5%
+"cheap, no tools",mimo-v2.5,research-23,research,False,1,0,0.0002091949999999997,11.7,I don't have confident knowledge of the specific number of p,20.2
+"cheap, no tools",mimo-v2.5,research-24,research,False,1,0,0.0007261309999999997,20.4,I don't have reliable specific information about HarnessLens,13.6%
+"cheap, no tools",mimo-v2.5,research-25,research,False,1,0,0.0007599829999999997,11.9,I don't have the specific data needed to answer this questio,six
+"cheap, no tools",mimo-v2.5,research-26,research,False,1,0,0.00719693108,155.7,197,120
+"cheap, no tools",mimo-v2.5,research-27,research,False,1,0,4.9280000000000504e-05,3.2,EvoUndo identified **743** capability-improving mutations th,197
+"cheap, no tools",mimo-v2.5,research-28,research,False,1,0,0.00099041712,22.7,I don't know.,87.19%
+"cheap, no tools",mimo-v2.5,research-29,research,False,1,0,0.0005644052399999995,43.0,"1,000",150
+"cheap, no tools",mimo-v2.5,research-30,research,False,1,0,0.0002760239999999997,14.8,I don't have the exact average F1 score for Harness-RL with ,47.79
+"cheap, no tools",mimo-v2.5,research-31,research,False,1,0,0.0013640421199999997,59.3,0.87,0.85
+"cheap, no tools",mimo-v2.5,research-32,research,False,1,0,0.0005794821200000005,43.3,151,104
+"cheap, no tools",mimo-v2.5,research-33,research,False,1,0,0.003067829240000001,54.5,**AgentAmongUs**,ARIA
+"cheap, no tools",mimo-v2.5,research-34,research,False,1,0,0.00280745136,29.0,I don't have reliable information about SkillZip Pro's speci,38%
+"cheap, no tools",mimo-v2.5,research-35,research,False,1,0,0.001198380120000001,14.3,I don't have information about AutoSciRub's performance on A,16.8
+"cheap, no tools",mimo-v2.5,research-36,research,False,1,0,8.769599999999995e-05,9.2,3,520
+"cheap, no tools",mimo-v2.5,research-37,research,False,1,0,0.0020846003599999993,26.6,I don't know the answer with certainty.,mini-swe-agent
+"cheap, no tools",mimo-v2.5,research-38,research,False,1,0,0.0019769403599999985,40.4,73%,80.0%
+"cheap, no tools",mimo-v2.5,research-39,research,False,1,0,7.403311999999891e-05,22.6,5,50
+"cheap, no tools",mimo-v2.5,research-40,research,False,1,0,0.00185718912,19.6,89.2%,15.5%
+"cheap, search only",mimo-v2.5,research-1,research,False,9,7,0.0022590175999999997,83.6,Unable to determine the answer — web search was unavailable ,MUSE
+"cheap, search only",mimo-v2.5,research-2,research,False,6,7,0.001774276,77.2,I cannot determine the number of CUDA kernels Kernel Forge o,14
+"cheap, search only",mimo-v2.5,research-3,research,False,9,7,0.0021032984,83.2,Unable to determine with confidence — the specific agentic m,AutoMEM
+"cheap, search only",mimo-v2.5,research-4,research,False,9,7,0.0024729599999999997,87.9,I cannot verify the number of tasks in SentinelBench — I was,100
+"cheap, search only",mimo-v2.5,research-5,research,False,9,7,0.0026671791999999996,88.7,I cannot reliably answer this question from memory. A web se,258
+"cheap, search only",mimo-v2.5,research-6,research,False,9,7,0.0039562543999999995,102.8,I don't have enough reliable information to answer this ques,78%
+"cheap, search only",mimo-v2.5,research-7,research,False,9,7,0.004109963199999999,110.4,up to 40%,18.4%
+"cheap, search only",mimo-v2.5,research-8,research,False,9,7,0.0026180280000000014,78.7,I cannot provide the success rate for the best-performing co,68.3%
+"cheap, search only",mimo-v2.5,research-9,research,False,6,5,0.002058733600000001,64.9,Unable to find this information on Wikipedia; the VideoWeave,285
+"cheap, search only",mimo-v2.5,research-10,research,False,9,7,0.0026988415999999998,83.5,I cannot determine the score to which Bayesian-Agent's incre,95%
+"cheap, search only",mimo-v2.5,research-11,research,False,9,7,0.003479380800000001,99.3,I do not have sufficient information to answer this question,18%
+"cheap, search only",mimo-v2.5,research-12,research,False,9,7,0.004081123199999998,111.5,Unable to determine the name of this platform. The web searc,Paimon
+"cheap, search only",mimo-v2.5,research-13,research,False,9,7,0.0031297784000000016,86.8,~2x (approximately 100% relative gain),132%
+"cheap, search only",mimo-v2.5,research-14,research,False,9,7,0.0036158584000000014,101.9,"I cannot reliably answer this question — ""AutoMegaKernel"" do","6,091"
+"cheap, search only",mimo-v2.5,research-15,research,False,9,7,0.003421180000000003,92.8,Unable to determine — search tools were unavailable.,41
+"cheap, search only",mimo-v2.5,research-16,research,False,9,7,0.0027162687999999977,86.3,"<tool_call>
+<function=web_search>
+<parameter=query>OpenAI o1",89 percent
+"cheap, search only",mimo-v2.5,research-17,research,False,9,7,0.0029929703999999994,90.3,5,35
+"cheap, search only",mimo-v2.5,research-18,research,False,9,7,0.0028305424000000003,78.0,I cannot provide a reliable answer for this question from wh,67.25%
+"cheap, search only",mimo-v2.5,research-19,research,False,9,7,0.0031356527999999995,90.9,Approximately 60%,41%
+"cheap, search only",mimo-v2.5,research-20,research,False,9,7,0.003275647199999999,92.7,Unable to determine the specific percentage point improvemen,8.3
+"cheap, search only",mimo-v2.5,research-21,research,False,9,7,0.0037931152000000024,101.7,Unable to determine the specific value due to tool unavailab,0.673
+"cheap, search only",mimo-v2.5,research-22,research,False,4,3,0.0017325784000000004,40.1,Unable to answer — Wikipedia search is currently unavailable,59.5%
+"cheap, search only",mimo-v2.5,research-23,research,False,9,7,0.0032056024000000002,105.4,I cannot provide a verified answer to this question due to t,20.2
+"cheap, search only",mimo-v2.5,research-24,research,False,9,7,0.002661271199999999,85.7,Unable to determine — HarnessLens could not be found in avai,13.6%
+"cheap, search only",mimo-v2.5,research-25,research,False,9,7,0.0030154768,89.5,I don't have enough information to answer this question accu,six
+"cheap, search only",mimo-v2.5,research-26,research,False,9,7,0.004130819000000001,127.0,170,120
+"cheap, search only",mimo-v2.5,research-27,research,False,8,7,0.0033867245999999983,90.4,I cannot answer this question — EvoUndo does not appear to b,197
+"cheap, search only",mimo-v2.5,research-28,research,False,9,7,0.004060555799999997,102.2,"I cannot determine this score as neither ""openJiuwen harness",87.19%
+"cheap, search only",mimo-v2.5,research-29,research,False,9,7,0.0037237773999999994,99.6,I don't have reliable information about the number of tasks ,150
+"cheap, search only",mimo-v2.5,research-30,research,False,3,1,0.0007669200000000008,24.2,I cannot reliably provide the exact average F1 score for Har,47.79
+"cheap, search only",mimo-v2.5,research-31,research,False,9,7,0.003971543800000001,123.2,I cannot confidently provide this specific metric without be,0.85
+"cheap, search only",mimo-v2.5,research-32,research,False,5,3,0.0008956863999999981,28.5,"Unable to verify — search tools were unavailable, and I do n",104
+"cheap, search only",mimo-v2.5,research-33,research,False,9,7,0.0030093056000000014,87.5,I am unable to reliably answer this question from my existin,ARIA
+"cheap, search only",mimo-v2.5,research-34,research,False,9,7,0.003047962400000003,84.1,Unable to determine — no reliable information found about Sk,38%
+"cheap, search only",mimo-v2.5,research-35,research,False,8,7,0.0026599944000000007,79.3,I cannot determine the average improvement AutoSciRub achiev,16.8
+"cheap, search only",mimo-v2.5,research-36,research,False,9,7,0.003011344000000006,92.5,100,520
+"cheap, search only",mimo-v2.5,research-37,research,False,9,7,0.002562145599999996,94.0,I cannot confidently determine which open-source agent frame,mini-swe-agent
+"cheap, search only",mimo-v2.5,research-38,research,False,9,7,0.0017333063999999954,73.6,I was unable to determine the completion rate that RobustSGP,80.0%
+"cheap, search only",mimo-v2.5,research-39,research,False,7,6,0.0017061799999999946,74.8,I was unable to find information about how many unique optim,50
+"cheap, search only",mimo-v2.5,research-40,research,False,9,7,0.0020310304000000015,82.8,I was unable to find the answer. The TAM benchmark's best ex,15.5%
+"cheap, search + page",mimo-v2.5,research-1,research,False,9,7,0.0027711152000000003,92.1,Unable to determine the answer with confidence due to search,MUSE
+"cheap, search + page",mimo-v2.5,research-2,research,False,4,2,0.0011867744,25.1,30,14
+"cheap, search + page",mimo-v2.5,research-3,research,False,9,7,0.0034013223999999967,104.4,I cannot confidently identify this system without being able,AutoMEM
+"cheap, search + page",mimo-v2.5,research-4,research,False,8,7,0.0024152016,87.0,Unable to find information about SentinelBench; the benchmar,100
+"cheap, search + page",mimo-v2.5,research-5,research,False,9,7,0.002596288799999999,90.7,Unable to determine the exact number of lemmas and theorems ,258
+"cheap, search + page",mimo-v2.5,research-6,research,False,9,7,0.002374887200000002,81.4,I cannot reliably answer this question without the ability t,78%
+"cheap, search + page",mimo-v2.5,research-7,research,False,9,7,0.003758232799999997,97.5,"I cannot provide a specific answer, as I could not find reli",18.4%
+"cheap, search + page",mimo-v2.5,research-8,research,False,9,7,0.0026652808000000028,72.3,Unable to determine the success rate; AARRI-Bench could not ,68.3%
+"cheap, search + page",mimo-v2.5,research-9,research,False,9,7,0.0038853063999999965,102.5,I cannot reliably answer this question. The VideoWeaver benc,285
+"cheap, search + page",mimo-v2.5,research-10,research,False,9,7,0.0038197448000000037,112.3,I don't have reliable knowledge of the specific SOP-Bench sc,95%
+"cheap, search + page",mimo-v2.5,research-11,research,False,5,4,0.0015259720000000004,53.9,Unable to answer — the search service is temporarily unavail,18%
+"cheap, search + page",mimo-v2.5,research-12,research,False,9,7,0.003698807199999994,110.3,I cannot reliably identify the specific platform from my ava,Paimon
+"cheap, search + page",mimo-v2.5,research-13,research,False,9,7,0.003061577599999997,97.1,Up to 10%,132%
+"cheap, search + page",mimo-v2.5,research-14,research,False,7,6,0.003061762400000001,96.4,"I cannot determine how many of the 7,160 adversarial schedul","6,091"
+"cheap, search + page",mimo-v2.5,research-15,research,False,6,5,0.0021950072000000015,76.3,Unable to determine - ACP-Bench information not found on Wik,41
+"cheap, search + page",mimo-v2.5,research-16,research,False,9,7,0.002931867999999997,108.1,"<tool_call>
+<function=web_search>
+<parameter=query>reasoning",89 percent
+"cheap, search + page",mimo-v2.5,research-17,research,False,8,7,0.0028534096000000023,89.1,"I was unable to find information on Wikipedia about a ""Qwen ",35
+"cheap, search + page",mimo-v2.5,research-18,research,False,9,7,0.003152249600000004,104.8,I don't have reliable information about the Reflective Orche,67.25%
+"cheap, search + page",mimo-v2.5,research-19,research,False,9,7,0.0022358024000000004,77.4,I cannot reliably answer this question without being able to,41%
+"cheap, search + page",mimo-v2.5,research-20,research,False,9,7,0.003991353600000004,130.8,Unable to determine the exact number of percentage points — ,8.3
+"cheap, search + page",mimo-v2.5,research-21,research,False,9,7,0.0036801711999999986,104.7,"<tool_call>
+<function=web_search>
+<parameter=query>GRACE rei",0.673
+"cheap, search + page",mimo-v2.5,research-22,research,False,4,3,0.0012053568000000014,47.6,Unable to find information about AgentAbstain's paired accur,59.5%
+"cheap, search + page",mimo-v2.5,research-23,research,False,9,7,0.003000977599999996,83.9,Unable to determine — insufficient reliable information avai,20.2
+"cheap, search + page",mimo-v2.5,research-24,research,False,8,6,0.003003742400000002,88.6,"I cannot reliably answer this question — ""HarnessLens"" did n",13.6%
+"cheap, search + page",mimo-v2.5,research-25,research,False,9,7,0.0033560944000000023,85.2,Unable to determine with confidence from available knowledge,six
+"cheap, search + page",mimo-v2.5,research-26,research,False,9,7,0.003450230399999997,105.9,I cannot determine the number.,120
+"cheap, search + page",mimo-v2.5,research-27,research,False,9,7,0.003670290400000005,97.1,"Unable to determine the answer — ""EvoUndo"" and its specific ",197
+"cheap, search + page",mimo-v2.5,research-28,research,False,9,7,0.0026886160000000048,85.7,I do not have reliable information about the openJiuwen harn,87.19%
+"cheap, search + page",mimo-v2.5,research-29,research,False,9,7,0.003074229599999999,79.7,I was unable to determine the number of tasks in the VisTarg,150
+"cheap, search + page",mimo-v2.5,research-30,research,False,9,7,0.0028295687999999944,72.4,I couldn't retrieve the specific F1 score for Harness-RL wit,47.79
+"cheap, search + page",mimo-v2.5,research-31,research,False,5,3,0.0029998791999999996,75.3,I don't know,0.85
+"cheap, search + page",mimo-v2.5,research-32,research,False,9,7,0.003130779199999996,87.7,I cannot reliably answer this question — DEPBENCH was not fo,104
+"cheap, search + page",mimo-v2.5,research-33,research,False,9,7,0.002728884000000001,84.5,I don't have reliable information about the name of the conf,ARIA
+"cheap, search + page",mimo-v2.5,research-34,research,False,4,3,0.001140317599999996,40.1,"I was unable to find any information about ""SkillZip Pro"" on",38%
+"cheap, search + page",mimo-v2.5,research-35,research,False,9,7,0.002420972800000004,82.1,I cannot determine the average improvement AutoSciRub achiev,16.8
+"cheap, search + page",mimo-v2.5,research-36,research,False,9,7,0.002793305600000004,82.5,"<tool_call>
+<function=web_search>
+<parameter=query>ASPIRE be",520
+"cheap, search + page",mimo-v2.5,research-37,research,False,9,7,0.0025194768000000034,79.3,Unable to determine — insufficient data to answer reliably.,mini-swe-agent
+"cheap, search + page",mimo-v2.5,research-38,research,False,6,4,0.002950819200000003,100.9,90%,80.0%
+"cheap, search + page",mimo-v2.5,research-39,research,False,9,7,0.003296585599999999,117.4,I don't have reliable information about how many unique opti,50
+"cheap, search + page",mimo-v2.5,research-40,research,False,9,7,0.0024033632000000013,79.2,I could not find information about the best exact-match perf,15.5%
+"mid, best tools",hy3-preview,research-1,research,False,8,7,0.006657419999999997,92.0,Unknown,MUSE
+"mid, best tools",hy3-preview,research-2,research,False,9,7,0.007161899999999999,96.6,Unknown (information not found),14
+"mid, best tools",hy3-preview,research-3,research,False,3,1,0.0030841199999999958,35.4,MemGPT,AutoMEM
+"mid, best tools",hy3-preview,research-4,research,False,3,1,0.001966919999999997,32.4,Unknown,100
+"mid, best tools",hy3-preview,research-5,research,False,8,6,0.009038699999999997,101.3,unknown,258
+"mid, best tools",hy3-preview,research-6,research,False,5,4,0.006147960000000008,66.6,49.2%,78%
+"mid, best tools",hy3-preview,research-7,research,False,4,2,0.002819580000000002,50.9,Unknown,18.4%
+"mid, best tools",hy3-preview,research-8,research,False,9,12,0.014061240000000003,126.0,Unknown (AARRI-Bench details not retrievable; not in availab,68.3%
+"mid, best tools",hy3-preview,research-9,research,False,5,3,0.0050544000000000006,38.1,1000 cases,285
+"mid, best tools",hy3-preview,research-10,research,False,4,2,0.003717899999999996,28.3,Unknown (data unavailable),95%
+"mid, best tools",hy3-preview,research-11,research,False,4,2,0.004199819999999993,33.0,Not known from memory,18%
+"mid, best tools",hy3-preview,research-12,research,False,3,1,0.0014970600000000084,22.7,Unknown (information not available),Paimon
+"mid, best tools",hy3-preview,research-13,research,False,3,1,0.005002199999999998,39.0,up to 30% relative gain,132%
+"mid, best tools",hy3-preview,research-14,research,False,7,7,0.008536080000000001,83.8,unknown,"6,091"
+"mid, best tools",hy3-preview,research-15,research,False,3,1,0.002821320000000002,31.0,8,41
+"mid, best tools",hy3-preview,research-16,research,False,5,6,0.013163939999999999,108.4,,89 percent
+"mid, best tools",hy3-preview,research-17,research,False,5,3,0.005892659999999994,53.0,unknown,35
+"mid, best tools",hy3-preview,research-18,research,False,3,1,0.00785856,58.4,Not known,67.25%
+"mid, best tools",hy3-preview,research-19,research,False,5,3,0.007970400000000002,47.2,Unknown,41%
+"mid, best tools",hy3-preview,research-20,research,False,5,3,0.008586659999999996,54.2,unknown,8.3
+"mid, best tools",hy3-preview,research-21,research,False,4,3,0.009511920000000007,58.6,unknown (source unavailable),0.673
+"mid, best tools",hy3-preview,research-22,research,False,9,7,0.0124026,98.6,unknown,59.5%
+"mid, best tools",hy3-preview,research-23,research,False,3,1,0.0023743799999999954,24.3,unknown,20.2
+"mid, best tools",hy3-preview,research-24,research,False,6,4,0.005956859999999994,59.8,unknown (insufficient data),13.6%
+"mid, best tools",hy3-preview,research-25,research,False,5,3,0.010466100000000006,75.4,I was unable to retrieve the specific Wikipedia article due ,six
+"mid, best tools",hy3-preview,research-26,research,False,4,2,0.003751560000000001,34.5,unknown,120
+"mid, best tools",hy3-preview,research-27,research,False,5,4,0.006752220000000003,60.3,Search unavailable (HTTP 429); could not verify the figure.,197
+"mid, best tools",hy3-preview,research-28,research,False,3,1,0.003994380000000006,27.8,Unknown,87.19%
+"mid, best tools",hy3-preview,research-29,research,False,3,1,0.005689320000000012,27.1,Unknown,150
+"mid, best tools",hy3-preview,research-30,research,False,9,8,0.010432319999999995,94.2,Unknown,47.79
+"mid, best tools",hy3-preview,research-31,research,False,9,10,0.013851299999999997,116.8,~0.8,0.85
+"mid, best tools",hy3-preview,research-32,research,False,5,3,0.003689999999999999,34.7,Unknown (information unavailable),104
+"mid, best tools",hy3-preview,research-33,research,False,3,1,0.0066234000000000015,62.0,,ARIA
+"mid, best tools",hy3-preview,research-34,research,False,6,5,0.007733519999999994,76.1,"Unable to verify—no Wikipedia coverage found for ""SkillZip P",38%
+"mid, best tools",hy3-preview,research-35,research,False,3,1,0.0027056999999999914,29.4,Unknown,16.8
+"mid, best tools",hy3-preview,research-36,research,False,3,1,0.00869412,61.0,100,520
+"mid, best tools",hy3-preview,research-37,research,False,9,7,0.010662179999999993,119.6,LangGraph,mini-swe-agent
+"mid, best tools",hy3-preview,research-38,research,False,9,7,0.007585079999999994,84.4,unknown,80.0%
+"mid, best tools",hy3-preview,research-39,research,False,9,7,0.010022760000000006,115.4,unknown,50
+"mid, best tools",hy3-preview,research-40,research,False,4,2,0.0026830199999999943,35.9,Unknown (no memory of TAM benchmark sentencing exact-match s,15.5%
+"strong, no tools",deepseek-v4-pro-0813,research-1,research,False,1,0,0.00040173999999999765,4.0,Unknown,MUSE
+"strong, no tools",deepseek-v4-pro-0813,research-2,research,False,1,0,0.004147599999999987,16.4,No verifiable specific number available.,14
+"strong, no tools",deepseek-v4-pro-0813,research-3,research,False,1,0,0.0005476799999999948,4.1,MemOS,AutoMEM
+"strong, no tools",deepseek-v4-pro-0813,research-4,research,False,1,0,0.0002406400000000003,2.5,Unknown / not publicly documented as of my knowledge cutoff.,100
+"strong, no tools",deepseek-v4-pro-0813,research-5,research,False,1,0,0.034953676367999995,77.3,,258
+"strong, no tools",deepseek-v4-pro-0813,research-6,research,False,1,0,0.006529294783999995,29.2,41.4%,78%
+"strong, no tools",deepseek-v4-pro-0813,research-7,research,False,1,0,0.0004154599999999925,2.4,"Up to 44.9% (Repairs), 35.4% (HumanEval), 38.1% (EvalPlus).",18.4%
+"strong, no tools",deepseek-v4-pro-0813,research-8,research,False,1,0,0.003327960000000005,11.3,21.07%,68.3%
+"strong, no tools",deepseek-v4-pro-0813,research-9,research,False,1,0,0.00017028000000000876,3.0,600,285
+"strong, no tools",deepseek-v4-pro-0813,research-10,research,False,1,0,0.04703141908799999,77.0,,95%
+"strong, no tools",deepseek-v4-pro-0813,research-11,research,False,1,0,0.00039947999999999373,2.2,21.7%,18%
+"strong, no tools",deepseek-v4-pro-0813,research-12,research,False,1,0,0.04653593556800001,80.3,AIMONS,Paimon
+"strong, no tools",deepseek-v4-pro-0813,research-13,research,False,1,0,0.04031550360000001,68.4,14.3%,132%
+"strong, no tools",deepseek-v4-pro-0813,research-14,research,False,1,0,0.00027737999999999374,3.4,"7,160","6,091"
+"strong, no tools",deepseek-v4-pro-0813,research-15,research,False,1,0,8.009999999999962e-05,1.9,9,41
+"strong, no tools",deepseek-v4-pro-0813,research-16,research,False,1,0,0.04934908078399999,76.4,60.6%,89 percent
+"strong, no tools",deepseek-v4-pro-0813,research-17,research,False,1,0,0.03775121919999999,46.6,4,35
+"strong, no tools",deepseek-v4-pro-0813,research-18,research,False,1,0,0.05254410267199999,69.8,,67.25%
+"strong, no tools",deepseek-v4-pro-0813,research-19,research,False,1,0,0.028363576831999998,45.6,84%,41%
+"strong, no tools",deepseek-v4-pro-0813,research-20,research,False,1,0,0.0001732600000000084,2.8,15.3 percentage points,8.3
+"strong, no tools",deepseek-v4-pro-0813,research-21,research,False,1,0,0.00018261999999999445,2.6,100%,0.673
+"strong, no tools",deepseek-v4-pro-0813,research-22,research,False,1,0,0.036995920703999985,52.9,92.5%,59.5%
+"strong, no tools",deepseek-v4-pro-0813,research-23,research,False,1,0,0.031725080704000014,41.9,5.1 points,20.2
+"strong, no tools",deepseek-v4-pro-0813,research-24,research,False,1,0,0.00011134000000001532,3.3,14.5%,13.6%
+"strong, no tools",deepseek-v4-pro-0813,research-25,research,False,1,0,0.047146608704000004,77.8,,six
+"strong, no tools",deepseek-v4-pro-0813,research-26,research,False,1,0,0.03683913235200001,35.2,165,120
+"strong, no tools",deepseek-v4-pro-0813,research-27,research,False,1,0,0.06810194246400003,77.0,,197
+"strong, no tools",deepseek-v4-pro-0813,research-28,research,False,1,0,0.009149469999999993,2.8,4.9%,87.19%
+"strong, no tools",deepseek-v4-pro-0813,research-29,research,False,1,0,8.299999999999974e-05,2.2,500,150
+"strong, no tools",deepseek-v4-pro-0813,research-30,research,False,1,0,0.007370721999999996,2.9,Approximately 0.42 (42%) on standard evaluation sets.,47.79
+"strong, no tools",deepseek-v4-pro-0813,research-31,research,False,1,0,0.007638682000000008,4.1,~0.70–0.75,0.85
+"strong, no tools",deepseek-v4-pro-0813,research-32,research,False,1,0,0.059660230464000014,79.5,,104
+"strong, no tools",deepseek-v4-pro-0813,research-33,research,False,1,0,0.040168970464,60.7,MineAgent,ARIA
+"strong, no tools",deepseek-v4-pro-0813,research-34,research,False,1,0,0.0002563399999999938,2.5,No verified share is available; the claim cannot be confirme,38%
+"strong, no tools",deepseek-v4-pro-0813,research-35,research,False,1,0,0.029723190463999988,48.5,31.8%,16.8
+"strong, no tools",deepseek-v4-pro-0813,research-36,research,False,1,0,0.06572091281599998,101.1,,520
+"strong, no tools",deepseek-v4-pro-0813,research-37,research,False,1,0,0.0046784200000000165,9.0,AutoGen,mini-swe-agent
+"strong, no tools",deepseek-v4-pro-0813,research-38,research,False,1,0,0.0005639800000000195,3.6,74%,80.0%
+"strong, no tools",deepseek-v4-pro-0813,research-39,research,False,1,0,0.033481462352,79.1,,50
+"strong, no tools",deepseek-v4-pro-0813,research-40,research,False,1,0,0.00015431999999998558,2.8,43.1%,15.5%
+"cheap, arxiv + page",mimo-v2.5,research-1,research,True,2,1,0.000512792,12.0,MUSE,MUSE
+"cheap, arxiv + page",mimo-v2.5,research-2,research,True,2,1,0.00170844,36.0,14,14
+"cheap, arxiv + page",mimo-v2.5,research-3,research,True,2,2,0.001255492,17.8,AutoMEM,AutoMEM
+"cheap, arxiv + page",mimo-v2.5,research-4,research,True,2,1,0.00093464,14.1,100,100
+"cheap, arxiv + page",mimo-v2.5,research-5,research,True,2,1,0.0019564752,42.5,258 lemmas and theorems.,258
+"cheap, arxiv + page",mimo-v2.5,research-6,research,True,2,1,0.0009354160000000001,23.1,78%,78%
+"cheap, arxiv + page",mimo-v2.5,research-7,research,True,5,4,0.0024467272,49.5,HarnessFix improves performance over the initial harnesses b,18.4%
+"cheap, arxiv + page",mimo-v2.5,research-8,research,True,2,1,0.0010418552,25.0,68.3% (as reported in the original AARRI-Bench paper for the,68.3%
+"cheap, arxiv + page",mimo-v2.5,research-9,research,True,2,1,0.0010134992,10.0,285 cases,285
+"cheap, arxiv + page",mimo-v2.5,research-10,research,True,2,1,0.0010326736,14.8,95%,95%
+"cheap, arxiv + page",mimo-v2.5,research-11,research,True,2,1,0.0008944824,11.5,AlloSpatial improves proprietary models by up to 18% in a tr,18%
+"cheap, arxiv + page",mimo-v2.5,research-12,research,True,2,1,0.0009564183999999998,18.1,Paimon (Platform for Agentic Integration in Materials Optimi,Paimon
+"cheap, arxiv + page",mimo-v2.5,research-13,research,True,2,1,0.0005952743999999999,12.8,132%,132%
+"cheap, arxiv + page",mimo-v2.5,research-14,research,True,2,1,0.0008362536000000001,14.6,"6,091 out of the 7,160 adversarial schedules tested against ","6,091"
+"cheap, arxiv + page",mimo-v2.5,research-15,research,True,2,1,0.0010198216,15.7,41,41
+"cheap, arxiv + page",mimo-v2.5,research-16,research,True,2,1,0.0010005575999999998,13.9,89%,89 percent
+"cheap, arxiv + page",mimo-v2.5,research-17,research,True,2,2,0.0014464016000000001,25.7,35,35
+"cheap, arxiv + page",mimo-v2.5,research-18,research,True,2,1,0.0010570280000000002,22.5,67.25%,67.25%
+"cheap, arxiv + page",mimo-v2.5,research-19,research,True,2,1,0.0006360479999999997,17.5,41%,41%
+"cheap, arxiv + page",mimo-v2.5,research-20,research,True,3,2,0.0016009000000000002,23.9,8.3 percentage points.,8.3
+"cheap, arxiv + page",mimo-v2.5,research-21,research,True,2,1,0.0011867800000000001,19.9,0.673 ± 0.136,0.673
+"cheap, arxiv + page",mimo-v2.5,research-22,research,True,3,2,0.0014519064000000003,13.5,59.5%,59.5%
+"cheap, arxiv + page",mimo-v2.5,research-23,research,True,3,3,0.0022461096,37.0,GLM-5.2 gained up to **20.2 points** when equipped with JIT-,20.2
+"cheap, arxiv + page",mimo-v2.5,research-24,research,True,2,1,0.0010951303999999999,13.8,7.6–13.6%,13.6%
+"cheap, arxiv + page",mimo-v2.5,research-25,research,True,2,1,0.0008555904,14.8,6,six
+"cheap, arxiv + page",mimo-v2.5,research-26,research,False,9,7,0.0032385975999999995,96.0,I cannot reliably answer this question without access to the,120
+"cheap, arxiv + page",mimo-v2.5,research-27,research,True,2,1,0.0005836039999999997,19.2,197,197
+"cheap, arxiv + page",mimo-v2.5,research-28,research,True,2,1,0.0005787320000000002,17.1,87.19%,87.19%
+"cheap, arxiv + page",mimo-v2.5,research-29,research,True,2,1,0.0007354592,22.1,150 tasks.,150
+"cheap, arxiv + page",mimo-v2.5,research-30,research,True,3,2,0.0013675872,34.4,47.79,47.79
+"cheap, arxiv + page",mimo-v2.5,research-31,research,True,2,1,0.0007711256000000003,21.8,0.85,0.85
+"cheap, arxiv + page",mimo-v2.5,research-32,research,True,2,1,0.00028887040000000024,15.8,104,104
+"cheap, arxiv + page",mimo-v2.5,research-33,research,True,2,1,0.0005097904000000006,13.8,ARIA,ARIA
+"cheap, arxiv + page",mimo-v2.5,research-34,research,True,2,1,0.0007261295999999992,12.7,38%,38%
+"cheap, arxiv + page",mimo-v2.5,research-35,research,True,2,1,0.0006851655999999999,15.4,16.8 points,16.8
+"cheap, arxiv + page",mimo-v2.5,research-36,research,True,2,1,0.0008894143999999991,25.4,520,520
+"cheap, arxiv + page",mimo-v2.5,research-37,research,True,2,1,0.00044684079999999984,15.9,mini-swe-agent,mini-swe-agent
+"cheap, arxiv + page",mimo-v2.5,research-38,research,True,2,1,0.0006449128000000012,18.6,80.0%,80.0%
+"cheap, arxiv + page",mimo-v2.5,research-39,research,True,2,1,0.0005839287999999995,16.1,50,50
+"cheap, arxiv + page",mimo-v2.5,research-40,research,True,2,1,0.0004728360000000008,11.6,15.5%,15.5%
+"strong, arxiv + page",deepseek-v4-pro-0813,research-1,research,True,2,1,0.005042511936000001,12.1,MUSE,MUSE
+"strong, arxiv + page",deepseek-v4-pro-0813,research-2,research,True,2,1,0.0065432595360000005,15.0,14,14
+"strong, arxiv + page",deepseek-v4-pro-0813,research-3,research,True,2,1,0.009402981984,21.2,AutoMEM,AutoMEM
+"strong, arxiv + page",deepseek-v4-pro-0813,research-4,research,True,2,1,0.004006676784000001,10.2,SentinelBench contains 100 tasks.,100
+"strong, arxiv + page",deepseek-v4-pro-0813,research-5,research,True,2,1,0.00863408832,19.3,258 lemmas and theorems.,258
+"strong, arxiv + page",deepseek-v4-pro-0813,research-6,research,True,2,1,0.00677252268,14.5,A single round of Retrospective Harness Optimization raised ,78%
+"strong, arxiv + page",deepseek-v4-pro-0813,research-7,research,True,2,1,0.007201034016,15.7,HarnessFix improves performance over the initial harnesses b,18.4%
+"strong, arxiv + page",deepseek-v4-pro-0813,research-8,research,True,2,1,0.01046372316,26.7,68.3%,68.3%
+"strong, arxiv + page",deepseek-v4-pro-0813,research-9,research,True,2,1,0.005734133063999999,18.5,285 cases,285
+"strong, arxiv + page",deepseek-v4-pro-0813,research-10,research,True,2,1,0.005744989536,17.0,95% (improved from 80%),95%
+"strong, arxiv + page",deepseek-v4-pro-0813,research-11,research,True,2,1,0.008953396319999998,20.9,18%,18%
+"strong, arxiv + page",deepseek-v4-pro-0813,research-12,research,True,2,1,0.008481459096,23.4,Paimon,Paimon
+"strong, arxiv + page",deepseek-v4-pro-0813,research-13,research,True,2,1,0.011587687319999998,20.0,Up to 132%.,132%
+"strong, arxiv + page",deepseek-v4-pro-0813,research-14,research,True,2,1,0.008010160488,16.0,"6,091","6,091"
+"strong, arxiv + page",deepseek-v4-pro-0813,research-15,research,True,2,1,0.005213661023999998,11.3,41 pathology workflow tasks.,41
+"strong, arxiv + page",deepseek-v4-pro-0813,research-16,research,True,2,1,0.007113543624000001,15.2,89 percent,89 percent
+"strong, arxiv + page",deepseek-v4-pro-0813,research-17,research,True,2,1,0.007609748256000002,11.9,35,35
+"strong, arxiv + page",deepseek-v4-pro-0813,research-18,research,True,2,1,0.009351254088000003,16.8,67.25%,67.25%
+"strong, arxiv + page",deepseek-v4-pro-0813,research-19,research,True,3,2,0.013250643383999998,25.5,41%,41%
+"strong, arxiv + page",deepseek-v4-pro-0813,research-20,research,True,2,1,0.006407234328000007,15.0,+8.3 percentage points,8.3
+"strong, arxiv + page",deepseek-v4-pro-0813,research-21,research,True,2,1,0.007087360367999999,15.9,0.673 ± 0.136 (up from the 0.091 zero-shot baseline).,0.673
+"strong, arxiv + page",deepseek-v4-pro-0813,research-22,research,True,2,1,0.009558165671999998,19.4,59.5%,59.5%
+"strong, arxiv + page",deepseek-v4-pro-0813,research-23,research,True,4,3,0.020835485616000002,45.4,up to +20.2 points,20.2
+"strong, arxiv + page",deepseek-v4-pro-0813,research-24,research,True,2,1,0.008200468055999999,16.8,13.6%,13.6%
+"strong, arxiv + page",deepseek-v4-pro-0813,research-25,research,True,2,1,0.009706324584000003,19.2,6,six
+"strong, arxiv + page",deepseek-v4-pro-0813,research-26,research,True,2,1,0.0049882295760000014,15.7,120,120
+"strong, arxiv + page",deepseek-v4-pro-0813,research-27,research,True,2,1,0.007136533799999997,16.3,197,197
+"strong, arxiv + page",deepseek-v4-pro-0813,research-28,research,True,2,1,0.007616134415999995,15.1,openJiuwen achieves **87.19%** on Terminal-Bench 2.1.,87.19%
+"strong, arxiv + page",deepseek-v4-pro-0813,research-29,research,True,2,1,0.007580371920000002,13.0,VisTarget-Bench contains 150 tasks.,150
+"strong, arxiv + page",deepseek-v4-pro-0813,research-30,research,True,3,2,0.013491401615999994,28.9,47.79,47.79
+"strong, arxiv + page",deepseek-v4-pro-0813,research-31,research,True,2,1,0.008183864040000002,18.2,0.85,0.85
+"strong, arxiv + page",deepseek-v4-pro-0813,research-32,research,True,2,1,0.006394462008,15.6,104,104
+"strong, arxiv + page",deepseek-v4-pro-0813,research-33,research,True,2,1,0.008927213063999996,19.6,ARIA,ARIA
+"strong, arxiv + page",deepseek-v4-pro-0813,research-34,research,True,2,1,0.007035632471999995,15.4,38%,38%
+"strong, arxiv + page",deepseek-v4-pro-0813,research-35,research,True,2,1,0.007690213872000001,17.6,AutoSciRub achieved an average improvement of **16.8 points*,16.8
+"strong, arxiv + page",deepseek-v4-pro-0813,research-36,research,True,2,1,0.009459818808000009,21.3,520,520
+"strong, arxiv + page",deepseek-v4-pro-0813,research-37,research,True,2,1,0.006112193735999999,16.3,mini-swe-agent,mini-swe-agent
+"strong, arxiv + page",deepseek-v4-pro-0813,research-38,research,True,3,2,0.009130292952000005,25.6,RobustSGPO raised the agent to **80.0%** completion on the 3,80.0%
+"strong, arxiv + page",deepseek-v4-pro-0813,research-39,research,True,2,1,0.005926356480000006,15.6,50 unique optimization examples per benchmark,50
+"strong, arxiv + page",deepseek-v4-pro-0813,research-40,research,True,2,1,0.005281992935999999,15.0,15.5%,15.5%

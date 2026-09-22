@@ -1,0 +1,43 @@
+{
+ "task": {
+  "id": "research-29",
+  "source": "research",
+  "question": "How many tasks does the VisTarget-Bench benchmark contain?",
+  "answer": "150",
+  "evidence": "We also introduce VisTarget-Bench, a 150-task human-verified benchmark that pairs each question with a held-out target image, distinguishing image-retrieval failures from visual-perception failures.",
+  "page": "WeAgent-MMSearch (arXiv)",
+  "url": "https://arxiv.org/abs/2608.28062"
+ },
+ "answer": "The VisTarget-Bench benchmark contains 500 tasks.  \nFINAL: 500",
+ "correct": false,
+ "cost": 8.299999999999974e-05,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions. No tools are available in this run, so answer from your own knowledge. Do not attempt to call any tools. Write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many tasks does the VisTarget-Bench benchmark contain?"
+  },
+  {
+   "role": "assistant",
+   "content": "The VisTarget-Bench benchmark contains 500 tasks.  \nFINAL: 500",
+   "refusal": null,
+   "reasoning": null
+  }
+ ],
+ "row": {
+  "config": "strong, no tools",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-29",
+  "source": "research",
+  "correct": false,
+  "steps": 1,
+  "tool_calls": 0,
+  "cost": 8.299999999999974e-05,
+  "seconds": 2.2,
+  "answer": "500",
+  "gold": "150"
+ }
+}

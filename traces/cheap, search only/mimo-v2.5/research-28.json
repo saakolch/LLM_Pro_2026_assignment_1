@@ -1,0 +1,265 @@
+{
+ "task": {
+  "id": "research-28",
+  "source": "research",
+  "question": "What score does the openJiuwen harness achieve on Terminal-Bench 2.1?",
+  "answer": "87.19%",
+  "evidence": "We systematically evaluate openJiuwen on SWE-bench Verified and Terminal-Bench 2.1, where it achieves 82.6% and 87.19%, respectively, exceeding the strongest selected official-leaderboard point estimates by 3.4 and 3.39 percentage points.",
+  "page": "openJiuwen (arXiv)",
+  "url": "https://arxiv.org/abs/2608.27969"
+ },
+ "answer": "I was unable to find any information about \"openJiuwen harness\" or \"Terminal-Bench 2.1\" through my searches. These terms do not appear to correspond to any known Wikipedia articles or widely recognized technical benchmarks that I can verify.\n\nFINAL: I cannot determine this score as neither \"openJiuwen harness\" nor \"Terminal-Bench 2.1\" appear to be documented in reliable sources I have access to.",
+ "correct": false,
+ "cost": 0.004060555799999997,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What score does the openJiuwen harness achieve on Terminal-Bench 2.1?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about a specific score that \"openJiuwen harness\" achieves on \"Terminal-Bench 2.1\". This seems to be a technical benchmark question. I should search for information about openJiuwen harness and Terminal-Bench 2.1.\n\nLet me start by searching for \"openJiuwen harness\" and \"Terminal-Bench 2.1\" to see if I can find relevant information.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_92e71abff49c40b18221caf8",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"openJiuwen harness Terminal-Bench 2.1 score\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a specific score that \"openJiuwen harness\" achieves on \"Terminal-Bench 2.1\". This seems to be a technical benchmark question. I should search for information about openJiuwen harness and Terminal-Bench 2.1.\n\nLet me start by searching for \"openJiuwen harness\" and \"Terminal-Bench 2.1\" to see if I can find relevant information.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_92e71abff49c40b18221caf8",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try a broader search for \"openJiuwen harness\" and \"Terminal-Bench\".",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_60df11d52cf14970b9b31511",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"openJiuwen harness benchmark score\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try a broader search for \"openJiuwen harness\" and \"Terminal-Bench\".",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_60df11d52cf14970b9b31511",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try again with a slightly different approach.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_536a660f246b47ea97661ccb",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"openJiuwen harness Terminal-Bench\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try again with a slightly different approach.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_536a660f246b47ea97661ccb",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try a broader search to see if \"openJiuwen\" or \"Terminal-Bench\" exist as Wikipedia articles or topics.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_f83ec305250a4b5793bed297",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Terminal-Bench 2.1\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try a broader search to see if \"openJiuwen\" or \"Terminal-Bench\" exist as Wikipedia articles or topics.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_f83ec305250a4b5793bed297",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try different searches to find information about this.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_80d4d24943d640e488d3d3cf",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"openJiuwen\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try different searches to find information about this.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_80d4d24943d640e488d3d3cf",
+   "content": "[Extreme learning machine] Extreme learning machines are feedforward neural networks for classification, regression, clustering, sparse approximation, compression and feature learning with a single layer or multiple layers of hidden nodes, where the parameters of hidden nodes (not just the weights connecting inputs to hidden nodes) need to be tuned. These hidden nodes can be randomly assigned and never updated (i.e. they are random projection but with nonlinear transforms), or can be inherited from their ancestors without being changed. In most cases, the output weights of hidden nodes are usually learned in a single step, which essentially amounts to learning a linear model. The name \"extreme learning machine\" (ELM) was given to such models by Guang-Bin Huang who originally proposed for the networks with any type of nonlinear piecewise continuous hidden nodes including biological neurons and different type of mathematical basis functions. The idea for artificial neural networks goes back to Frank Rosenblatt, who not only published a single layer perceptron in 1958, but also introduced a multilayer perceptron with 3 layers: an input layer, a hidden layer with randomized weights that did not learn, and a learning output layer. According to some researchers, these models are able to produce good generalization performance and learn thousands of times faster than networks trained using backpropagation. In literature, it also shows that these models can outperform support vector machines in both classifica | other articles: Beijing city fortifications, Beijing siheyuan"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search for \"openJiuwen\" returned results about extreme learning machines, which is not what I'm looking for. The \"openJiuwen harness\" and \"Terminal-Bench 2.1\" don't appear to be established topics on Wikipedia. These seem like they could be very niche or fictional technical terms.\n\nLet me try a few more searches to see if these terms exist anywhere on Wikipedia.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_6292f4473e8c4836aef21eef",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Terminal Bench benchmark\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search for \"openJiuwen\" returned results about extreme learning machines, which is not what I'm looking for. The \"openJiuwen harness\" and \"Terminal-Bench 2.1\" don't appear to be established topics on Wikipedia. These seem like they could be very niche or fictional technical terms.\n\nLet me try a few more searches to see if these terms exist anywhere on Wikipedia.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_6292f4473e8c4836aef21eef",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": "I'm encountering rate limits on Wikipedia search. Let me try once more.",
+   "refusal": null,
+   "reasoning": "I'm getting rate limited. Let me wait and try again.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_3daeca58e3c04cc1816c3108",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Terminal-Bench software testing\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "I'm getting rate limited. Let me wait and try again.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_3daeca58e3c04cc1816c3108",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "user",
+   "content": "Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>."
+  },
+  {
+   "role": "assistant",
+   "content": "I was unable to find any information about \"openJiuwen harness\" or \"Terminal-Bench 2.1\" through my searches. These terms do not appear to correspond to any known Wikipedia articles or widely recognized technical benchmarks that I can verify.\n\nFINAL: I cannot determine this score as neither \"openJiuwen harness\" nor \"Terminal-Bench 2.1\" appear to be documented in reliable sources I have access to.",
+   "refusal": null,
+   "reasoning": "The user is asking about \"openJiuwen harness\" and its score on \"Terminal-Bench 2.1\". These terms don't appear to be real or established terms that I have knowledge about. I searched Wikipedia but couldn't find any relevant information. These sound like they could be fictional or made-up terms.\n\nI should be honest that I cannot find this information.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"openJiuwen harness\" and its score on \"Terminal-Bench 2.1\". These terms don't appear to be real or established terms that I have knowledge about. I searched Wikipedia but couldn't find any relevant information. These sound like they could be fictional or made-up terms.\n\nI should be honest that I cannot find this information.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, search only",
+  "model": "mimo-v2.5",
+  "id": "research-28",
+  "source": "research",
+  "correct": false,
+  "steps": 9,
+  "tool_calls": 7,
+  "cost": 0.004060555799999997,
+  "seconds": 102.2,
+  "answer": "I cannot determine this score as neither \"openJiuwen harness",
+  "gold": "87.19%"
+ }
+}

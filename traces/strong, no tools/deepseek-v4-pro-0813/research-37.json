@@ -1,0 +1,51 @@
+{
+ "task": {
+  "id": "research-37",
+  "source": "research",
+  "question": "Which open-source agent framework does the HLS-Eval agentic evaluation flow build on?",
+  "answer": "mini-swe-agent",
+  "evidence": "We therefore extend HLS-Eval with an agentic evaluation flow built on the open-source mini-swe-agent framework.",
+  "page": "HLS-Eval (arXiv)",
+  "url": "https://arxiv.org/abs/2609.09526"
+ },
+ "answer": "AutoGen",
+ "correct": false,
+ "cost": 0.0046784200000000165,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions. No tools are available in this run, so answer from your own knowledge. Do not attempt to call any tools. Write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "Which open-source agent framework does the HLS-Eval agentic evaluation flow build on?"
+  },
+  {
+   "role": "assistant",
+   "content": "AutoGen",
+   "refusal": null,
+   "reasoning": "We need answer question. \"Which open-source agent framework does the HLS-Eval agentic evaluation flow build on?\" Need identify. HLS-Eval likely benchmark for evaluating LLM agents? \"HLS-Eval agentic evaluation flow\" maybe built on AutoGen? Let's recall. HLS-Eval: A benchmark for evaluating LLM agents on high-level synthesis? HLS-Eval: \"HLS-Eval: A Benchmark and Evaluation Framework for LLM-Aided High-Level Synthesis\" maybe uses AutoGen? Need know.\n\nLet's search memory. HLS-Eval is an evaluation framework for LLM agents in high-level synthesis (HLS) tasks. It likely builds on \"AutoGen\" from Microsoft? The phrase \"agentic evaluation flow\" perhaps built on \"Meta's LlamaStack\"? Let's recall from papers.\n\nI remember a paper: \"HLS-Eval: A Benchmark and Evaluation Framework for LLM-Driven High-Level Synthesis\" maybe uses \"AutoGen\" for multi-agent conversation. HLS-Eval includes \"agentic evaluation flow\" built on \"AutoGen\"? The repo might be \"hls-eval\" by \"cheng zhang\"? Let's think.\n\nHLS-Eval: \"An open-source evaluation framework for LLM-based HLS code generation\" maybe built on \"AutoGen\" and \"LangChain\"? Question asks \"Which open-source agent framework does the HLS-Eval agentic evaluation flow build on?\" Singular. Likely \"AutoGen\".\n\nNeed ensure not \"LangGraph\" or \"OpenAI Swarm\". Let's recall details.\n\nFrom memory: HLS-Eval paper: \"We build HLS-Eval on top of AutoGen, an open-source multi-agent framework, to construct an agentic evaluation flow.\" I have seen? Let's try to recall.\n\nHLS-Eval maybe from NVIDIA? \"HLS-Eval: A Benchmark and Framework for Evaluating LLM-Based High-Level Synthesis\" uses \"AutoGen\" to orchestrate agents: designer, tester, etc. Yes.\n\nLet's answer \"AutoGen\". But let's be certain. There is \"HLS-Eval\" GitHub maybe \"Xilinx/HLS-Eval\"? It builds on \"AutoGen\" for the agentic flow. The question wording: \"Which open-source agent framework does the HLS-Eval agentic evaluation flow build on?\" It expects \"AutoGen\". Final should be concise.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer question. \"Which open-source agent framework does the HLS-Eval agentic evaluation flow build on?\" Need identify. HLS-Eval likely benchmark for evaluating LLM agents? \"HLS-Eval agentic evaluation flow\" maybe built on AutoGen? Let's recall. HLS-Eval: A benchmark for evaluating LLM agents on high-level synthesis? HLS-Eval: \"HLS-Eval: A Benchmark and Evaluation Framework for LLM-Aided High-Level Synthesis\" maybe uses AutoGen? Need know.\n\nLet's search memory. HLS-Eval is an evaluation framework for LLM agents in high-level synthesis (HLS) tasks. It likely builds on \"AutoGen\" from Microsoft? The phrase \"agentic evaluation flow\" perhaps built on \"Meta's LlamaStack\"? Let's recall from papers.\n\nI remember a paper: \"HLS-Eval: A Benchmark and Evaluation Framework for LLM-Driven High-Level Synthesis\" maybe uses \"AutoGen\" for multi-agent conversation. HLS-Eval includes \"agentic evaluation flow\" built on \"AutoGen\"? The repo might be \"hls-eval\" by \"cheng zhang\"? Let's think.\n\nHLS-Eval: \"An open-source evaluation framework for LLM-based HLS code generation\" maybe built on \"AutoGen\" and \"LangChain\"? Question asks \"Which open-source agent framework does the HLS-Eval agentic evaluation flow build on?\" Singular. Likely \"AutoGen\".\n\nNeed ensure not \"LangGraph\" or \"OpenAI Swarm\". Let's recall details.\n\nFrom memory: HLS-Eval paper: \"We build HLS-Eval on top of AutoGen, an open-source multi-agent framework, to construct an agentic evaluation flow.\" I have seen? Let's try to recall.\n\nHLS-Eval maybe from NVIDIA? \"HLS-Eval: A Benchmark and Framework for Evaluating LLM-Based High-Level Synthesis\" uses \"AutoGen\" to orchestrate agents: designer, tester, etc. Yes.\n\nLet's answer \"AutoGen\". But let's be certain. There is \"HLS-Eval\" GitHub maybe \"Xilinx/HLS-Eval\"? It builds on \"AutoGen\" for the agentic flow. The question wording: \"Which open-source agent framework does the HLS-Eval agentic evaluation flow build on?\" It expects \"AutoGen\". Final should be concise.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, no tools",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-37",
+  "source": "research",
+  "correct": false,
+  "steps": 1,
+  "tool_calls": 0,
+  "cost": 0.0046784200000000165,
+  "seconds": 9.0,
+  "answer": "AutoGen",
+  "gold": "mini-swe-agent"
+ }
+}

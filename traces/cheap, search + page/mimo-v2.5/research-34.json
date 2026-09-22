@@ -1,0 +1,141 @@
+{
+ "task": {
+  "id": "research-34",
+  "source": "research",
+  "question": "What share of skill bundle tokens does SkillZip Pro remove with no quality loss?",
+  "answer": "38%",
+  "evidence": "On a production content-moderation skill evaluated by our industrial multi-round harness, \\method removes \\hl{38\\%} of skill bundle tokens and \\hl{10.4\\%} of end-to-end per-run tokens with no quality loss, while an unprotected 71\\% configuration loses up to 26 accuracy points to one-sided false positives.",
+  "page": "SkillZip Pro (arXiv)",
+  "url": "https://arxiv.org/abs/2608.30785"
+ },
+ "answer": "I was unable to find any information about \"SkillZip Pro\" on Wikipedia. The search results returned unrelated articles. This product or technology does not appear to be documented in any Wikipedia articles that I can access.\n\nCould you provide more context about where you heard about SkillZip Pro? It's possible this is:\n- A very niche or proprietary tool not covered on Wikipedia\n- A fictional or hypothetical product\n- Something from a specific industry (e.g., AI/ML model compression) that hasn't made it to Wikipedia yet\n\nWithout being able to verify the information through reliable sources, I cannot give you an accurate answer. Please share where you encountered this term so I can help you better.",
+ "correct": false,
+ "cost": 0.001140317599999996,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What share of skill bundle tokens does SkillZip Pro remove with no quality loss?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about \"SkillZip Pro\" and what share of skill bundle tokens it removes with no quality loss. This seems like a very specific product/feature question. Let me search for this.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5673d4de93244a9b9b9197d4",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"SkillZip Pro skill bundle tokens remove quality loss\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"SkillZip Pro\" and what share of skill bundle tokens it removes with no quality loss. This seems like a very specific product/feature question. Let me search for this.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5673d4de93244a9b9b9197d4",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The web search failed because it seems to be rate limited. Let me try again with a simpler query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_48d118e4fcdf4cf0a10b65f6",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"SkillZip Pro tokens quality\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The web search failed because it seems to be rate limited. Let me try again with a simpler query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_48d118e4fcdf4cf0a10b65f6",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search is failing with a rate limit error. Let me try once more.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_419f14ce51774148be59d92c",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"SkillZip Pro\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search is failing with a rate limit error. Let me try once more.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_419f14ce51774148be59d92c",
+   "content": "[YouTube] YouTube is an American online video-sharing platform owned by Google. YouTube was founded on February 14, 2005, by Chad Hurley, Jawed Karim, and Steve Chen who were all former employees at PayPal. Headquartered in San Bruno, California, it is the second-most-visited website in the world, after Google itself. In January 2024, YouTube had reached more than 2.7 billion monthly active users, who collectively watched more than one billion hours of video every day. As of May 2019, videos were being uploaded to the platform at a rate of more than 500 hours of video per minute, and as of mid-2024, there were approximately 14.8 billion videos in total. On November 13, 2006, YouTube was purchased by Google for 1.65 billion USD (equivalent to $2.44 billion in 2025). Google expanded YouTube's business model from generating revenue through advertisements alone to paid offerings such as movies and exclusive programming explicitly produced for YouTube. It also offers YouTube Premium, a paid subscription option for watching videos without ads. YouTube incorporated the Google AdSense program, generating more revenue for both YouTube and approved users. In 2025, YouTube's advertising revenue was $40.4 billion. Since its purchase by Google, YouTube has expanded beyond the core website, creating mobile apps, network television, games, and the ability to link with other platforms. Video categories on YouTube include music videos, video clips, news, short and feature films, songs, documentaries, m | other articles: Google, World Trade Center (1973–2001)"
+  },
+  {
+   "role": "assistant",
+   "content": "I was unable to find any information about \"SkillZip Pro\" on Wikipedia. The search results returned unrelated articles. This product or technology does not appear to be documented in any Wikipedia articles that I can access.\n\nCould you provide more context about where you heard about SkillZip Pro? It's possible this is:\n- A very niche or proprietary tool not covered on Wikipedia\n- A fictional or hypothetical product\n- Something from a specific industry (e.g., AI/ML model compression) that hasn't made it to Wikipedia yet\n\nWithout being able to verify the information through reliable sources, I cannot give you an accurate answer. Please share where you encountered this term so I can help you better.",
+   "refusal": null,
+   "reasoning": "The search returned YouTube results, not anything about \"SkillZip Pro.\" This doesn't appear to be a real product or technology that exists on Wikipedia. It might be a fictional or very niche product. Let me try searching more specifically.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search returned YouTube results, not anything about \"SkillZip Pro.\" This doesn't appear to be a real product or technology that exists on Wikipedia. It might be a fictional or very niche product. Let me try searching more specifically.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, search + page",
+  "model": "mimo-v2.5",
+  "id": "research-34",
+  "source": "research",
+  "correct": false,
+  "steps": 4,
+  "tool_calls": 3,
+  "cost": 0.001140317599999996,
+  "seconds": 40.1,
+  "answer": "I was unable to find any information about \"SkillZip Pro\" on",
+  "gold": "38%"
+ }
+}

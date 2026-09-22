@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-36",
+  "source": "research",
+  "question": "How many hidden expert-authored items does ASPIRE evaluate evolved systems on?",
+  "answer": "520",
+  "evidence": "ASPIRE supports both model-weight and agent-harness evolution in a unified interactive environment and evaluates the resulting systems on a hidden, expert-authored set of 520 items spanning six goals.",
+  "page": "ASPIRE (arXiv)",
+  "url": "https://arxiv.org/abs/2608.31111"
+ },
+ "answer": "FINAL: 520",
+ "correct": true,
+ "cost": 0.009459818808000009,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many hidden expert-authored items does ASPIRE evaluate evolved systems on?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "We need answer about ASPIRE benchmark, hidden expert-authored items evaluating evolved systems. Need search arxiv.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_i76f3ccpzh9919tzu9oevh90",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"ASPIRE hidden expert-authored items evolved systems\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer about ASPIRE benchmark, hidden expert-authored items evaluating evolved systems. Need search arxiv.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_i76f3ccpzh9919tzu9oevh90",
+   "content": "[Aspire: Can Models Self-Evolve from Vague Goals?] Many important forms of human learning begin with a vague goal, such as \"become a better physicist\" or \"improve at research.\" Learners must interpret the goal, identify capability gaps, decide how to learn, and determine whether they have actually improved. In contrast, existing work on LLM self-evolution typically begins with tasks and evaluation metrics specified by humans, reducing self-evolution to optimizing an explicit objective rather than deciding what and how to learn. We introduce ASPIRE, a benchmark for vague-goal-driven self-evolution. ASPIRE provides only a natural-language capability goal while downstream evaluation tasks remain hidden. The agent must operationalize the goal by choosing data and update methods, constructing training and validation signals, and deciding when to evaluate. ASPIRE supports both model-weight and agent-harness evolution in a unified interactive environment and evaluates the resulting systems on a hidden, expert-authored set of 520 items spanning six goals. Our experiments show that vague goals redirect search effort toward goal interpretation. Current agents routinely complete training and harness-editing loops, but weight-level gains remain sparse and unstable, and the strongest evolved harness remains below the engineered Qwen-Agent reference. Agents often train on mismatched data and trust narrow self-evaluations, so local gains fail to transfer to hidden evaluation and continued search and training can erase earlier improvements. (https://arxiv.org/abs/2608.31111v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 520",
+   "refusal": null,
+   "reasoning": "The abstract says hidden expert-authored set of 520 items spanning six goals. Question: How many hidden expert-authored items does ASPIRE evaluate evolved systems on? Answer 520. Need final with FINAL.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract says hidden expert-authored set of 520 items spanning six goals. Question: How many hidden expert-authored items does ASPIRE evaluate evolved systems on? Answer 520. Need final with FINAL.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-36",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.009459818808000009,
+  "seconds": 21.3,
+  "answer": "520",
+  "gold": "520"
+ }
+}

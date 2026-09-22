@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-26",
+  "source": "research",
+  "question": "On how many of the 200 benchmark tasks did Logos succeed under one fault?",
+  "answer": "120",
+  "evidence": "Under one fault on two hundred benchmark tasks across three configurations, the single-process reference lost every session and scored 1.5 percent on the official validator, the MCP configuration kept its sessions while spending 1099 calls on a dead endpoint, and Logos kept every session alive, wasted zero calls, and succeeded on 120 tasks against 102 for both configurations combined.",
+  "page": "Logos (arXiv)",
+  "url": "https://arxiv.org/abs/2608.28553"
+ },
+ "answer": "FINAL: 120",
+ "correct": true,
+ "cost": 0.0049882295760000014,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "On how many of the 200 benchmark tasks did Logos succeed under one fault?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "We need answer from a paper. \"Logos\" benchmark tasks, \"one fault\" success. Need search arXiv. Let me search for Logos benchmark.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_hxmqputbzsz2057iuchfp845",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"Logos benchmark tasks one fault\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer from a paper. \"Logos\" benchmark tasks, \"one fault\" success. Need search arXiv. Let me search for Logos benchmark.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_hxmqputbzsz2057iuchfp845",
+   "content": "[Logos: An Agent Harness on a Cross-Process Bus] Plugin-based agents assemble capabilities at runtime, and the spatiotemporal-composability calculus proves a reversibility guarantee for this assembly. However, the guarantee is carried by a single process, which confines all components, sessions, and recovery records to one failure domain, where a fault spreads past the plugin boundary, and process death interrupts every session the process hosts. Resting only on the hypotheses the calculus already states and the stateless interface of the model call, this paper relaxes the single-process restriction of the calculus to an arbitrary assignment of components and records to processes, gives four sufficient conditions, and proves with Theorem 1, derived from the four lemmas, that the reversibility guarantee holds across processes when these conditions are met. Based on Theorem 1, this paper constructs Logos, a cross-process plugin-based agent in the peer-process and name-routed form of ROS, where a plugin is a process, the router holds only a rebuildable routing table, and the session state needed for recovery lives in an append-only transcript owned by no process. Under one fault on two hundred benchmark tasks across three configurations, the single-process reference lost every session and scored 1.5 percent on the official validator, the MCP configuration kept its sessions while spending 1099 calls on a dead endpoint, and Logos kept every session alive, wasted zero calls, and succeeded on 120 tasks against 102 for both configurations combined. At the mechanism level, eighty sessions terminated at four points of the tool-call cycle all resumed with no repeated action, 3,500 concurrent calls paired with zero violations, and one bus hop cost 1 in 823 of the model's first token. The results show that the reversibility guaran (https://arxiv.org/abs/2608.28553v3)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 120",
+   "refusal": null,
+   "reasoning": "The abstract says Logos succeeded on 120 tasks. Need answer: on how many of the 200 benchmark tasks did Logos succeed under one fault? 120.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract says Logos succeeded on 120 tasks. Need answer: on how many of the 200 benchmark tasks did Logos succeed under one fault? 120.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-26",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0049882295760000014,
+  "seconds": 15.7,
+  "answer": "120",
+  "gold": "120"
+ }
+}

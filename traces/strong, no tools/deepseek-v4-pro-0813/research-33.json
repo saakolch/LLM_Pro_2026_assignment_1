@@ -1,0 +1,51 @@
+{
+ "task": {
+  "id": "research-33",
+  "source": "research",
+  "question": "What is the name of the configurable VLM-agent harness proposed alongside the MineAmongUs sandbox?",
+  "answer": "ARIA",
+  "evidence": "We also propose ARIA, a configurable VLM-agent harness that exposes five cognitive-component ablation axes; and an atom- and arc-level annotation scheme grounded in deception taxonomies and operationalized at scale by an LLM-as-a-Judge reaching near-human atom-labeling agreement.",
+  "page": "MineAmongUs (arXiv)",
+  "url": "https://arxiv.org/abs/2608.30428"
+ },
+ "answer": "FINAL: MineAgent",
+ "correct": false,
+ "cost": 0.040168970464,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions. No tools are available in this run, so answer from your own knowledge. Do not attempt to call any tools. Write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What is the name of the configurable VLM-agent harness proposed alongside the MineAmongUs sandbox?"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: MineAgent",
+   "refusal": null,
+   "reasoning": "We need answer question. Need recall. \"configurable VLM-agent harness proposed alongside the MineAmongUs sandbox\" likely from paper? MineAmongUs is a Minecraft-based Among Us environment for multi-agent? Need name of harness. Let's recall. There is \"MineAmongUs\" sandbox, proposed alongside \"Odyssey\"? Hmm. Need identify configurable VLM-agent harness. I know paper \"MineAmongUs: A Minecraft-based Benchmark for Multi-Agent Planning and Communication\" maybe introduces \"MineAgent\"? Let's search memory internal. I recall an arXiv paper: \"MineAmongUs: A Multi-Agent Benchmark for Evaluating Theory of Mind and Communication in LLM Agents\" maybe uses \"Minecraft\" and \"Among Us\". They propose \"C-Agents\" or \"Voyager\"? Let's think.\n\nThe question: \"What is the name of the configurable VLM-agent harness proposed alongside the MineAmongUs sandbox?\" This sounds from a specific paper. \"MineAmongUs\" sandbox and \"configurable VLM-agent harness\" named maybe \"MineDojo\"? No. \"VLM-agent harness\" maybe \"Agent S\"? \"MineAgent\"? Let's recall details.\n\nI have seen paper \"MineAmongUs: A Benchmark for Multi-Agent Coordination and Deception in Minecraft\" from 2024? They introduce \"MineAmongUs\" and \"MineAgent\" harness? The harness might be called \"MineAgent\" or \"Minecraft Agent Harness (MAH)\"? Let's search memory from latent. Terms: \"MineAmongUs\" is built on \"Mineflayer\"? They propose \"MineAgent\" as a configurable VLM-agent harness. I remember reading abstract: \"We introduce MineAmongUs, a sandbox environment based on Minecraft that procedurally generates Among Us tasks, and a configurable VLM-agent harness, MineAgent, to support multimodal agents.\" Hmm yes likely \"MineAgent\". Let's verify.\n\nQuestion wording: \"configurable VLM-agent harness proposed alongside the MineAmongUs sandbox\" likely exact phrase from paper: \"We also propose MineAgent, a configurable VLM-agent harness...\" I think answer is MineAgent. Need final.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer question. Need recall. \"configurable VLM-agent harness proposed alongside the MineAmongUs sandbox\" likely from paper? MineAmongUs is a Minecraft-based Among Us environment for multi-agent? Need name of harness. Let's recall. There is \"MineAmongUs\" sandbox, proposed alongside \"Odyssey\"? Hmm. Need identify configurable VLM-agent harness. I know paper \"MineAmongUs: A Minecraft-based Benchmark for Multi-Agent Planning and Communication\" maybe introduces \"MineAgent\"? Let's search memory internal. I recall an arXiv paper: \"MineAmongUs: A Multi-Agent Benchmark for Evaluating Theory of Mind and Communication in LLM Agents\" maybe uses \"Minecraft\" and \"Among Us\". They propose \"C-Agents\" or \"Voyager\"? Let's think.\n\nThe question: \"What is the name of the configurable VLM-agent harness proposed alongside the MineAmongUs sandbox?\" This sounds from a specific paper. \"MineAmongUs\" sandbox and \"configurable VLM-agent harness\" named maybe \"MineDojo\"? No. \"VLM-agent harness\" maybe \"Agent S\"? \"MineAgent\"? Let's recall details.\n\nI have seen paper \"MineAmongUs: A Benchmark for Multi-Agent Coordination and Deception in Minecraft\" from 2024? They introduce \"MineAmongUs\" and \"MineAgent\" harness? The harness might be called \"MineAgent\" or \"Minecraft Agent Harness (MAH)\"? Let's search memory from latent. Terms: \"MineAmongUs\" is built on \"Mineflayer\"? They propose \"MineAgent\" as a configurable VLM-agent harness. I remember reading abstract: \"We introduce MineAmongUs, a sandbox environment based on Minecraft that procedurally generates Among Us tasks, and a configurable VLM-agent harness, MineAgent, to support multimodal agents.\" Hmm yes likely \"MineAgent\". Let's verify.\n\nQuestion wording: \"configurable VLM-agent harness proposed alongside the MineAmongUs sandbox\" likely exact phrase from paper: \"We also propose MineAgent, a configurable VLM-agent harness...\" I think answer is MineAgent. Need final.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, no tools",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-33",
+  "source": "research",
+  "correct": false,
+  "steps": 1,
+  "tool_calls": 0,
+  "cost": 0.040168970464,
+  "seconds": 60.7,
+  "answer": "MineAgent",
+  "gold": "ARIA"
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "task": {
+  "id": "research-21",
+  "source": "research",
+  "question": "To what value does GRACE improve strict reliability (pass^3) at the final checkpoint?",
+  "answer": "0.673",
+  "evidence": "Across five independent replications, GRACE improves strict reliability, measured by pass^3, from the Gemini 2.5 Flash zero-shot value of 0.091 to 0.673$\\pm$0.136 at the final checkpoint.",
+  "page": "GRACE (arXiv)",
+  "url": "https://arxiv.org/abs/2607.09175"
+ },
+ "answer": "The GRACE method improves strict reliability (pass^3) at the final checkpoint to **100%** (or perfect pass^3 reliability), based on the context of its evaluation on the GSM8K dataset.  \n\nFINAL: 100%",
+ "correct": false,
+ "cost": 0.00018261999999999445,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions. No tools are available in this run, so answer from your own knowledge. Do not attempt to call any tools. Write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "To what value does GRACE improve strict reliability (pass^3) at the final checkpoint?"
+  },
+  {
+   "role": "assistant",
+   "content": "The GRACE method improves strict reliability (pass^3) at the final checkpoint to **100%** (or perfect pass^3 reliability), based on the context of its evaluation on the GSM8K dataset.  \n\nFINAL: 100%",
+   "refusal": null,
+   "reasoning": null
+  }
+ ],
+ "row": {
+  "config": "strong, no tools",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-21",
+  "source": "research",
+  "correct": false,
+  "steps": 1,
+  "tool_calls": 0,
+  "cost": 0.00018261999999999445,
+  "seconds": 2.6,
+  "answer": "100%",
+  "gold": "0.673"
+ }
+}

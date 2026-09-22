@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-8",
+  "source": "research",
+  "question": "What success rate did the best-performing configuration achieve on the AARRI-Bench benchmark?",
+  "answer": "68.3%",
+  "evidence": "revealing that even the best-performing configuration (Mini-SWE-Agent with Claude Opus 4.7) achieves only 68.3\\% success rate, frequently overlooking subtle yet critical details that are obvious to real human researchers.",
+  "page": "AARRI-Bench (arXiv)",
+  "url": "https://arxiv.org/abs/2606.07462"
+ },
+ "answer": "Based on the AARRI-Bench paper (arXiv:2606.07462), the best-performing configuration — **Mini-SWE-Agent with Claude Opus 4.7** — achieved a **68.3% success rate** on the AARRI-Bench benchmark. The paper notes that even this top result frequently overlooks subtle yet critical details that are obvious to real human researchers.\n\nIt's worth noting that a subsequent paper on the **Argus** runtime (arXiv:2608.05144) reported reaching **76.8%** on AARRI-Bench, which would surpass the original benchmark paper's reported best.\n\nFINAL: 68.3% (as reported in the original AARRI-Bench paper for the best-performing configuration: Mini-SWE-Agent with Claude Opus 4.7).",
+ "correct": true,
+ "cost": 0.0010418552,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What success rate did the best-performing configuration achieve on the AARRI-Bench benchmark?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user wants to know the success rate of the best-performing configuration on the AARRI-Bench benchmark. I should search for \"AARRI-Bench\" on arXiv.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_e37bd50786444c22a5f0db58",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"AARRI-Bench benchmark\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user wants to know the success rate of the best-performing configuration on the AARRI-Bench benchmark. I should search for \"AARRI-Bench\" on arXiv.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_e37bd50786444c22a5f0db58",
+   "content": "[Act As a Real Researcher: A Suite of Benchmarks Evaluating Frontier LLMs and Agentic Harnesses in Research Lifecycle] As foundation models advance and agent scaffolding becomes increasingly sophisticated, agents have demonstrated remarkable proficiency in complex, long-horizon coding tasks and even autonomous experiment execution. Despite their evolution from research assistants into autonomous research agents, these systems still exhibit significant limitations in field sensitivity, research ethics, and nuanced scientific judgment. Consequently, frontier agents remain unable to fully replace human researchers. To bridge this gap, we conceptualize the AARR (Act As a Real Researcher) benchmark series. Unlike existing benchmarks that primarily assess macro-level execution capabilities, AARR focuses on whether agents can emulate the professionalism, thoroughness, and nuanced reasoning that characterize human researchers in granular research scenarios. In this work, we propose AARRI-Bench (Act As a Real Research Intern), the first benchmark in this series. We conduct extensive experiments across frontier models and agentic systems, revealing that even the best-performing configuration (Mini-SWE-Agent with Claude Opus 4.7) achieves only 68.3\\% success rate, frequently overlooking subtle yet critical details that are obvious to real human researchers. Our results indicate that developing researcher-like AI requires further exploration of research behavior, rather than merely complex scaffolding. Our data is released at https://github.com/AARR-bench/AARRI-bench. (https://arxiv.org/abs/2606.07462v1)\n---\n[Argus: A General-Purpose Agentic Reasoning Runtime for Long-Horizon Tasks] Long-horizon reasoning requires an agentic runtime that can persist when evidence supports its current approach and pivot when measurements reveal failure, hidden constraints, or a misspecified objective. We present Argus, a persistent, self-evolving runtime in which Manager, Planner, Engineer, and Reviewer execute bounded missions over durable project state. Argus separates stable user intent from operational objectives, constraints, and verification criteria, and admits memories, skills, procedures, verifiers, routing decisions, and rejected routes only after role-owned review and, when available, task-native verification. Model weights remain fixed; self-evolution occurs through persistent runtime state and control policy, with autonomous execution between operator-owned escalation points. Across seven GPT-5.5 benchmark arenas, Argus achieves about 78% on SWE-Bench Pro versus 59% for Direct Copilot while using 1.41 times the aggregate tokens. After verification-gated self-evolution, mature SWE-Bench waves use 21% fewer solve-input tokens and 15% less active workflow time per task than startup waves, while recording 34 verifier recoveries and 22 strict review-loop rescues. Argus also reaches 76.8% on AARRI-Bench and a 28.0-point gap on mathematical data synthesis, with competitive GPU-kernel and language-model-training results. Beyond benchmarks, an optimized RWKV6 kernel was merged upstream; a multi-day mathematics campaign retained falsified routes and proof-backed frontier updates; and six paper pipelines completed 254 missions with 16 stage rollbacks. These results show that a fixed-weight, self-evolving harness can revise, recover, and accumulate verified approaches while producing structured trajectories for future supervised and reinforcement learning. (https://arxiv.org/abs/2608.05144v2)"
+  },
+  {
+   "role": "assistant",
+   "content": "Based on the AARRI-Bench paper (arXiv:2606.07462), the best-performing configuration — **Mini-SWE-Agent with Claude Opus 4.7** — achieved a **68.3% success rate** on the AARRI-Bench benchmark. The paper notes that even this top result frequently overlooks subtle yet critical details that are obvious to real human researchers.\n\nIt's worth noting that a subsequent paper on the **Argus** runtime (arXiv:2608.05144) reported reaching **76.8%** on AARRI-Bench, which would surpass the original benchmark paper's reported best.\n\nFINAL: 68.3% (as reported in the original AARRI-Bench paper for the best-performing configuration: Mini-SWE-Agent with Claude Opus 4.7).",
+   "refusal": null,
+   "reasoning": "The user is asking about the success rate of the best-performing configuration on the AARRI-Bench benchmark.\n\nLooking at the first search result:\n- \"we propose AARRI-Bench (Act As a Real Research Intern), the first benchmark in this series.\"\n- \"even the best-performing configuration (Mini-SWE-Agent with Claude Opus 4.7) achieves only 68.3\\% success rate\"\n\nThe best-performing configuration achieved a **68.3% success rate**.\n\nThe second search result also mentions AARRI-Bench:\n- \"Argus also reaches 76.8% on AARRI-Bench\"\n\nWait, this is interesting. The question asks about the best-performing configuration on AARRI-Bench. The first result says the best-performing configuration (Mini-SWE-Agent with Claude Opus 4.7) achieves only 68.3%. But the second result mentions Argus reaches 76.8% on AARRI-Bench.\n\nThese are from different papers. The first paper introduces AARRI-Bench and says the best-performing configuration achieves 68.3%. The second paper about Argus claims 76.8% on AARRI-Bench.\n\nThe question asks \"What success rate did the best-performing configuration achieve on the AARRI-Bench benchmark?\" - this seems to be asking about the results reported in the original paper that introduced the benchmark, which states 68.3%.\n\nHowever, if there's a newer result (76.8%) from a different system, that could be considered the \"best-performing\" overall.\n\nLet me think about this more carefully. The first paper is the one that introduced AARRI-Bench and reported results across frontier models and agentic systems. In that paper, the best-performing configuration was Mini-SWE-Agent with Claude Opus 4.7 at 68.3%.\n\nThe second paper about Argus is a separate paper that also evaluated on AARRI-Bench and achieved 76.8%, which would be higher.\n\nGiven that the user is asking a general question about the benchmark, I think the most relevant answer is 68.3% as reported in the original AARRI-Bench paper, but I should note that Argus achieved 76.8% in a different paper.\n\nActually, re-reading the question: \"What success rate did the best-performing configuration achieve on the AARRI-Bench benchmark?\" - this is a bit ambiguous. It could refer to:\n1. The best-performing configuration in the original AARRI-Bench paper (68.3%)\n2. The best-performing configuration overall across papers (76.8% by Argus)\n\nI think the answer the user is looking for is 68.3%, as this is what the original benchmark paper reports as the best-performing configuration's success rate.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about the success rate of the best-performing configuration on the AARRI-Bench benchmark.\n\nLooking at the first search result:\n- \"we propose AARRI-Bench (Act As a Real Research Intern), the first benchmark in this series.\"\n- \"even the best-performing configuration (Mini-SWE-Agent with Claude Opus 4.7) achieves only 68.3\\% success rate\"\n\nThe best-performing configuration achieved a **68.3% success rate**.\n\nThe second search result also mentions AARRI-Bench:\n- \"Argus also reaches 76.8% on AARRI-Bench\"\n\nWait, this is interesting. The question asks about the best-performing configuration on AARRI-Bench. The first result says the best-performing configuration (Mini-SWE-Agent with Claude Opus 4.7) achieves only 68.3%. But the second result mentions Argus reaches 76.8% on AARRI-Bench.\n\nThese are from different papers. The first paper introduces AARRI-Bench and says the best-performing configuration achieves 68.3%. The second paper about Argus claims 76.8% on AARRI-Bench.\n\nThe question asks \"What success rate did the best-performing configuration achieve on the AARRI-Bench benchmark?\" - this seems to be asking about the results reported in the original paper that introduced the benchmark, which states 68.3%.\n\nHowever, if there's a newer result (76.8%) from a different system, that could be considered the \"best-performing\" overall.\n\nLet me think about this more carefully. The first paper is the one that introduced AARRI-Bench and reported results across frontier models and agentic systems. In that paper, the best-performing configuration was Mini-SWE-Agent with Claude Opus 4.7 at 68.3%.\n\nThe second paper about Argus is a separate paper that also evaluated on AARRI-Bench and achieved 76.8%, which would be higher.\n\nGiven that the user is asking a general question about the benchmark, I think the most relevant answer is 68.3% as reported in the original AARRI-Bench paper, but I should note that Argus achieved 76.8% in a different paper.\n\nActually, re-reading the question: \"What success rate did the best-performing configuration achieve on the AARRI-Bench benchmark?\" - this is a bit ambiguous. It could refer to:\n1. The best-performing configuration in the original AARRI-Bench paper (68.3%)\n2. The best-performing configuration overall across papers (76.8% by Argus)\n\nI think the answer the user is looking for is 68.3%, as this is what the original benchmark paper reports as the best-performing configuration's success rate.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-8",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0010418552,
+  "seconds": 25.0,
+  "answer": "68.3% (as reported in the original AARRI-Bench paper for the",
+  "gold": "68.3%"
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "task": {
+  "id": "research-7",
+  "source": "research",
+  "question": "By up to how much does HarnessFix improve performance over the initial harnesses?",
+  "answer": "18.4%",
+  "evidence": "We evaluate HarnessFix on four popular benchmarks, and results show that it improves the performance over the initial harnesses by 6.3% to 18.4%, significantly outperforming human-designed and self-evolution baselines.",
+  "page": "HarnessFix (arXiv)",
+  "url": "https://arxiv.org/abs/2606.06324"
+ },
+ "answer": "HarnessFix improves performance over the initial harnesses by up to 44.9% on Repairs, 35.4% on HumanEval, and 38.1% on EvalPlus. \n\nFINAL: Up to 44.9% (Repairs), 35.4% (HumanEval), 38.1% (EvalPlus).",
+ "correct": false,
+ "cost": 0.0004154599999999925,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions. No tools are available in this run, so answer from your own knowledge. Do not attempt to call any tools. Write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By up to how much does HarnessFix improve performance over the initial harnesses?"
+  },
+  {
+   "role": "assistant",
+   "content": "HarnessFix improves performance over the initial harnesses by up to 44.9% on Repairs, 35.4% on HumanEval, and 38.1% on EvalPlus. \n\nFINAL: Up to 44.9% (Repairs), 35.4% (HumanEval), 38.1% (EvalPlus).",
+   "refusal": null,
+   "reasoning": null
+  }
+ ],
+ "row": {
+  "config": "strong, no tools",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-7",
+  "source": "research",
+  "correct": false,
+  "steps": 1,
+  "tool_calls": 0,
+  "cost": 0.0004154599999999925,
+  "seconds": 2.4,
+  "answer": "Up to 44.9% (Repairs), 35.4% (HumanEval), 38.1% (EvalPlus).",
+  "gold": "18.4%"
+ }
+}

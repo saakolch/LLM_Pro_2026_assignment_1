@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-13",
+  "source": "research",
+  "question": "By up to what relative gain did Self-Harness improve pass rates across nine model-benchmark combinations?",
+  "answer": "132%",
+  "evidence": "Across all nine model--benchmark combinations, every final harness improves both held-in and held-out pass rates, with overall relative gains of up to 132%.",
+  "page": "Self-Harness (arXiv)",
+  "url": "https://arxiv.org/abs/2606.09498"
+ },
+ "answer": "FINAL: Up to 132%.",
+ "correct": true,
+ "cost": 0.011587687319999998,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By up to what relative gain did Self-Harness improve pass rates across nine model-benchmark combinations?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "We need answer about \"Self-Harness\" improving pass rates across nine model-benchmark combinations. Need search arxiv.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_poll2vpbb5l4vfqr3ocqyq5u",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"Self-Harness pass rates model-benchmark combinations\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer about \"Self-Harness\" improving pass rates across nine model-benchmark combinations. Need search arxiv.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_poll2vpbb5l4vfqr3ocqyq5u",
+   "content": "[Self-Harness: Harnesses That Improve Themselves] The performance of LLM-based agents is jointly shaped by their base models and the harnesses that mediate their interaction with the environment. Because different models exhibit distinct behaviors, effective harness design is inherently model-specific. Yet agent harnesses are still largely engineered by human experts, a paradigm that scales poorly as modern LLMs become increasingly diverse and rapidly evolving. In this paper, we introduce Self-Harness, a new paradigm in which an LLM-based agent improves its own operating harness, without relying on human engineers or stronger external agents. We operationalize Self-Harness as an iterative loop with three stages: Weakness Mining, which identifies model-specific failure patterns from execution traces; Harness Proposal, which generates diverse yet minimal harness modifications tied to these failures; and Proposal Validation, which accepts candidate edits only after regression testing. We instantiate Self-Harness across Terminal-Bench-2.0, SWE-bench Verified, and AppWorld using a minimal initial harness and three base models from diverse families: MiniMax M2.5, Qwen3.5-35B-A3B, and GLM-5. Across all nine model--benchmark combinations, every final harness improves both held-in and held-out pass rates, with overall relative gains of up to 132%. Qualitative analyses further show that the retained mechanisms address benchmark-specific bottlenecks in artifact handling and runtime control, software-patch verification, and application-state retrieval. These results suggest a path toward LLM-based agents that are not merely shaped by their harnesses, but can also participate in reshaping them. (https://arxiv.org/abs/2606.09498v3)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: Up to 132%.",
+   "refusal": null,
+   "reasoning": "The abstract says overall relative gains of up to 132%. The question: \"By up to what relative gain did Self-Harness improve pass rates across nine model-benchmark combinations?\" Answer: up to 132%.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract says overall relative gains of up to 132%. The question: \"By up to what relative gain did Self-Harness improve pass rates across nine model-benchmark combinations?\" Answer: up to 132%.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-13",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.011587687319999998,
+  "seconds": 20.0,
+  "answer": "Up to 132%.",
+  "gold": "132%"
+ }
+}

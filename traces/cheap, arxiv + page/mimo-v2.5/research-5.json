@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-5",
+  "source": "research",
+  "question": "How many lemmas and theorems did LeanMarathon prove across three autonomous runs?",
+  "answer": "258",
+  "evidence": "Across three autonomous runs, it formalizes all seven target theorems with no sorry, proving 258 lemmas and theorems.",
+  "page": "LeanMarathon (arXiv)",
+  "url": "https://arxiv.org/abs/2606.05400"
+ },
+ "answer": "The answer is stated directly in the abstract of the paper. Across three autonomous runs, LeanMarathon proved **258 lemmas and theorems** (while formalizing all seven target theorems with no `sorry`).\n\nFINAL: 258 lemmas and theorems.",
+ "correct": true,
+ "cost": 0.0019564752,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many lemmas and theorems did LeanMarathon prove across three autonomous runs?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me search for \"LeanMarathon\" on arxiv.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_713cbfa16c054a5bb2d0810a",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"LeanMarathon Lean autonomous\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me search for \"LeanMarathon\" on arxiv.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_713cbfa16c054a5bb2d0810a",
+   "content": "[LeanMarathon: Toward Reliable AI Co-Mathematicians through Long-Horizon Lean Autoformalization] Long-horizon autoformalization of research mathematics fails not only at hard lemmas, but at scale: statements drift, dependencies tangle, context decays, and local repairs corrupt distant work. We present LeanMarathon, a multi-agent harness for reliable research-level Lean autoformalization. Its core abstraction is an evolving blueprint: a Lean file that serves simultaneously as formal proof skeleton, natural-language proof graph, and shared system of record. Four contract-scoped agents construct, audit, prove, and repair this blueprint. These agents are coordinated by a two-stage orchestrator that first stabilizes target fidelity through adversarial review and then discharges the proof directed acyclic graph (DAG) from its dynamic leaves upward in parallel CI-gated rounds. LeanMarathon turns one brittle multi-hour run into many local, recoverable, parallel transactions. We evaluate LeanMarathon on two recent research papers spanning four Erdős problems (#1051, #1196, #164, #1217). Across three autonomous runs, it formalizes all seven target theorems with no sorry, proving 258 lemmas and theorems. These results show that reliable AI co-mathematics requires not only stronger provers, but durable harnesses that preserve target fidelity across long mathematical developments. The code can be found at https://github.com/YuanheZ/LeanMarathon. (https://arxiv.org/abs/2606.05400v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "The answer is stated directly in the abstract of the paper. Across three autonomous runs, LeanMarathon proved **258 lemmas and theorems** (while formalizing all seven target theorems with no `sorry`).\n\nFINAL: 258 lemmas and theorems.",
+   "refusal": null,
+   "reasoning": "The answer is right there in the abstract: \"Across three autonomous runs, it formalizes all seven target theorems with no sorry, proving 258 lemmas and theorems.\"",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The answer is right there in the abstract: \"Across three autonomous runs, it formalizes all seven target theorems with no sorry, proving 258 lemmas and theorems.\"",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-5",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0019564752,
+  "seconds": 42.5,
+  "answer": "258 lemmas and theorems.",
+  "gold": "258"
+ }
+}

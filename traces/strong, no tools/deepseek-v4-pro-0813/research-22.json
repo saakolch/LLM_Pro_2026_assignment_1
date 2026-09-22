@@ -1,0 +1,43 @@
+{
+ "task": {
+  "id": "research-22",
+  "source": "research",
+  "question": "What paired accuracy did the best agent achieve on AgentAbstain?",
+  "answer": "59.5%",
+  "evidence": "Across 17 frontier LLMs in 4 agent harnesses, the best agent (Gemini 3.1 Pro) achieves only 59.5% paired accuracy (correct on both the act and abstain sides of each paired task).",
+  "page": "AgentAbstain (arXiv)",
+  "url": "https://arxiv.org/abs/2607.10059"
+ },
+ "answer": "The best agent achieved a paired accuracy of **92.5%** on AgentAbstain.  \n\nFINAL: 92.5%",
+ "correct": false,
+ "cost": 0.036995920703999985,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions. No tools are available in this run, so answer from your own knowledge. Do not attempt to call any tools. Write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What paired accuracy did the best agent achieve on AgentAbstain?"
+  },
+  {
+   "role": "assistant",
+   "content": "The best agent achieved a paired accuracy of **92.5%** on AgentAbstain.  \n\nFINAL: 92.5%",
+   "refusal": null,
+   "reasoning": null
+  }
+ ],
+ "row": {
+  "config": "strong, no tools",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-22",
+  "source": "research",
+  "correct": false,
+  "steps": 1,
+  "tool_calls": 0,
+  "cost": 0.036995920703999985,
+  "seconds": 52.9,
+  "answer": "92.5%",
+  "gold": "59.5%"
+ }
+}

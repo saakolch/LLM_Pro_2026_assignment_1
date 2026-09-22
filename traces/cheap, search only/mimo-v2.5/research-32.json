@@ -1,0 +1,145 @@
+{
+ "task": {
+  "id": "research-32",
+  "source": "research",
+  "question": "How many of the 203 dependency-upgrade tasks did the best coding-agent configuration solve on DEPBENCH?",
+  "answer": "104",
+  "evidence": "We evaluate mainstream coding agents on DEPBENCH. The best completed configuration solves only 104/203 tasks (51.2%), with substantial variation across agent harnesses, models, and ecosystems, highlighting an important gap between current agent capabilities and real-world software maintenance needs.",
+  "page": "DEPBENCH (arXiv)",
+  "url": "https://arxiv.org/abs/2608.30300"
+ },
+ "answer": "I attempted to search for information about the DEPBENC benchmark and its results, but the search tools became unavailable before I could find reliable information. I do not have confident, verified knowledge about the specific number of tasks the best coding-agent configuration solved out of the 203 dependency-upgrade tasks on DEPBENC.\n\nFINAL: Unable to verify — search tools were unavailable, and I do not have reliable information to answer this question accurately.",
+ "correct": false,
+ "cost": 0.0008956863999999981,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many of the 203 dependency-upgrade tasks did the best coding-agent configuration solve on DEPBENCH?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "I'll search for information about DEPBENCH and coding-agent configurations to answer this question.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_2badbf1d8dec4691ae442bf4",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"DEPBENC coding-agent configuration 203 dependency-upgrade tasks\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "I'll search for information about DEPBENCH and coding-agent configurations to answer this question.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_2badbf1d8dec4691ae442bf4",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me search for DEPBENCH with different terms.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_3bab882648314bbc9d9c6744",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"DEPBENCH benchmark dependency upgrade tasks coding agent\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me search for DEPBENCH with different terms.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_3bab882648314bbc9d9c6744",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try searching with different queries.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_c6ebd1639cd049b3b7c0a48c",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"DEPBENC benchmark dependency upgrade tasks coding agent\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try searching with different queries.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_c6ebd1639cd049b3b7c0a48c",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "user",
+   "content": "Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>."
+  },
+  {
+   "role": "assistant",
+   "content": "I attempted to search for information about the DEPBENC benchmark and its results, but the search tools became unavailable before I could find reliable information. I do not have confident, verified knowledge about the specific number of tasks the best coding-agent configuration solved out of the 203 dependency-upgrade tasks on DEPBENC.\n\nFINAL: Unable to verify — search tools were unavailable, and I do not have reliable information to answer this question accurately.",
+   "refusal": null,
+   "reasoning": "The user is asking about DEPBENCH, which appears to be a benchmark for evaluating coding agents on dependency-upgrade tasks. The question mentions 203 tasks total and asks how many the best coding-agent configuration solved.\n\nI don't have reliable information about this specific benchmark result. I should not make up an answer. Let me be honest about this.\n\nActually, I should not answer from memory since the instructions say \"Never answer from memory: use web_search to find the right Wikipedia article.\" Since the tools are unavailable, I should acknowledge I cannot answer this question reliably.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about DEPBENCH, which appears to be a benchmark for evaluating coding agents on dependency-upgrade tasks. The question mentions 203 tasks total and asks how many the best coding-agent configuration solved.\n\nI don't have reliable information about this specific benchmark result. I should not make up an answer. Let me be honest about this.\n\nActually, I should not answer from memory since the instructions say \"Never answer from memory: use web_search to find the right Wikipedia article.\" Since the tools are unavailable, I should acknowledge I cannot answer this question reliably.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, search only",
+  "model": "mimo-v2.5",
+  "id": "research-32",
+  "source": "research",
+  "correct": false,
+  "steps": 5,
+  "tool_calls": 3,
+  "cost": 0.0008956863999999981,
+  "seconds": 28.5,
+  "answer": "Unable to verify — search tools were unavailable, and I do n",
+  "gold": "104"
+ }
+}

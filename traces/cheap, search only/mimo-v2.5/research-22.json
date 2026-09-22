@@ -1,0 +1,141 @@
+{
+ "task": {
+  "id": "research-22",
+  "source": "research",
+  "question": "What paired accuracy did the best agent achieve on AgentAbstain?",
+  "answer": "59.5%",
+  "evidence": "Across 17 frontier LLMs in 4 agent harnesses, the best agent (Gemini 3.1 Pro) achieves only 59.5% paired accuracy (correct on both the act and abstain sides of each paired task).",
+  "page": "AgentAbstain (arXiv)",
+  "url": "https://arxiv.org/abs/2607.10059"
+ },
+ "answer": "I apologize, but the Wikipedia search tool is currently unavailable due to rate limiting (HTTP 429 error). I'm unable to look up information about \"AgentAbstain\" and its paired accuracy metrics at this time.\n\nIf you have access to the paper or article about AgentAbstain, you could share the relevant details and I could help analyze them. Alternatively, you could try asking again later when the search tool may be available.\n\nFINAL: Unable to answer — Wikipedia search is currently unavailable due to rate limiting.",
+ "correct": false,
+ "cost": 0.0017325784000000004,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What paired accuracy did the best agent achieve on AgentAbstain?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about the \"paired accuracy\" achieved by the \"best agent\" on \"AgentAbstain\". This sounds like a benchmark or dataset for AI agents. I need to search for information about AgentAbstain.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_60f0f98bb85c4b88b04522d9",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"AgentAbstain benchmark paired accuracy best agent\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about the \"paired accuracy\" achieved by the \"best agent\" on \"AgentAbstain\". This sounds like a benchmark or dataset for AI agents. I need to search for information about AgentAbstain.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_60f0f98bb85c4b88b04522d9",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The Wikipedia search is unavailable due to a rate limit error. Let me try again with a different search query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_7bd43ebe720a4b2496215b97",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"AgentAbstain dataset 2025 2026\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The Wikipedia search is unavailable due to a rate limit error. Let me try again with a different search query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_7bd43ebe720a4b2496215b97",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "It seems the Wikipedia search is temporarily unavailable (HTTP 429 - Too Many Requests). Let me try again after a moment.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_8c9f39ebf2b94dd78668534a",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"AgentAbstain\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "It seems the Wikipedia search is temporarily unavailable (HTTP 429 - Too Many Requests). Let me try again after a moment.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_8c9f39ebf2b94dd78668534a",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": "I apologize, but the Wikipedia search tool is currently unavailable due to rate limiting (HTTP 429 error). I'm unable to look up information about \"AgentAbstain\" and its paired accuracy metrics at this time.\n\nIf you have access to the paper or article about AgentAbstain, you could share the relevant details and I could help analyze them. Alternatively, you could try asking again later when the search tool may be available.\n\nFINAL: Unable to answer — Wikipedia search is currently unavailable due to rate limiting.",
+   "refusal": null,
+   "reasoning": "The web search tool is currently unavailable due to rate limiting (HTTP 429). I cannot find information about \"AgentAbstain\" through Wikipedia search at this time. I should let the user know that I'm unable to retrieve the information due to the tool being unavailable.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The web search tool is currently unavailable due to rate limiting (HTTP 429). I cannot find information about \"AgentAbstain\" through Wikipedia search at this time. I should let the user know that I'm unable to retrieve the information due to the tool being unavailable.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, search only",
+  "model": "mimo-v2.5",
+  "id": "research-22",
+  "source": "research",
+  "correct": false,
+  "steps": 4,
+  "tool_calls": 3,
+  "cost": 0.0017325784000000004,
+  "seconds": 40.1,
+  "answer": "Unable to answer — Wikipedia search is currently unavailable",
+  "gold": "59.5%"
+ }
+}

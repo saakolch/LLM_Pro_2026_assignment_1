@@ -1,0 +1,265 @@
+{
+ "task": {
+  "id": "research-25",
+  "source": "research",
+  "question": "Across how many coding-agent harnesses did the instruction privilege escalation attacks achieve all 13 objectives?",
+  "answer": "six",
+  "evidence": "We evaluate this threat by using multi-agent mechanisms to achieve 13 attack objectives across six coding-agent harnesses.",
+  "page": "Instruction privilege escalation (arXiv)",
+  "url": "https://arxiv.org/abs/2608.27299"
+ },
+ "answer": "I don't have reliable knowledge of the specific research paper or finding you're referencing about instruction privilege escalation attacks across coding-agent harnesses and their 13 objectives. This appears to be a very specific detail from a research study that I cannot confidently recall without being able to verify it through search.\n\nFINAL: I don't have enough information to answer this question accurately.",
+ "correct": false,
+ "cost": 0.0030154768,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "Across how many coding-agent harnesses did the instruction privilege escalation attacks achieve all 13 objectives?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about a specific research finding regarding instruction privilege escalation attacks across coding-agent harnesses. Let me search for this information.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_a8fe19c160a046c6a2d3253e",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"instruction privilege escalation attacks coding-agent harnesses 13 objectives\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a specific research finding regarding instruction privilege escalation attacks across coding-agent harnesses. Let me search for this information.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_a8fe19c160a046c6a2d3253e",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try searching again with a different query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_a14899e35734436dbbfe341b",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"instruction privilege escalation coding agent harnesses 13 objectives paper 2025\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try searching again with a different query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_a14899e35734436dbbfe341b",
+   "content": "nothing found"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try a broader search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_413e4b6218c24b12bcc0a2fd",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"instruction privilege escalation attack coding agents research paper\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try a broader search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_413e4b6218c24b12bcc0a2fd",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try another search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_077d3e8bb844404dbd0b73aa",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"privilege escalation coding agent harnesses attack paper\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try another search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_077d3e8bb844404dbd0b73aa",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me try searching with a slightly different approach.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_2519c89fec594ea7bbce897c",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"instruction privilege escalation attacks coding agent harnesses\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me try searching with a slightly different approach.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_2519c89fec594ea7bbce897c",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The web search is not finding anything relevant. Let me try a different approach.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_10d409031fe643759c04f131",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"SWE-bench coding agent privilege escalation attack 13 objectives\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The web search is not finding anything relevant. Let me try a different approach.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_10d409031fe643759c04f131",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about a specific research finding about \"instruction privilege escalation attacks\" across \"coding-agent harnesses\" achieving \"all 13 objectives.\" This seems to be about a specific paper or research study. Let me try different search queries.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_0017a41435d64453af8818f3",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"instruction hierarchy privilege escalation AI coding agents research\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a specific research finding about \"instruction privilege escalation attacks\" across \"coding-agent harnesses\" achieving \"all 13 objectives.\" This seems to be about a specific paper or research study. Let me try different search queries.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_0017a41435d64453af8818f3",
+   "content": "[Wikipedia] Wikipedia is a free online encyclopedia written and maintained by a community of volunteers, known as Wikipedians, through open collaboration and the wiki software MediaWiki. Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an American nonprofit organization funded mainly by donations from readers. Wikipedia is the largest and most read reference work in history. Initially available only in English, Wikipedia has grown to over 300 languages and is one of the world's most visited websites as of 2026. The English Wikipedia, with over 7 million articles, remains the largest of the editions, which together comprise more than 68 million articles and attract more than 1.5 billion unique device visits and 13 million edits per month (about five edits per second on average) as of April 2024. As of December 2025, over 25% of Wikipedia's traffic comes from the United States, while Japan accounts for nearly 7%, and the United Kingdom, Germany, and Russia each represent around 5%. Wikipedia has been praised for its internal structure and culture, enabling the democratization of knowledge, and for its extensive coverage on various topics. The encyclopedia has also been criticized for systemic bias, such as a gender bias against women and a geographical bias against the Global South. The reliability of Wikipedia was frequently criticized in the 2000s, but has received greater praise from the late 2010s onward. Censorship of W | other articles: History of the Philippines, Expectancy violations theory"
+  },
+  {
+   "role": "user",
+   "content": "Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>."
+  },
+  {
+   "role": "assistant",
+   "content": "I don't have reliable knowledge of the specific research paper or finding you're referencing about instruction privilege escalation attacks across coding-agent harnesses and their 13 objectives. This appears to be a very specific detail from a research study that I cannot confidently recall without being able to verify it through search.\n\nFINAL: I don't have enough information to answer this question accurately.",
+   "refusal": null,
+   "reasoning": "The user is asking about a specific research finding regarding \"instruction privilege escalation attacks\" across \"coding-agent harnesses\" achieving \"all 13 objectives.\" \n\nThis seems to refer to a specific research paper about prompt injection or instruction hierarchy attacks against AI coding agents. I recall there was research around2025 about attacks on coding agents like those used in software development contexts (e.g., SWE-bench style environments).\n\nI'm not confident I know the exact answer to this specific question about how many coding-agent harnesses the attacks achieved all 13 objectives across. This seems to be a very specific detail from a research paper that I may not have reliable knowledge about.\n\nWithout being able to search, I should be honest that I don't have confident knowledge of this specific finding.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a specific research finding regarding \"instruction privilege escalation attacks\" across \"coding-agent harnesses\" achieving \"all 13 objectives.\" \n\nThis seems to refer to a specific research paper about prompt injection or instruction hierarchy attacks against AI coding agents. I recall there was research around2025 about attacks on coding agents like those used in software development contexts (e.g., SWE-bench style environments).\n\nI'm not confident I know the exact answer to this specific question about how many coding-agent harnesses the attacks achieved all 13 objectives across. This seems to be a very specific detail from a research paper that I may not have reliable knowledge about.\n\nWithout being able to search, I should be honest that I don't have confident knowledge of this specific finding.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, search only",
+  "model": "mimo-v2.5",
+  "id": "research-25",
+  "source": "research",
+  "correct": false,
+  "steps": 9,
+  "tool_calls": 7,
+  "cost": 0.0030154768,
+  "seconds": 89.5,
+  "answer": "I don't have enough information to answer this question accu",
+  "gold": "six"
+ }
+}

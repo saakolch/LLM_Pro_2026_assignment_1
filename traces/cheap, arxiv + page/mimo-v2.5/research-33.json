@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-33",
+  "source": "research",
+  "question": "What is the name of the configurable VLM-agent harness proposed alongside the MineAmongUs sandbox?",
+  "answer": "ARIA",
+  "evidence": "We also propose ARIA, a configurable VLM-agent harness that exposes five cognitive-component ablation axes; and an atom- and arc-level annotation scheme grounded in deception taxonomies and operationalized at scale by an LLM-as-a-Judge reaching near-human atom-labeling agreement.",
+  "page": "MineAmongUs (arXiv)",
+  "url": "https://arxiv.org/abs/2608.30428"
+ },
+ "answer": "FINAL: ARIA",
+ "correct": true,
+ "cost": 0.0005097904000000006,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What is the name of the configurable VLM-agent harness proposed alongside the MineAmongUs sandbox?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me search for the MineAmongUs sandbox and the associated VLM-agent harness.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_6cf7e8c5349a4255829084de",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"MineAmongUs sandbox VLM-agent harness\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me search for the MineAmongUs sandbox and the associated VLM-agent harness.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_6cf7e8c5349a4255829084de",
+   "content": "[Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions] Strategic deception by LLM and VLM agents has emerged as a central AI alignment and safety concern. Social-deduction games (where each player holds a hidden role and communicates with others to deduce identities) serve as the canonical testbed, particularly in multi-agent settings. Existing testbeds, however, are text-only and run on a single fixed agent configuration, missing the non-verbal sensorimotor channels treated as core by deception taxonomies and leaving it ambiguous whether an observed behavior reflects the underlying model or the surrounding harness. We introduce MineAmongUs, a 3D multimodal Among Us sandbox where imposter agents must deceive crewmates through joint verbal and non-verbal action. We also propose ARIA, a configurable VLM-agent harness that exposes five cognitive-component ablation axes; and an atom- and arc-level annotation scheme grounded in deception taxonomies and operationalized at scale by an LLM-as-a-Judge reaching near-human atom-labeling agreement. Empirical results show that VLM agents pursue imposter wins through joint verbal and non-verbal deception, with non-verbal channels emerging as the more decisive winning contributors across both harness ablation and cross-VLM evaluation. Taken together, our work opens a new path for embodied VLM-agent alignment research. (https://arxiv.org/abs/2608.30428v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: ARIA",
+   "refusal": null,
+   "reasoning": "The answer is **ARIA** - a configurable VLM-agent harness that exposes five cognitive-component ablation axes.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The answer is **ARIA** - a configurable VLM-agent harness that exposes five cognitive-component ablation axes.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-33",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0005097904000000006,
+  "seconds": 13.8,
+  "answer": "ARIA",
+  "gold": "ARIA"
+ }
+}

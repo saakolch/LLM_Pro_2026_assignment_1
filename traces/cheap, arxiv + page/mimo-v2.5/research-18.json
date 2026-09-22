@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-18",
+  "source": "research",
+  "question": "What pass@2 score does the Reflective Orchestrator reach on the ARC-AGI-1 public evaluation set?",
+  "answer": "67.25%",
+  "evidence": "On the ARC-AGI-1 public 400-task evaluation set, the pipeline reaches 57.50% pass@2 at \\$0.25 per task, and the orchestrator reaches 67.25% pass@2 at \\$0.62 per task.",
+  "page": "ARC-AGI-1 harnesses (arXiv)",
+  "url": "https://arxiv.org/abs/2607.06764"
+ },
+ "answer": "The answer is found directly in the abstract of the paper. The paper introduces an **Explorer-Definer Pipeline** and then a **Reflective Orchestrator** built on top of it, tested on the ARC-AGI-1 benchmark.\n\nAccording to the abstract:\n\n> \"On the ARC-AGI-1 public 400-task evaluation set, the pipeline reaches 57.50% pass@2 at $0.25 per task, and the **orchestrator reaches 67.25% pass@2** at $0.62 per task.\"\n\nFINAL: 67.25%",
+ "correct": true,
+ "cost": 0.0010570280000000002,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What pass@2 score does the Reflective Orchestrator reach on the ARC-AGI-1 public evaluation set?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about a specific score (\"Reflective Orchestrator\" on \"ARC-AGI-1 public evaluation set\") for a \"pass@2\" metric. I need to search for this system and benchmark.\n\nKeywords: \"Reflective Orchestrator\", \"ARC-AGI-1\".",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_70ffcc8358da4e00a5886ec8",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"Reflective Orchestrator ARC-AGI-1\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a specific score (\"Reflective Orchestrator\" on \"ARC-AGI-1 public evaluation set\") for a \"pass@2\" metric. I need to search for this system and benchmark.\n\nKeywords: \"Reflective Orchestrator\", \"ARC-AGI-1\".",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_70ffcc8358da4e00a5886ec8",
+   "content": "[Cost-Effective Agent Harnesses for Abstract Reasoning and Generalization on ARC-AGI-1] Recent progress on ARC-AGI-1 from disclosed architectures has come broadly from two regimes: heavy test-time compute over frontier models (evolutionary search, exhaustive sampling, extended chain-of-thought), or benchmark-specific training in which small models are fine-tuned on ARC data, often with task-specialized architectures. We study a third regime: an open-weight model in non-thinking mode (DeepSeek V3.2) under a strict budget, with no ARC-specific fine-tuning. We study what is recoverable through architecture alone, building agentic harnesses that decompose pattern-discovery and program-synthesis stages explicitly. First, we introduce an Explorer-Definer Pipeline that separates pattern discovery from executable transformation synthesis, implemented as a two-stage agent pipeline. Next, we present the Reflective Orchestrator, which augments the pipeline with autonomous exploration of new transformations when previous hypotheses fail on training pairs. On the ARC-AGI-1 public 400-task evaluation set, the pipeline reaches 57.50% pass@2 at \\$0.25 per task, and the orchestrator reaches 67.25% pass@2 at \\$0.62 per task. Together these architectures lift a 15.50% one-shot baseline by ~52 points without benchmark-specific training or heavy test-time compute. Furthermore, the orchestrator-driven lift tests a falsifiable diagnostic the pipeline produces; unbiased pass@k analysis suggests the pipeline is generation-bound, not selection-bound (selection via training-pair accuracy captures ~95% of the candidate ceiling) and predicts that significant improvement requires broader generation, not better ranking. The orchestrator implements this prediction via adaptive re-exploration and confirms it (unbiased pass@1 lift +9.81 pp, matching selection-mediated pass@2 lift). An addi (https://arxiv.org/abs/2607.06764v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "The answer is found directly in the abstract of the paper. The paper introduces an **Explorer-Definer Pipeline** and then a **Reflective Orchestrator** built on top of it, tested on the ARC-AGI-1 benchmark.\n\nAccording to the abstract:\n\n> \"On the ARC-AGI-1 public 400-task evaluation set, the pipeline reaches 57.50% pass@2 at $0.25 per task, and the **orchestrator reaches 67.25% pass@2** at $0.62 per task.\"\n\nFINAL: 67.25%",
+   "refusal": null,
+   "reasoning": "The abstract states: \"the orchestrator reaches 67.25% pass@2 at $0.62 per task\" on the \"ARC-AGI-1 public 400-task evaluation set\".\n\nThe question asks for the pass@2 score.67.25%.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract states: \"the orchestrator reaches 67.25% pass@2 at $0.62 per task\" on the \"ARC-AGI-1 public 400-task evaluation set\".\n\nThe question asks for the pass@2 score.67.25%.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-18",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0010570280000000002,
+  "seconds": 22.5,
+  "answer": "67.25%",
+  "gold": "67.25%"
+ }
+}

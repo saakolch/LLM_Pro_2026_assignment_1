@@ -1,0 +1,85 @@
+{
+ "task": {
+  "id": "research-3",
+  "source": "research",
+  "question": "What is the name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality?",
+  "answer": "AutoMEM",
+  "evidence": "We instantiate this insight in AutoMEM, an agentic memory harness with a self-managed tool interface that achieves the best cross-scenario generality among the systems we evaluate.",
+  "page": "AutoMEM (arXiv)",
+  "url": "https://arxiv.org/abs/2606.04315"
+ },
+ "answer": "I do not have specific information from 2025 or 2026 available in my training data, but based on known agentic memory architectures that feature self-managed interfaces, the system most commonly associated with an agentic memory harness and tool management is MemGPT (or its successors). However, without verification I cannot be certain of the exact 2025/2026 nomenclature.\n\nFINAL: MemGPT",
+ "correct": false,
+ "cost": 0.0030841199999999958,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What is the name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about an \"agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality.\" This sounds like a specific technical term from 2025/2026 research.\n\nI need to search for this. Let me use web",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "chatcmpl-tool-aa13710d87d368cc",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"agentic memory harness self-managed tool interface cross-scenario generality\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about an \"agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality.\" This sounds like a specific technical term from 2025/2026 research.\n\nI need to search for this. Let me use web",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-aa13710d87d368cc",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "user",
+   "content": "Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>."
+  },
+  {
+   "role": "assistant",
+   "content": "I do not have specific information from 2025 or 2026 available in my training data, but based on known agentic memory architectures that feature self-managed interfaces, the system most commonly associated with an agentic memory harness and tool management is MemGPT (or its successors). However, without verification I cannot be certain of the exact 2025/2026 nomenclature.\n\nFINAL: MemGPT",
+   "refusal": null,
+   "reasoning": "The user originally asked: \"What is the name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality?\"\n\nThis sounds like a specific paper or system from 2025 or 2026 about AI agents, memory, tool use. \"Agentic memory harness\", \"self-managed tool interface\", \"cross-scenario generality\". \n\nThere was a paper or benchmark about agentic memory. Maybe \"MemGPT\"? No, that's older. \"Self-managed tool interface\" - could be something like \"ToolMemo\" or \"AgentKit\"? \n\nWait, the user says \"answer questions about events of 2025 and 2026\" and instructed to use web search, but tools are unavailable now and they say \"Answer from what you already know, last line FINAL: <answer>.\"\n\nFrom what I know (my training data goes up to early 2024, but maybe I saw some arXiv papers? Actually my knowledge cutoff is around April 2024, so I wouldn't know 2025/2026 events from memory. However, the instruction says \"Answer from what you already know\" now that tools are unavailable.\n\nLet's think if there's any known system: \"agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality\". This sounds like it could be from a paper like \"MemoryBank\", \"Generative Agents\", or maybe something from a benchmark like \"AgentBench\" or \"ToolBench\". \"Cross-scenario generality\" is a specific phrase.\n\nMaybe it's \"Memochrome\"? Or \"SCM\" (Self-Managed Context)? \n\nAlternatively, maybe it's \"AutoGPT\" with memory? No.\n\nWait, maybe this is referencing a specific paper from 2025 that I wouldn't know. But I have to answer from what I know. If I don't know, I should guess or state I don't know? The instruction says \"Answer from what you already know, last line FINAL: <answer>.\"\n\nCould it be \"MemGPT\" (which has a self-managed memory interface)? But tool interface? MemGPT manages its own memory and tools. But \"cross-scenario generality\" - maybe \"MemGPT\" achieved good results?\n\nOr maybe \"AgentLM\"? No.\n\nLet's search my memory for \"agentic memory harness\" phrase. I recall a paper: \"Agentic Memory\" or \"A Memory System for LLM Agents\". There's a concept of \"memory harness\". \n\nMaybe it is \"HuggingGPT\"? No.\n\nLet's think of \"self-managed tool interface\". In some paper, they propose an agent that manages its own tools via a memory system. \n\nMaybe it's \"ToolLLM\"? No.\n\nCould it be \"MT-agent\" or \"Memory-Agent\"?\n\nActually, there is a 2024/2025 paper: \"Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory\" - no.\n\n\"Self-managed tool interface\" reminds me of \"Toolformer\" but that's not agentic memory.\n\nWait, there is a paper called \"Agentic Memory Harness\" maybe? Let me think of benchmark: \"Cross-scenario generality\" might refer to a table in a paper comparing different memory architectures: Conversation Memory, Vector DB, Agentic Memory with self-managed tool interface, etc.\n\nI vaguely recall a paper about \"LLM Agents with Adaptive Memory\" or \"AMAG\". \n\nSince I must answer, I'll guess the name might be \"MemAgent\" or \"AgenticMem\". But maybe it's \"MACM\" (Memory-Augmented Chat Model)? \n\nWait, I think there is a specific system called \"RecallM\" or \"Memorag\"? Memorag is a recent paper: \"MemoRAG: Moving towards Next-Gen RAG via Memory-Inspired Knowledge Discovery\". Not exactly.\n\nWhat about \"Agentic Memory: A Survey\"? No.\n\nLet's consider the phrase \"achieved the best cross-scenario generality\". This sounds like a result from a specific experiment. Could be \"Self-Managed Memory and Tool Interface (SMTI)\"? \n\nMaybe it's \"AutoMem\"? \n\nAlternatively, maybe the user is testing if I can recall a fictional or real recent thing. Since tools are down, I will provide a plausible answer based on limited knowledge: The system might be called \"MemGPT\" or more likely \"AgentKit\" or \"ToolMem\". \n\nActually, I recall a paper from late 2024 or 2025 (maybe arXiv) called \"An Agentic Memory Harness for Tool-Using LLMs\" or something. The name could be \"META\" (Memory and Tool Agent)? \n\nLet's just say \"MemGPT\" since it's the most well-known agentic memory system with self-management. But MemGPT doesn't have a \"self-managed tool interface\" specifically highlighted as achieving best cross-scenario generality in a 2025 paper.\n\nWait, maybe it's \"OpenHands\" (formerly OpenDevin)? No.\n\nCould be \"SmolAgent\"? No.\n\nGiven the constraints, I will answer with the most likely candidate from recent AI literature that fits \"agentic memory harness\" and \"self-managed tool interface\": I think there is a system called \"MemTool\" or \"ToolMemory\". \n\nActually, I'll guess \"Agentic Memory with Self-Managed Tool Interface (AMST)\"? That's not a name.\n\nLet's think of benchmarks: \"Cross-scenario generality\" is a term used in the paper \"ToolBench\" or \"AgentBench\" to evaluate generalization across scenarios. The best performing method might be \"Reflexion\" with memory? Reflexion uses episodic memory.\n\nBut \"agentic memory harness\" is a specific term. I found in my mind: \"AMOA\" (Agentic Memory and Observation Agent)? \n\nI will answer: \"MemGPT\" is not 2025. Maybe \"Mem0\"? \n\nLet's just output a reasonable guess: \"MemAgent\". But the user wants the name. I'll say \"Memorag\" no.\n\nMaybe the answer is \"SAGE\" (Self-managed Agentic General Memory)? \n\nI'll just state \"AgenticMem\" or something. But to be safe, I'll say I don't know exact name but from what I know it might be \"MemGPT\" (as the pioneering agentic memory system). However, the instruction says answer from what you know, last line FINAL: <answer>.\n\nI will write: FINAL: MemGPT (or a more specific name if I can think). Actually, I recall a 2025 paper \"Agentic Memory Harness: Empowering LLMs with Self-Managed Tools\" where the proposed model is called \"HarnessMem\" or \"H-Mem\". I'll guess \"H-Mem\". \n\nBetter to be honest: I don't recall exactly, but a known system is \"MemGPT\". I'll output \"MemGPT\" as it's the prominent agentic memory architecture.\n\nWait, maybe it's \"Claude\" with artifacts? No.\n\nI will answer: FINAL: MemGPT",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user originally asked: \"What is the name of the agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality?\"\n\nThis sounds like a specific paper or system from 2025 or 2026 about AI agents, memory, tool use. \"Agentic memory harness\", \"self-managed tool interface\", \"cross-scenario generality\". \n\nThere was a paper or benchmark about agentic memory. Maybe \"MemGPT\"? No, that's older. \"Self-managed tool interface\" - could be something like \"ToolMemo\" or \"AgentKit\"? \n\nWait, the user says \"answer questions about events of 2025 and 2026\" and instructed to use web search, but tools are unavailable now and they say \"Answer from what you already know, last line FINAL: <answer>.\"\n\nFrom what I know (my training data goes up to early 2024, but maybe I saw some arXiv papers? Actually my knowledge cutoff is around April 2024, so I wouldn't know 2025/2026 events from memory. However, the instruction says \"Answer from what you already know\" now that tools are unavailable.\n\nLet's think if there's any known system: \"agentic memory harness with a self-managed tool interface that achieved the best cross-scenario generality\". This sounds like it could be from a paper like \"MemoryBank\", \"Generative Agents\", or maybe something from a benchmark like \"AgentBench\" or \"ToolBench\". \"Cross-scenario generality\" is a specific phrase.\n\nMaybe it's \"Memochrome\"? Or \"SCM\" (Self-Managed Context)? \n\nAlternatively, maybe it's \"AutoGPT\" with memory? No.\n\nWait, maybe this is referencing a specific paper from 2025 that I wouldn't know. But I have to answer from what I know. If I don't know, I should guess or state I don't know? The instruction says \"Answer from what you already know, last line FINAL: <answer>.\"\n\nCould it be \"MemGPT\" (which has a self-managed memory interface)? But tool interface? MemGPT manages its own memory and tools. But \"cross-scenario generality\" - maybe \"MemGPT\" achieved good results?\n\nOr maybe \"AgentLM\"? No.\n\nLet's search my memory for \"agentic memory harness\" phrase. I recall a paper: \"Agentic Memory\" or \"A Memory System for LLM Agents\". There's a concept of \"memory harness\". \n\nMaybe it is \"HuggingGPT\"? No.\n\nLet's think of \"self-managed tool interface\". In some paper, they propose an agent that manages its own tools via a memory system. \n\nMaybe it's \"ToolLLM\"? No.\n\nCould it be \"MT-agent\" or \"Memory-Agent\"?\n\nActually, there is a 2024/2025 paper: \"Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory\" - no.\n\n\"Self-managed tool interface\" reminds me of \"Toolformer\" but that's not agentic memory.\n\nWait, there is a paper called \"Agentic Memory Harness\" maybe? Let me think of benchmark: \"Cross-scenario generality\" might refer to a table in a paper comparing different memory architectures: Conversation Memory, Vector DB, Agentic Memory with self-managed tool interface, etc.\n\nI vaguely recall a paper about \"LLM Agents with Adaptive Memory\" or \"AMAG\". \n\nSince I must answer, I'll guess the name might be \"MemAgent\" or \"AgenticMem\". But maybe it's \"MACM\" (Memory-Augmented Chat Model)? \n\nWait, I think there is a specific system called \"RecallM\" or \"Memorag\"? Memorag is a recent paper: \"MemoRAG: Moving towards Next-Gen RAG via Memory-Inspired Knowledge Discovery\". Not exactly.\n\nWhat about \"Agentic Memory: A Survey\"? No.\n\nLet's consider the phrase \"achieved the best cross-scenario generality\". This sounds like a result from a specific experiment. Could be \"Self-Managed Memory and Tool Interface (SMTI)\"? \n\nMaybe it's \"AutoMem\"? \n\nAlternatively, maybe the user is testing if I can recall a fictional or real recent thing. Since tools are down, I will provide a plausible answer based on limited knowledge: The system might be called \"MemGPT\" or more likely \"AgentKit\" or \"ToolMem\". \n\nActually, I recall a paper from late 2024 or 2025 (maybe arXiv) called \"An Agentic Memory Harness for Tool-Using LLMs\" or something. The name could be \"META\" (Memory and Tool Agent)? \n\nLet's just say \"MemGPT\" since it's the most well-known agentic memory system with self-management. But MemGPT doesn't have a \"self-managed tool interface\" specifically highlighted as achieving best cross-scenario generality in a 2025 paper.\n\nWait, maybe it's \"OpenHands\" (formerly OpenDevin)? No.\n\nCould be \"SmolAgent\"? No.\n\nGiven the constraints, I will answer with the most likely candidate from recent AI literature that fits \"agentic memory harness\" and \"self-managed tool interface\": I think there is a system called \"MemTool\" or \"ToolMemory\". \n\nActually, I'll guess \"Agentic Memory with Self-Managed Tool Interface (AMST)\"? That's not a name.\n\nLet's think of benchmarks: \"Cross-scenario generality\" is a term used in the paper \"ToolBench\" or \"AgentBench\" to evaluate generalization across scenarios. The best performing method might be \"Reflexion\" with memory? Reflexion uses episodic memory.\n\nBut \"agentic memory harness\" is a specific term. I found in my mind: \"AMOA\" (Agentic Memory and Observation Agent)? \n\nI will answer: \"MemGPT\" is not 2025. Maybe \"Mem0\"? \n\nLet's just output a reasonable guess: \"MemAgent\". But the user wants the name. I'll say \"Memorag\" no.\n\nMaybe the answer is \"SAGE\" (Self-managed Agentic General Memory)? \n\nI'll just state \"AgenticMem\" or something. But to be safe, I'll say I don't know exact name but from what I know it might be \"MemGPT\" (as the pioneering agentic memory system). However, the instruction says answer from what you know, last line FINAL: <answer>.\n\nI will write: FINAL: MemGPT (or a more specific name if I can think). Actually, I recall a 2025 paper \"Agentic Memory Harness: Empowering LLMs with Self-Managed Tools\" where the proposed model is called \"HarnessMem\" or \"H-Mem\". I'll guess \"H-Mem\". \n\nBetter to be honest: I don't recall exactly, but a known system is \"MemGPT\". I'll output \"MemGPT\" as it's the prominent agentic memory architecture.\n\nWait, maybe it's \"Claude\" with artifacts? No.\n\nI will answer: FINAL: MemGPT",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "mid, best tools",
+  "model": "hy3-preview",
+  "id": "research-3",
+  "source": "research",
+  "correct": false,
+  "steps": 3,
+  "tool_calls": 1,
+  "cost": 0.0030841199999999958,
+  "seconds": 35.4,
+  "answer": "MemGPT",
+  "gold": "AutoMEM"
+ }
+}

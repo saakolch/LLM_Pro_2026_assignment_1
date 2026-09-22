@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-15",
+  "source": "research",
+  "question": "How many pathology workflow tasks does ACP-Bench evaluate?",
+  "answer": "41",
+  "evidence": "ACP-Bench evaluates 41 pathology workflow tasks, including 24 biomarker, 7 morphology and 10 prognosis tasks spanning 6 body-system groups and 9 endpoint families.",
+  "page": "ACP-Bench (arXiv)",
+  "url": "https://arxiv.org/abs/2607.02598"
+ },
+ "answer": "ACP-Bench evaluates **41 pathology workflow tasks** (24 biomarker, 7 morphology, and 10 prognosis tasks).\n\nFINAL: 41 pathology workflow tasks.",
+ "correct": true,
+ "cost": 0.005213661023999998,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many pathology workflow tasks does ACP-Bench evaluate?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user asks: \"How many pathology workflow tasks does ACP-Bench evaluate?\" This is about a recent AI research paper (2025-2026). I should search arXiv for ACP-Bench.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_vwg2859zvy0veou58p6yvxfu",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"ACP-Bench pathology workflow tasks\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user asks: \"How many pathology workflow tasks does ACP-Bench evaluate?\" This is about a recent AI research paper (2025-2026). I should search arXiv for ACP-Bench.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_vwg2859zvy0veou58p6yvxfu",
+   "content": "[Evaluating Agentic Harness Systems for Autonomous Computational Pathology] Autonomous computational pathology (ACP) converts high-level pathology analysis goals into executable, traceable and clinically bounded workflows. Realizing this capability requires adapting general agentic harness systems to pathology-specific tasks, tools, evidence standards and clinical claim boundaries. We contribute ACP-Bench, a framework that adapts existing harness systems from computational pathology support toward ACP workflow capability. ACP-Bench evaluates 41 pathology workflow tasks, including 24 biomarker, 7 morphology and 10 prognosis tasks spanning 6 body-system groups and 9 endpoint families. The benchmark evaluates 9 models and 3 harness groups (Claude Code, Codex and Open Code), yielding 369 complete trajectories. ACP-Bench evaluates each trajectory across workflow execution, diagnostic performance and clinical-boundary alignment, combining expert-adjudicated process audits, diagnostic assessment and pathologist-validated safety review. Across evaluated systems, workflow initiation, task interpretation and diagnostic reporting were more mature than tool-bound execution, result binding and reflective workflow revision, and formal end-to-end completion remained rare. ACP-Bench provides a reusable standard for auditing whether agentic systems can operationalize pathology workflows before claims of reliable clinical autonomy. (https://arxiv.org/abs/2607.02598v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "ACP-Bench evaluates **41 pathology workflow tasks** (24 biomarker, 7 morphology, and 10 prognosis tasks).\n\nFINAL: 41 pathology workflow tasks.",
+   "refusal": null,
+   "reasoning": "The abstract states ACP-Bench evaluates 41 pathology workflow tasks. Let me answer.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract states ACP-Bench evaluates 41 pathology workflow tasks. Let me answer.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-15",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.005213661023999998,
+  "seconds": 11.3,
+  "answer": "41 pathology workflow tasks.",
+  "gold": "41"
+ }
+}

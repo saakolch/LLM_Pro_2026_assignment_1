@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-21",
+  "source": "research",
+  "question": "To what value does GRACE improve strict reliability (pass^3) at the final checkpoint?",
+  "answer": "0.673",
+  "evidence": "Across five independent replications, GRACE improves strict reliability, measured by pass^3, from the Gemini 2.5 Flash zero-shot value of 0.091 to 0.673$\\pm$0.136 at the final checkpoint.",
+  "page": "GRACE (arXiv)",
+  "url": "https://arxiv.org/abs/2607.09175"
+ },
+ "answer": "The abstract from the GRACE paper provides the answer directly. At the final checkpoint, GRACE improves strict reliability (pass^3) from the Gemini 2.5 Flash zero-shot baseline of **0.091** to **0.673 ± 0.136**. This also exceeds the Gemini 3.1 Pro zero-shot reference of 0.242.\n\nFINAL: 0.673 ± 0.136",
+ "correct": true,
+ "cost": 0.0011867800000000001,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "To what value does GRACE improve strict reliability (pass^3) at the final checkpoint?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about the GRACE system/benchmark and specifically about its improvement in strict reliability (pass^3) at the final checkpoint. Let me search for this on arxiv.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_04538b0dfa37427ca2e84318",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"GRACE strict reliability pass^3\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about the GRACE system/benchmark and specifically about its improvement in strict reliability (pass^3) at the final checkpoint. Let me search for this on arxiv.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_04538b0dfa37427ca2e84318",
+   "content": "[Scoped Verification for Reliable Long-Horizon Agentic Context Evolution under Distribution Shift] Deployed LLM agents rely on agentic context, the model-external textual control content assembled by an operational harness. In this work, the mutable component of that context is a persistent system-level instruction that is updated from operational experience while the model, tools, and harness remain fixed. Over long evolution horizons, flat-text maintenance makes verification increasingly difficult as accumulated instructions grow and interact. We propose Graph-Regularized Agentic Context Evolution (GRACE), which maintains the persistent instruction component as a typed semantic graph and validates proposed updates within the local typed neighborhoods of modified nodes. Accepted graph updates are reconstructed as incremental edits to the textual instruction checkpoint used at deployment. We evaluate GRACE within a fixed telecom agent harness derived from $τ^2$-bench under a controlled distribution-shift protocol. Across five independent replications, GRACE improves strict reliability, measured by pass^3, from the Gemini 2.5 Flash zero-shot value of 0.091 to 0.673$\\pm$0.136 at the final checkpoint. This exceeds a Gemini 3.1 Pro zero-shot reference of 0.242 on the same held-out set, while the flat-text HCE baseline finishes at 0.191$\\pm$0.051. These results identify two requirements for reliable long-horizon context evolution, a structural substrate that makes verification local and a consolidation mechanism that keeps accumulated instruction content usable. (https://arxiv.org/abs/2607.09175v2)"
+  },
+  {
+   "role": "assistant",
+   "content": "The abstract from the GRACE paper provides the answer directly. At the final checkpoint, GRACE improves strict reliability (pass^3) from the Gemini 2.5 Flash zero-shot baseline of **0.091** to **0.673 ± 0.136**. This also exceeds the Gemini 3.1 Pro zero-shot reference of 0.242.\n\nFINAL: 0.673 ± 0.136",
+   "refusal": null,
+   "reasoning": "The abstract clearly states the answer. GRACE improves strict reliability (pass^3) from the Gemini 2.5 Flash zero-shot value of 0.091 to 0.673 ± 0.136 at the final checkpoint.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract clearly states the answer. GRACE improves strict reliability (pass^3) from the Gemini 2.5 Flash zero-shot value of 0.091 to 0.673 ± 0.136 at the final checkpoint.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-21",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0011867800000000001,
+  "seconds": 19.9,
+  "answer": "0.673 ± 0.136",
+  "gold": "0.673"
+ }
+}

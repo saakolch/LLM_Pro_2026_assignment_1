@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-10",
+  "source": "research",
+  "question": "To what score did Bayesian-Agent's incremental repair improve SOP-Bench?",
+  "answer": "95%",
+  "evidence": "In the incremental mode, incremental repair improves SOP-Bench from 80\\% to 95\\%, Lifelong AgentBench from 90\\% to 100\\%, and RealFin-Bench from 45\\% to 65\\%.",
+  "page": "Bayesian-Agent (arXiv)",
+  "url": "https://arxiv.org/abs/2606.08348"
+ },
+ "answer": "FINAL: 95% (improved from 80%)",
+ "correct": true,
+ "cost": 0.005744989536,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "To what score did Bayesian-Agent's incremental repair improve SOP-Bench?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "We need answer question about Bayesian-Agent's incremental repair improving SOP-Bench score. Need search arxiv. Let me search for \"Bayesian-Agent SOP-Bench incremental repair\".",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ued357np1rt0mooxtwz5i1vx",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"Bayesian-Agent SOP-Bench incremental repair\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer question about Bayesian-Agent's incremental repair improving SOP-Bench score. Need search arxiv. Let me search for \"Bayesian-Agent SOP-Bench incremental repair\".",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ued357np1rt0mooxtwz5i1vx",
+   "content": "[Bayesian-Agent: Posterior-Guided Skill Evolution Across LLM Agent Harnesses] LLM agents increasingly rely on prompts, tools, memory, SOPs, skills, and harness feedback, yet current self-evolution pipelines often update these assets through heuristic reflection or raw success counts. Such updates are brittle when trajectories are sparse, expensive, and context-dependent. We introduce Bayesian-Agent, a native and cross-harness framework that treats reusable agent skills as Bayesian evidence objects. Bayesian-Agent records verified trajectories, maintains posterior beliefs over skill reliability and failure modes, and turns those beliefs into auditable skill actions and model-facing guardrails. This posterior view provides a finite-sample alternative to raw empirical-rate skill updates and frames prompt, context, and harness engineering as inference over the external decision environment. On RealFin-Bench, Bayesian skill evolution matches or improves the raw empirical-rate control and yields large gains on native runs. In the incremental mode, incremental repair improves SOP-Bench from 80\\% to 95\\%, Lifelong AgentBench from 90\\% to 100\\%, and RealFin-Bench from 45\\% to 65\\%. Backend and model-scaling ablations further show that posterior-guided repair can operate across BA native, MiniSWEAgent, and Claude Code, provided the harness produces verifiable task artifacts. The source code is available at https://github.com/DataArcTech/Bayesian-Agent. (https://arxiv.org/abs/2606.08348v2)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 95% (improved from 80%)",
+   "refusal": null,
+   "reasoning": "Abstract states incremental repair improves SOP-Bench from 80% to 95%. Need final concise.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Abstract states incremental repair improves SOP-Bench from 80% to 95%. Need final concise.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-10",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.005744989536,
+  "seconds": 17.0,
+  "answer": "95% (improved from 80%)",
+  "gold": "95%"
+ }
+}

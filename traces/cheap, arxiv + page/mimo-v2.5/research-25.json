@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-25",
+  "source": "research",
+  "question": "Across how many coding-agent harnesses did the instruction privilege escalation attacks achieve all 13 objectives?",
+  "answer": "six",
+  "evidence": "We evaluate this threat by using multi-agent mechanisms to achieve 13 attack objectives across six coding-agent harnesses.",
+  "page": "Instruction privilege escalation (arXiv)",
+  "url": "https://arxiv.org/abs/2608.27299"
+ },
+ "answer": "The answer is found directly in the paper \"When Context Gets Root: Privilege Escalation in LLM Harnesses\" (arxiv.org/abs/2608.27299v1).\n\nAccording to the abstract, the instruction privilege escalation attacks achieved **all 13 objectives across six coding-agent harnesses** (under unrestricted action execution), and also achieved all 13 on all three harnesses that provide automatic permission review.\n\nFINAL: 6",
+ "correct": true,
+ "cost": 0.0008555904,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "Across how many coding-agent harnesses did the instruction privilege escalation attacks achieve all 13 objectives?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me search for information about instruction privilege escalation attacks on coding-agent harnesses.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_2ccd916317fb4cc485c0226b",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"instruction privilege escalation attacks coding agent harnesses\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me search for information about instruction privilege escalation attacks on coding-agent harnesses.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_2ccd916317fb4cc485c0226b",
+   "content": "[When Context Gets Root: Privilege Escalation in LLM Harnesses] Instruction hierarchy is a model-side defense that assigns instructions different levels of privilege according to their sources. These levels constrain which content may direct model behavior. During agent execution, however, agent harnesses construct context for each model invocation. This construction can elevate low-level content to a higher instruction level and grant it greater model-facing privilege. We introduce instruction privilege escalation. In this attack, an attacker induces an agent to elevate low-level malicious content to a higher instruction level. The elevated content then causes the agent to execute instructions it would not follow at their original level. We evaluate this threat by using multi-agent mechanisms to achieve 13 attack objectives across six coding-agent harnesses. These objectives span confidentiality, integrity, availability, and remote code execution. With unrestricted action execution, the attacks achieve all 13 objectives on all six harnesses. Under automatic permission review, the attacks achieve all 13 objectives on all three harnesses that provide this mode. We further reproduce the vulnerability using harness-provided persistent goals and scheduled tasks. These results demonstrate the generality of instruction privilege escalation. (https://arxiv.org/abs/2608.27299v1)\n---\n[Seeing Is Not Screening: Multimodal Hidden Instruction Attacks on Agent Skill Scanners] Agent skills are emerging as an important attack surface in LLM-based systems. Through an empirical study of existing skill scanners, we find that current defenses primarily rely on textual descriptions, manifests, and source code as the main signals for security analysis, which can leave visually conveyed malicious intent insufficiently examined. This creates a practical blind spot: harmful operational instructions hidden in images may bypass scanning while still being recoverable by multimodal agents during deployment. To systematically investigate this threat, we propose SkillCamo, a document-mediated multimodal instruction attack that conceals malicious instructions within images bundled with a skill while rewriting the surrounding documentation to naturally reference those images as part of the normal workflow. Thus, the attack does not rely on the image alone, but on the joint interpretation of textual guidance and visual payload at execution time. To defend against such attacks, we further propose ExecScan, an execution-grounded multimodal scanning module that performs intent extraction, behavior reconstruction, abuse assessment, and deliberative execution simulation over skill artifacts. ExecScan jointly analyzes documentation, code, referenced resources, and visual content to recover hidden instructions, reconstruct executable behavior chains, and identify downstream risks such as exfiltration, destruction, persistence, deception, and privilege escalation. Extensive experiments show that image-hidden malicious instructions challenge existing skill scanners, while ExecScan can improve the skill scanning performance. (https://arxiv.org/abs/2606.18198v1)\n---\n[Agent Skills in the Wild: An Empirical Study of Security Vulnerabilities at Scale] The rise of AI agent frameworks has introduced agent skills, modular packages containing instructions and executable code that dynamically extend agent capabilities. While this architecture enables powerful customization, skills execute with implicit trust and minimal vetting, creating a significant yet uncharacterized attack surface. We conduct the first large-scale empirical security analysis of this emerging ecosystem, collecting 42,447 skills from two major marketplaces and systematically analyzing 31,132 using SkillScan, a multi-stage detection framework integrating static analysis with LLM-based semantic classification. Our findings reveal pervasive security risks: 26.1% of skills contain at least one vulnerability, spanning 14 distinct patterns across four categories: prompt injection, data exfiltration, privilege escalation, and supply chain risks. Data exfiltration (13.3%) and privilege escalation (11.8%) are most prevalent, while 5.2% of skills exhibit high-severity patterns strongly suggesting malicious intent. We find that skills bundling executable scripts are 2.12x more likely to contain vulnerabilities than instruction-only skills (OR=2.12, p&lt;0.001). Our contributions include: (1) a grounded vulnerability taxonomy derived from 8,126 vulnerable skills, (2) a validated detection methodology achieving 86.7% precision and 82.5% recall, and (3) an open dataset and detection toolkit to support future research. These results demonstrate an urgent need for capability-based permission systems and mandatory security vetting before this attack vector is further exploited. (https://arxiv.org/abs/2601.10338v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "The answer is found directly in the paper \"When Context Gets Root: Privilege Escalation in LLM Harnesses\" (arxiv.org/abs/2608.27299v1).\n\nAccording to the abstract, the instruction privilege escalation attacks achieved **all 13 objectives across six coding-agent harnesses** (under unrestricted action execution), and also achieved all 13 on all three harnesses that provide automatic permission review.\n\nFINAL: 6",
+   "refusal": null,
+   "reasoning": "The first result directly answers the question. From the abstract: \"We evaluate this threat by using multi-agent mechanisms to achieve 13 attack objectives across six coding-agent harnesses.\" And \"With unrestricted action execution, the attacks achieve all 13 objectives on all six harnesses.\"\n\nSo the answer is 6 coding-agent harnesses.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The first result directly answers the question. From the abstract: \"We evaluate this threat by using multi-agent mechanisms to achieve 13 attack objectives across six coding-agent harnesses.\" And \"With unrestricted action execution, the attacks achieve all 13 objectives on all six harnesses.\"\n\nSo the answer is 6 coding-agent harnesses.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-25",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0008555904,
+  "seconds": 14.8,
+  "answer": "6",
+  "gold": "six"
+ }
+}

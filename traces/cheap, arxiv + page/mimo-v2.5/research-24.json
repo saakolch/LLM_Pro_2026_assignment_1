@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-24",
+  "source": "research",
+  "question": "By up to how much does HarnessLens improve average held-out performance?",
+  "answer": "13.6%",
+  "evidence": "Across three agent harnesses and four benchmarks, HarnessLens improves average held-out performance by 7.6-13.6% while consuming substantially less evaluation budget than competing baselines.",
+  "page": "HarnessLens (arXiv)",
+  "url": "https://arxiv.org/abs/2608.27311"
+ },
+ "answer": "The abstract from the HarnessLens paper states clearly that it improves average held-out performance by **7.6–13.6%** across three agent harnesses and four benchmarks.\n\nFINAL: 7.6–13.6%",
+ "correct": true,
+ "cost": 0.0010951303999999999,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By up to how much does HarnessLens improve average held-out performance?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about HarnessLens and how much it improves average held-out performance. Let me search for this on arxiv.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_134558b40be144c280cdfb8d",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"HarnessLens held-out performance\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about HarnessLens and how much it improves average held-out performance. Let me search for this on arxiv.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_134558b40be144c280cdfb8d",
+   "content": "[Verify Smarter, Evolve Further: Efficient Harness Evolution through Behavior-Aware Verification] Agent harnesses shape how language-model agents use instructions, tools, and runtime components, but adapting these harnesses requires costly verification. Existing propose-and-verify methods typically score every candidate on a fixed task set, wasting rollouts on unrelated behaviors and allowing aggregate scores to obscure specific regressions. We introduce HarnessLens, a budget-aware framework for automated harness evolution. HarnessLens jointly explores the task space and user-configurable components, derives candidate modifications from execution trajectories, and selectively verifies each candidate on behavior-relevant tasks using an attributable-evidence gate. Across three agent harnesses and four benchmarks, HarnessLens improves average held-out performance by 7.6-13.6% while consuming substantially less evaluation budget than competing baselines. These results demonstrate that behavior-aware verification with explicit attribution enables more reliable and sample-efficient harness evolution under constrained interaction budgets. Our code is available at https://github.com/jhxu5214/HarnessLens. (https://arxiv.org/abs/2608.27311v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "The abstract from the HarnessLens paper states clearly that it improves average held-out performance by **7.6–13.6%** across three agent harnesses and four benchmarks.\n\nFINAL: 7.6–13.6%",
+   "refusal": null,
+   "reasoning": "The abstract states: \"HarnessLens improves average held-out performance by 7.6-13.6%\".",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract states: \"HarnessLens improves average held-out performance by 7.6-13.6%\".",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-24",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0010951303999999999,
+  "seconds": 13.8,
+  "answer": "7.6–13.6%",
+  "gold": "13.6%"
+ }
+}

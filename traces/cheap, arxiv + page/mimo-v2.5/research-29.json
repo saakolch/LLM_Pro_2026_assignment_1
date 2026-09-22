@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-29",
+  "source": "research",
+  "question": "How many tasks does the VisTarget-Bench benchmark contain?",
+  "answer": "150",
+  "evidence": "We also introduce VisTarget-Bench, a 150-task human-verified benchmark that pairs each question with a held-out target image, distinguishing image-retrieval failures from visual-perception failures.",
+  "page": "WeAgent-MMSearch (arXiv)",
+  "url": "https://arxiv.org/abs/2608.28062"
+ },
+ "answer": "The VisTarget-Bench benchmark contains 150 tasks, as stated in the abstract: \"We also introduce VisTarget-Bench, a 150-task human-verified benchmark that pairs each question with a held-out target image.\"\n\nFINAL: 150 tasks.",
+ "correct": true,
+ "cost": 0.0007354592,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many tasks does the VisTarget-Bench benchmark contain?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about \"VisTarget-Bench\", which sounds like a benchmark. I need to search for it on arxiv. I'll use the keywords \"VisTarget-Bench\". Let's do a search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_866e74040764416983f85656",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"VisTarget-Bench\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"VisTarget-Bench\", which sounds like a benchmark. I need to search for it on arxiv. I'll use the keywords \"VisTarget-Bench\". Let's do a search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_866e74040764416983f85656",
+   "content": "[WeAgent-MMSearch: Native Text-Vision Interaction for Multimodal Search Agents] Multimodal search agents extend parametric knowledge with newly emerging and long-tail evidence from the open web. Yet many existing agentic search environments often expose retrieved evidence only as text and omit tool-returned images from subsequent context, reducing visually grounded trajectories to text-only reasoning. Long-horizon interaction also compounds tool-call, response-length, timeout, and budget failures, which can discard salvageable trajectories, waste rollout computation, and disturb policy updates. To address these issues, we introduce WeAgent-Harness, a multimodal agentic harness that supports native text-vision interaction and runtime recovery. Retrieved images receive persistent disk references, allowing the model to inspect, process, and cite them throughout the trajectory. Based on this harness, we develop WeAgent-MMSearch, an integrated system spanning data construction, agentic post-training, and multimodal rollout. For data construction, a strong MLLM uses WeAgent-Harness to discover, synthesize, and verify MMSearch-style tasks and collect expert trajectories. During post-training, our Failure-Aware GSPO (FA-GSPO) recovers salvageable abnormal rollouts and filters invalid ones to improve bounded multimodal planning and search. We also introduce VisTarget-Bench, a 150-task human-verified benchmark that pairs each question with a held-out target image, distinguishing image-retrieval failures from visual-perception failures. Evaluation on VisTarget-Bench and seven public benchmarks shows that agentic post-training improves the average score by 19.22 points, enabling our model to outperform similarly sized open-source models and rival models with roughly ten times its parameter count. (https://arxiv.org/abs/2608.28062v2)"
+  },
+  {
+   "role": "assistant",
+   "content": "The VisTarget-Bench benchmark contains 150 tasks, as stated in the abstract: \"We also introduce VisTarget-Bench, a 150-task human-verified benchmark that pairs each question with a held-out target image.\"\n\nFINAL: 150 tasks.",
+   "refusal": null,
+   "reasoning": "The search result contains information about VisTarget-Bench. The abstract states: \"We also introduce VisTarget-Bench, a 150-task human-verified benchmark that pairs each question with a held-out target image, distinguishing image-retrieval failures from visual-perception failures.\"\n\nSo the benchmark contains 150 tasks. The question asks \"How many tasks does the VisTarget-Bench benchmark contain?\" The answer is 150.\n\nI should verify by reading the abstract. It says \"150-task\". That's clear. I'll use the calculator to ensure I'm not misreading. No need for calculation.\n\nNow I need to write the final line as \"FINAL: <short answer>\". The short answer should be \"150 tasks\". Let's output that.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search result contains information about VisTarget-Bench. The abstract states: \"We also introduce VisTarget-Bench, a 150-task human-verified benchmark that pairs each question with a held-out target image, distinguishing image-retrieval failures from visual-perception failures.\"\n\nSo the benchmark contains 150 tasks. The question asks \"How many tasks does the VisTarget-Bench benchmark contain?\" The answer is 150.\n\nI should verify by reading the abstract. It says \"150-task\". That's clear. I'll use the calculator to ensure I'm not misreading. No need for calculation.\n\nNow I need to write the final line as \"FINAL: <short answer>\". The short answer should be \"150 tasks\". Let's output that.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-29",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0007354592,
+  "seconds": 22.1,
+  "answer": "150 tasks.",
+  "gold": "150"
+ }
+}

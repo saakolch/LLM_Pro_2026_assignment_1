@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-7",
+  "source": "research",
+  "question": "By up to how much does HarnessFix improve performance over the initial harnesses?",
+  "answer": "18.4%",
+  "evidence": "We evaluate HarnessFix on four popular benchmarks, and results show that it improves the performance over the initial harnesses by 6.3% to 18.4%, significantly outperforming human-designed and self-evolution baselines.",
+  "page": "HarnessFix (arXiv)",
+  "url": "https://arxiv.org/abs/2606.06324"
+ },
+ "answer": "FINAL: HarnessFix improves performance over the initial harnesses by **6.3% to 18.4%**.",
+ "correct": true,
+ "cost": 0.007201034016,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By up to how much does HarnessFix improve performance over the initial harnesses?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "We need answer question about HarnessFix. Need search arxiv. \"HarnessFix improve performance over initial harnesses\" likely a paper. Let me search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_sw5uw7cdguovwspdrhg30vjg",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"HarnessFix improve performance over initial harnesses\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer question about HarnessFix. Need search arxiv. \"HarnessFix improve performance over initial harnesses\" likely a paper. Let me search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_sw5uw7cdguovwspdrhg30vjg",
+   "content": "[From Failed Trajectories to Reliable LLM Agents: Diagnosing and Repairing Harness Flaws] LLM agents increasingly rely on agent harness: the runtime infrastructure around the base model that defines execution environments, tool interfaces, context, lifecycle orchestration, observability, verification, and governance. Existing self-improving agents and automatic harness evolution methods mainly improve agents through runtime supervision, prompt optimization, workflow search, or harness modification based on final outcomes. However, they often fail to diagnose where the responsible evidence lies in failed trajectories and which harness implementation mechanism causes the unreliable behavior, resulting in broad, indirect, or poorly scoped changes. This paper proposes HarnessFix, a trace-grounded and diagnosis-driven framework for repairing agent harnesses. HarnessFix compiles raw execution traces and harness artifacts into a Harness-aware Trace Intermediate Representation (HTIR), which normalizes fragmented trajectory evidence, captures step-level data-flow and control-flow relations, and aligns runtime steps with the harness artifacts that shape their behavior. It then attributes failures to responsible steps and harness artifacts, and consolidates recurring diagnoses into repair-oriented flaw records. Finally, HarnessFix maps these records to scoped repair operators, generates patches under flaw-specific repair specifications, and accepts them through regression-aware validation. We evaluate HarnessFix on four popular benchmarks, and results show that it improves the performance over the initial harnesses by 6.3% to 18.4%, significantly outperforming human-designed and self-evolution baselines. HarnessFix highlights the value of treating failed trajectories not only as feedback signals, but also as structured evidence for diagnosing and repairing the harness  (https://arxiv.org/abs/2606.06324v2)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: HarnessFix improves performance over the initial harnesses by **6.3% to 18.4%**.",
+   "refusal": null,
+   "reasoning": "The abstract says improves performance over initial harnesses by 6.3% to 18.4%. Need answer.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract says improves performance over initial harnesses by 6.3% to 18.4%. Need answer.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-7",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.007201034016,
+  "seconds": 15.7,
+  "answer": "HarnessFix improves performance over the initial harnesses b",
+  "gold": "18.4%"
+ }
+}

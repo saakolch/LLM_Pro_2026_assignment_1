@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-11",
+  "source": "research",
+  "question": "By up to how much does AlloSpatial improve proprietary models in a training-free setting?",
+  "answer": "18%",
+  "evidence": "Experiments on VSI-Bench and MindCube show that AlloSpatial improves proprietary models by 5%-18% in a training-free setting, while ASTs alone support strong spatial reasoning even when visual inputs are removed.",
+  "page": "AlloSpatial (arXiv)",
+  "url": "https://arxiv.org/abs/2606.08952"
+ },
+ "answer": "The answer is clearly stated in the abstract of the AlloSpatial paper:\n\n> \"AlloSpatial improves proprietary models by **5%–18%** in a training-free setting.\"\n\nThis result was demonstrated on the VSI-Bench and MindCube benchmarks.\n\nFINAL: AlloSpatial improves proprietary models by up to 18% in a training-free setting.",
+ "correct": true,
+ "cost": 0.0008944824,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By up to how much does AlloSpatial improve proprietary models in a training-free setting?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about \"AlloSpatial\" and how much it improves proprietary models in a training-free setting. I need to search arxiv for this paper.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_135ba24eae5f46feb17cf7fd",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"AlloSpatial training-free spatial\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"AlloSpatial\" and how much it improves proprietary models in a training-free setting. I need to search arxiv for this paper.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_135ba24eae5f46feb17cf7fd",
+   "content": "[AlloSpatial: Agentic Harness Framework for Spatial Reasoning in Foundation Models] Multimodal Foundation Models (MFMs) have made substantial progress, yet remain fragile in spatial reasoning over the physical world. A key bottleneck lies in their inability to transform local egocentric observations into a global allocentric spatial representation. To address this, we propose AlloSpatial, an agentic framework for allocentric spatial cognition in foundation models. AlloSpatial introduces World2Mind, a plug-and-play cognitive mapping sandbox that converts egocentric observations into structured allocentric priors, including Allocentric-Spatial Trees and route maps that support querying object topology, geometric relations, passability, and trajectories. To utilize these priors reliably under noisy reconstruction and ambiguous visual evidence, AlloSpatial introduces a Spatial Reasoning Harness for tool-use judgment, modality-decoupled cue collection, and geometry-semantic arbitration. We further internalize this process in Qwen3-VL through cold-start reinforcement learning with a harness-gated trajectory-level reward. Experiments on VSI-Bench and MindCube show that AlloSpatial improves proprietary models by 5%-18% in a training-free setting, while ASTs alone support strong spatial reasoning even when visual inputs are removed. The trained AlloSpatial agents further outperform larger general-purpose models and competitive spatial baselines, suggesting that structured allocentric representations, active tool use, and verifiable reasoning offer a promising route toward spatially capable foundation models. (https://arxiv.org/abs/2606.08952v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "The answer is clearly stated in the abstract of the AlloSpatial paper:\n\n> \"AlloSpatial improves proprietary models by **5%–18%** in a training-free setting.\"\n\nThis result was demonstrated on the VSI-Bench and MindCube benchmarks.\n\nFINAL: AlloSpatial improves proprietary models by up to 18% in a training-free setting.",
+   "refusal": null,
+   "reasoning": "The abstract states: \"AlloSpatial improves proprietary models by 5%-18% in a training-free setting.\"",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract states: \"AlloSpatial improves proprietary models by 5%-18% in a training-free setting.\"",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-11",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0008944824,
+  "seconds": 11.5,
+  "answer": "AlloSpatial improves proprietary models by up to 18% in a tr",
+  "gold": "18%"
+ }
+}

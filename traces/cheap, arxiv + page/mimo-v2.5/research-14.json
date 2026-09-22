@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-14",
+  "source": "research",
+  "question": "How many of the 7,160 adversarial schedules tested against AutoMegaKernel were unsafe?",
+  "answer": "6,091",
+  "evidence": "so an unsafe agent-proposed schedule is rejected before launch: across 7,160 adversarial schedules (6,091 unsafe) it had zero false-accepts and accepted all 360 real lowerings.",
+  "page": "AutoMegaKernel (arXiv)",
+  "url": "https://arxiv.org/abs/2606.09682"
+ },
+ "answer": "FINAL: 6,091 out of the 7,160 adversarial schedules tested against AutoMegaKernel were unsafe.",
+ "correct": true,
+ "cost": 0.0008362536000000001,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many of the 7,160 adversarial schedules tested against AutoMegaKernel were unsafe?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Let me search for information about AutoMegaKernel and adversarial schedules.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_36e7e7962ffc42a59b6dbc3b",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"AutoMegaKernel adversarial schedules unsafe\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Let me search for information about AutoMegaKernel and adversarial schedules.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_36e7e7962ffc42a59b6dbc3b",
+   "content": "[AutoMegaKernel: A Statically-Checked Agent Harness for Self-Retargeting Megakernel Synthesis] AutoMegaKernel (AMK) compiles a HuggingFace Llama-family model into a single persistent cooperative CUDA kernel that runs the whole forward pass in one launch, with no per-model hand-written CUDA. The contribution is the system, not raw speed. A frozen schedule-IR validator statically certifies deadlock-freedom and race-freedom via static graph checks (not a mechanized proof), so an unsafe agent-proposed schedule is rejected before launch: across 7,160 adversarial schedules (6,091 unsafe) it had zero false-accepts and accepted all 360 real lowerings. The same source retargets sm_80/sm_90/sm_120 from one codebase, auto-generates correct megakernels for 10 of 10 supported models, and on a real SmolLM2-135M checkpoint reproduces HuggingFace greedy decode token-for-token (perplexity match 2.5e-7). An unattended, agent-drivable autoresearch loop self-improves the megakernel over its own baseline (1.25-1.72x). A search-found int8 (W8A16) megakernel beats CUDA-graphed cuBLAS bf16 at batch-1 decode across NVIDIA's datacenter inference fleet: L4 up to 1.33x, the current-gen L40S 1.25-1.27x, A10G up to 1.08x at scale, and the consumer RTX 5090 1.19-1.23x. The ordering is not a clean function of bandwidth (the 864 GB/s L40S beats the 600 GB/s A10G); the divide is inference-class vs training-class. AMK trails cuBLAS on the high-bandwidth training-class A100/H100, where the harness localizes the cross-SM-sync bottleneck; we report the gap plainly. This is a precision-asymmetric (W8A16 vs bf16) comparison at decode position 0; the largest real checkpoint is TinyLlama-1.1B. Code and the harness: https://github.com/RightNow-AI/AutoMegaKernel (https://arxiv.org/abs/2606.09682v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 6,091 out of the 7,160 adversarial schedules tested against AutoMegaKernel were unsafe.",
+   "refusal": null,
+   "reasoning": "The abstract states: \"across 7,160 adversarial schedules (6,091 unsafe) it had zero false-accepts.\"",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract states: \"across 7,160 adversarial schedules (6,091 unsafe) it had zero false-accepts.\"",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-14",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.0008362536000000001,
+  "seconds": 14.6,
+  "answer": "6,091 out of the 7,160 adversarial schedules tested against ",
+  "gold": "6,091"
+ }
+}

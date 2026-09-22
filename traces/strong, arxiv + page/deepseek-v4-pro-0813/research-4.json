@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-4",
+  "source": "research",
+  "question": "How many tasks does SentinelBench, the June 2026 benchmark for long-running monitoring agents, contain?",
+  "answer": "100",
+  "evidence": "SentinelBench contains 100 tasks across 10 synthetic web environments, including email, calendars, finance, professional networking, and entertainment.",
+  "page": "SentinelBench (arXiv)",
+  "url": "https://arxiv.org/abs/2606.05342"
+ },
+ "answer": "FINAL: SentinelBench contains 100 tasks.",
+ "correct": true,
+ "cost": 0.004006676784000001,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many tasks does SentinelBench, the June 2026 benchmark for long-running monitoring agents, contain?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "We need answer question about SentinelBench, June 2026 benchmark for long-running monitoring agents. Need search arxiv. Let's use arxiv_search with distinctive keywords \"SentinelBench long-running monitoring agents\".",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_839cd2m2fdjaec6t11az6kz0",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"SentinelBench long-running monitoring agents\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer question about SentinelBench, June 2026 benchmark for long-running monitoring agents. Need search arxiv. Let's use arxiv_search with distinctive keywords \"SentinelBench long-running monitoring agents\".",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_839cd2m2fdjaec6t11az6kz0",
+   "content": "[SentinelBench: A Benchmark for Long-Running Monitoring Agents] AI agents are increasingly asked to carry out work that spans minutes, hours, or longer. Yet the default model of agent behavior is continuous action: issuing tool calls, refreshing pages, searching for alternatives, or otherwise trying to force progress. This is the wrong approach for many long-running tasks, which are better served by a strategy of sustained attention. Instead, agents should monitor an environment, notice when an external event makes progress possible, then respond promptly without wasting resources while waiting. To measure progress on this class of tasks, we introduce SentinelBench, an open-source benchmark for time-evolving monitoring tasks. SentinelBench contains 100 tasks across 10 synthetic web environments, including email, calendars, finance, professional networking, and entertainment. Each environment exposes a live web interface and replays a scripted sequence of events, requiring agents to navigate and reason about web pages whose state shifts underfoot. SentinelBench measures task completion, reaction time, and resource use, exposing the tradeoff between responsiveness and cost. We report results across three models and two browser-agent harnesses, establishing performance baselines for future comparison and demonstrating how agent design choices can dramatically impact key metrics. Together, these results show that SentinelBench distinguishes meaningful differences in agent behavior. (https://arxiv.org/abs/2606.05342v2)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: SentinelBench contains 100 tasks.",
+   "refusal": null,
+   "reasoning": "The abstract says SentinelBench contains 100 tasks across 10 synthetic web environments. Need answer.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The abstract says SentinelBench contains 100 tasks across 10 synthetic web environments. Need answer.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-4",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.004006676784000001,
+  "seconds": 10.2,
+  "answer": "SentinelBench contains 100 tasks.",
+  "gold": "100"
+ }
+}

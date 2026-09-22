@@ -1,0 +1,111 @@
+{
+ "task": {
+  "id": "research-19",
+  "source": "research",
+  "question": "By what percentage does the harness cut blended cost per task, holding models constant, according to 'The Harness Effect' study?",
+  "answer": "41%",
+  "evidence": "Holding models constant, the harness cuts blended cost per task 41% ($0.21->$0.12), median wall-clock 44% (48s->27s), and tokens per task 38% (14.2k->8.8k), with task-completion quality at parity (0.78->0.81, directional at this sample size).",
+  "page": "The Harness Effect (arXiv)",
+  "url": "https://arxiv.org/abs/2607.06906"
+ },
+ "answer": "FINAL: 41%",
+ "correct": true,
+ "cost": 0.013250643383999998,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "By what percentage does the harness cut blended cost per task, holding models constant, according to 'The Harness Effect' study?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "We need answer: \"By what percentage does the harness cut blended cost per task, holding models constant, according to 'The Harness Effect' study?\" Need search arxiv for \"The Harness Effect\".",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_w888jcv8jwkvi01xx2m2ri66",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"The Harness Effect\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer: \"By what percentage does the harness cut blended cost per task, holding models constant, according to 'The Harness Effect' study?\" Need search arxiv for \"The Harness Effect\".",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_w888jcv8jwkvi01xx2m2ri66",
+   "content": "[XGV-BERT: Leveraging Contextualized Language Model and Graph Neural Network for Efficient Software Vulnerability Detection] With the advancement of deep learning (DL) in various fields, there are many attempts to reveal software vulnerabilities by data-driven approach. Nonetheless, such existing works lack the effective representation that can retain the non-sequential semantic characteristics and contextual relationship of source code attributes. Hence, in this work, we propose XGV-BERT, a framework that combines the pre-trained CodeBERT model and Graph Neural Network (GCN) to detect software vulnerabilities. By jointly training the CodeBERT and GCN modules within XGV-BERT, the proposed model leverages the advantages of large-scale pre-training, harnessing vast raw data, and transfer learning by learning representations for training data through graph convolution. The research results demonstrate that the XGV-BERT method significantly improves vulnerability detection accuracy compared to two existing methods such as VulDeePecker and SySeVR. For the VulDeePecker dataset, XGV-BERT achieves an impressive F1-score of 97.5%, significantly outperforming VulDeePecker, which achieved an F1-score of 78.3%. Again, with the SySeVR dataset, XGV-BERT achieves an F1-score of 95.5%, surpassing the results of SySeVR with an F1-score of 83.5%. (https://arxiv.org/abs/2309.14677v1)\n---\n[Predicting Age from White Matter Diffusivity with Residual Learning] Imaging findings inconsistent with those expected at specific chronological age ranges may serve as early indicators of neurological disorders and increased mortality risk. Estimation of chronological age, and deviations from expected results, from structural MRI data has become an important task for developing biomarkers that are sensitive to such deviations. Complementary to structural analysis, diffusion tensor imaging (DTI) has proven effective in identifying age-related microstructural changes within the brain white matter, thereby presenting itself as a promising additional modality for brain age prediction. Although early studies have sought to harness DTI's advantages for age estimation, there is no evidence that the success of this prediction is owed to the unique microstructural and diffusivity features that DTI provides, rather than the macrostructural features that are also available in DTI data. Therefore, we seek to develop white-matter-specific age estimation to capture deviations from normal white matter aging. Specifically, we deliberately disregard the macrostructural information when predicting age from DTI scalar images, using two distinct methods. The first method relies on extracting only microstructural features from regions of interest. The second applies 3D residual neural networks (ResNets) to learn features directly from the images, which are non-linearly registered and warped to a template to minimize macrostructural variations. When tested on unseen data, the first method yields mean absolute error (MAE) of 6.11 years for cognitively normal participants and MAE of 6.62 years for cognitively impaired participants, while the second method achieves MAE of 4.69 years for cognitively normal participants and MAE of 4.96 years for cognitively impai (https://arxiv.org/abs/2311.03500v2)"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "Search didn't find. Need more specific query maybe \"harness effect\" benchmark eval? The study likely about AI evaluation harnesses and cost. Search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_cbtz5xhbvyuuo0kfgkggsoi5",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"harness effect evaluation cost per task\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Search didn't find. Need more specific query maybe \"harness effect\" benchmark eval? The study likely about AI evaluation harnesses and cost. Search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_cbtz5xhbvyuuo0kfgkggsoi5",
+   "content": "[The Scaffold Effect in Coding Agents: Harness Choice as a Hidden Variable in Coding-Agent Evaluation] Public leaderboards for coding agents typically rank systems by model name and pass rate, while the surrounding harness (the scaffold that issues tools, manages context, and decides when to stop) is often under-specified. Model-to-model comparison is valid when the harness is fixed; when it varies, performance and efficiency conflate model and scaffold effects. We evaluate Qwen 3.6 Plus and MiniMax M2.5 across three open-source harnesses (Goose, OpenCode, OpenHands-SDK) on a stratified 50-task subset of Terminal-Bench Pro. Harness choice induces up to a 40x difference in tokens per solved task, while paired within-model pass-rate differences remain 0-8 percentage points (95% paired-task bootstrap CIs include zero except for the largest gap). Failure fingerprints replicate across models (REASON for Goose, VERIFY/MAX_TURNS for OpenHands-SDK, idle-loop/TIME for OpenCode), indicating harness-level biases that are largely model-independent. For human-centered coding-agent evaluation, model name alone is an incomplete comparison unit: harness-model pairs determine real-world cost, latency, and oversight burden; no-action turns are a per-task wait tax, not just a token tax. We therefore recommend selecting harness-model pairs by pass rate under token/latency budgets, and reporting token usage, latency, and full harness specifications alongside any model comparison. We release anonymized configs, raw trial logs, aggregated snapshots, and analysis scripts. (https://arxiv.org/abs/2607.22585v1)\n---\n[The Harness Effect: How Orchestration Design Sets the Token Economics of Enterprise Agentic AI] Agentic AI development today runs on token maxing: buying capability with tokens -- longer reasoning traces, more turns, wider tool payloads, bigger replayed contexts -- so tokens per task grow faster than task value. Falling per-token prices mask the pattern; total spend rises anyway. We argue the decisive lever against token maxing is the harness: the orchestration layer that assembles context, exposes tools, sequences turns, delegates work, and carries enterprise observability and governance. We isolate it with a controlled swap: 22 locked evaluation tasks, six foundation models (Claude Sonnet 4.6, Gemini 3.1, Gemini Flash 3.5, Qwen 3.6, GLM 5.1, Palmyra X6), changing only the orchestration layer -- a frozen conventional production loop versus the Writer Agent Harness. Holding models constant, the harness cuts blended cost per task 41% ($0.21-&gt;$0.12), median wall-clock 44% (48s-&gt;27s), and tokens per task 38% (14.2k-&gt;8.8k), with task-completion quality at parity (0.78-&gt;0.81, directional at this sample size). Efficiency is model-invariant -- every model gets cheaper (33-61%) -- while quality gains are capability-dependent: a model's gain correlates almost perfectly with its baseline strength (r=0.99, n=6), a phenomenon we term harness leverage. Quality per dollar rises 82%; task-completions per million tokens rise from 54.9 to 92.0. On this workload the orchestration layer moved cost per task more than the full spread of the model menu did. We formalize token economics at the orchestration layer (including effective input price under prompt caching), detail the six mechanism families behind the effect -- cache-shape discipline to failure-spend governance -- compare six widely used agent systems on the same axes, and argue the harness is the one component wh (https://arxiv.org/abs/2607.06906v1)\n---\n[Cost-Effective Agent Harnesses for Abstract Reasoning and Generalization on ARC-AGI-1] Recent progress on ARC-AGI-1 from disclosed architectures has come broadly from two regimes: heavy test-time compute over frontier models (evolutionary search, exhaustive sampling, extended chain-of-thought), or benchmark-specific training in which small models are fine-tuned on ARC data, often with task-specialized architectures. We study a third regime: an open-weight model in non-thinking mode (DeepSeek V3.2) under a strict budget, with no ARC-specific fine-tuning. We study what is recoverable through architecture alone, building agentic harnesses that decompose pattern-discovery and program-synthesis stages explicitly. First, we introduce an Explorer-Definer Pipeline that separates pattern discovery from executable transformation synthesis, implemented as a two-stage agent pipeline. Next, we present the Reflective Orchestrator, which augments the pipeline with autonomous exploration of new transformations when previous hypotheses fail on training pairs. On the ARC-AGI-1 public 400-task evaluation set, the pipeline reaches 57.50% pass@2 at \\$0.25 per task, and the orchestrator reaches 67.25% pass@2 at \\$0.62 per task. Together these architectures lift a 15.50% one-shot baseline by ~52 points without benchmark-specific training or heavy test-time compute. Furthermore, the orchestrator-driven lift tests a falsifiable diagnostic the pipeline produces; unbiased pass@k analysis suggests the pipeline is generation-bound, not selection-bound (selection via training-pair accuracy captures ~95% of the candidate ceiling) and predicts that significant improvement requires broader generation, not better ranking. The orchestrator implements this prediction via adaptive re-exploration and confirms it (unbiased pass@1 lift +9.81 pp, matching selection-mediated pass@2 lift). An addi (https://arxiv.org/abs/2607.06764v1)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 41%",
+   "refusal": null,
+   "reasoning": "Found. Abstract says \"Holding models constant, the harness cuts blended cost per task 41% ($0.21->$0.12)\". So answer 41%. Need final with FINAL line.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Found. Abstract says \"Holding models constant, the harness cuts blended cost per task 41% ($0.21->$0.12)\". So answer 41%. Need final with FINAL line.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-19",
+  "source": "research",
+  "correct": true,
+  "steps": 3,
+  "tool_calls": 2,
+  "cost": 0.013250643383999998,
+  "seconds": 25.5,
+  "answer": "41%",
+  "gold": "41%"
+ }
+}

@@ -1,0 +1,265 @@
+{
+ "task": {
+  "id": "research-33",
+  "source": "research",
+  "question": "What is the name of the configurable VLM-agent harness proposed alongside the MineAmongUs sandbox?",
+  "answer": "ARIA",
+  "evidence": "We also propose ARIA, a configurable VLM-agent harness that exposes five cognitive-component ablation axes; and an atom- and arc-level annotation scheme grounded in deception taxonomies and operationalized at scale by an LLM-as-a-Judge reaching near-human atom-labeling agreement.",
+  "page": "MineAmongUs (arXiv)",
+  "url": "https://arxiv.org/abs/2608.30428"
+ },
+ "answer": "Based on my knowledge, I'm not fully certain of the specific name of the configurable VLM-agent harness proposed alongside MineAmongUs. However, I believe it may be called **AgentStudio** or a similar modular evaluation framework, but I cannot verify this with certainty without access to web search.\n\nFINAL: I am unable to reliably answer this question from my existing knowledge. The specific name of the configurable VLM-agent harness proposed alongside MineAmongUs requires verification via web search, which is currently unavailable.",
+ "correct": false,
+ "cost": 0.0030093056000000014,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2025 and 2026. Never answer from memory: use web_search to find the right Wikipedia article, then page_find to look inside long articles such as '2026 in <country or field>' for the specific fact. For arithmetic or date math use the calculator. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What is the name of the configurable VLM-agent harness proposed alongside the MineAmongUs sandbox?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about a configurable VLM-agent harness proposed alongside the MineAmongUs sandbox. This seems like a specific research paper or project from 2025 or 2026. I need to search for \"MineAmongUs\" to find relevant information. Let's start with a web search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_50b906c0dd5449a3b72b164b",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"MineAmongUs sandbox configurable VLM-agent harness\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a configurable VLM-agent harness proposed alongside the MineAmongUs sandbox. This seems like a specific research paper or project from 2025 or 2026. I need to search for \"MineAmongUs\" to find relevant information. Let's start with a web search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_50b906c0dd5449a3b72b164b",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "It seems Wikipedia search is rate limited. Let me try a different query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_adb9364a8a3a4cb391788111",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"MineAmongUs paper 2025\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "It seems Wikipedia search is rate limited. Let me try a different query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_adb9364a8a3a4cb391788111",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "It seems like the web_search tool is having issues with rate limiting (HTTP 429). Let me try again with a simpler query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_431a189cc5474c9eb00550a4",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"MineAmongUs\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "It seems like the web_search tool is having issues with rate limiting (HTTP 429). Let me try again with a simpler query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_431a189cc5474c9eb00550a4",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The Wikipedia search is failing due to rate limiting. Let me try again after a moment with a simpler query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_2bc268fc9ea34adaadaeb120",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"VLM agent harness MineAmongUs\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The Wikipedia search is failing due to rate limiting. Let me try again after a moment with a simpler query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_2bc268fc9ea34adaadaeb120",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search tool seems to be rate limited. Let me try again with a different query.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_1cc225a0e8c24f0c988728dc",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"MineAmongUs sandbox vision language model\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search tool seems to be rate limited. Let me try again with a different query.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_1cc225a0e8c24f0c988728dc",
+   "content": "[M16 rifle] The M16 rifle (officially designated Rifle, Caliber 5.56mm, M16) is a family of assault rifles adapted from the ArmaLite AR-15 rifle for the United States military. The original M16 rifle was a 5.56×45mm automatic rifle with a 20-round magazine. In 1964, the XM16E1 entered US military service as the M16 and in the following year was deployed for jungle warfare operations during the Vietnam War. In 1969, the M16A1 replaced the M14 rifle to become the US military's standard service rifle. The M16A1 incorporated numerous modifications, including a bolt-assist (\"forward-assist\"), chrome-plated bore, protective reinforcement around the magazine release, and a revised flash hider. In 1983, the United States Marine Corps adopted the M16A2 rifle, and the US Army adopted it in 1986. The M16A2 fires the improved 5.56×45mm (M855/SS109) cartridge and has a newer adjustable rear sight, case deflector, heavy barrel, improved handguard, pistol grip, and buttstock, as well as a semi-auto and three-round burst fire selector. Adopted in July 1997, the M16A4 is the fourth generation of the M16 series. It is equipped with a removable carrying handle and quad Picatinny rail for mounting optics and other ancillary devices. The M16 has also been widely adopted by other armed forces around the world. Total worldwide production of M16s is approximately eight million, making it the most-produced firearm of its 5.56mm caliber. The US military has largely replaced the M16 in frontline combat units with  | other articles: Hypothetical Axis victory in World War II, Barack Obama"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search results aren't returning relevant information about MineAmongUs. Let me try a different search approach.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_bdd61324805e4b688e6d5ad1",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"MineAmongUs benchmark\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search results aren't returning relevant information about MineAmongUs. Let me try a different search approach.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_bdd61324805e4b688e6d5ad1",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search keeps failing or returning irrelevant results. Let me try once more with a different approach.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ce8231469a564bbea09006e8",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"MineAmongUs Minecraft agent evaluation\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search keeps failing or returning irrelevant results. Let me try once more with a different approach.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ce8231469a564bbea09006e8",
+   "content": "failed to call tool web_search: Wikipedia unavailable: HTTP 429"
+  },
+  {
+   "role": "user",
+   "content": "Tools are now unavailable. Answer from what you already know, last line FINAL: <answer>."
+  },
+  {
+   "role": "assistant",
+   "content": "Based on my knowledge, I'm not fully certain of the specific name of the configurable VLM-agent harness proposed alongside MineAmongUs. However, I believe it may be called **AgentStudio** or a similar modular evaluation framework, but I cannot verify this with certainty without access to web search.\n\nFINAL: I am unable to reliably answer this question from my existing knowledge. The specific name of the configurable VLM-agent harness proposed alongside MineAmongUs requires verification via web search, which is currently unavailable.",
+   "refusal": null,
+   "reasoning": "The user is asking about a configurable VLM-agent harness proposed alongside the MineAmongUs sandbox. This seems to be about a research paper related to Minecraft environments for evaluating Vision-Language Model (VLM) agents.\n\nBased on my knowledge, MineAmongUs is a benchmark/sandbox for evaluating VLM agents in Minecraft-like environments. The configurable VLM-agent harness proposed alongside it is called **AgentBench** or possibly **MineAgent**... but I'm not entirely certain.\n\nActually, let me think more carefully. I recall there was work on Minecraft-based benchmarks for evaluating multimodal AI agents. The MineAmongUs sandbox was proposed as a way to test agent capabilities in a Minecraft-like environment.\n\nThe harness proposed alongside MineAmongUs is called **CrafterEnv** or perhaps **VLABench**... \n\nI'm not fully confident in my answer here. The configurable VLM-agent harness might be called **AgentStudio** or something similar, but I should be honest about my uncertainty.\n\nActually, I think the answer might be **AgentHarnes** or **VLMAgent** - but I'm not sure.\n\nGiven my uncertainty, I'll provide my best answer while being transparent about the limitations. The harness proposed alongside MineAmongUs might be called **MineAgent** or a similar name, but I cannot verify this without web search.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about a configurable VLM-agent harness proposed alongside the MineAmongUs sandbox. This seems to be about a research paper related to Minecraft environments for evaluating Vision-Language Model (VLM) agents.\n\nBased on my knowledge, MineAmongUs is a benchmark/sandbox for evaluating VLM agents in Minecraft-like environments. The configurable VLM-agent harness proposed alongside it is called **AgentBench** or possibly **MineAgent**... but I'm not entirely certain.\n\nActually, let me think more carefully. I recall there was work on Minecraft-based benchmarks for evaluating multimodal AI agents. The MineAmongUs sandbox was proposed as a way to test agent capabilities in a Minecraft-like environment.\n\nThe harness proposed alongside MineAmongUs is called **CrafterEnv** or perhaps **VLABench**... \n\nI'm not fully confident in my answer here. The configurable VLM-agent harness might be called **AgentStudio** or something similar, but I should be honest about my uncertainty.\n\nActually, I think the answer might be **AgentHarnes** or **VLMAgent** - but I'm not sure.\n\nGiven my uncertainty, I'll provide my best answer while being transparent about the limitations. The harness proposed alongside MineAmongUs might be called **MineAgent** or a similar name, but I cannot verify this without web search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, search only",
+  "model": "mimo-v2.5",
+  "id": "research-33",
+  "source": "research",
+  "correct": false,
+  "steps": 9,
+  "tool_calls": 7,
+  "cost": 0.0030093056000000014,
+  "seconds": 87.5,
+  "answer": "I am unable to reliably answer this question from my existin",
+  "gold": "ARIA"
+ }
+}

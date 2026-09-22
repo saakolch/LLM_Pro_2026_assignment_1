@@ -1,0 +1,81 @@
+{
+ "task": {
+  "id": "research-17",
+  "source": "research",
+  "question": "How many sequential releases of the Qwen Code CLI were evaluated in the controlled longitudinal harness study?",
+  "answer": "35",
+  "evidence": "We then perform a controlled deep dive into 35 sequential releases of the Qwen Code CLI, evaluating each against 50 stratified SWE-bench Verified tasks while holding the underlying LLM constant.",
+  "page": "Don't Blame the LLM (arXiv)",
+  "url": "https://arxiv.org/abs/2607.03691"
+ },
+ "answer": "FINAL: 35",
+ "correct": true,
+ "cost": 0.007609748256000002,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "How many sequential releases of the Qwen Code CLI were evaluated in the controlled longitudinal harness study?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "We need answer question: \"How many sequential releases of the Qwen Code CLI were evaluated in the controlled longitudinal harness study?\" Need search arxiv. Keywords: Qwen Code CLI longitudinal harness study. Let me search.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_drqqolm4azhwtksxjlhfbnra",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"Qwen Code CLI longitudinal harness study\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "We need answer question: \"How many sequential releases of the Qwen Code CLI were evaluated in the controlled longitudinal harness study?\" Need search arxiv. Keywords: Qwen Code CLI longitudinal harness study. Let me search.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_drqqolm4azhwtksxjlhfbnra",
+   "content": "[Don't Blame the Large Language Model: How Agent Harness Evolution Shapes Coding Agent Quality] Coding agents, autonomous systems that use large language models (LLMs) to resolve software engineering tasks, rely on agent harness: a middleware layer in between a developer and a large language model that orchestrates system prompts, tool execution, context management, and iterative reasoning loops. While these agent harnesses evolve at extreme velocities, no study has examined how this evolution affects agent quality (i.e., effectiveness and efficiency) over time. Practitioners regularly report quality regressions after agent harness updates, yet consistently attribute them to the underlying model rather than the harness itself. In this paper, we address this gap by conducting the first controlled longitudinal study that isolates the agent harness contribution. Unlike prior work that fixes the agent harness and varies the model, we fix the model and vary only the agent harness, evaluating 35 sequential releases to measure their impact on agent effectiveness and efficiency. We first empirically study the development and release evolution of five major open-source agent harnesses (i.e., Codex, Qwen Code, Gemini, OpenCode, and OpenHands), revealing extreme release velocities exceeding two releases per day and thousands of issues within months. We then perform a controlled deep dive into 35 sequential releases of the Qwen Code CLI, evaluating each against 50 stratified SWE-bench Verified tasks while holding the underlying LLM constant. We trace the resulting quality fluctuations to specific development patterns and architectural components, and illustrate our findings with concrete qualitative evidence linking individual pull requests to measured quality shifts. (https://arxiv.org/abs/2607.03691v2)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 35",
+   "refusal": null,
+   "reasoning": "Abstract says evaluating 35 sequential releases to measure impact, and deep dive into 35 sequential releases of Qwen Code CLI. Question: How many sequential releases of the Qwen Code CLI were evaluated in the controlled longitudinal harness study? Answer: 35.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "Abstract says evaluating 35 sequential releases to measure impact, and deep dive into 35 sequential releases of Qwen Code CLI. Question: How many sequential releases of the Qwen Code CLI were evaluated in the controlled longitudinal harness study? Answer: 35.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "strong, arxiv + page",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-17",
+  "source": "research",
+  "correct": true,
+  "steps": 2,
+  "tool_calls": 1,
+  "cost": 0.007609748256000002,
+  "seconds": 11.9,
+  "answer": "35",
+  "gold": "35"
+ }
+}

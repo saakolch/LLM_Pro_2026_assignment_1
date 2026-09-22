@@ -1,0 +1,111 @@
+{
+ "task": {
+  "id": "research-22",
+  "source": "research",
+  "question": "What paired accuracy did the best agent achieve on AgentAbstain?",
+  "answer": "59.5%",
+  "evidence": "Across 17 frontier LLMs in 4 agent harnesses, the best agent (Gemini 3.1 Pro) achieves only 59.5% paired accuracy (correct on both the act and abstain sides of each paired task).",
+  "page": "AgentAbstain (arXiv)",
+  "url": "https://arxiv.org/abs/2607.10059"
+ },
+ "answer": "The search result clearly states: \"the best agent (Gemini 3.1 Pro) achieves only 59.5% paired accuracy (correct on both the act and abstain sides of each paired task).\"\n\nFINAL: 59.5%",
+ "correct": true,
+ "cost": 0.0014519064000000003,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about recent AI research papers (2025-2026). Never answer from memory: use arxiv_search with distinctive keywords, ideally the system or benchmark name from the question. Read the returned abstracts: the fact you need is usually stated there. If a search returns an error or nothing, retry once with 1-2 different keywords, then move on. You may use the calculator for simple arithmetic on numbers from abstracts. Do not repeat the same call. When done, write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What paired accuracy did the best agent achieve on AgentAbstain?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The user is asking about \"AgentAbstain\" and wants to know the \"paired accuracy\" achieved by the best agent. I need to search for this. Let's try searching for \"AgentAbstain\" on arxiv.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_690ee6926d464793864b908d",
+     "function": {
+      "name": "arxiv_search",
+      "arguments": "{\"query\": \"AgentAbstain benchmark\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The user is asking about \"AgentAbstain\" and wants to know the \"paired accuracy\" achieved by the best agent. I need to search for this. Let's try searching for \"AgentAbstain\" on arxiv.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_690ee6926d464793864b908d",
+   "content": "[AgentAbstain: Do LLM Agents Know When Not to Act?] Agent systems based on large language models (LLMs) are increasingly deployed for autonomous tasks, yet existing evaluations mostly focus on task success rather than whether agents know when to abstain. This gap poses real risks: under ambiguity, conflicting constraints, or tool failures, agents may execute unintended and irreversible actions. To close this gap, we present the first systematic evaluation framework for agentic abstention: the calibrated ability of tool-using LLM agents to recognize when not to act. At its core, AgentAbstain is a paired-task benchmark built on an agent-native taxonomy of 8 abstention scenarios across pre-execution reasoning and runtime discovery. It contains 263 paired tasks across 42 executable sandbox environments, where each pair consists of a should-act task and a should-abstain variant produced through a controlled perturbation to the instruction, tool, or environment state. To scale this paired design and resist data contamination, we propose AbstainGen, a fully automated pipeline that synthesizes sandbox environments and generates paired tasks end-to-end, validated by deterministic replay and semantic LLM judges; fresh task instances can be regenerated on demand, and three independent annotators rate 94-98% of sampled tasks as well-designed. Across 17 frontier LLMs in 4 agent harnesses, the best agent (Gemini 3.1 Pro) achieves only 59.5% paired accuracy (correct on both the act and abstain sides of each paired task). More importantly, abstention capability is largely independent of general task-solving capability, indicating that scaling task-solving alone will not close this gap. We further identify failure modes such as post-hoc abstention, in which agents execute irreversible actions before recognizing abstention triggers. Our c (https://arxiv.org/abs/2607.10059v1)"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": "The search result provides the answer directly from the abstract: \"the best agent (Gemini 3.1 Pro) achieves only 59.5% paired accuracy (correct on both the act and abstain sides of each paired task).\" So the paired accuracy is 59.5%.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_caf4f7e5726d46d39841ec0c",
+     "function": {
+      "name": "calculator",
+      "arguments": "{\"expr\": \"59.5\"}"
+     }
+    }
+   ],
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The search result provides the answer directly from the abstract: \"the best agent (Gemini 3.1 Pro) achieves only 59.5% paired accuracy (correct on both the act and abstain sides of each paired task).\" So the paired accuracy is 59.5%.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_caf4f7e5726d46d39841ec0c",
+   "content": "59.5"
+  },
+  {
+   "role": "assistant",
+   "content": "The search result clearly states: \"the best agent (Gemini 3.1 Pro) achieves only 59.5% paired accuracy (correct on both the act and abstain sides of each paired task).\"\n\nFINAL: 59.5%",
+   "refusal": null,
+   "reasoning": "The answer is clearly stated in the abstract. The best agent (Gemini 3.1 Pro) achieves 59.5% paired accuracy on AgentAbstain.",
+   "reasoning_details": [
+    {
+     "type": "reasoning.text",
+     "text": "The answer is clearly stated in the abstract. The best agent (Gemini 3.1 Pro) achieves 59.5% paired accuracy on AgentAbstain.",
+     "format": "unknown",
+     "index": 0
+    }
+   ]
+  }
+ ],
+ "row": {
+  "config": "cheap, arxiv + page",
+  "model": "mimo-v2.5",
+  "id": "research-22",
+  "source": "research",
+  "correct": true,
+  "steps": 3,
+  "tool_calls": 2,
+  "cost": 0.0014519064000000003,
+  "seconds": 13.5,
+  "answer": "59.5%",
+  "gold": "59.5%"
+ }
+}

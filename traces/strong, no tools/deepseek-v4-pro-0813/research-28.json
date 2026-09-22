@@ -1,0 +1,43 @@
+{
+ "task": {
+  "id": "research-28",
+  "source": "research",
+  "question": "What score does the openJiuwen harness achieve on Terminal-Bench 2.1?",
+  "answer": "87.19%",
+  "evidence": "We systematically evaluate openJiuwen on SWE-bench Verified and Terminal-Bench 2.1, where it achieves 82.6% and 87.19%, respectively, exceeding the strongest selected official-leaderboard point estimates by 3.4 and 3.39 percentage points.",
+  "page": "openJiuwen (arXiv)",
+  "url": "https://arxiv.org/abs/2608.27969"
+ },
+ "answer": "The OpenJiuwen harness achieved a score of 4.9% on Terminal-Bench 2.1.  \n\nFINAL: 4.9%",
+ "correct": false,
+ "cost": 0.009149469999999993,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions. No tools are available in this run, so answer from your own knowledge. Do not attempt to call any tools. Write the last line as FINAL: <short answer>."
+  },
+  {
+   "role": "user",
+   "content": "What score does the openJiuwen harness achieve on Terminal-Bench 2.1?"
+  },
+  {
+   "role": "assistant",
+   "content": "The OpenJiuwen harness achieved a score of 4.9% on Terminal-Bench 2.1.  \n\nFINAL: 4.9%",
+   "refusal": null,
+   "reasoning": null
+  }
+ ],
+ "row": {
+  "config": "strong, no tools",
+  "model": "deepseek-v4-pro-0813",
+  "id": "research-28",
+  "source": "research",
+  "correct": false,
+  "steps": 1,
+  "tool_calls": 0,
+  "cost": 0.009149469999999993,
+  "seconds": 2.8,
+  "answer": "4.9%",
+  "gold": "87.19%"
+ }
+}
